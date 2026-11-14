@@ -1,0 +1,8 @@
+{
+ "page": 114,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Undisbursed Balances in Expired Grant Accounts\n\nTABLES:\n| Fiscal Year | Total Number of Expired Grants with Undisbursed Balances | Total Amount of Undisbursed Balances for Expired Grants (in thousands) |\n|---|---|---|\n| 2024 | 975 | $ 12,936 |\n| 2023 | 663 | $ 8,126 |\n| 2022 | 669 | $ 16,718 |\n\nPHOTOS:\n- People attending the Podcast Movement conference at the Gaylord National Resort and Convention Center in National Harbor, Md.\n- Caption: NASA Participates in the Podcast Movement conference, Tuesday, Aug. 20, 2024, at the Gaylord National Resort and Convention Center in National Harbor, Md. During the event, NASA hosted a panel entitled, \"Eclipses, Moon Missions, and Climate Change: How NASA Reaches Curious Listeners.\" PHOTO CREDIT – NASA/Bill Ingalls\n\nKEY FACTS:\n- In FY 2024, the total number of expired grants with undisbursed balances was 975, with a total amount of $12,936 thousand.\n- In FY 2023, the total number of expired grants with undisbursed balances was 663, with a total amount of $8,126 thousand.\n- In FY 2022, the total number of expired grants with undisbursed balances was 669, with a total amount of $16,718 thousand.\n- Code of Federal Regulations § 200.344 allows grant recipients 120 days to finalize reporting and complete final financial transactions.",
+ "prompt_tokens": 1353,
+ "output_tokens": 389,
+ "latency_s": 2.32
+}

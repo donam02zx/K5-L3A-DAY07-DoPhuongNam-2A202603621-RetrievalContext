@@ -1,0 +1,58 @@
+[
+ {
+  "variant": "dense:text,table",
+  "N": 15,
+  "hit1": 11,
+  "hit3": 13,
+  "hit5": 14,
+  "all_pages5": 14,
+  "median_ms": 22.9,
+  "miss5": [
+   "AD03"
+  ]
+ },
+ {
+  "variant": "dense:text,table,visual",
+  "N": 15,
+  "hit1": 11,
+  "hit3": 15,
+  "hit5": 15,
+  "all_pages5": 15,
+  "median_ms": 24.2,
+  "miss5": []
+ },
+ {
+  "variant": "bm25:text,table,visual",
+  "N": 15,
+  "hit1": 11,
+  "hit3": 12,
+  "hit5": 12,
+  "all_pages5": 11,
+  "median_ms": 2.9,
+  "miss5": [
+   "AD01",
+   "AD02",
+   "AD03"
+  ]
+ },
+ {
+  "variant": "hybrid_rrf:text,table,visual",
+  "N": 15,
+  "hit1": 12,
+  "hit3": 13,
+  "hit5": 15,
+  "all_pages5": 14,
+  "median_ms": 28.0,
+  "miss5": []
+ },
+ {
+  "variant": "hybrid_rerank:text,table,visual",
+  "N": 15,
+  "hit1": 13,
+  "hit3": 14,
+  "hit5": 15,
+  "all_pages5": 14,
+  "median_ms": 2366.2,
+  "miss5": []
+ }
+]

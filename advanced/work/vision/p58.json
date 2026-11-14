@@ -1,0 +1,8 @@
+{
+ "page": 58,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n01 NOTE 1 Reporting Entity and Summary of Significant Accounting Policies (CONTINUED)\n\nKEY FACTS:\n- For FERS employees hired January 1, 2013, and after, NASA contributes 18.4 percent of gross pay.\n- CSRS employees: NASA makes contributions of 7.0 percent of gross pay.\n- FERS employees hired before January 1, 2013: NASA makes contributions to the defined benefit plan of 16.0 percent of gross pay.\n- The Agency also contributes 1.0 percent to a thrift savings plan (contribution plan) for each employee and matches employee contributions to this plan up to an additional 4.0 percent of gross pay.\n- In FY 2024, NASA implemented SFFAS 54, Leases.\n- SFFAS 49 requires agencies to assess and disclose P3s (between Federal and the private sector) involving risk-sharing or limited protections and unequitable long-term benefit/cost characteristics greater than five years.",
+ "prompt_tokens": 1352,
+ "output_tokens": 238,
+ "latency_s": 2.25
+}

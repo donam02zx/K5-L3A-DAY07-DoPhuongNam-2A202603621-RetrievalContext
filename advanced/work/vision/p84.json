@@ -1,0 +1,8 @@
+{
+ "page": 84,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION Audit Reports\n\nPHOTOS: A person wearing a blue cap and a gray hoodie with \"ROCKET SCIENTIST\" printed on the back stands facing away from the camera, waving with one hand and holding the other out, as a rocket launches into the sky leaving a thick white trail of smoke over a grassy landscape with buildings and a water tower in the background. Caption: NASA Engineer Cindy Fuentes Rosal waves goodbye to a Black Brant IX sounding rocket launching from NASA’s Wallops Flight Facility in Virginia during the total solar eclipse on April 8, 2024. The rocket was part of a series of three launches for the Atmospheric Perturbations around Eclipse Path (APEP) mission to study the disturbances in the electrified region of Earth’s atmosphere known as the ionosphere created when the Moon eclipses the Sun. The rockets launched before, during, and after peak local eclipse time on the Eastern Shore of Virginia. Photo Credit: NASA/Chris Pirner.\n\nKEY FACTS:\n- NASA Engineer Cindy Fuentes Rosal waves goodbye to a Black Brant IX sounding rocket.\n- The rocket launched from NASA’s Wallops Flight Facility in Virginia.\n- The launch occurred during the total solar eclipse on April 8, 2024.\n- The rocket was part of a series of three launches for the Atmospheric Perturbations around Eclipse Path (APEP) mission.\n- The mission's purpose was to study disturbances in the ionosphere created when the Moon eclipses the Sun.\n- The rockets launched before, during, and after peak local eclipse time on the Eastern Shore of Virginia.\n- Photo Credit: NASA/Chris Pirner.",
+ "prompt_tokens": 1352,
+ "output_tokens": 342,
+ "latency_s": 3.2
+}

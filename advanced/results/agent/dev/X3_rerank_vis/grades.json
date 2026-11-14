@@ -1,0 +1,110 @@
+[
+ {
+  "query_id": "AD01",
+  "group": "table",
+  "pass": true,
+  "reason": "$697M (2024) and — (2023) from balance sheet p50 table chunk."
+ },
+ {
+  "query_id": "AD02",
+  "group": "table",
+  "pass": true,
+  "reason": "$2,795M from Statement of Net Cost p51."
+ },
+ {
+  "query_id": "AD03",
+  "group": "table",
+  "pass": true,
+  "reason": "$25,015M from SBR p53."
+ },
+ {
+  "query_id": "AD04",
+  "group": "table",
+  "pass": true,
+  "reason": "5-20 years, $1,066M, page 62 (verified on original)."
+ },
+ {
+  "query_id": "AD05",
+  "group": "image",
+  "pass": true,
+  "reason": "Hammer + drive tube, sample integrity; p14 caption."
+ },
+ {
+  "query_id": "AD06",
+  "group": "image",
+  "pass": true,
+  "reason": "All five values; p10."
+ },
+ {
+  "query_id": "AD07",
+  "group": "image",
+  "pass": true,
+  "reason": "PACE in Falcon 9 fairings; p24."
+ },
+ {
+  "query_id": "AD08",
+  "group": "chart",
+  "pass": true,
+  "reason": "$7,664M / $6,719M; p29."
+ },
+ {
+  "query_id": "AD09",
+  "group": "chart",
+  "pass": true,
+  "reason": "31%, $2,353M; p31."
+ },
+ {
+  "query_id": "AD10",
+  "group": "chart",
+  "pass": true,
+  "reason": "11%, $3,335M; p34."
+ },
+ {
+  "query_id": "AD11",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Below by ~$0.2B (question asks 'roughly'); p13 + p32 (alt to p51)."
+ },
+ {
+  "query_id": "AD12",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Lists all six balance-sheet asset lines (incl. Other Assets) behind the Other slice; cites p30 + p50."
+ },
+ {
+  "query_id": "AD13",
+  "group": "text",
+  "pass": true,
+  "reason": "$1.8B (+$200M), net cost $24.7B (+$118M); p32."
+ },
+ {
+  "query_id": "AD14",
+  "group": "text",
+  "pass": true,
+  "reason": "Definition + $48M (2%) increase; p31 (+ note p65 details)."
+ },
+ {
+  "query_id": "AD15",
+  "group": "text",
+  "pass": true,
+  "reason": "CFO Act 1990 + GPRAMA 2010; p9."
+ },
+ {
+  "query_id": "AE01",
+  "group": "no_evidence",
+  "pass": false,
+  "reason": "FAIL: answered that Stennis employees are 'included in Other' - the report never says this (unsupported inference) instead of abstaining."
+ },
+ {
+  "query_id": "AE02",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained."
+ },
+ {
+  "query_id": "AE03",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained."
+ }
+]

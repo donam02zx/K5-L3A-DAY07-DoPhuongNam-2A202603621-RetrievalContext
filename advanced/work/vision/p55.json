@@ -1,0 +1,8 @@
+{
+ "page": 55,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n01 NOTE 1 Reporting Entity and Summary of Significant Accounting Policies (CONTINUED)\n\nKEY FACTS:\n- These consolidated financial statements are prepared in accordance with FASAB standards in the format prescribed by the Office of Management and Budget (OMB) Circular A-136, Financial Reporting Requirements, Revised (May 2024).\n- Congress funds NASA’s operations through nine main appropriations: Science; Aeronautics; Exploration; Space Operations; Science, Technology, Engineering and Mathematics Engagement; Safety, Security and Mission Services; Space Technology; Office of Inspector General; and Construction and Environmental Compliance and Restoration.\n- NASA applies the Financial Accounting Standards Board’s (FASB) Accounting Standards Codification (ASC) 730-10-25, Research and Development - Recognition, and FASB ASC 730-10-50 Research and Development - Disclosure, to its R&D projects.\n- Costs to acquire PP&E that is expected to be used only for a specific R&D project are expensed in the period they are incurred.",
+ "prompt_tokens": 1352,
+ "output_tokens": 240,
+ "latency_s": 2.38
+}

@@ -9,3 +9,8 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Advanced challenge: large/regenerable artifacts (rebuild with advanced/README.md)
+advanced/source/*.pdf
+advanced/work/pages/
+advanced/work/crops/

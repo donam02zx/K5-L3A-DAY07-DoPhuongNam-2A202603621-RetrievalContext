@@ -1,0 +1,8 @@
+{
+ "page": 100,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- The Deputy Administrator initiated a tiger team to identify ways NASA can further develop the risk management framework in support of Mission Directorates, Centers, and programs.\n- The study found optimism exists in pre-formulation regardless of mission category, as well as a lack of connectivity between pre-formulation program and project policy under NPR 7120.5, NASA Space Flight Program and Project Management Requirements, and NPD 1000.5, Policy for NASA Acquisition.\n- The Agency Program Management Council approved recommendations to improve realism in early program and project formulation, strengthen acquisition management, and achieve improvements in the management of NASA's major programs and projects.\n- NASA is updating NPD 1000.5, NPR 7120.5, and the Standing Review Board handbook to include a Mission Concept Review (MCR) requirement.\n- Independent assessments of Single Project Programs, Category 1 projects, and select Category 2 projects are conducted at MCR prior to Acquisition Strategy Meetings (ASM).\n- Agency Baseline Commitments (ABC) are established for each project element of the Artemis Campaign under the Moon to Mars Program Office for projects over $250 million across Mission Directorates.\n- NASA regularly updates the Office of Management and Budget (OMB) and Congress on the performance and progress of development projects.",
+ "prompt_tokens": 1353,
+ "output_tokens": 301,
+ "latency_s": 1.92
+}

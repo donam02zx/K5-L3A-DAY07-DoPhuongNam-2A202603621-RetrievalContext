@@ -1,0 +1,23 @@
+{
+ "config": "X4_rerank_inspect",
+ "split": "test",
+ "pass": 28,
+ "N": 30,
+ "rate": 0.9333,
+ "by_group": {
+  "table": "6/6",
+  "image": "5/5",
+  "chart": "4/5",
+  "multihop": "4/4",
+  "text": "3/4",
+  "no_evidence": "6/6"
+ },
+ "errors": 0,
+ "prompt_tokens": 300613,
+ "output_tokens": 5587,
+ "cost_usd_est": 0.0323,
+ "latency_s_median": 14.31,
+ "latency_s_total": 518.6,
+ "model_calls_mean": 3.87,
+ "inspect_per_q": 0.8
+}

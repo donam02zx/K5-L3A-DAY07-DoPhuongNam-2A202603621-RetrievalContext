@@ -1,0 +1,8 @@
+{
+ "page": 43,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS Forward Looking\n\nPHOTOS: A group of young women (TechGirls participants) listening to a woman speaking inside a facility next to a Nancy Grace Roman Space Telescope display.\nCaption:\nTechGirls Tour NASA Goddard\nNASA Goddard hosted participants from the U.S. Department of State’s TechGirls program once again this summer. On Aug. 1, 2024, 133 girls from 37 different countries/territories toured Goddard’s research labs and TV production studios and heard from a panel of some of the incredible women that work at Goddard.\nPHOTO CREDIT: NASA/Jay Friedlander\n\nKEY FACTS:\n- 133 girls participated in the TechGirls program.\n- Participants came from 37 different countries/territories.\n- The tour took place on Aug. 1, 2024.\n- Program hosted by NASA Goddard.\n- Program is from the U.S. Department of State’s TechGirls program.",
+ "prompt_tokens": 1352,
+ "output_tokens": 213,
+ "latency_s": 2.88
+}

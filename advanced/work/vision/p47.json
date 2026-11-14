@@ -1,0 +1,8 @@
+{
+ "page": 47,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Message from the Chief Financial Officer\n\nPHOTOS:\n- Margaret Vo Schaus, Chief Financial Officer, smiling in a circular portrait with caption \"Sincerely, Margaret Vo Schaus\"\n\nKEY FACTS:\n- Financial Section date: November 15, 2024\n- 14th consecutive year of an unmodified \"clean\" opinion on NASA's financial statements from the FY 2024 Auditors' report\n- Goal I: Ensure stewardship of the taxpayer's investment entrusted to NASA to advance and achieve the Agency's strategic goals, priorities, and missions\n- Goal II: Lead and develop a robust analytical community and capability that supports and empowers the Agency mission\n- Goal III: Develop and engage the Enterprise workforce to enable the NASA of the future\n- FY 2024 Agency Financial Report page number: 46",
+ "prompt_tokens": 1352,
+ "output_tokens": 175,
+ "latency_s": 2.14
+}

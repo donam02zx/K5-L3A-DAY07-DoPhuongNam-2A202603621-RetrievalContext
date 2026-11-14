@@ -1,0 +1,8 @@
+{
+ "page": 63,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n06 NOTE 6\nStewardship PP&E (CONTINUED)\n\nTABLES:\n| HERITAGE ASSETS (IN PHYSICAL UNITS) | 2023 | ADDITIONS | WITHDRAWALS | 2024 |\n|---|---|---|---|---|\n| **Collection-type** | | | | |\n| Air and Space Displays and Artifacts | 2 | — | — | 2 |\n| Art | 1 | — | — | 1 |\n| **Non-Collection-type** | | | | |\n| NASA Locations | 9 | — | 1 | 8 |\n| **Total Heritage Assets** | **12** | **—** | **1** | **11** |\n\nKEY FACTS:\n* As of September 30, 2024, and 2023, the total number of NASA’s multi-use heritage assets were 507 and 502 respectively.\n* In 2023, Air and Space Displays and Artifacts physical units totaled 2.\n* In 2024, Air and Space Displays and Artifacts physical units totaled 2.\n* In 2023, Art physical units totaled 1.\n* In 2024, Art physical units totaled 1.\n* In 2023, NASA Locations physical units totaled 9.\n* In 2024, NASA Locations physical units totaled 8 (with 1 withdrawal).\n* Total Heritage Assets were 12 in 2023 and 11 in 2024 (with 1 withdrawal).",
+ "prompt_tokens": 1352,
+ "output_tokens": 375,
+ "latency_s": 2.28
+}

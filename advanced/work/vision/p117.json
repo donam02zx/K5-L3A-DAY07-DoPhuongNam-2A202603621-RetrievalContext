@@ -1,0 +1,8 @@
+{
+ "page": 117,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: SECTION 4 Appendix\n\nPHOTOS: This composite image of multiple exposures shows the progression of a partial solar eclipse over the Washington Monument, Monday, April 8, 2024, in Washington. A total solar eclipse swept across a narrow portion of the North American continent from Mexico’s Pacific coast to the Atlantic coast of Newfoundland, Canada. A partial solar eclipse was visible across the entire North American continent along with parts of Central America and Europe.\nPHOTO CREDIT: NASA/Bill Ingalls",
+ "prompt_tokens": 1353,
+ "output_tokens": 103,
+ "latency_s": 2.16
+}

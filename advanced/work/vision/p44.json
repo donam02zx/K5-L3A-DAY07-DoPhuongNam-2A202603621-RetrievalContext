@@ -1,0 +1,8 @@
+{
+ "page": 44,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS FORWARD LOOKING\n2025 and Beyond\n\nKEY FACTS:\n- NASA continues to plan for the future of deep space exploration, preparing for the launch of Artemis II and Artemis III.\n- Artemis II will mark NASA’s first crewed mission of the Orion spacecraft, following Artemis I which demonstrated the Space Launch System (SLS) rocket.\n- Four Commercial Crew missions and ninety experiments are expected to be conducted using commercial facilities on ISS over the next two fiscal years.\n- NASA is launching the Total and Spectral Solar Irradiance Sensor 2 mission, completing the Operational Readiness Review of the NASA-Indian Space Research Organisation Synthetic Aperture Radar (NISAR) mission, and completing the Landsat Next System Requirements Review and GRACE-C Critical Design Review by the end of FY 2025.\n- Europa Clipper, a mission headed for Jupiter’s moon Europa, is among projects slated to better understand the solar system and the universe beyond.\n- The Spectro-Photometer for the History of the Universe, Epoch of Reionization and Ices Explorer (SPHEREx) is targeted for launch in FY 2025 to provide the first all-sky spectral survey of hundreds of millions of galaxies.\n- SMD projects in development include the Nancy Grace Roman Space Telescope, the Interstellar Mapping and Acceleration Probe (IMAP), the Dragonfly mission, Near-Earth Object (NEO) Surveyor, and the Multi-Slit Solar Explorer (MUSE).\n- By the end of FY 2025, NASA will demonstrate leadership in space technology by enhancing partnerships with industry through initializing several tipping point opportunities.",
+ "prompt_tokens": 1352,
+ "output_tokens": 345,
+ "latency_s": 2.67
+}

@@ -1,0 +1,8 @@
+{
+ "page": 107,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION / AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- NASA has infused its Employee Value Proposition (EVP) into Agency recruitment and outreach efforts for the last five years.\n- NASA's digital presence reaches over 6 million followers on LinkedIn and other social media sites.\n- NASA's Office of STEM Engagement engages more than 2,000 students annually in hands-on internships.\n- The Agency Master Plan (AMP) will establish a 20-year vision for physical infrastructure and real property assets.",
+ "prompt_tokens": 1353,
+ "output_tokens": 125,
+ "latency_s": 1.68
+}

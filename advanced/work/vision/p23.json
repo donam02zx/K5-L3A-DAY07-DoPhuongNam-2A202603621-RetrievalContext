@@ -1,0 +1,8 @@
+{
+ "page": 23,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | STRATEGIC GOALS AND HIGHLIGHTS\nFY 2024 Performance Assessment (CONTINUED)\n\nPHOTOS:\n- Photo showing the New York-based artist team Geraluz (left), WERC (right), and their son Amaru Alvarez (5) posing for a picture with the mural \"To the Moon, and Back\" created as part of the reimagined NASA Art Program on Tuesday, September 24, 2024, at 350 Hudson Street in New York City. The murals use geometrical patterns to invite deeper reflection on the exploration, creativity, and connection with the cosmos. Photo credit — Joel Kowsky.\n\nKEY FACTS:\n- Two of NASA's Performance Goals were rated Red in FY 2024.\n- Performance Goal 1.2.9 focuses on achieving critical milestones of Science Mission Directorate’s heliophysics, planetary science, and astrophysics major projects.\n- The goal to achieve a Green rating for the NASA Federal Employee Viewpoint Survey (FEVS) DEIA index was to keep the index rating at 88 percent or above, and the FY 2024 data has shown an index rating of 84.1 percent.",
+ "prompt_tokens": 1352,
+ "output_tokens": 260,
+ "latency_s": 2.28
+}

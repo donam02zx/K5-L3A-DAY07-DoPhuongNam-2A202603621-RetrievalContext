@@ -1,0 +1,8 @@
+{
+ "page": 90,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | INDEPENDENT AUDITORS' REPORT\n\nKEY FACTS:\n- Other Reporting Required by Government Auditing Standards by Ernst & Young LLP for NASA dated November 15, 2024.\n- Page number: 4.\n- Footer: \"FY 2024 AGENCY FINANCIAL REPORT NASA.GOV\" and \"CONTINUED ON THE NEXT PAGE → 89 NASA\".",
+ "prompt_tokens": 1352,
+ "output_tokens": 88,
+ "latency_s": 1.66
+}

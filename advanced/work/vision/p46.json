@@ -1,0 +1,8 @@
+{
+ "page": 46,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: SECTION 2 Financial Section\n\nPHOTOS: An aerial/high-angle photo showing the launch of a SpaceX rocket with massive clouds of smoke and exhaust rising from the launch pad, with land and ocean visible in the background.\nCaption: PHOTO CREDIT: SpaceX. Text describes it as the third integrated flight test of the Super Heavy booster and Starship upper stage, launched on March 14, SpaceX Starbase orbital launch pad at 8:25 a.m. CDT, as part of NASA's Artemis campaign working with SpaceX to develop the Starship human landing system (HLS).\n\nKEY FACTS:\n- SpaceX launched the third integrated flight test of its Super Heavy booster and Starship upper stage on March 14 at 8:25 a.m. CDT from Starbase orbital launch pad.\n- The Super Heavy booster features 33 Raptor engines fueled by super-cooled liquid methane and liquid oxygen.\n- Starship uses six Raptor engines.\n- Hot-staging technique to fire the engines before separation occurred at approximately three minutes into the flight.",
+ "prompt_tokens": 1352,
+ "output_tokens": 222,
+ "latency_s": 2.23
+}

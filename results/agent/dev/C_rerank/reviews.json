@@ -1,0 +1,192 @@
+[
+ {
+  "query_id": "q01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q07",
+  "answer_grade": 0,
+  "citation_support": [],
+  "reason": "False abstention: correct amend answer rejected twice for grouped citations [p11-c0, p11-c1]."
+ },
+ {
+  "query_id": "q08",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q10",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q12",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q13",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Rerank retrieved gold p8-c18; 'avoid recursivity' supported (fixes A/B miss)."
+ },
+ {
+  "query_id": "q14",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "q15",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Non-fast-forward merge commit; p32-c10 supports (grouped attempt rejected first)."
+ },
+ {
+  "query_id": "q16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "t01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "t02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "git reset HEAD <file> supported by p11-c5 (alternative gold)."
+ },
+ {
+  "query_id": "t03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "t04",
+  "answer_grade": 0,
+  "citation_support": [],
+  "reason": "False abstention: grouped citations [p32-c4, p32-c5] rejected."
+ },
+ {
+  "query_id": "t05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "t06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; cited chunk contains the gold evidence (read and checked)."
+ },
+ {
+  "query_id": "u01",
+  "citation_support": [],
+  "abstention_correct": true,
+  "reason": "Abstained after searching; topic absent from corpus."
+ },
+ {
+  "query_id": "u02",
+  "citation_support": [],
+  "abstention_correct": true,
+  "reason": "Abstained after searching; topic absent from corpus."
+ },
+ {
+  "query_id": "u03",
+  "citation_support": [],
+  "abstention_correct": true,
+  "reason": "Abstained after searching; topic absent from corpus."
+ }
+]

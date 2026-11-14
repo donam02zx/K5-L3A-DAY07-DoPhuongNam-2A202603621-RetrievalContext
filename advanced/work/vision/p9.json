@@ -1,0 +1,8 @@
+{
+ "page": 9,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Management's Discussion and Analysis / Welcome to NASA\n\nPHOTOS:\n- Administrator Bill Nelson and Snoopy view the eclipse just before totality. NASA Glenn Research Center and the Great Lakes Science Center hosted a three-day celestial celebration in downtown Cleveland, OH. This free, outdoor, family-friendly science and arts festival featured free concerts, performances, speakers, and hands-on science activities with community partners. A total solar eclipse swept across a narrow portion of the North American continent from Mexico's Pacific coast to the Atlantic coast of Newfoundland, Canada. A partial solar eclipse was visible across the entire North American continent along with parts of Central America and Europe. Photo credit — NASA/GRC/Sara Lowthian-Hanna, April 8, 2024.\n\nKEY FACTS:\n- The FY 2024 AFR presents NASA’s audited FY 2024 and FY 2023 financial statements and disclosures.\n- Business operations are accounted for according to U.S. Generally Accepted Accounting Principles (GAAP).\n- Financial aspects of the Agency's business operations are governed by the Chief Financial Officers Act of 1990 (CFO Act).\n- Operations comply with the Government Performance and Results Act Modernization Act of 2010 (GPRAMA).\n- The mission performance section starts on page 13.\n- The Statement of Net Cost (SNC) is found in the Financial section starting on page 45.",
+ "prompt_tokens": 1351,
+ "output_tokens": 309,
+ "latency_s": 2.12
+}

@@ -1,0 +1,8 @@
+{
+ "page": 60,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNOTE 2 Fund Balance with Treasury\nNOTE 3 Investments, Net\n\nTABLES:\n\n**Note 2 Table: Status of Fund Balance with Treasury**\n(IN MILLIONS) | 2024 | 2023\n---|---|---\n**Status of Fund Balance with Treasury:** | |\nUnobligated Balances | |\nAvailable | $ 2,612 | $ 2,466\nUnavailable | 269 | 181\nObligated Balance Not Yet Disbursed | 14,280 | 14,702\nNon-Budgetary FBWT | 25 | 29\n**Total** | **$ 17,186** | **$ 17,378**\n\n---\n\n**Note 3 Table: Investments, Net (2024)**\n(IN MILLIONS) | COST | AMORTIZATION METHOD | AMORTIZED (PREMIUM) DISCOUNT | INTEREST RECEIVABLE | INVESTMENTS, NET | UNREALIZED GAIN/(LOSS) | MARKET VALUE DISCLOSURE\n---|---|---|---|---|---|---|---\n**Intragovernmental Securities:** | | Straight-Line Effective-Interest | | | | |\nNon-Marketable: Par value | $ 15 | 4.704 - 4.747% | $ — | $ — | $ 15 | $ — | $ 15\n**Total** | **$ 15** | | **$ —** | **$ —** | **$ 15** | **$ —** | **$ 15**\n\n---\n\n**Note 3 Table: Investments, Net (2023)**\n(IN MILLIONS) | COST | AMORTIZATION METHOD | AMORTIZED (PREMIUM) DISCOUNT | INTEREST RECEIVABLE | INVESTMENTS, NET | UNREALIZED GAIN/(LOSS) | MARKET VALUE DISCLOSURE\n---|---|---|---|---|---|---|---\n**Intragovernmental Securities:** | | Straight-Line Effective-Interest | | | | |\nNon-Marketable: Par value | $ 15 | 4.766 - 5.441% | $ — | $ — | $ 15 | $ — | $ 15\n**Total** | **$ 15** | | **$ —** | **$ —** | **$ 15** | **$ —** | **$ 15**",
+ "prompt_tokens": 1352,
+ "output_tokens": 553,
+ "latency_s": 2.53
+}

@@ -1,0 +1,8 @@
+{
+ "page": 75,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNOTE 18 Public-Private Partnerships\n\nKEY FACTS:\n- NASA engages in relationships with private entities referred informally as \"public-private partnerships.\"\n- SFFAS 49, Public-Private Partnerships: Disclosure Requirements sets criteria for financial benefit or risk sharing relationships.\n- NASA collaborates with private entities for commercial space capabilities in accordance with the National Space Policy of the United States.\n- NASA utilizes 51 U.S.C. § 20101 et seq., and procurement contract authority (FAR and NASA FAR Supplement (NFS) requirements) to execute agreements.\n- NASA awarded FAR based firm fixed price contracts under a competitive broad area announcement procurement titled \"Next Space Technologies for Exploration Partnerships\" (NextSTEP).",
+ "prompt_tokens": 1352,
+ "output_tokens": 170,
+ "latency_s": 1.66
+}

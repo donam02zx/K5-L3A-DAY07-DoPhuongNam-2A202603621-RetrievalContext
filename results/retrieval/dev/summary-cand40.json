@@ -1,0 +1,24 @@
+[
+ {
+  "method": "hybrid_rrf",
+  "split": "dev",
+  "N": 22,
+  "top_k": 5,
+  "context_k": 3,
+  "budget_chars": 2400,
+  "filter": true,
+  "candidates": 40,
+  "hit1": 16,
+  "hit3": 21,
+  "hit5": 21,
+  "mrr": 0.833,
+  "context_hit": 21,
+  "avg_context_chars": 1958,
+  "median_latency_ms": 17.3,
+  "load_seconds": 11.1,
+  "cost_usd": 0.0,
+  "misses_at3": [
+   "t02"
+  ]
+ }
+]

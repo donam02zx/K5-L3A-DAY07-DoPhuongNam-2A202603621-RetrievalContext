@@ -1,0 +1,8 @@
+{
+ "page": 119,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: APÉNDICE 15 DE NOVIEMBRE DE 2024\nMensaje del Administrador (CONTINUACIÓN)\n\nPHOTOS: Headshot of Bill Nelson with his handwritten signature and printed name \"Bill Nelson\" below, captioned \"Atentamente,\".\n\nKEY FACTS:\n- In Fiscal Year 2024, NASA marked the Crew-8 and Crew-9 crewed launches to the ISS aboard SpaceX rockets under the Commercial Crew Program.\n- NASA's fleet includes over two dozen satellites and instruments, providing over 60 years of climate observation data.\n- The NASA-ISRO Synthetic Aperture Radar (NISAR) mission is the first radar of its kind in space to systematically map Earth using two radar frequencies.\n- In January 2024, NASA publicly unveiled the X-59 quiet supersonic aircraft designed to reduce sonic booms.\n- The Sustainable Flight Demonstrator X-66 is an experimental aircraft focused on helping achieve net-zero aviation emissions by 2050.\n- The 2024-2026 STEM Engagement Strategic Implementation Plan supports NASA's strategy in STEM.",
+ "prompt_tokens": 1353,
+ "output_tokens": 243,
+ "latency_s": 2.07
+}

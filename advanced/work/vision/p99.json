@@ -1,0 +1,8 @@
+{
+ "page": 99,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION / AGENCY RESPONSE TO OIG REPORT ON NASA’S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\nAgency Response to OIG Report on NASA’s Top Management and Performance Challenges\n\nKEY FACTS:\n- Date of memo: November 5, 2024\n- TO: Inspector General (Acting)\n- FROM: Administrator\n- SUBJECT: Agency Response to Office of Inspector General Draft Report, “2024 Report on NASA’s Top Management and Performance Challenges”\n- Reference draft report dated September 30, 2024 (Q-24-02-00-AOQA)\n- Challenge 1: Improving the Management of Major Programs and Projects",
+ "prompt_tokens": 1352,
+ "output_tokens": 147,
+ "latency_s": 1.64
+}

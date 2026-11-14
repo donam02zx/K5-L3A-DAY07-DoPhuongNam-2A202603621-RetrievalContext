@@ -1,0 +1,8 @@
+{
+ "page": 94,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | INDEPENDENT AUDITORS' REPORT\n\nKEY FACTS:\n- The report is dated November 15, 2024.\n- The auditor is Ernst & Young LLP.\n- The document is page 93 of the FY 2024 Agency Financial Report NASA.GOV.",
+ "prompt_tokens": 1352,
+ "output_tokens": 70,
+ "latency_s": 2.01
+}

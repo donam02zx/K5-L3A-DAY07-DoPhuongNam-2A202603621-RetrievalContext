@@ -1,0 +1,8 @@
+{
+ "page": 88,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION: INDEPENDENT AUDITORS' REPORT\n\nKEY FACTS:\n- Management is responsible for the preparation and fair presentation of the financial statements in accordance with accounting principles generally accepted in the United States of America.\n- The financial statements must be free of material misstatement, whether due to fraud or error.\n- Auditors' objectives are to obtain reasonable assurance about whether the financial statements as a whole are free of material misstatement, and to issue an auditor's report that includes our opinion.\n- Reasonable assurance is a high level of assurance but is not absolute assurance.\n- GAAS and *Government Auditing Standards* and the provisions of OMB Bulletin No. 24-02 govern the audit.\n- In performing an audit in accordance with GAAS and *Government Auditing Standards*, auditors exercise professional judgment and maintain professional skepticism throughout the audit.\n- Auditors obtain an understanding of internal control relevant to the audit in order to design audit procedures appropriate in the circumstances, but not for the purpose of expressing an opinion on the effectiveness of NASA's internal control.",
+ "prompt_tokens": 1352,
+ "output_tokens": 223,
+ "latency_s": 1.74
+}

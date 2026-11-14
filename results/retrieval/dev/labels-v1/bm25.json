@@ -1,0 +1,1553 @@
+{
+ "summary": {
+  "method": "bm25",
+  "split": "dev",
+  "N": 22,
+  "top_k": 5,
+  "context_k": 3,
+  "budget_chars": 2400,
+  "filter": true,
+  "candidates": null,
+  "hit1": 18,
+  "hit3": 19,
+  "hit5": 20,
+  "mrr": 0.852,
+  "context_hit": 19,
+  "avg_context_chars": 1990,
+  "median_latency_ms": 1.6,
+  "load_seconds": 0.1,
+  "cost_usd": 0.0,
+  "misses_at3": [
+   "q04",
+   "q08",
+   "t02"
+  ]
+ },
+ "traces": [
+  {
+   "query_id": "q01",
+   "question": "What are the three main states that files can reside in in Git?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p5-c10",
+     "score": 26.357273,
+     "page": 5,
+     "source": "book/01-introduction/sections/what-is-git.asc",
+     "section": "The Three States",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p5-c12",
+     "score": 12.963532,
+     "page": 5,
+     "source": "book/01-introduction/sections/what-is-git.asc",
+     "section": "The Three States",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p5-c11",
+     "score": 11.766986,
+     "page": 5,
+     "source": "book/01-introduction/sections/what-is-git.asc",
+     "section": "The Three States",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p8-c0",
+     "score": 9.049633,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Recording Changes to the Repository",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p8-c2",
+     "score": 8.433679,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Checking the Status of Your Files",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p5-c10"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p5-c10",
+    "p5-c12",
+    "p5-c11"
+   ],
+   "context_chars": 2379,
+   "context_hit": true,
+   "latency_ms": 2.0
+  },
+  {
+   "query_id": "q02",
+   "question": "How long is the checksum string Git uses to identify content?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p5-c7",
+     "score": 13.597998,
+     "page": 5,
+     "source": "book/01-introduction/sections/what-is-git.asc",
+     "section": "Git Has Integrity",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p18-c1",
+     "score": 12.398065,
+     "page": 18,
+     "source": "book/03-git-branching/sections/workflows.asc",
+     "section": "Long-Running Branches",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p7-c7",
+     "score": 8.20035,
+     "page": 7,
+     "source": "book/02-git-basics/sections/getting-a-repository.asc",
+     "section": "Cloning an Existing Repository",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p12-c19",
+     "score": 8.093586,
+     "page": 12,
+     "source": "book/02-git-basics/sections/viewing-history.asc",
+     "section": "Limiting Log Output",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p15-c1",
+     "score": 7.896635,
+     "page": 15,
+     "source": "book/03-git-branching/sections/nutshell.asc",
+     "section": "Branches in a Nutshell",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p5-c7"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p5-c7",
+    "p18-c1",
+    "p7-c7"
+   ],
+   "context_chars": 1860,
+   "context_hit": true,
+   "latency_ms": 1.6
+  },
+  {
+   "query_id": "q03",
+   "question": "Which file does git config use when given the --system option, and what privilege is needed to change it?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p2-c1",
+     "score": 24.362277,
+     "page": 2,
+     "source": "book/01-introduction/sections/first-time-setup.asc",
+     "section": "First-Time Git Setup",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p2-c0",
+     "score": 14.916655,
+     "page": 2,
+     "source": "book/01-introduction/sections/first-time-setup.asc",
+     "section": "First-Time Git Setup",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p2-c3",
+     "score": 13.956696,
+     "page": 2,
+     "source": "book/01-introduction/sections/first-time-setup.asc",
+     "section": "First-Time Git Setup",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p2-c5",
+     "score": 12.037736,
+     "page": 2,
+     "source": "book/01-introduction/sections/first-time-setup.asc",
+     "section": "Your Identity",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p2-c6",
+     "score": 11.023444,
+     "page": 2,
+     "source": "book/01-introduction/sections/first-time-setup.asc",
+     "section": "Your Editor",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p2-c1"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p2-c1",
+    "p2-c0",
+    "p2-c3"
+   ],
+   "context_chars": 2279,
+   "context_hit": true,
+   "latency_ms": 1.5
+  },
+  {
+   "query_id": "q04",
+   "question": "How can I read the full manual for the configuration command without an internet connection?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p29-c33",
+     "score": 12.737963,
+     "page": 29,
+     "source": "book/05-distributed-git/sections/maintaining.asc",
+     "section": "Rerere",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p21-c2",
+     "score": 8.769324,
+     "page": 21,
+     "source": "book/04-git-server/sections/git-on-a-server.asc",
+     "section": "Getting Git on a Server",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p25-c6",
+     "score": 8.734468,
+     "page": 25,
+     "source": "book/04-git-server/sections/setting-up-server.asc",
+     "section": "Setting Up the Server",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p9-c0",
+     "score": 8.111172,
+     "page": 9,
+     "source": "book/02-git-basics/sections/remotes.asc",
+     "section": "Working with Remotes",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p2-c11",
+     "score": 7.699626,
+     "page": 2,
+     "source": "book/01-introduction/sections/first-time-setup.asc",
+     "section": "Checking Your Settings",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p3-c0"
+   ],
+   "hit1": false,
+   "hit3": false,
+   "hit5": false,
+   "rr": 0.0,
+   "first_hit_rank": null,
+   "context_ids": [
+    "p29-c33",
+    "p21-c2",
+    "p25-c6"
+   ],
+   "context_chars": 2019,
+   "context_hit": false,
+   "latency_ms": 1.3
+  },
+  {
+   "query_id": "q05",
+   "question": "What two kinds of tags does Git support?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p10-c3",
+     "score": 10.370197,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Creating Tags",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p10-c11",
+     "score": 9.6985,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Deleting Tags",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p29-c45",
+     "score": 9.460373,
+     "page": 29,
+     "source": "book/05-distributed-git/sections/maintaining.asc",
+     "section": "Tagging Your Releases",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p10-c10",
+     "score": 8.905216,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Sharing Tags",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p10-c9",
+     "score": 8.400291,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Sharing Tags",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p10-c3"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p10-c3",
+    "p10-c11",
+    "p29-c45"
+   ],
+   "context_chars": 2158,
+   "context_hit": true,
+   "latency_ms": 1.0
+  },
+  {
+   "query_id": "q06",
+   "question": "If I push using the --follow-tags option, which tags reach the remote?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p10-c10",
+     "score": 28.545,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Sharing Tags",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p10-c9",
+     "score": 19.478581,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Sharing Tags",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p10-c11",
+     "score": 15.921192,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Deleting Tags",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p10-c12",
+     "score": 13.543471,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Deleting Tags",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p10-c2",
+     "score": 13.491599,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Listing Your Tags",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p10-c10"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p10-c10",
+    "p10-c9"
+   ],
+   "context_chars": 1599,
+   "context_hit": true,
+   "latency_ms": 1.3
+  },
+  {
+   "query_id": "q07",
+   "question": "I committed too early and forgot to include a file. How do I redo that last commit?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p11-c0",
+     "score": 20.52067,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Undoing Things",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p11-c7",
+     "score": 14.161037,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Unmodifying a Modified File",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p11-c13",
+     "score": 13.896952,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Unmodifying a Modified File with git restore",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p11-c2",
+     "score": 11.061993,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Undoing Things",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p8-c5",
+     "score": 10.727108,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Checking the Status of Your Files",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p11-c0"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p11-c0",
+    "p11-c7",
+    "p11-c13"
+   ],
+   "context_chars": 2314,
+   "context_hit": true,
+   "latency_ms": 1.4
+  },
+  {
+   "query_id": "q08",
+   "question": "Under what condition is it safe to amend a commit?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p11-c0",
+     "score": 8.302118,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Undoing Things",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p11-c9",
+     "score": 6.850922,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Unmodifying a Modified File",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p29-c27",
+     "score": 6.470057,
+     "page": 29,
+     "source": "book/05-distributed-git/sections/maintaining.asc",
+     "section": "Large-Merging Workflows",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p11-c3",
+     "score": 6.333906,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Undoing Things",
+     "hit": true
+    },
+    {
+     "rank": 5,
+     "id": "p11-c1",
+     "score": 6.173745,
+     "page": 11,
+     "source": "book/02-git-basics/sections/undoing.asc",
+     "section": "Undoing Things",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p11-c3"
+   ],
+   "hit1": false,
+   "hit3": false,
+   "hit5": true,
+   "rr": 0.25,
+   "first_hit_rank": 4,
+   "context_ids": [
+    "p11-c0",
+    "p11-c9",
+    "p29-c27"
+   ],
+   "context_chars": 1896,
+   "context_hit": false,
+   "latency_ms": 1.0
+  },
+  {
+   "query_id": "q09",
+   "question": "What single guideline sums up the danger of rewriting history with rebase?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p27-c7",
+     "score": 12.724238,
+     "page": 27,
+     "source": "book/05-distributed-git/sections/contributing.asc",
+     "section": "Commit Guidelines",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p16-c10",
+     "score": 12.697472,
+     "page": 16,
+     "source": "book/03-git-branching/sections/rebasing.asc",
+     "section": "The Perils of Rebasing",
+     "hit": true
+    },
+    {
+     "rank": 3,
+     "id": "p27-c36",
+     "score": 11.867878,
+     "page": 27,
+     "source": "book/05-distributed-git/sections/contributing.asc",
+     "section": "Forked Public Project",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p16-c19",
+     "score": 8.564391,
+     "page": 16,
+     "source": "book/03-git-branching/sections/rebasing.asc",
+     "section": "Rebase vs. Merge",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p29-c31",
+     "score": 8.465738,
+     "page": 29,
+     "source": "book/05-distributed-git/sections/maintaining.asc",
+     "section": "Rebasing and Cherry-Picking Workflows",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p16-c10"
+   ],
+   "hit1": false,
+   "hit3": true,
+   "hit5": true,
+   "rr": 0.5,
+   "first_hit_rank": 2,
+   "context_ids": [
+    "p27-c7",
+    "p16-c10",
+    "p27-c36"
+   ],
+   "context_chars": 2126,
+   "context_hit": true,
+   "latency_ms": 1.3
+  },
+  {
+   "query_id": "q10",
+   "question": "Why does Git only move the branch pointer ahead when merging a hotfix that is directly ahead of master?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p13-c6",
+     "score": 26.344413,
+     "page": 13,
+     "source": "book/03-git-branching/sections/basic-branching-and-merging.asc",
+     "section": "Basic Branching",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p17-c18",
+     "score": 19.195882,
+     "page": 17,
+     "source": "book/03-git-branching/sections/remote-branches.asc",
+     "section": "Tracking Branches",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p15-c4",
+     "score": 15.726449,
+     "page": 15,
+     "source": "book/03-git-branching/sections/nutshell.asc",
+     "section": "Creating a New Branch",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p17-c3",
+     "score": 15.155244,
+     "page": 17,
+     "source": "book/03-git-branching/sections/remote-branches.asc",
+     "section": "Remote Branches",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p17-c19",
+     "score": 15.094506,
+     "page": 17,
+     "source": "book/03-git-branching/sections/remote-branches.asc",
+     "section": "Tracking Branches",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p13-c6"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p13-c6",
+    "p17-c18",
+    "p15-c4"
+   ],
+   "context_chars": 2257,
+   "context_hit": true,
+   "latency_ms": 1.6
+  },
+  {
+   "query_id": "q11",
+   "question": "A branch still has unmerged work and `git branch -d` refuses to delete it. How can I delete it anyway?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p14-c2",
+     "score": 23.746548,
+     "page": 14,
+     "source": "book/03-git-branching/sections/branch-management.asc",
+     "section": "Branch Management",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p13-c11",
+     "score": 21.201348,
+     "page": 13,
+     "source": "book/03-git-branching/sections/basic-branching-and-merging.asc",
+     "section": "Basic Merging",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p13-c7",
+     "score": 20.296857,
+     "page": 13,
+     "source": "book/03-git-branching/sections/basic-branching-and-merging.asc",
+     "section": "Basic Branching",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p17-c22",
+     "score": 17.130618,
+     "page": 17,
+     "source": "book/03-git-branching/sections/remote-branches.asc",
+     "section": "Deleting Remote Branches",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p14-c5",
+     "score": 17.003382,
+     "page": 14,
+     "source": "book/03-git-branching/sections/branch-management.asc",
+     "section": "Changing a branch name",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p14-c2"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p14-c2",
+    "p13-c11",
+    "p13-c7"
+   ],
+   "context_chars": 1966,
+   "context_hit": true,
+   "latency_ms": 4.9
+  },
+  {
+   "query_id": "q12",
+   "question": "Which protocols can Git use to transfer data?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p24-c0",
+     "score": 19.426651,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "The Protocols",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p24-c18",
+     "score": 14.165018,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "The Pros",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p24-c8",
+     "score": 13.136492,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "The HTTP Protocols",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p7-c7",
+     "score": 12.971086,
+     "page": 7,
+     "source": "book/02-git-basics/sections/getting-a-repository.asc",
+     "section": "Cloning an Existing Repository",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p24-c21",
+     "score": 11.244602,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "The Pros",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p24-c0"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p24-c0",
+    "p24-c18",
+    "p24-c8"
+   ],
+   "context_chars": 1570,
+   "context_hit": true,
+   "latency_ms": 1.7
+  },
+  {
+   "query_id": "q13",
+   "question": "In a .gitignore file, what does starting a pattern with a forward slash do?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p8-c18",
+     "score": 28.697527,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Ignoring Files",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p8-c21",
+     "score": 10.323069,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Ignoring Files",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p8-c20",
+     "score": 9.992368,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Ignoring Files",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p8-c16",
+     "score": 9.983486,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Ignoring Files",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p8-c17",
+     "score": 7.778951,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Ignoring Files",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p8-c18"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p8-c18",
+    "p8-c21",
+    "p8-c20"
+   ],
+   "context_chars": 1750,
+   "context_hit": true,
+   "latency_ms": 1.9
+  },
+  {
+   "query_id": "q14",
+   "question": "What are the main units of long-lived discussion in this tool?",
+   "filter": {
+    "chapter": "04-git-server"
+   },
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p22-c12",
+     "score": 26.757966,
+     "page": 22,
+     "source": "book/04-git-server/sections/gitlab.asc",
+     "section": "Working Together",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p21-c9",
+     "score": 4.418225,
+     "page": 21,
+     "source": "book/04-git-server/sections/git-on-a-server.asc",
+     "section": "SSH Access",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p21-c5",
+     "score": 4.050169,
+     "page": 21,
+     "source": "book/04-git-server/sections/git-on-a-server.asc",
+     "section": "Putting the Bare Repository on a Server",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p19-c3",
+     "score": 3.082676,
+     "page": 19,
+     "source": "book/04-git-server/sections/generating-ssh-key.asc",
+     "section": "Generating Your SSH Public Key",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p20-c3",
+     "score": 3.049356,
+     "page": 20,
+     "source": "book/04-git-server/sections/git-daemon.asc",
+     "section": "Git Daemon",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p22-c12"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p22-c12",
+    "p21-c9",
+    "p21-c5"
+   ],
+   "context_chars": 2001,
+   "context_hit": true,
+   "latency_ms": 2.0
+  },
+  {
+   "query_id": "q15",
+   "question": "What kind of merge is created when you press the merge button on the website?",
+   "filter": {
+    "chapter": "06-github"
+   },
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p32-c10",
+     "score": 14.85329,
+     "page": 32,
+     "source": "book/06-github/sections/3-maintaining.asc",
+     "section": "Collaborating on the Pull Request",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p32-c20",
+     "score": 11.034804,
+     "page": 32,
+     "source": "book/06-github/sections/3-maintaining.asc",
+     "section": "Pull Request Refs",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p31-c16",
+     "score": 10.789346,
+     "page": 31,
+     "source": "book/06-github/sections/2-contributing.asc",
+     "section": "Iterating on a Pull Request",
+     "hit": true
+    },
+    {
+     "rank": 4,
+     "id": "p31-c21",
+     "score": 7.67936,
+     "page": 31,
+     "source": "book/06-github/sections/2-contributing.asc",
+     "section": "Pull Requests as Patches",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p31-c2",
+     "score": 7.275212,
+     "page": 31,
+     "source": "book/06-github/sections/2-contributing.asc",
+     "section": "Forking Projects",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p31-c16",
+    "p32-c10"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p32-c10",
+    "p32-c20",
+    "p31-c16"
+   ],
+   "context_chars": 1920,
+   "context_hit": true,
+   "latency_ms": 2.0
+  },
+  {
+   "query_id": "q16",
+   "question": "Which workflow gives every developer a public repository they can write to while reading everyone else's?",
+   "filter": {
+    "chapter": "05-distributed-git"
+   },
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p28-c5",
+     "score": 22.388271,
+     "page": 28,
+     "source": "book/05-distributed-git/sections/distributed-workflows.asc",
+     "section": "Integration-Manager Workflow",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p28-c0",
+     "score": 18.595586,
+     "page": 28,
+     "source": "book/05-distributed-git/sections/distributed-workflows.asc",
+     "section": "Distributed Workflows",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p28-c2",
+     "score": 14.470915,
+     "page": 28,
+     "source": "book/05-distributed-git/sections/distributed-workflows.asc",
+     "section": "Centralized Workflow",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p27-c45",
+     "score": 12.184739,
+     "page": 27,
+     "source": "book/05-distributed-git/sections/contributing.asc",
+     "section": "Public Project over Email",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p27-c2",
+     "score": 11.860866,
+     "page": 27,
+     "source": "book/05-distributed-git/sections/contributing.asc",
+     "section": "Contributing to a Project",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p28-c5"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p28-c5",
+    "p28-c0"
+   ],
+   "context_chars": 1646,
+   "context_hit": true,
+   "latency_ms": 3.2
+  },
+  {
+   "query_id": "t01",
+   "question": "Which port does the Git daemon listen on?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p20-c1",
+     "score": 13.192976,
+     "page": 20,
+     "source": "book/04-git-server/sections/git-daemon.asc",
+     "section": "Git Daemon",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p24-c20",
+     "score": 12.970951,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "The Git Protocol",
+     "hit": true
+    },
+    {
+     "rank": 3,
+     "id": "p24-c24",
+     "score": 11.987399,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "The Cons",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p20-c3",
+     "score": 10.831694,
+     "page": 20,
+     "source": "book/04-git-server/sections/git-daemon.asc",
+     "section": "Git Daemon",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p20-c2",
+     "score": 10.714828,
+     "page": 20,
+     "source": "book/04-git-server/sections/git-daemon.asc",
+     "section": "Git Daemon",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p20-c1",
+    "p24-c20"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p20-c1",
+    "p24-c20",
+    "p24-c24"
+   ],
+   "context_chars": 2221,
+   "context_hit": true,
+   "latency_ms": 1.6
+  },
+  {
+   "query_id": "t02",
+   "question": "How do I take a file back out of the staging area without throwing away my edits?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p5-c12",
+     "score": 15.120784,
+     "page": 5,
+     "source": "book/01-introduction/sections/what-is-git.asc",
+     "section": "The Three States",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p8-c34",
+     "score": 13.170998,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Skipping the Staging Area",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p5-c11",
+     "score": 11.758173,
+     "page": 5,
+     "source": "book/01-introduction/sections/what-is-git.asc",
+     "section": "The Three States",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p8-c36",
+     "score": 10.747103,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Removing Files",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p8-c38",
+     "score": 10.637575,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Removing Files",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p11-c12"
+   ],
+   "hit1": false,
+   "hit3": false,
+   "hit5": false,
+   "rr": 0.0,
+   "first_hit_rank": null,
+   "context_ids": [
+    "p5-c12",
+    "p8-c34",
+    "p5-c11"
+   ],
+   "context_chars": 2141,
+   "context_hit": false,
+   "latency_ms": 3.8
+  },
+  {
+   "query_id": "t03",
+   "question": "How many API requests per hour can I make to GitHub with and without authenticating?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p34-c14",
+     "score": 29.915435,
+     "page": 34,
+     "source": "book/06-github/sections/5-scripting.asc",
+     "section": "Commenting on an Issue",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p34-c0",
+     "score": 13.550048,
+     "page": 34,
+     "source": "book/06-github/sections/5-scripting.asc",
+     "section": "Scripting GitHub",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p34-c22",
+     "score": 11.887064,
+     "page": 34,
+     "source": "book/06-github/sections/5-scripting.asc",
+     "section": "Octokit",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p34-c10",
+     "score": 10.480808,
+     "page": 34,
+     "source": "book/06-github/sections/5-scripting.asc",
+     "section": "The GitHub API",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p31-c19",
+     "score": 9.886334,
+     "page": 31,
+     "source": "book/06-github/sections/2-contributing.asc",
+     "section": "Pull Requests as Patches",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p34-c14"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p34-c14",
+    "p34-c0",
+    "p34-c22"
+   ],
+   "context_chars": 1954,
+   "context_hit": true,
+   "latency_ms": 2.6
+  },
+  {
+   "query_id": "t04",
+   "question": "How do I give other people push access to my repository?",
+   "filter": {
+    "chapter": "06-github"
+   },
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p32-c4",
+     "score": 18.509055,
+     "page": 32,
+     "source": "book/06-github/sections/3-maintaining.asc",
+     "section": "Adding Collaborators",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p31-c2",
+     "score": 10.896034,
+     "page": 31,
+     "source": "book/06-github/sections/2-contributing.asc",
+     "section": "Forking Projects",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p33-c6",
+     "score": 9.668037,
+     "page": 33,
+     "source": "book/06-github/sections/4-managing-organization.asc",
+     "section": "Audit Log",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p32-c6",
+     "score": 9.400939,
+     "page": 32,
+     "source": "book/06-github/sections/3-maintaining.asc",
+     "section": "Managing Pull Requests",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p33-c3",
+     "score": 8.758357,
+     "page": 33,
+     "source": "book/06-github/sections/4-managing-organization.asc",
+     "section": "Teams",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p32-c4"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p32-c4",
+    "p31-c2",
+    "p33-c6"
+   ],
+   "context_chars": 1847,
+   "context_hit": true,
+   "latency_ms": 1.8
+  },
+  {
+   "query_id": "t05",
+   "question": "Who are the lieutenants in the dictator and lieutenants workflow?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p28-c8",
+     "score": 33.130734,
+     "page": 28,
+     "source": "book/05-distributed-git/sections/distributed-workflows.asc",
+     "section": "Dictator and Lieutenants Workflow",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p28-c9",
+     "score": 31.860257,
+     "page": 28,
+     "source": "book/05-distributed-git/sections/distributed-workflows.asc",
+     "section": "Dictator and Lieutenants Workflow",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p28-c2",
+     "score": 4.954719,
+     "page": 28,
+     "source": "book/05-distributed-git/sections/distributed-workflows.asc",
+     "section": "Centralized Workflow",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p28-c3",
+     "score": 4.912429,
+     "page": 28,
+     "source": "book/05-distributed-git/sections/distributed-workflows.asc",
+     "section": "Centralized Workflow",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p27-c54",
+     "score": 4.904641,
+     "page": 27,
+     "source": "book/05-distributed-git/sections/contributing.asc",
+     "section": "Summary",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p28-c8"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p28-c8",
+    "p28-c9"
+   ],
+   "context_chars": 1568,
+   "context_hit": true,
+   "latency_ms": 0.9
+  },
+  {
+   "query_id": "t06",
+   "question": "What option must git describe be given to also use non-annotated tags?",
+   "filter": null,
+   "method": "bm25",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p29-c41",
+     "score": 32.261985,
+     "page": 29,
+     "source": "book/05-distributed-git/sections/maintaining.asc",
+     "section": "Tagging Your Releases",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p10-c10",
+     "score": 16.278478,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Sharing Tags",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p10-c3",
+     "score": 14.29639,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Creating Tags",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p29-c39",
+     "score": 13.725766,
+     "page": 29,
+     "source": "book/05-distributed-git/sections/maintaining.asc",
+     "section": "Tagging Your Releases",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p10-c4",
+     "score": 13.316846,
+     "page": 10,
+     "source": "book/02-git-basics/sections/tagging.asc",
+     "section": "Annotated Tags",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p29-c41"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p29-c41",
+    "p10-c10",
+    "p10-c3"
+   ],
+   "context_chars": 2316,
+   "context_hit": true,
+   "latency_ms": 1.5
+  }
+ ]
+}

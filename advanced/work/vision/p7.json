@@ -1,0 +1,8 @@
+{
+ "page": 7,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Message from the Administrator (continued)\n\nPHOTOS:\n- Portrait photo of Bill Nelson with signature \"Bill Nelson\" below it.\n\nKEY FACTS:\n- Launches of NASA's SpaceX Crew-8 and SpaceX Crew-9 to the ISS marked in FY 2024.\n- Fleet of more than two dozen satellites and instruments used to study Earth as a system.\n- NASA-Indian Space Research Organisation (ISRO) Synthetic Aperture Radar (NISAR) satellite is a joint mission.\n- X-59 quiet supersonic aircraft publicly unveiled in January 2024.\n- X-66 Sustainable Flight Demonstrator helps U.S. achieve net-zero aviation emissions by 2050.\n- 2024-2026 STEM Engagement Strategic Implementation Plan supports NASA's STEM strategy.",
+ "prompt_tokens": 1351,
+ "output_tokens": 177,
+ "latency_s": 1.98
+}

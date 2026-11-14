@@ -1,0 +1,8 @@
+{
+ "page": 48,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Financial Section: Introduction to the Principal Financial Statements\n\nKEY FACTS:\n- Introduction to the Principal Financial Statements prepared to report financial position and results of operations of NASA pursuant to 31 U.S.C. § 3515(b).\n- Consolidated Balance Sheets provide information on assets, liabilities, and net position as of the end of the reporting periods.\n- Consolidated Statements of Net Cost report net cost of operations during the reporting periods by strategic goal and at the entity level.\n- Consolidated Statements of Changes in Net Position report beginning balances of net position, current financing sources and use of resources, unexpended resources for the reporting periods, and ending net position for the current reporting periods.\n- Combined Statements of Budgetary Resources report information on the sources and status of budgetary resources for the reporting periods on the budgetary basis of accounting.\n- Page number: 47",
+ "prompt_tokens": 1352,
+ "output_tokens": 184,
+ "latency_s": 2.18
+}

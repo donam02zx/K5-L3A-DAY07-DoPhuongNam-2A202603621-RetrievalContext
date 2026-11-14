@@ -1,0 +1,8 @@
+{
+ "page": 101,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION / AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- The page is numbered 3 at the top right.\n- The document section is titled \"Artemis Campaign\".\n- Refers to Exploration Systems Development Mission Directorate (ESDMD).\n- Refers to Artemis I's flight heat shield anomaly.\n- Refers to NASA policy and protocol under NPR 7120.5.\n- Mentions capability upgrades and programs: Orion Crew Capsule, Space Launch Systems Block 1B Exploration Upper Stage and Associated Capabilities, Gateway Program initial capability, Human Landing System (HLS) initial capability, and Mobile Launcher 2 (ML2).\n- Mentions prime contractor Bechtel National, Inc. (Bechtel) regarding ML2.\n- Contains two footnotes regarding the Gateway capability and NPR 7120.5 paragraph 2.4.1.6.",
+ "prompt_tokens": 1353,
+ "output_tokens": 199,
+ "latency_s": 2.04
+}

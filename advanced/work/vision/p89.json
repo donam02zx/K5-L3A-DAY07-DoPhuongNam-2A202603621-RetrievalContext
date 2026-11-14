@@ -1,0 +1,8 @@
+{
+ "page": 89,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | INDEPENDENT AUDITORS’ REPORT\n\nKEY FACTS:\n- The page number at the bottom is 3.\n- Mentioned guidelines established by SFFAS 59, Accounting and Reporting of Government Land.\n- Document includes EY (Ernst & Young LLP) footer note \"A member firm of Ernst & Young Global Limited\".\n- Mentions NASA's Agency Financial Report pages 78-82.",
+ "prompt_tokens": 1352,
+ "output_tokens": 94,
+ "latency_s": 2.31
+}

@@ -1,0 +1,8 @@
+{
+ "page": 111,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION AGENCY RESPONSE TO OIG REPORT ON NASA’S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- NASA leveraged its Enterprise Pricing Office (EPO) responsible for contract pricing, audit, and closeout capability across NASA's enterprise.\n- Under Procurement Fraud Avoidance and Improper Use of Grant Funds, NASA added strategic efforts including Sustaining Vendor Management, Pricing Academy, and Development of Prices Paid Capabilities.\n- NASA launched initiatives to increase monitoring of grants by integrating revisions to 2 CFR, “Office of Management and Budget Guidance for Federal Financial Assistance,” into policy and processes.\n- Transaction Testing Reviews require the grant officer to randomly select a quarter of grantee expenditures and review for questionable costs at least once every five years for each award during its period of performance.\n- Grant officers review Federal Financial Reports on a semi-annual basis and grantees must provide explanations for any on-hand cash and anomalies identified.\n- In FY 2024, NASA conducted 968 Transaction Testing Reviews and 6,738 Federal Financial Report reviews.",
+ "prompt_tokens": 1353,
+ "output_tokens": 220,
+ "latency_s": 1.99
+}

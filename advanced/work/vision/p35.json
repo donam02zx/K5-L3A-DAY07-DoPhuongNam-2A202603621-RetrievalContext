@@ -1,0 +1,8 @@
+{
+ "page": 35,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE\nLimitations of the Financial Statements\n\nPHOTOS: A large group of female staff gathered outside the Katherine G. Johnson Computational Research Facility at NASA’s Langley Research Center in Hampton, Virginia, on Feb. 6, 2024.\nCAPTION: In honor of Women's History Month 2024 and those who paved the way for them, hundreds of female staff – from artists to administrative support, educators to engineers, and scientists to safety officers – gathered in front of the Katherine G. Johnson Computational Research Facility at NASA's Langley Research Center in Hampton, Virginia, on Feb. 6, 2024.\nPHOTO CREDIT – NASA/David C. Bowman\n\nKEY FACTS:\n- The financial statements are prepared to report the financial position, financial condition, and results of operations, consistent with the requirements of 31 U.S.C. § 3515(b).\n- The statements are prepared from records of Federal entities in accordance with Federal Generally Accepted Accounting Principles (GAAP).\n- Formats are prescribed by the Office of Management and Budget (OMB).\n- Reports used to monitor and control budgetary resources are prepared from the same records.\n- Users of the statements are advised that the statements are for a component of the U.S. Government.\n- Photo date: Feb. 6, 2024.\n- Location: Katherine G. Johnson Computational Research Facility at NASA’s Langley Research Center in Hampton, Virginia.\n- Page number 34.",
+ "prompt_tokens": 1352,
+ "output_tokens": 327,
+ "latency_s": 3.16
+}

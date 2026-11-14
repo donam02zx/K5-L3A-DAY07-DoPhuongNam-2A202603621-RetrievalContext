@@ -1,0 +1,2947 @@
+[
+ {
+  "query_id": "AD01",
+  "split": "dev",
+  "group": "table",
+  "question": "What amount of Other Assets (Note 7) did NASA report with the public on the FY 2024 balance sheet, and what was it in FY 2023?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "On the FY 2024 balance sheet (under Assets With the Public), NASA reported Other Assets (Note 7) of $697 million for FY 2024 and $0 million (or none reported / represented by a dash) for FY 2023 [a50-tab1].",
+  "citations": [
+   "a50-tab1"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Other Assets Note 7 balance sheet FY 2024 FY 2023 public",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1882.0,
+    "results": [
+     {
+      "id": "a64-v1",
+      "rank": 1,
+      "score": 8.426924,
+      "page": 64
+     },
+     {
+      "id": "a50-t0",
+      "rank": 2,
+      "score": 7.481657,
+      "page": 50
+     },
+     {
+      "id": "a50-tab1",
+      "rank": 3,
+      "score": 6.863322,
+      "page": 50
+     },
+     {
+      "id": "a29-v2",
+      "rank": 4,
+      "score": 5.963629,
+      "page": 29
+     },
+     {
+      "id": "a29-t0",
+      "rank": 5,
+      "score": 5.809021,
+      "page": 29
+     }
+    ],
+    "admitted": [
+     "a64-v1",
+     "a50-t0",
+     "a50-tab1",
+     "a29-v2",
+     "a29-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Note 7 Other Assets FY 2024 FY 2023 NASA",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2006.6,
+    "results": [
+     {
+      "id": "a64-v1",
+      "rank": 1,
+      "score": 8.00447,
+      "page": 64
+     },
+     {
+      "id": "a64-t0",
+      "rank": 2,
+      "score": 7.573013,
+      "page": 64
+     },
+     {
+      "id": "a64-tab3",
+      "rank": 3,
+      "score": 6.964882,
+      "page": 64
+     },
+     {
+      "id": "a29-v2",
+      "rank": 4,
+      "score": 6.790109,
+      "page": 29
+     },
+     {
+      "id": "a64-t2",
+      "rank": 5,
+      "score": 6.551505,
+      "page": 64
+     }
+    ],
+    "admitted": [
+     "a64-t0",
+     "a64-tab3",
+     "a64-t2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Note 7 Other Assets 2024 2023 million",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1958.4,
+    "results": [
+     {
+      "id": "a64-v1",
+      "rank": 1,
+      "score": 9.96221,
+      "page": 64
+     },
+     {
+      "id": "a50-t0",
+      "rank": 2,
+      "score": 7.714094,
+      "page": 50
+     },
+     {
+      "id": "a50-v1",
+      "rank": 3,
+      "score": 7.146779,
+      "page": 50
+     },
+     {
+      "id": "a64-t2",
+      "rank": 4,
+      "score": 6.466536,
+      "page": 64
+     },
+     {
+      "id": "a67-v1",
+      "rank": 5,
+      "score": 6.151257,
+      "page": 67
+     }
+    ],
+    "admitted": [
+     "a50-v1"
+    ],
+    "skipped_budget": [
+     "a67-v1"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a50-tab1"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a64-v1",
+   "a50-t0",
+   "a50-tab1",
+   "a29-v2",
+   "a29-t0",
+   "a64-t0",
+   "a64-tab3",
+   "a64-t2",
+   "a50-v1"
+  ],
+  "context": "[a64-v1 | nasa-fy-2024-afr.pdf | page 64 | KEY FACTS]\nVISUAL CONTENT of page 64 (PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION)\nKEY FACTS:\n- Note 7 Other Assets: Value of Other Assets at the end of the period in FY 2024 was $697 million.\n- Note 8 Liabilities Not Covered by Budgetary Resources: Discount rate of FECA actuarial liability estimate was 2.65 percent in FY 2024 and 2.33 percent in FY 2023.\n- Intragovernmental Liabilities - Other Liabilities: 2024 is $30 million, 2023 is $58 million.\n- Federal Employee Salary, Leave and Benefits Payable: 2024 is $281 million, 2023 is $275 million.\n- Pensions and Post-Employment Benefits Payable: 2024 is $26 million, 2023 is $27 million.\n- Environmental and Disposal Liabilities (Note 9): 2024 is $2,266 million, 2023 is $2,184 million.\n- Other Liabilities: 2024 is $833 million, 2023 is $99 million.\n- Total Liabilities: 2024 is $7,664 million, 2023 is $6,719 million.\n\n[a50-t0 | nasa-fy-2024-afr.pdf | page 50 | Consolidated Balance Sheets]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nTHE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nConsolidated Balance Sheets\nAs of September 30, 2024 and 2023\n(IN MILLIONS)\n2024\n2023\nAssets\nIntragovernmental:\nFund Balance with Treasury (Note 2)\n$ 17,186\n$ 17,378\nInvestments, Net (Note 3)\nAccounts Receivable, Net (Note 4)\nAdvances and Prepayments\n—\nTotal Intragovernmental\n17,407\n17,460\nWith the Public:\nAccounts Receivable, Net (Note 4)\nProperty, Plant, and Equipment, Net (Note 5)\n9,331\n8,651\nAdvances and Prepayments\nOther Assets (Note 7)\n—\nTotal with the Public\n10,097\n8,675\nTotal Assets\n$ 27,504\n$ 26,135\nStewardship PP&E (Note 6)\nLiabilities: (Note 8)\nIntragovernmental:\nAccounts Payable\n$ 29\n$ 36\nAdvances from Others and Deferred Revenue\nOther Liabilities (Note 10)\nTotal Intragovernmental\nWith the Public:\nAccounts Payable\n1,746\n1,730\nFederal Employee Salary, Leave and Benefits Payable\nPensions and Post-Employment Benefits Payable\nEnvironmental and Disposal Liabilities (Note 9)\n2,353\n2,305\nAdvances from Others and Deferred Revenue\nOther Liabilities (Note 10)\n\n[a50-tab1 | nasa-fy-2024-afr.pdf | page 50 | Consolidated Balance Sheets]\nTABLE on page 50: Consolidated Balance Sheets\n|  | 2024 |  | 2023 |\n|---|---|---|---|\n| Assets Intragovernmental: Fund Balance with Treasury (Note 2) $ 17,186 $ 17,378 Investments, Net (Note 3) 15 15 Accounts Receivable, Net (Note 4) 98 67 Advances and Prepayments 108 — Total Intragovernmental 17,407 17,460 With the Public: Accounts Receivable, Net (Note 4) 26 1 Property, Plant, and Equipment, Net (Note 5) 9,331 8,651 Advances and Prepayments 43 23 Other Assets (Note 7) 697 — Total with the Public 10,097 8,675 Total Assets $ 27,504 $ 26,135 Stewardship PP&E (Note 6) Liabilities: (Note 8) Intragovernmental: Accounts Payable $ 29 $ 36 Advances from Others and Deferred Revenue 34 39 Other Liabilities (Note 10) 188 175 Total Intragovernmental 251 250 With the Public: Accounts Payable 1,746 1,730 Federal Employee Salary, Leave and Benefits Payable 348 288 Pensions and Post-Employment Benefits Payable 26 27 Environmental and Disposal Liabilities (Note 9) 2,353 2,305 Advances from Others and Deferred Revenue 180 199 Other Liabilities (Note 10) Other Accrued Liabilities 1,902 1,793 Other 858 127 Total with the Public 7,413 6,469 Total Liabilities $ 7,664 $ 6,719 Commitments and Contingencies (Note 12) Net Position: Unexpended Appropriations $ 13,157 $ 13,333 Cumulative Results of Operations 6,683 6,083 Total Net Position $ 19,840 $ 19,416 Total Liabilities and Net Position $ 27,504 $ 26,135 |  |  |  |\n|  |  |  | $ 26,135 |\n| THE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS |  |  |  |\n\n[a29-v2 | nasa-fy-2024-afr.pdf | page 29 | KEY FACTS]\nVISUAL CONTENT of page 29 (PAGE TITLE: Management's Discussion and Analysis / Financial Performance: Financial Highlights / Overview of Financial Position)\nKEY FACTS:\n- NASA's Balance Sheet provides a comparable snapshot of the Agency’s financial position as of September 30, 2024 and September 30, 2023.\n- FY 2024 Assets: $27,504 million.\n- FY 2024 Liabilities: $7,664 million.\n- FY 2024 Net Position: $19,840 million.\n- FY 2023 Assets: $26,135 million.\n- FY 2023 Liabilities: $6,719 million.\n- FY 2023 Net Position: $19,416 million.\n\n[a29-t0 | nasa-fy-2024-afr.pdf | page 29 | $27,504]\nFY 2023\n$27,504\n$26,135\n$7,664\n$6,719\n$19,840\n$19,416\nFY 2024\nAssets             Liabilities             Net Position\nFinancial Highlights\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nOverview of Financial Position\nNASA’s Balance Sheet provides a comparable snapshot of the Agency’s financial position as of September 30, 2024 and\nSeptember 30, 2023. It displays amounts in three primary categories.\nAssets\nNet Position\nthe activity between revenue and\nother financing sources, and costs\nincurred since inception.\nthe current and future\neconomic benefits owned or\navailable for use by NASA.\nBalance Sheet Components FY 2024 and FY 2023\n(IN MILLIONS)\nLiabilities\nthe debts owed by NASA but\nnot yet paid.\n\n[a64-t0 | nasa-fy-2024-afr.pdf | page 64 | NASA’s Other Assets consist of lessor lease receivables, which represent amounts]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNASA’s Other Assets consist of lessor lease receivables, which represent amounts due from lessees under lease agreements\nwhere NASA is the lessor. In FY 2024, NASA implemented the requirements under SFFAS 54, Leases, which requires\nNASA to record a lease receivable for the term of the lease at net present value where NASA is the lessor for arrangements\nother than (1) short-term leases, (2) contracts or agreements that transfer ownership, and (3) intragovernmental leases,\nincluding the estimated allowance for uncollectible accounts (See Note 11, Leases, for more information). The value of\nOther Assets at the end of the period was $697 million, which represent lessor lease receivables as of September 30, 2024.\nNASA has determined the estimated uncollectible amount is zero due to the nature of arrangements.\nLiabilities Not Covered by Budgetary Resources include future environmental cleanup liability, legal claims, other\nretirement benefits, workers’ compensation, annual leave, unearned lease revenue, and lease liability. Liabilities not\n\n[a64-tab3 | nasa-fy-2024-afr.pdf | page 64 | NASA’s Other Assets consist of lessor lease receivables, which represent amounts]\nTABLE on page 64: NASA’s Other Assets consist of lessor lease receivables, which represent amounts\n| (IN MILLIONS) | 2024 | 2023 |\n|---|---|---|\n| Intragovernmental Liabilities: Other Liabilities $ 30 $ 58 Total Intragovernmental Liabilities 30 58 Federal Employee Salary, Leave and Benefits Payable 281 275 Pensions and Post-Employment Benefits Payable 26 27 Environmental and Disposal Liabilities (Note 9) 2,266 2,184 Other Liabilities 833 99 Total Liabilities Not Covered by Budgetary Resources $ 3,436 $ 2,643 Total Liabilities Covered by Budgetary Resources $ 4,203 $ 4,048 Total Liabilities Not Requiring Budgetary Resources $ 25 $ 28 Total Liabilities $ 7,664 $ 6,719 |  |  |\n|  | $ 7,664 | $ 6,719 |\n\n[a64-t2 | nasa-fy-2024-afr.pdf | page 64 | NASA’s Other Assets consist of lessor lease receivables, which represent amounts]\nset forth in SFFAS 54 outline the recognition and\nmeasurement for lease liabilities and unearned lease revenue. See Note 11, Leases, for information on NASA’s lease\nreporting.\n(IN MILLIONS)\n2024\n2023\n\nIntragovernmental Liabilities:\nOther Liabilities\n$ 30\n$ 58\nTotal Intragovernmental Liabilities\nFederal Employee Salary, Leave and Benefits Payable\nPensions and Post-Employment Benefits Payable\nEnvironmental and Disposal Liabilities (Note 9)\n2,266\n2,184\nOther Liabilities\nTotal Liabilities Not Covered by Budgetary Resources\n$ 3,436\n$ 2,643\nTotal Liabilities Covered by Budgetary Resources\n$ 4,203\n$ 4,048\nTotal Liabilities Not Requiring Budgetary Resources\n$ 25\n$ 28\nTotal Liabilities\n$ 7,664\n$ 6,719\nNOTE 7\nOther Assets\nNOTE 8\nLiabilities Not Covered by Budgetary Resources\n\n[a50-v1 | nasa-fy-2024-afr.pdf | page 50 | KEY FACTS]\nVISUAL CONTENT of page 50 (PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nConsolidated Balance Sheets\nAs of September 30, 2024 and 2023\n(IN MILLIONS))\nKEY FACTS:\n- Total Assets for 2024 are $27,504 million.\n- Total Assets for 2023 are $26,135 million.\n- Total Liabilities for 2024 are $7,664 million.\n- Total Liabilities for 2023 are $6,719 million.\n- Total Net Position for 2024 is $19,840 million.\n- Total Net Position for 2023 is $19,416 million.\n- Total Liabilities and Net Position for 2024 are $27,504 million.\n- Total Liabilities and Net Position for 2023 are $26,135 million.",
+  "context_chars": 8927,
+  "n_searches": 3,
+  "prompt_tokens": 10408,
+  "output_tokens": 191,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.11,
+  "cost_usd": 0.001117,
+  "latency_s": 14.52,
+  "cited_pages": [
+   50
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD02",
+  "split": "dev",
+  "group": "table",
+  "question": "What was the net cost of Strategic Goal 4 in FY 2023 according to the Statement of Net Cost?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "According to the Consolidated Statements of Net Cost, the net cost of Strategic Goal 4 (\"Enhance capabilities and operations to catalyze current and future mission success\") in FY 2023 was $2,795 million [a51-t0].",
+  "citations": [
+   "a51-t0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Strategic Goal 4 net cost FY 2023 Statement of Net Cost",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2028.0,
+    "results": [
+     {
+      "id": "a51-v1",
+      "rank": 1,
+      "score": 9.192755,
+      "page": 51
+     },
+     {
+      "id": "a32-v1",
+      "rank": 2,
+      "score": 8.269161,
+      "page": 32
+     },
+     {
+      "id": "a32-t1",
+      "rank": 3,
+      "score": 8.022371,
+      "page": 32
+     },
+     {
+      "id": "a32-v0",
+      "rank": 4,
+      "score": 7.669849,
+      "page": 32
+     },
+     {
+      "id": "a51-t0",
+      "rank": 5,
+      "score": 7.385463,
+      "page": 51
+     }
+    ],
+    "admitted": [
+     "a51-v1",
+     "a32-v1",
+     "a32-t1",
+     "a32-v0",
+     "a51-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Statement of Net Cost Strategic Goal 4 FY 2023",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2036.0,
+    "results": [
+     {
+      "id": "a51-v1",
+      "rank": 1,
+      "score": 8.553459,
+      "page": 51
+     },
+     {
+      "id": "a32-v1",
+      "rank": 2,
+      "score": 8.210745,
+      "page": 32
+     },
+     {
+      "id": "a32-t1",
+      "rank": 3,
+      "score": 7.819238,
+      "page": 32
+     },
+     {
+      "id": "a51-t0",
+      "rank": 4,
+      "score": 7.574569,
+      "page": 51
+     },
+     {
+      "id": "a32-t0",
+      "rank": 5,
+      "score": 7.548274,
+      "page": 32
+     }
+    ],
+    "admitted": [
+     "a32-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a51-t0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a51-v1",
+   "a32-v1",
+   "a32-t1",
+   "a32-v0",
+   "a51-t0",
+   "a32-t0"
+  ],
+  "context": "[a51-v1 | nasa-fy-2024-afr.pdf | page 51 | KEY FACTS]\nVISUAL CONTENT of page 51 (PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION)\nKEY FACTS:\n- Strategic Goal 1 Net Costs: 2024 $8,038 million; 2023 $8,262 million\n- Strategic Goal 2 Net Costs: 2024 $10,920 million; 2023 $10,676 million\n- Strategic Goal 3 Net Costs: 2024 $2,929 million; 2023 $2,883 million\n- Strategic Goal 4 Net Costs: 2024 $2,847 million; 2023 $2,795 million\n- Total Gross Costs: 2024 $26,551 million; 2023 $26,233 million\n- Less: Total Earned Revenue: 2024 $1,817 million; 2023 $1,617 million\n- Net Costs of Operations: 2024 $24,734 million; 2023 $24,616 million\n\n[a32-v1 | nasa-fy-2024-afr.pdf | page 32 | KEY FACTS]\nVISUAL CONTENT of page 32 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE\nResults of Operations\nNet Cost of Operations)\nKEY FACTS:\n- The Statement of Net Cost presents NASA's Net Cost of Operations by strategic goal.\n- As of September 30, 2024, NASA's gross costs were $26.6 billion, an increase of $318 million from FY 2023.\n- Earned Revenue from other governmental organizations or private entities was $1.8 billion, a $200 million increase from FY 2023.\n- This leaves NASA with a FY 2024 net cost of $24.7 billion, an increase of $118 million from FY 2023.\n- Strategic Goal 1 net cost for FY 2024 is $8,038 million (32%).\n- Strategic Goal 2 net cost for FY 2024 is $10,920 million (44%).\n- Strategic Goal 3 net cost for FY 2024 is $2,929 million (12%).\n- Strategic Goal 4 net cost for FY 2024 is $2,847 million (12%).\n\n[a32-t1 | nasa-fy-2024-afr.pdf | page 32 | Results of Operations]\nnd on towards Mars for sustainable long-term\nexploration, development, and utilization.\nSTRATEGIC GOAL 3\nCatalyze economic growth and drive innovation to address national challenges.\nSTRATEGIC GOAL 4\n\nEnhance capabilities and operations to catalyze current and future mission success.\nNet Cost of Operations By\nStrategic Goal for FY 2024\n(IN MILLIONS)\nCONTINUED ON THE NEXT PAGE →\nTOTAL\nNET COST\n$24,734\n32%\nGoal 1\n$8,038\n44%\nGoal 2\n$10,920\n12%\nGoal 3\n$2,929\n12%\nGoal 4\n$2,847\n\n[a32-v0 | nasa-fy-2024-afr.pdf | page 32 | CHARTS]\nVISUAL CONTENT of page 32 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE\nResults of Operations\nNet Cost of Operations)\nCHARTS:\nTitle: Net Cost of Operations By Strategic Goal for FY 2024\nChart Type: Donut Chart\nUnits: In Millions\nLegend / Categories:\n- Strategic Goal 1: Expand human knowledge through new scientific discoveries.\n- Strategic Goal 2: Extend human presence to the Moon and on towards Mars for sustainable long-term exploration, development, and utilization.\n- Strategic Goal 3: Catalyze economic growth and drive innovation to address national challenges.\n- Strategic Goal 4: Enhance capabilities and operations to catalyze current and future mission success.\nLabeled Values:\n- Total Net Cost: $24,734\n- Goal 1: 32%, $8,038\n- Goal 2: 44%, $10,920\n- Goal 3: 12%, $2,929\n- Goal 4: 12%, $2,847\n\n[a51-t0 | nasa-fy-2024-afr.pdf | page 51 | Consolidated Statements of Net Cost]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nTHE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nConsolidated Statements of Net Cost\nFor the Fiscal Years Ended September 30, 2024 and 2023\n(IN MILLIONS)\n2024\n2023\nSTRATEGIC GOAL 1\nExpand human knowledge through new scientific discoveries:\nGross Costs\n$ 9,128\n$ 9,166\nLess: Earned Revenue\n1,090\nNet Costs\n8,038\n8,262\nSTRATEGIC GOAL 2\nExtend human presence to the Moon and on towards Mars for sustainable\nlong-term exploration, development, and utilization:\nGross Costs\n$ 11,306\n$ 11,030\nLess: Earned Revenue\nNet Costs\n10,920\n10,676\nSTRATEGIC GOAL 3\nCatalyze economic growth and drive innovation to address national challenges:\nGross Costs\n$ 3,075\n$ 3,044\nLess: Earned Revenue\nNet Costs\n2,929\n2,883\nSTRATEGIC GOAL 4\nEnhance capabilities and operations to catalyze current and future mission success:\nGross Costs\n$ 3,042\n$ 2,993\nLess: Earned Revenue\nNet Costs\n2,847\n2,795\nNet Cost of Operations\nTotal Gross Costs\n$ 26,551\n$ 26,233\nLess: Total Earned Revenue\n1,817\n1,617\nNet Costs\n$ 24,734\n$ 24,616\n\n[a32-t0 | nasa-fy-2024-afr.pdf | page 32 | Results of Operations]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nResults of Operations\nNet Cost of Operations\nThe Statement of Net Cost presents NASA’s Net Cost of Operations by strategic goal. NASA’s strategic goals are\ndescribed in the Mission Performance section of the Agency Financial Report (page 13). The Net Cost of Operations\nrepresents gross cost incurred less revenue earned for work performed for other government organizations or private\nentities. As of September 30, 2024, NASA’s gross costs were $26.6 billion, an increase of $318 million from FY 2023.\nEarned Revenue from other governmental organizations or private entities was $1.8 billion, a $200 million increase\nfrom FY 2023. This leaves NASA with a FY 2024 net cost of $24.7 billion, an increase of $118 million from FY 2023.\nSTRATEGIC GOAL 1\nExpand human knowledge through new scientific discoveries.\nSTRATEGIC GOAL 2\nExtend human presence to the Moon and on towards Mars for sustainable long-term\nexploration, development, and utilization.\nSTRATEGIC GOAL 3\nCatalyze economic growth and drive innovation to address national challenges.\nSTRATEGIC GOAL 4",
+  "context_chars": 5434,
+  "n_searches": 2,
+  "prompt_tokens": 5254,
+  "output_tokens": 138,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.23,
+  "cost_usd": 0.000581,
+  "latency_s": 13.25,
+  "cited_pages": [
+   51
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD03",
+  "split": "dev",
+  "group": "table",
+  "question": "What were NASA's Agency Outlays, Net in FY 2024 according to the Statement of Budgetary Resources?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "According to the Combined Statement of Budgetary Resources in NASA's FY 2024 Agency Financial Report, NASA's Agency Outlays, Net in FY 2024 were $25,015 million (derived from Outlays, Net (Total) of $25,019 million minus Distributed Offsetting Receipts of $4 million) [a53-t0].",
+  "citations": [
+   "a53-t0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Agency Outlays Net FY 2024 Statement of Budgetary Resources",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1901.0,
+    "results": [
+     {
+      "id": "a53-v1",
+      "rank": 1,
+      "score": 8.151518,
+      "page": 53
+     },
+     {
+      "id": "a53-t0",
+      "rank": 2,
+      "score": 6.547901,
+      "page": 53
+     },
+     {
+      "id": "a53-tab1",
+      "rank": 3,
+      "score": 6.287293,
+      "page": 53
+     },
+     {
+      "id": "a79-v1",
+      "rank": 4,
+      "score": 6.1894,
+      "page": 79
+     },
+     {
+      "id": "a70-t0",
+      "rank": 5,
+      "score": 6.085365,
+      "page": 70
+     }
+    ],
+    "admitted": [
+     "a53-v1",
+     "a53-t0",
+     "a53-tab1",
+     "a79-v1",
+     "a70-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "\"Agency Outlays, Net\" FY 2024 \"Statement of Budgetary Resources\"",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2209.8,
+    "results": [
+     {
+      "id": "a53-v1",
+      "rank": 1,
+      "score": 7.239084,
+      "page": 53
+     },
+     {
+      "id": "a53-t0",
+      "rank": 2,
+      "score": 5.790653,
+      "page": 53
+     },
+     {
+      "id": "a70-t0",
+      "rank": 3,
+      "score": 5.431593,
+      "page": 70
+     },
+     {
+      "id": "a79-v1",
+      "rank": 4,
+      "score": 5.282186,
+      "page": 79
+     },
+     {
+      "id": "a53-v0",
+      "rank": 5,
+      "score": 5.02747,
+      "page": 53
+     }
+    ],
+    "admitted": [
+     "a53-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a53-t0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a53-v1",
+   "a53-t0",
+   "a53-tab1",
+   "a79-v1",
+   "a70-t0",
+   "a53-v0"
+  ],
+  "context": "[a53-v1 | nasa-fy-2024-afr.pdf | page 53 | KEY FACTS]\nVISUAL CONTENT of page 53 (PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nCombined Statements of Budgetary Resources\nFor the Fiscal Years Ended September 30, 2024 and 2023\n(IN MILLIONS))\nKEY FACTS:\n- Total Budgetary Resources for 2024: $30,051 million\n- Total Budgetary Resources for 2023: $30,923 million\n- Agency Outlays, Net for 2024: $25,015 million\n- Agency Outlays, Net for 2023: $25,319 million\n- Appropriations for 2024: $24,876 million\n- Appropriations for 2023: $25,573 million\n- New Obligations and Upward Adjustments (Total) for 2024: $27,170 million\n- New Obligations and Upward Adjustments (Total) for 2023: $28,276 million\n\n[a53-t0 | nasa-fy-2024-afr.pdf | page 53 | Combined Statements of Budgetary Resources]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nTHE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nCombined Statements of Budgetary Resources\nFor the Fiscal Years Ended September 30, 2024 and 2023\n(IN MILLIONS)\n2024\n2023\nBudgetary Resources:\nUnobligated Balance from Prior Year Budget Authority, Net\n$ 3,335\n$ 3,242\nAppropriations\n24,876\n25,573\nSpending Authority from Offsetting Collections\n1,840\n2,108\nTotal Budgetary Resources\n$ 30,051\n$ 30,923\nStatus of Budgetary Resources:\nNew Obligations and Upward Adjustments (Total)\n$ 27,170\n$ 28,276\nUnobligated Balance, End of Year:\nApportioned, Unexpired Accounts\n2,612\n2,466\nUnapportioned, Unexpired Accounts\nUnexpired Unobligated Balance, End of Year\n2,709\n2,471\nExpired Unobligated Balance, End of Year\nUnobligated Balance, End of Year (Total)\n2,881\n2,647\nTotal Budgetary Resources\n$ 30,051\n$ 30,923\nOutlays, Net:\nOutlays, Net (Total)\n$ 25,019\n$ 25,326\nDistributed Offsetting Receipts (-)\n(4)\n(7)\nAgency Outlays, Net\n$ 25,015\n$ 25,319\n\n[a53-tab1 | nasa-fy-2024-afr.pdf | page 53 | Combined Statements of Budgetary Resources]\nTABLE on page 53: Combined Statements of Budgetary Resources\n|  | 2024 |  | 2023 |\n|---|---|---|---|\n| Budgetary Resources: Unobligated Balance from Prior Year Budget Authority, Net $ 3,335 $ 3,242 Appropriations 24,876 25,573 Spending Authority from Offsetting Collections 1,840 2,108 Total Budgetary Resources $ 30,051 $ 30,923 Status of Budgetary Resources: New Obligations and Upward Adjustments (Total) $ 27,170 $ 28,276 Unobligated Balance, End of Year: Apportioned, Unexpired Accounts 2,612 2,466 Unapportioned, Unexpired Accounts 97 5 Unexpired Unobligated Balance, End of Year 2,709 2,471 Expired Unobligated Balance, End of Year 172 176 Unobligated Balance, End of Year (Total) 2,881 2,647 Total Budgetary Resources $ 30,051 $ 30,923 Outlays, Net: Outlays, Net (Total) $ 25,019 $ 25,326 Distributed Offsetting Receipts (-) (4) (7) Agency Outlays, Net $ 25,015 $ 25,319 |  |  |  |\n|  |  |  | $ 25,319 |\n| THE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS |  |  |  |\n\n[a79-v1 | nasa-fy-2024-afr.pdf | page 79 | KEY FACTS]\nVISUAL CONTENT of page 79 (PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nREQUIRED SUPPLEMENTARY INFORMATION\nCombining Statements of Budgetary Resources\nFor the Fiscal Year Ended September 30, 2024)\nKEY FACTS:\n- Total Budgetary Resources for the Space Operations Mission is $4,645 million.\n- Total Budgetary Resources for the Science Mission is $8,169 million.\n- Total Budgetary Resources for the Exploration Mission is $7,969 million.\n- Total Budgetary Resources for the Aeronautics Mission is $1,003 million.\n- Total Budgetary Resources for Safety, Security and Mission Services is $5,656 million.\n- Total Budgetary Resources across all categories is $30,051 million.\n- Agency Outlays, Net across all categories is $25,015 million.\n- FY 2024 Agency Financial Report NASA.GOV page 78 (continuation footer indicates page 78).\n\n[a70-t0 | nasa-fy-2024-afr.pdf | page 70 | The FY 2026 Budget of the United States Government (President’s Budget), which p]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nThe FY 2026 Budget of the United States Government (President’s Budget), which presents the actual amounts for the\nyear ended September 30, 2024, has not been published as of the issue date of these financial statements. The FY 2026\nBudget of the United States Government will be published on a later date at https://www.whitehouse.gov/omb/budget\n(Unaudited).\nNASA reconciled the amounts of the FY 2023 column on the Statement of Budgetary Resources (SBR) to the actual\namounts for FY 2023 in the FY 2025 President’s Budget for budgetary resources, new obligations, upward adjustments\n(total), distributed offsetting receipts, and net outlays as presented below.\nUndelivered Orders represent the amount of goods and/or services ordered to perform NASA’s mission objectives,\nwhich have not been received. Undelivered Orders at the end of the period totaled $12 billion as of September 30, 2024\nand $13 billion as of September 30, 2023.\n(IN MILLIONS)\nTOTAL\nBUDGETARY\nRESOURCES\nNEW OBLIGATIONS &\nUPWARD ADJUSTMENTS\n(TOTAL)\nDISTRIBUTED\nOFFSETTING\nRECEIPTS\nNET OUTLAYS\nCombined Statement of Budgetary Resources\n\n[a53-v0 | nasa-fy-2024-afr.pdf | page 53 | TABLES]\nVISUAL CONTENT of page 53 (PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nCombined Statements of Budgetary Resources\nFor the Fiscal Years Ended September 30, 2024 and 2023\n(IN MILLIONS))\nTABLES:\n| Budgetary Resources: | 2024 | 2023 |\n| :--- | :--- | :--- |\n| Unobligated Balance from Prior Year Budget Authority, Net | $ 3,335 | $ 3,242 |\n| Appropriations | 24,876 | 25,573 |\n| Spending Authority from Offsetting Collections | 1,840 | 2,108 |\n| **Total Budgetary Resources** | **$ 30,051** | **$ 30,923** |\n\n| Status of Budgetary Resources: | 2024 | 2023 |\n| :--- | :--- | :--- |\n| New Obligations and Upward Adjustments (Total) | $ 27,170 | $ 28,276 |\n| Unobligated Balance, End of Year: | | |\n| Apportioned, Unexpired Accounts | 2,612 | 2,466 |\n| Unapportioned, Unexpired Accounts | 97 | 5 |\n| Unexpired Unobligated Balance, End of Year | 2,709 | 2,471 |\n| Expired Unobligated Balance, End of Year | 172 | 176 |\n| Unobligated Balance, End of Year (Total) | 2,881 | 2,647 |\n| **Total Budgetary Resources** | **$ 30,051** | **$ 30,923** |\n\n| Outlays, Net: | 2024 | 2023 |\n| :--- | :--- | :--- |\n| Outlays, Net (Total) | $ 25,019 | $ 25,326 |\n| Distributed Offsetting Receipts (-) | (4) | (7) |\n| **Agency Outlays, Net** | **$ 25,015** | **$ 25,319** |",
+  "context_chars": 6711,
+  "n_searches": 2,
+  "prompt_tokens": 5996,
+  "output_tokens": 173,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.12,
+  "cost_usd": 0.000669,
+  "latency_s": 13.49,
+  "cited_pages": [
+   53
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD04",
+  "split": "dev",
+  "group": "table",
+  "question": "In the FY 2023 PP&E table, what estimated useful life and book value are listed for Equipment?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "In the FY 2023 Property, Plant, and Equipment (PP&E) table (Note 5), the estimated useful life listed for Equipment is **5–20 Years** and the book value is **$1,066 million** (derived from a cost of $16,493 million minus accumulated depreciation of $15,427 million) [a62-v0].",
+  "citations": [
+   "a62-v0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "PP&E Equipment FY 2023 estimated useful life book value",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2020.1,
+    "results": [
+     {
+      "id": "a61-v4",
+      "rank": 1,
+      "score": 8.826381,
+      "page": 61
+     },
+     {
+      "id": "a61-t2",
+      "rank": 2,
+      "score": 7.111349,
+      "page": 61
+     },
+     {
+      "id": "a62-tab2",
+      "rank": 3,
+      "score": 6.684921,
+      "page": 62
+     },
+     {
+      "id": "a61-tab4",
+      "rank": 4,
+      "score": 6.572185,
+      "page": 61
+     },
+     {
+      "id": "a57-v0",
+      "rank": 5,
+      "score": 5.79336,
+      "page": 57
+     }
+    ],
+    "admitted": [
+     "a61-v4",
+     "a61-t2",
+     "a62-tab2",
+     "a61-tab4",
+     "a57-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Equipment 2023 book value 16,493 15,427",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1952.1,
+    "results": [
+     {
+      "id": "a62-tab2",
+      "rank": 1,
+      "score": 5.873378,
+      "page": 62
+     },
+     {
+      "id": "a61-t2",
+      "rank": 2,
+      "score": 2.804217,
+      "page": 61
+     },
+     {
+      "id": "a62-v0",
+      "rank": 3,
+      "score": 2.689088,
+      "page": 62
+     },
+     {
+      "id": "a61-tab4",
+      "rank": 4,
+      "score": 2.551491,
+      "page": 61
+     },
+     {
+      "id": "a61-v4",
+      "rank": 5,
+      "score": 1.236518,
+      "page": 61
+     }
+    ],
+    "admitted": [
+     "a62-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Note 5 Property, Plant, and Equipment Net FY 2023 Equipment",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1893.4,
+    "results": [
+     {
+      "id": "a68-t3",
+      "rank": 1,
+      "score": 6.210484,
+      "page": 68
+     },
+     {
+      "id": "a62-v0",
+      "rank": 2,
+      "score": 5.916938,
+      "page": 62
+     },
+     {
+      "id": "a62-t2",
+      "rank": 3,
+      "score": 5.132668,
+      "page": 62
+     },
+     {
+      "id": "a61-v4",
+      "rank": 4,
+      "score": 5.039137,
+      "page": 61
+     },
+     {
+      "id": "a50-t0",
+      "rank": 5,
+      "score": 4.455665,
+      "page": 50
+     }
+    ],
+    "admitted": [
+     "a68-t3",
+     "a62-t2",
+     "a50-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a62-v0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a61-v4",
+   "a61-t2",
+   "a62-tab2",
+   "a61-tab4",
+   "a57-v0",
+   "a62-v0",
+   "a68-t3",
+   "a62-t2",
+   "a50-t0"
+  ],
+  "context": "[a61-v4 | nasa-fy-2024-afr.pdf | page 61 | KEY FACTS]\nVISUAL CONTENT of page 61 (PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION)\nKEY FACTS:\n* Note 4 states total net accounts receivable of $ 124 million for FY 2024.\n* Note 4 states total net accounts receivable of $ 68 million for FY 2023.\n* Note 5 states total PP&E book value of $ 9,331 million for FY 2024 (cost of $ 34,731 million minus accumulated depreciation/amortization of $ (25,400) million).\n* Structures, Facilities and Leasehold Improvements have a book value of $ 2,857 million and an estimated useful life of 15-40 Years.\n* Equipment has a book value of $ 906 million and an estimated useful life of 5-20 Years.\n* Work In Progress – Personal Property has a book value of $ 4,448 million.\n* Construction In Progress – Real Property has a book value of $ 968 million.\n* Land has a book value of $ 124 million with N/A depreciation method and useful life.\n\n[a61-t2 | nasa-fy-2024-afr.pdf | page 61 | There are no known restrictions to the use or convertibility of NASA PP&E. The c]\n8\nIntragovernmental\n$ 67\n$ —\n$ 67\nPublic\n—\nPublic\n—\nTotal\n$ 124\n$ —\n$ 124\nTotal\n$ 68\n$ —\n$ 68\n2024\n(IN MILLIONS)\nDEPRECIATION/\nAMORTIZATION\nMETHOD\nESTIMATED USEFUL\nLIFE\nCOST\nACCUMULATED\nDEPRECIATION/\n\nAMORTIZATION\nBOOK\nVALUE\nPP&E\nStructures, Facilities and Leasehold Improvements\nStraight-Line\n15-40 Years\n$ 12,460\n$ (9,603)\n$ 2,857\nEquipment\nStraight-Line\n5-20 Years\n16,447\n(15,541)\nWork In Progress – Personal Property\nN/A\nN/A\n4,448\n—\n4,448\nConstruction In Progress – Real Property\nN/A\nN/A\n—\nRight-to-Use Lease Assets – Real Property\nStraight-Line\nN/A\n(4)\nInternal Use Software\nStraight-Line\n5 Years\n(252)\nLand\nN/A\nN/A\n—\nInternal Use Software In Development\nN/A\nN/A\n—\nTotal\n$ 34,731\n$ (25,400)\n$ 9,331\nCONTINUED ON THE NEXT PAGE →\nNOTE 4\nAccounts Receivable, Net\nNOTE 5\nProperty, Plant, and Equipment, Net\n\n[a62-tab2 | nasa-fy-2024-afr.pdf | page 62 | Federal agencies are required to classify and report heritage assets, multi-use ]\nTABLE on page 62: Federal agencies are required to classify and report heritage assets, multi-use \n| 2023 |  |  |  |  |  |\n|---|---|---|---|---|---|\n| (IN MILLIONS) | DEPRECIATION/ AMORTIZATION METHOD | ESTIMATED USEFUL LIFE | COST | ACCUMULATED DEPRECIATION/ AMORTIZATION | BOOK VALUE |\n| PP&E Structures, Facilities and Leasehold Improvements Straight-Line 15-40 Years $ 12,393 $ (9,417) $ 2,976 Equipment Straight-Line 5-20 Years 16,493 (15,427) 1,066 Work In Progress – Personal Property N/A N/A 3,527 — 3,527 Construction In Progress – Real Property N/A N/A 955 — 955 Internal Use Software Straight-Line 5 Years 253 (251) 2 Land N/A N/A 124 — 124 Internal Use Software In Development N/A N/A 1 — 1 Total $ 33,746 $ (25,095) $ 8,651 |  |  |  |  |  |\n|  |  |  | $ 33,746 | $ (25,095) | $ 8,651 |\n\n[a61-tab4 | nasa-fy-2024-afr.pdf | page 61 | There are no known restrictions to the use or convertibility of NASA PP&E. The c]\nTABLE on page 61: There are no known restrictions to the use or convertibility of NASA PP&E. The c\n| 2024 |  |  |  |  |  |\n|---|---|---|---|---|---|\n| (IN MILLIONS) | DEPRECIATION/ AMORTIZATION METHOD | ESTIMATED USEFUL LIFE | COST | ACCUMULATED DEPRECIATION/ AMORTIZATION | BOOK VALUE |\n| PP&E Structures, Facilities and Leasehold Improvements Straight-Line 15-40 Years $ 12,460 $ (9,603) $ 2,857 Equipment Straight-Line 5-20 Years 16,447 (15,541) 906 Work In Progress – Personal Property N/A N/A 4,448 — 4,448 Construction In Progress – Real Property N/A N/A 968 — 968 Right-to-Use Lease Assets – Real Property Straight-Line N/A 27 (4) 23 Internal Use Software Straight-Line 5 Years 256 (252) 4 Land N/A N/A 124 — 124 Internal Use Software In Development N/A N/A 1 — 1 Total $ 34,731 $ (25,400) $ 9,331 |  |  |  |  |  |\n|  |  |  | $ 34,731 | $ (25,400) | $ 9,331 |\n\n[a57-v0 | nasa-fy-2024-afr.pdf | page 57 | KEY FACTS]\nVISUAL CONTENT of page 57 (PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n01 NOTE 1 Reporting Entity and Summary of Significant Accounting Policies (CONTINUED))\nKEY FACTS:\n- Property, Plant, and Equipment (PP&E) are capitalized assets with acquisition costs of $500,000 or more, and a useful life of two years or more.\n- Capitalized costs for internal use software include the full costs incurred during the software development stage only.\n- For internal use software, NASA capitalizes costs when the total projected cost is $1 million or more, and the expected useful life is two years or more.\n- In FY 2024, NASA implemented the requirements under SFFAS 54, Leases.\n- Under SFFAS 62, Transitional Amendment to SFFAS 54, NASA has elected the transitional accommodation related to \"embedded leases\" through September 30, 2026.\n\n[a62-v0 | nasa-fy-2024-afr.pdf | page 62 | TABLES]\nVISUAL CONTENT of page 62 (PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n05 NOTE 5 Property, Plant, and Equipment, Net (CONTINUED))\nTABLES:\n\n| 2023 (in millions) | Depreciation/Amortization Method | Estimated Useful Life | Cost | Accumulated Depreciation/Amortization | Book Value |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Structures, Facilities and Leasehold Improvements | Straight-Line | 15-40 Years | $ 12,393 | $ (9,417) | $ 2,976 |\n| Equipment | Straight-Line | 5-20 Years | 16,493 | (15,427) | 1,066 |\n| Work In Progress – Personal Property | N/A | N/A | 3,527 | — | 3,527 |\n| Construction In Progress – Real Property | N/A | N/A | 955 | — | 955 |\n| Internal Use Software | Straight-Line | 5 Years | 253 | (251) | 2 |\n| Land | N/A | N/A | 124 | — | 124 |\n| Internal Use Software In Development | N/A | N/A | 1 | — | 1 |\n| **Total** | | | **$ 33,746** | **$ (25,095)** | **$ 8,651** |\n\n| NET PP&E (in millions) | 2024 | 2023 |\n| :--- | :--- | :--- |\n| **Balance Beginning of Year, Unadjusted** | **$ 8,651** | **$ 7,643** |\n| Effects of Implementation of SFFAS 54 | 27 | — |\n| **Balance Beginning of Year, Adjusted** | | |\n| Capitalized Acquisitions | 1,227 | 1,664 |\n| CY Amortization of Right-to-Use Lease Assets | (4) | — |\n| Dispositions | (85) | (106) |\n| Depreciation Expense | (492) | (594) |\n| Donations | 7 | 44 |\n| **Balance End of Year** | **$ 9,331** | **$ 8,651** |\n\nPAGE TITLE: 06 NOTE 6 Stewardship PP&E\n\n[a68-t3 | nasa-fy-2024-afr.pdf | page 68 | 2025]\neriod received. NASA recognized $48.6 million of annual lease revenue in FY 2024 associated with leases\nunder SFFAS 54.\nSee Note 5, Property, Plant,\nand Equipment, Net (Lease\nAssets and Amortization)\n\nSee Note 8, Liabilities Not\nCovered by Budgetary\nResources (Lease Liabilities)\nSee Note 10, Other Liabilities\n(Lease Liabilities)\n\n[a62-t2 | nasa-fy-2024-afr.pdf | page 62 | Federal agencies are required to classify and report heritage assets, multi-use ]\nuction In Progress – Real Property\nN/A\nN/A\n—\nInternal Use Software\nStraight-Line\n5 Years\n(251)\nLand\nN/A\nN/A\n—\nInternal Use Software In Development\nN/A\nN/A\n—\nTotal\n$ 33,746\n$ (25,095)\n$ 8,651\nNET PP&E\n\n(IN MILLIONS)\n2024\n2023\nBalance Beginning of Year, Unadjusted\n$8,651\n$7,643\nEffects of Implementation of SFFAS 54\n—\nBalance Beginning of Year, Adjusted\nCapitalized Acquisitions\n1,227\n1,664\nCY Amortization of Right-to-Use Lease Assets\n(4)\n—\nDispositions\n(85)\n(106)\nDepreciation Expense\n(492)\n(594)\nDonations\nBalance End of Year\n$ 9,331\n$ 8,651\nNOTE 5\nProperty, Plant, and Equipment, Net (CONTINUED)\nNOTE 6\nStewardship PP&E\n\n[a50-t0 | nasa-fy-2024-afr.pdf | page 50 | Consolidated Balance Sheets]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nTHE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nConsolidated Balance Sheets\nAs of September 30, 2024 and 2023\n(IN MILLIONS)\n2024\n2023\nAssets\nIntragovernmental:\nFund Balance with Treasury (Note 2)\n$ 17,186\n$ 17,378\nInvestments, Net (Note 3)\nAccounts Receivable, Net (Note 4)\nAdvances and Prepayments\n—\nTotal Intragovernmental\n17,407\n17,460\nWith the Public:\nAccounts Receivable, Net (Note 4)\nProperty, Plant, and Equipment, Net (Note 5)\n9,331\n8,651\nAdvances and Prepayments\nOther Assets (Note 7)\n—\nTotal with the Public\n10,097\n8,675\nTotal Assets\n$ 27,504\n$ 26,135\nStewardship PP&E (Note 6)\nLiabilities: (Note 8)\nIntragovernmental:\nAccounts Payable\n$ 29\n$ 36\nAdvances from Others and Deferred Revenue\nOther Liabilities (Note 10)\nTotal Intragovernmental\nWith the Public:\nAccounts Payable\n1,746\n1,730\nFederal Employee Salary, Leave and Benefits Payable\nPensions and Post-Employment Benefits Payable\nEnvironmental and Disposal Liabilities (Note 9)\n2,353\n2,305\nAdvances from Others and Deferred Revenue\nOther Liabilities (Note 10)",
+  "context_chars": 8685,
+  "n_searches": 3,
+  "prompt_tokens": 10128,
+  "output_tokens": 212,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.31,
+  "cost_usd": 0.001098,
+  "latency_s": 18.21,
+  "cited_pages": [
+   62
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD05",
+  "split": "dev",
+  "group": "image",
+  "question": "In the photo on the Mission Performance page, what is astronaut Kate Rubins doing and why is that tool important?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "In the photo on the Mission Performance page, NASA astronaut Kate Rubins uses a hammer to get a drive tube into the ground to collect a pristine soil sample during a nighttime simulated moonwalk in the San Francisco Volcanic Field in Northern Arizona [a14-t0]. The drive tube is important because it is the key piece of hardware for preserving the integrity of samples from the Moon [a14-t0].",
+  "citations": [
+   "a14-t0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Kate Rubins astronaut Mission Performance photo",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1498.7,
+    "results": [
+     {
+      "id": "a14-v0",
+      "rank": 1,
+      "score": 8.16028,
+      "page": 14
+     },
+     {
+      "id": "a14-t0",
+      "rank": 2,
+      "score": 7.248166,
+      "page": 14
+     },
+     {
+      "id": "a97-v0",
+      "rank": 3,
+      "score": 5.275169,
+      "page": 97
+     },
+     {
+      "id": "a127-v0",
+      "rank": 4,
+      "score": 4.54232,
+      "page": 127
+     },
+     {
+      "id": "a127-t0",
+      "rank": 5,
+      "score": 4.430278,
+      "page": 127
+     }
+    ],
+    "admitted": [
+     "a14-v0",
+     "a14-t0",
+     "a97-v0",
+     "a127-v0",
+     "a127-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Kate Rubins hammer drive tube",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1617.4,
+    "results": [
+     {
+      "id": "a14-t0",
+      "rank": 1,
+      "score": 8.78503,
+      "page": 14
+     },
+     {
+      "id": "a14-v0",
+      "rank": 2,
+      "score": 8.589775,
+      "page": 14
+     },
+     {
+      "id": "a97-v0",
+      "rank": 3,
+      "score": -3.605815,
+      "page": 97
+     },
+     {
+      "id": "a97-t0",
+      "rank": 4,
+      "score": -3.667636,
+      "page": 97
+     },
+     {
+      "id": "a127-t0",
+      "rank": 5,
+      "score": -3.758956,
+      "page": 127
+     }
+    ],
+    "admitted": [
+     "a97-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "invalid_citations",
+    "answer": "In the photo on the Mission Performance page (page 14), NASA astronaut Kate Rubins uses a hammer to drive a tube into the ground to collect a pristine soil sample during a nighttime simulated moonwalk in the San Francisco Volcanic Field in Northern Arizona (May 16, 2024). The drive tube is the key piece of hardware for preserving the integrity of samples from the Moon.",
+    "citations": [
+     "a14-t0"
+    ],
+    "bad": [
+     "a14-t0"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a14-t0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a14-v0",
+   "a14-t0",
+   "a97-v0",
+   "a127-v0",
+   "a127-t0",
+   "a97-t0"
+  ],
+  "context": "[a14-v0 | nasa-fy-2024-afr.pdf | page 14 | PHOTOS]\nVISUAL CONTENT of page 14 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS\nMission Performance)\nPHOTOS:\n- NASA astronaut Kate Rubins uses a hammer to get a drive tube into the ground to collect a pristine soil sample during a nighttime simulated moonwalk in the San Francisco Volcanic Field in Northern Arizona on May 16, 2024. The drive tube is the key piece of hardware for preserving the integrity of samples from the Moon.\n- PHOTO CREDIT: NASA/Josh Valcarcel\n\n[a14-t0 | nasa-fy-2024-afr.pdf | page 14 | Mission Performance]\nMission Performance\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nNASA astronaut Kate Rubins uses a hammer to get a drive tube into the\nground to collect a pristine soil sample during a nighttime simulated\nmoonwalk in the San Francisco Volcanic Field in Northern Arizona\non May 16, 2024. The drive tube is the key piece of hardware for\npreserving the integrity of samples from the Moon.\nPHOTO CREDIT\nNASA/Josh Valcarcel\n\n[a97-v0 | nasa-fy-2024-afr.pdf | page 97 | PHOTOS]\nVISUAL CONTENT of page 97 (PAGE TITLE: Summary of Reports)\nPHOTOS:\n- NASA astronaut Andre Douglas holds open a sample bag for NASA astronaut Kate Rubins as she pours some geology samples into it during a simulated moonwalk in the San Francisco Volcanic Field in Northern Arizona on May 17, 2024. PHOTO CREDIT – NASA/Josh Valcarcel\n- Interior view of the primary structure of the Gateway space station's HALO module, April 12, 2024. PHOTO CREDIT – Northrop Grumman/Thales Alenia Space, April 12, 2024.\n\n[a127-v0 | nasa-fy-2024-afr.pdf | page 127 | PHOTOS]\nVISUAL CONTENT of page 127 (PAGE TITLE: BACK COVER IMAGE\nA Moonlit Moonwalk)\nPHOTOS:\n- What the photo shows: NASA astronaut Kate Rubins places a sample marker in the soil before collecting a sample during a nighttime simulated moonwalk in the San Francisco Volcanic Field in Northern Arizona on May 16, 2024. A sample marker provides a photographic reference point for science samples collected on the lunar surface.\n- Photo credit: NASA/Josh Valcarcel\n\n[a127-t0 | nasa-fy-2024-afr.pdf | page 127 | 300 E Street SW (Hidden Figures Way)]\nMARY W. JACKSON\nNASA HEADQUARTERS\n300 E Street SW (Hidden Figures Way)\nWashington, DC 20546\n(202) 358 - 0001\nNASA.GOV\nNational Aeronautics and\nSpace Administration\nBACK COVER IMAGE\nA Moonlit Moonwalk\nNASA astronaut Kate Rubins places a\nsample marker in the soil before collecting\na sample during a nighttime simulated\nmoonwalk in the San Francisco Volcanic\nField in Northern Arizona on May 16, 2024.\nA sample marker provides a photographic\nreference point for science samples\ncollected on the lunar surface.\nPHOTO CREDIT — NASA/Josh Valcarcel\nTHANK YOU FOR YOUR INTEREST\nIN NASA'S FY 2024 AFR\nWe welcome your comments on how we can improve this report\nfor our readers. Electronic copies of this report and prior years’\nreports are available through the Agency’s website.\nfacebook.com/NASA\nx.com/NASA\ninstagram.com/NASA\nyoutube.com/NASA\nflickr.com/NASAhqphoto\nlinkedin.com/company/NASA\nS C A N  M E\nSTAY CONNECTED WITH NASA\n\n[a97-t0 | nasa-fy-2024-afr.pdf | page 97 | Summary of Reports]\nSummary of Reports\nOTHER INFORMATION\nSUMMARY OF REPORTS\nNASA astronaut Andre Douglas holds open a sample bag for NASA astronaut Kate Rubins as she pours some geology samples into it during a\nsimulated moonwalk in the San Francisco Volcanic Field in Northern Arizona on May 17, 2024.\nPHOTO CREDIT — NASA/Josh Valcarcel\nA Home for Astronauts around the Moon\nThe primary structure of the Gateway space station's HALO (Habitation and Logistics Outpost) module is\none step closer to launch following welding completion in Turin, Italy. HALO is one of four Gateway modules\nwhere astronauts will live, conduct science, and prepare for lunar surface missions. NASA is partnering with\nNorthrop Grumman and their subcontractor Thales Alenia Space to develop HALO.\nDid You Know?\nPHOTO CREDIT — Northrop Grumman/Thales Alenia Space, April 12, 2024\nPayment Integrity Information Act (PIIA) Reporting\nPer OMB requirements, each Executive Branch agency must complete an Annual Data Call. The Annual Data Call\nfulfills reporting requirements under the Payment Integrity Information Act of 2019 (Public Law (P.L.) 116-117) (PIIA)",
+  "context_chars": 4234,
+  "n_searches": 2,
+  "prompt_tokens": 5988,
+  "output_tokens": 258,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.21,
+  "cost_usd": 0.000702,
+  "latency_s": 18.05,
+  "cited_pages": [
+   14
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD06",
+  "split": "dev",
+  "group": "image",
+  "question": "What are the five NASA Core Values shown in the 'Achieving our Vision and Mission' graphic?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "The five NASA Core Values shown under the \"Achieving our Vision and Mission\" section are:\n1. **Safety** [a10-t0]\n2. **Integrity** [a10-t0]\n3. **Inclusion** [a10-t0]\n4. **Teamwork** [a10-t0]\n5. **Excellence** [a10-t0]",
+  "citations": [
+   "a10-t0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Core Values Achieving our Vision and Mission graphic",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1624.3,
+    "results": [
+     {
+      "id": "a10-t0",
+      "rank": 1,
+      "score": 6.693175,
+      "page": 10
+     },
+     {
+      "id": "a3-t0",
+      "rank": 2,
+      "score": -0.248107,
+      "page": 3
+     },
+     {
+      "id": "a3-tab2",
+      "rank": 3,
+      "score": -1.081123,
+      "page": 3
+     },
+     {
+      "id": "a3-v0",
+      "rank": 4,
+      "score": -2.027311,
+      "page": 3
+     },
+     {
+      "id": "a10-t1",
+      "rank": 5,
+      "score": -2.980164,
+      "page": 10
+     }
+    ],
+    "admitted": [
+     "a10-t0",
+     "a3-t0",
+     "a3-tab2",
+     "a3-v0",
+     "a10-t1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "INCLUSION NASA is committed to a culture of diversity",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1708.4,
+    "results": [
+     {
+      "id": "a10-t1",
+      "rank": 1,
+      "score": 9.460793,
+      "page": 10
+     },
+     {
+      "id": "a7-t3",
+      "rank": 2,
+      "score": 4.670555,
+      "page": 7
+     },
+     {
+      "id": "a106-t1",
+      "rank": 3,
+      "score": 4.327108,
+      "page": 106
+     },
+     {
+      "id": "a45-t3",
+      "rank": 4,
+      "score": 3.4949,
+      "page": 45
+     },
+     {
+      "id": "a44-t5",
+      "rank": 5,
+      "score": 2.804885,
+      "page": 44
+     }
+    ],
+    "admitted": [
+     "a7-t3",
+     "a44-t5"
+    ],
+    "skipped_budget": [
+     "a106-t1",
+     "a45-t3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "five guiding Core Values Safety Integrity Inclusion Teamwork Excellence",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1301.1,
+    "results": [
+     {
+      "id": "a10-t0",
+      "rank": 1,
+      "score": 4.920374,
+      "page": 10
+     },
+     {
+      "id": "a10-t1",
+      "rank": 2,
+      "score": 2.109684,
+      "page": 10
+     },
+     {
+      "id": "a47-t3",
+      "rank": 3,
+      "score": -0.199948,
+      "page": 47
+     },
+     {
+      "id": "a121-t0",
+      "rank": 4,
+      "score": -6.185453,
+      "page": 121
+     },
+     {
+      "id": "a105-t1",
+      "rank": 5,
+      "score": -8.303337,
+      "page": 105
+     }
+    ],
+    "admitted": [],
+    "skipped_budget": [
+     "a47-t3",
+     "a121-t0",
+     "a105-t1"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a10-t0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a10-t0",
+   "a3-t0",
+   "a3-tab2",
+   "a3-v0",
+   "a10-t1",
+   "a7-t3",
+   "a44-t5"
+  ],
+  "context": "[a10-t0 | nasa-fy-2024-afr.pdf | page 10 | Achieving our Vision and Mission]\nAchieving our Vision and Mission\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nWELCOME TO NASA\nNASA embraces the challenge of furthering global scientific and technological achievement and expands the realm of\nwhat is possible in aeronautics and space exploration. This challenge is our passion and our purpose, and is reflected in\nthe Vision and Mission described in our 2022 Strategic Plan4.\nNASA’s long-term success will be largely determined by the strategic decisions and investments we make today, as well\nas constant adherence to our five guiding Core Values, shown below.\nVISION\nExploring the secrets\nof the universe for the\nbenefit of all.\nMISSION\nNASA explores the\nunknown in air and\nspace, innovates for the\nbenefit of humanity,\nand inspires the world\nthrough discovery.\nNASA’s Core Values\nNASA's existing Core Values of Safety, Integrity, Inclusion, Teamwork, and Excellence\nmandate individual and organizational behavior across the Agency at all levels:\nSAFETY\nNASA's constant attention to safety is the\ncornerstone upon which we build mission\nsuccess.\nINTEGRITY\nNASA is committed to maintaining an\nenvironment of trust, built upon honesty,\nethical behavior, respect, and candor.\nINCLUSION\n\n[a3-t0 | nasa-fy-2024-afr.pdf | page 3 | Management's Discussion and Analysis]\nSECTION 1\nManagement's Discussion and Analysis\nWELCOME TO NASA\nAchieving our Vision and Mission\nOrganizational Structure\nNASA Centers and Facilities\nNASA by the Numbers\nMISSION PERFORMANCE\nStrategic Plan Framework\nStrategic Goals and Objectives\nAgency Priority Goals\nSTRATEGIC GOALS AND HIGHLIGHTS\nAssessment Approach\nFY 2024 Performance Assessment\nFINANCIAL PERFORMANCE\nFinancial Highlights\nOverview of Financial Position\nResults of Operations\nSources of Funding\nLimitations of the Financial Statements\nANALYSIS OF SYSTEMS, CONTROLS, AND\nLEGAL COMPLIANCE\nInternal Control Framework\nEnterprise Risk Management\nManagement Assurances\nFinancial Systems Strategies\nFORWARD LOOKING\n2025 and Beyond\nSECTION 2\nFinancial Section\nMessage from the Chief Financial Officer\nIntroduction to the Principal Financial Statements\nFINANCIAL STATEMENTS, NOTES, AND\nREQUIRED SUPPLEMENTARY INFORMATION\nFinancial Statements\nNotes to the Financial Statements\nRequired Supplementary Information\nAUDIT REPORTS\nLetter from the Inspector General on Audit\nIndependent Auditors’ Report\nSECTION 4\nAppendix\nMessage from the Administrator: Spanish Version\nMessage from the Chief Financial Officer:\nSpanish Version\n\n[a3-tab2 | nasa-fy-2024-afr.pdf | page 3 | Management's Discussion and Analysis]\nTABLE on page 3: Management's Discussion and Analysis\n| WELCOME TO NASA | 08 |\n|---|---|\n| Achieving our Vision and Mission | 09 |\n| Organizational Structure | 10 |\n| NASA Centers and Facilities | 11 |\n| NASA by the Numbers | 12 |\n|  |  |\n| MISSION PERFORMANCE | 13 |\n| Strategic Plan Framework | 14 |\n| Strategic Goals and Objectives | 15 |\n| Agency Priority Goals | 17 |\n|  |  |\n| STRATEGIC GOALS AND HIGHLIGHTS | 19 |\n| Assessment Approach | 20 |\n| FY 2024 Performance Assessment | 21 |\n|  |  |\n| FINANCIAL PERFORMANCE | 27 |\n| Financial Highlights | 28 |\n| Overview of Financial Position | 28 |\n| Results of Operations | 31 |\n| Sources of Funding | 33 |\n| Limitations of the Financial Statements | 34 |\n|  |  |\n| ANALYSIS OF SYSTEMS, CONTROLS, AND LEGAL COMPLIANCE | 35 |\n| Internal Control Framework | 36 |\n| Enterprise Risk Management | 38 |\n| Management Assurances | 40 |\n| Financial Systems Strategies | 41 |\n|  |  |\n| FORWARD LOOKING | 42 |\n| 2025 and Beyond | 43 |\n\n[a3-v0 | nasa-fy-2024-afr.pdf | page 3 | TABLES]\nVISUAL CONTENT of page 3 (PAGE TITLE: Table of Contents)\nTABLES:\n| Section | Page |\n| --- | --- |\n| NASA Commemorates 55th Anniversary of Apollo 11 Moon Landing | 03 |\n| HERstory: NASA Johnson Dedicates Building to Dorothy Vaughan, Women of Apollo | 04 |\n| Message from the Administrator | 05 |\n| **SECTION 1** | |\n| **Management’s Discussion and Analysis** | **07** |\n| WELCOME TO NASA | 08 |\n| Achieving our Vision and Mission | 09 |\n| Organizational Structure | 10 |\n| NASA Centers and Facilities | 11 |\n| NASA by the Numbers | 12 |\n| MISSION PERFORMANCE | 13 |\n| Strategic Plan Framework | 14 |\n| Strategic Goals and Objectives | 15 |\n| Agency Priority Goals | 17 |\n| STRATEGIC GOALS AND HIGHLIGHTS | 19 |\n| Assessment Approach | 20 |\n| FY 2024 Performance Assessment | 21 |\n| FINANCIAL PERFORMANCE | 27 |\n| Financial Highlights | 28 |\n| Overview of Financial Position | 28 |\n| Results of Operations | 31 |\n| Sources of Funding | 33 |\n| Limitations of the Financial Statements | 34 |\n| ANALYSIS OF SYSTEMS, CONTROLS, AND LEGAL COMPLIANCE | 35 |\n| Internal Control Framework | 36 |\n| Enterprise Risk Management | 38 |\n| Management Assurances | 40 |\n| Financial Systems Strategies | 41 |\n| FORWARD LOOKING | 42 |\n| 2025 and Beyond | 43 |\n| **SECTION 2** | |\n| **Financial Section** | **45** |\n| Message from the Chief Financial Officer | 46 |\n| Introduction to the Principal Financial Statements | 47 |\n| FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION | 48 |\n| Financial Statements | 49 |\n| Notes to the Financial Statements | 53 |\n| Required Supplementary Information | 78 |\n| AUDIT REPORTS | 83 |\n| Letter from the Inspector General on Audit | 84 |\n| Independent Auditors’ Report | 86 |\n| **SECTION 3** | |\n| **Other Information** | **94** |\n| Summary of Financial Statement Audit and Management Assurances | 95 |\n\n[a10-t1 | nasa-fy-2024-afr.pdf | page 10 | Achieving our Vision and Mission]\nsafety is the\ncornerstone upon which we build mission\nsuccess.\nINTEGRITY\nNASA is committed to maintaining an\nenvironment of trust, built upon honesty,\nethical behavior, respect, and candor.\nINCLUSION\n\nNASA is committed to a culture of\ndiversity, inclusion, and equity, where all\nemployees feel welcome, respected, and\nengaged.\nTEAMWORK\nNASA’s most powerful asset for achieving\nmission success is a multidisciplinary\nteam of diverse, talented people across all\nNASA Centers.\nEXCELLENCE\nTo achieve the highest standards in engineering, research, operations, and management\nin support of mission success, NASA is committed to nurturing an organizational culture\nin which individuals make full use of their time, talent, and opportunities to pursue\nexcellence in conducting all Agency efforts.\n4 NASA produces a Strategic Plan\nevery four years in accordance with\nGPRAMA. NASA published the 2022\nStrategic Plan on March 28, 2022,\nconcurrent with publication of our\nFY 2023 Congressional Justification.\nThe Strategic Plan is available at\nhttps://www.nasa.gov/wp-content/\nuploads/2018/01/2022_nasa_\nstrategic_plan_0.pdf\n\n[a7-t3 | nasa-fy-2024-afr.pdf | page 7 | Message from the Administrator (CONTINUED)]\nination and execution of our STEM engagement work. By continuing to engage\nstudents, support educators and educational institutions, and support diversity, equity, inclusion, and accessibility in the\n\nSTEM fields, NASA strives to help support the next generation of pioneers and adventurers. Further, NASA provides\naccess to opportunities for underserved communities, providing crucial and diverse perspectives needed to take us to\nthe Moon, Mars, and beyond.\nI am deeply moved by the NASA workforce, whom I call the NASA wizards. They do remarkable things each and every\nday on behalf of the American people and for the benefit of all humanity. We excel in breaking down barriers that\nobstruct fairness, ensuring access to opportunities for underserved communities to engage the important and diverse\nperspectives needed to take us to the Moon, Mars, and beyond.\nOur pioneering spirit makes NASA consistently the best place to work in the Federal Government. I am excited for all\nthe giant leaps to come — and to celebrate historic successes for our Nation — as we continue to explore the unknown in\nair and space, innovate for the benefit of humanity, and inspire the world through discovery.\n\n[a44-t5 | nasa-fy-2024-afr.pdf | page 44 | NASA continues to plan for the future of deep space exploration, preparing for t]\non Directorate (STMD) has been charged with ensuring American global leadership in\nspace technology innovations through increased partnering with industry and demonstrating key lunar surface and deep\n\nspace technologies. STMD aims to achieve these goals by working closely with stakeholders, enlisting partnerships, utilizing\nevidence-based decision making, and promoting diversity, equity, inclusion, and accessibility. By the end of FY 2025, NASA\nwill demonstrate leadership in space technology by enhancing partnerships with industry through initializing several\ntipping point opportunities. For FY 2026 and beyond, STMD is in the process of restructuring from a Technology Readiness\n2025 and Beyond\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFORWARD LOOKING\nCONTINUED ON THE NEXT PAGE →",
+  "context_chars": 8861,
+  "n_searches": 3,
+  "prompt_tokens": 9090,
+  "output_tokens": 192,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 2.96,
+  "cost_usd": 0.000986,
+  "latency_s": 17.81,
+  "cited_pages": [
+   10
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD07",
+  "split": "dev",
+  "group": "image",
+  "question": "Which spacecraft is shown being encapsulated in payload fairings in the photo on the Strategic Goal 1 (Discover) page, and in which rocket's fairings?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "The photo on the Strategic Goal 1 (Discover) page shows NASA's PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) spacecraft being encapsulated in SpaceX's Falcon 9 payload fairings [a24-v0, a24-t3].",
+  "citations": [
+   "a24-v0",
+   "a24-t3"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Strategic Goal 1 Discover payload fairings spacecraft rocket photo",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1527.4,
+    "results": [
+     {
+      "id": "a24-v0",
+      "rank": 1,
+      "score": 6.908032,
+      "page": 24
+     },
+     {
+      "id": "a20-v0",
+      "rank": 2,
+      "score": 1.692452,
+      "page": 20
+     },
+     {
+      "id": "a20-v1",
+      "rank": 3,
+      "score": 0.53136,
+      "page": 20
+     },
+     {
+      "id": "a25-v0",
+      "rank": 4,
+      "score": 0.326801,
+      "page": 25
+     },
+     {
+      "id": "a16-v4",
+      "rank": 5,
+      "score": 0.047543,
+      "page": 16
+     }
+    ],
+    "admitted": [
+     "a24-v0",
+     "a20-v0",
+     "a20-v1",
+     "a25-v0",
+     "a16-v4"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "\"Astrotech Space Operations Facility\" PACE",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1280.2,
+    "results": [
+     {
+      "id": "a24-v0",
+      "rank": 1,
+      "score": 5.615788,
+      "page": 24
+     },
+     {
+      "id": "a24-t3",
+      "rank": 2,
+      "score": 4.08207,
+      "page": 24
+     },
+     {
+      "id": "a28-t0",
+      "rank": 3,
+      "score": 2.086065,
+      "page": 28
+     },
+     {
+      "id": "a28-v0",
+      "rank": 4,
+      "score": 1.80091,
+      "page": 28
+     },
+     {
+      "id": "a28-v1",
+      "rank": 5,
+      "score": 1.429717,
+      "page": 28
+     }
+    ],
+    "admitted": [
+     "a24-t3",
+     "a28-t0",
+     "a28-v0",
+     "a28-v1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a24-v0",
+     "a24-t3"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a24-v0",
+   "a20-v0",
+   "a20-v1",
+   "a25-v0",
+   "a16-v4",
+   "a24-t3",
+   "a28-t0",
+   "a28-v0",
+   "a28-v1"
+  ],
+  "context": "[a24-v0 | nasa-fy-2024-afr.pdf | page 24 | PHOTOS]\nVISUAL CONTENT of page 24 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS STRATEGIC GOALS AND HIGHLIGHTS\n01 STRATEGIC GOAL I. DISCOVER\nExpand human knowledge through new scientific discoveries.)\nPHOTOS:\n- Photo showing NASA and SpaceX technicians safely encapsulate NASA's PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) spacecraft in SpaceX's Falcon 9 payload fairings on Tuesday, Jan. 30, 2024, at the Astrotech Space Operations Facility near the Agency's Kennedy Space Center in Florida. The fairing halves protect the spacecraft from aerodynamic pressure and heating during the ascent phase of launch. Photo credit - NASA Goddard/Katie Mellos.\n\n[a20-v0 | nasa-fy-2024-afr.pdf | page 20 | PHOTOS]\nVISUAL CONTENT of page 20 (PAGE TITLE: Strategic Goals and Highlights)\nPHOTOS:\n- A SpaceX Falcon Heavy rocket with the Psyche spacecraft onboard is launched from Launch Complex 39A, Friday, Oct. 13, 2023, at NASA's Kennedy Space Center in Florida. NASA's Psyche spacecraft will travel to a metal-rich asteroid by the same name orbiting the Sun between Mars and Jupiter to study its' composition. The spacecraft also carries the Agency's Deep Space Optical Communications technology demonstration, which will test laser communications beyond the Moon.\n- PHOTO CREDIT: NASA/Aubrey Gemignani\n\n[a20-v1 | nasa-fy-2024-afr.pdf | page 20 | KEY FACTS]\nVISUAL CONTENT of page 20 (PAGE TITLE: Strategic Goals and Highlights)\nKEY FACTS:\n- SpaceX Falcon Heavy rocket launched with the Psyche spacecraft onboard.\n- Launch occurred from Launch Complex 39A on Friday, Oct. 13, 2023.\n- Location of launch: NASA's Kennedy Space Center in Florida.\n- Psyche spacecraft will travel to a metal-rich asteroid between Mars and Jupiter to study its composition.\n- Spacecraft carries the Deep Space Optical Communications technology demonstration.\n- Technology demonstration will test laser communications beyond the Moon.\n- Photo credit: NASA/Aubrey Gemignani.\n\n[a25-v0 | nasa-fy-2024-afr.pdf | page 25 | PHOTOS]\nVISUAL CONTENT of page 25 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS STRATEGIC GOALS AND HIGHLIGHTS\nSTRATEGIC GOAL II. EXPLORE\nExtend human presence to the Moon and on towards Mars for sustainable long-term exploration, development, and utilization.)\nPHOTOS:\n- The crew of NASA’s SpaceX Crew-8 mission to the International Space Station poses for a photo during their Crew Equipment Interface Test at NASA’s Kennedy Space Center in Florida. The goal of the training was to rehearse launch day activities and get a close look at the spacecraft that will take them to the International Space Station. Photo credit — SpaceX, January 12, 2024.\n\n[a16-v4 | nasa-fy-2024-afr.pdf | page 16 | KEY FACTS]\nVISUAL CONTENT of page 16 (PAGE TITLE: Strategic Goals and Objectives)\nKEY FACTS:\n• Four major themes represent NASA's four Strategic Goals: DISCOVER, EXPLORE, INNOVATE, and ADVANCE.\n• DISCOVER goal: Expand human knowledge through new scientific discoveries, with objectives 1.1 through 1.3.\n• EXPLORE goal: Extend human presence to the Moon and on towards Mars for sustainable long-term exploration, development, and utilization, with objectives 2.1 through 2.4.\n• INNOVATE goal: Catalyze economic growth and drive innovation to address national challenges, with objectives 3.1 and 3.2.\n• ADVANCE goal: Enhance capabilities and operations to catalyze current and future mission success, with objectives 4.1 through 4.3.\n\n[a24-t3 | nasa-fy-2024-afr.pdf | page 24 | Expand human knowledge through new scientific discoveries.]\nMars Perseverance rover continues to seek signs of ancient life and has collected samples\nof rock and regolith for an eventual return to Earth. NASA continues development of Interstellar Mapping and\n\nAcceleration Probe, Europa Clipper, the Nancy Grace Roman Space Telescope (Roman), and Near-Earth Object (NEO)\nSurveyor.\nCONTINUED ON THE NEXT PAGE →\nDid You Know?\nNASA and SpaceX technicians safely encapsulate NASA’s PACE (Plankton, Aerosol, Cloud, ocean Ecosystem)\nspacecraft in SpaceX’s Falcon 9 payload fairings on Tuesday, Jan. 30, 2024, at the Astrotech Space Operations\nFacility near the Agency’s Kennedy Space Center in Florida. The fairing halves protect the spacecraft from\naerodynamic pressure and heating during the ascent phase of launch. Photo credit — NASA Goddard/Katie Mellos\n\n[a28-t0 | nasa-fy-2024-afr.pdf | page 28 | Financial Performance]\nFinancial Performance\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nCrews transport NOAA’s (National Oceanic and Atmospheric Administration)\nGeostationary Operational Environmental Satellite (GOES-U) from the Astrotech Space\nOperations facility to the SpaceX hangar at Launch Complex 39A at NASA’s Kennedy\nSpace Center in Florida beginning on Friday, June 14, 2024, with the operation finishing\nearly Saturday, June 15, 2024. The fourth and final weather-observing and environmental\nmonitoring satellite in NOAA’s GOES-R Series will assist meteorologists in providing\nadvanced weather forecasting and warning capabilities.\nPHOTO CREDIT\nNASA/Ben Smegelsky\n\n[a28-v0 | nasa-fy-2024-afr.pdf | page 28 | PHOTOS]\nVISUAL CONTENT of page 28 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS\nFinancial Performance)\nPHOTOS:\n- What the photo shows: Crews transport NOAA’s (National Oceanic and Atmospheric Administration) Geostationary Operational Environmental Satellite (GOES-U) from the Astrotech Space Operations facility to the SpaceX hangar at Launch Complex 39A at NASA’s Kennedy Space Center in Florida beginning on Friday, June 14, 2024, with the operation finishing early Saturday, June 15, 2024. The fourth and final weather-observing and environmental monitoring satellite in NOAA’s GOES-R Series will assist meteorologists in providing advanced weather forecasting and warning capabilities.\n- Photo credit: NASA/Ben Smegelsky\n\n[a28-v1 | nasa-fy-2024-afr.pdf | page 28 | KEY FACTS]\nVISUAL CONTENT of page 28 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS\nFinancial Performance)\nKEY FACTS:\n- Date of transport: Friday, June 14, 2024 to early Saturday, June 15, 2024\n- Satellite transported: NOAA’s Geostationary Operational Environmental Satellite (GOES-U)\n- Facilities involved: Astrotech Space Operations facility to the SpaceX hangar at Launch Complex 39A at NASA’s Kennedy Space Center in Florida\n- Satellite series: NOAA’s GOES-R Series (fourth and final weather-observing and environmental monitoring satellite)\n- Page number: 27",
+  "context_chars": 6459,
+  "n_searches": 2,
+  "prompt_tokens": 4470,
+  "output_tokens": 140,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.72,
+  "cost_usd": 0.000503,
+  "latency_s": 13.48,
+  "cited_pages": [
+   24
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD08",
+  "split": "dev",
+  "group": "chart",
+  "question": "In the 'Balance Sheet Components FY 2024 and FY 2023' chart, what were total liabilities in each year?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "According to the 'Balance Sheet Components FY 2024 and FY 2023' chart, total liabilities were $7,664 million in FY 2024 and $6,719 million in FY 2023 [a29-v0].",
+  "citations": [
+   "a29-v0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Balance Sheet Components FY 2024 and FY 2023 total liabilities",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1727.0,
+    "results": [
+     {
+      "id": "a29-v0",
+      "rank": 1,
+      "score": 7.87418,
+      "page": 29
+     },
+     {
+      "id": "a29-t0",
+      "rank": 2,
+      "score": 7.668314,
+      "page": 29
+     },
+     {
+      "id": "a29-v2",
+      "rank": 3,
+      "score": 6.526608,
+      "page": 29
+     },
+     {
+      "id": "a50-v1",
+      "rank": 4,
+      "score": 6.430122,
+      "page": 50
+     },
+     {
+      "id": "a30-t0",
+      "rank": 5,
+      "score": 5.968485,
+      "page": 30
+     }
+    ],
+    "admitted": [
+     "a29-v0",
+     "a29-t0",
+     "a29-v2",
+     "a50-v1",
+     "a30-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "invalid_citations",
+    "answer": "According to the 'Balance Sheet Components FY 2024 and FY 2023' chart, total liabilities were:\n- **FY 2024:** $7,664 million\n- **FY 2023:** $6,719 million",
+    "citations": [
+     "a29-v0",
+     "a29-v2"
+    ],
+    "bad": [
+     "a29-v0",
+     "a29-v2"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a29-v0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a29-v0",
+   "a29-t0",
+   "a29-v2",
+   "a50-v1",
+   "a30-t0"
+  ],
+  "context": "[a29-v0 | nasa-fy-2024-afr.pdf | page 29 | CHARTS]\nVISUAL CONTENT of page 29 (PAGE TITLE: Management's Discussion and Analysis / Financial Performance: Financial Highlights / Overview of Financial Position)\nCHARTS:\n- Balance Sheet Components FY 2024 and FY 2023; column/bar chart; millions (in millions); Legend: Assets (yellow), Liabilities (teal), Net Position (dark blue); FY 2024: Assets $27,504, Liabilities $7,664, Net Position $19,840; FY 2023: Assets $26,135, Liabilities $6,719, Net Position $19,416.\n\n[a29-t0 | nasa-fy-2024-afr.pdf | page 29 | $27,504]\nFY 2023\n$27,504\n$26,135\n$7,664\n$6,719\n$19,840\n$19,416\nFY 2024\nAssets             Liabilities             Net Position\nFinancial Highlights\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nOverview of Financial Position\nNASA’s Balance Sheet provides a comparable snapshot of the Agency’s financial position as of September 30, 2024 and\nSeptember 30, 2023. It displays amounts in three primary categories.\nAssets\nNet Position\nthe activity between revenue and\nother financing sources, and costs\nincurred since inception.\nthe current and future\neconomic benefits owned or\navailable for use by NASA.\nBalance Sheet Components FY 2024 and FY 2023\n(IN MILLIONS)\nLiabilities\nthe debts owed by NASA but\nnot yet paid.\n\n[a29-v2 | nasa-fy-2024-afr.pdf | page 29 | KEY FACTS]\nVISUAL CONTENT of page 29 (PAGE TITLE: Management's Discussion and Analysis / Financial Performance: Financial Highlights / Overview of Financial Position)\nKEY FACTS:\n- NASA's Balance Sheet provides a comparable snapshot of the Agency’s financial position as of September 30, 2024 and September 30, 2023.\n- FY 2024 Assets: $27,504 million.\n- FY 2024 Liabilities: $7,664 million.\n- FY 2024 Net Position: $19,840 million.\n- FY 2023 Assets: $26,135 million.\n- FY 2023 Liabilities: $6,719 million.\n- FY 2023 Net Position: $19,416 million.\n\n[a50-v1 | nasa-fy-2024-afr.pdf | page 50 | KEY FACTS]\nVISUAL CONTENT of page 50 (PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nConsolidated Balance Sheets\nAs of September 30, 2024 and 2023\n(IN MILLIONS))\nKEY FACTS:\n- Total Assets for 2024 are $27,504 million.\n- Total Assets for 2023 are $26,135 million.\n- Total Liabilities for 2024 are $7,664 million.\n- Total Liabilities for 2023 are $6,719 million.\n- Total Net Position for 2024 is $19,840 million.\n- Total Net Position for 2023 is $19,416 million.\n- Total Liabilities and Net Position for 2024 are $27,504 million.\n- Total Liabilities and Net Position for 2023 are $26,135 million.\n\n[a30-t0 | nasa-fy-2024-afr.pdf | page 30 | Total Assets were the largest of the three categories (Total Liabilities plus To]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nTotal Assets were the largest of the three categories (Total Liabilities plus Total Net Position will always equal\nTotal Assets). NASA’s total asset balance, as of September 30, 2024, was $27.5 billion, five percent higher than FY 2023.\nThe Agency’s Fund Balance with Treasury (FBWT) and its Property, Plant, and Equipment (PP&E) were the two\nprimary components of the total assets balance.\nFBWT, which represents NASA’s cash balance with the U.S. Department of the Treasury, was the largest asset at $17\nbillion, accounting for 62 percent of total assets. This cash balance includes Congressional appropriated funds available\nfor NASA’s mission operations (for example, employee labor or purchased goods or services from contractors) that\nhave not yet been paid.\nNASA’s PP&E had a net book value of $9.3 billion as of September 30, 2024, 34 percent of total assets or an eight percent\nincrease as compared to FY 2023. The increase is primarily attributed to the fabrication of essential assets supporting\nArtemis, Gateway, and the International Space Station (ISS) program requirements, ongoing revitalization, construction",
+  "context_chars": 3917,
+  "n_searches": 1,
+  "prompt_tokens": 4477,
+  "output_tokens": 214,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.79,
+  "cost_usd": 0.000533,
+  "latency_s": 13.83,
+  "cited_pages": [
+   29
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD09",
+  "split": "dev",
+  "group": "chart",
+  "question": "In the 'Liabilities by Type FY 2024' donut chart, what share and amount do Environmental and Disposal Liabilities represent?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "In the 'Liabilities by Type FY 2024' donut chart, Environmental and Disposal Liabilities represent a share of 31% and an amount of $2,353 million [a31-v0, a31-t2].",
+  "citations": [
+   "a31-v0",
+   "a31-t2"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Liabilities by Type FY 2024 Environmental and Disposal Liabilities",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1872.8,
+    "results": [
+     {
+      "id": "a31-v0",
+      "rank": 1,
+      "score": 7.806869,
+      "page": 31
+     },
+     {
+      "id": "a31-t0",
+      "rank": 2,
+      "score": 7.703622,
+      "page": 31
+     },
+     {
+      "id": "a31-t2",
+      "rank": 3,
+      "score": 7.503513,
+      "page": 31
+     },
+     {
+      "id": "a31-v1",
+      "rank": 4,
+      "score": 6.875056,
+      "page": 31
+     },
+     {
+      "id": "a66-v0",
+      "rank": 5,
+      "score": 6.062813,
+      "page": 66
+     }
+    ],
+    "admitted": [
+     "a31-v0",
+     "a31-t0",
+     "a31-t2",
+     "a31-v1",
+     "a66-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "\"Liabilities by Type FY 2024\"",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2212.3,
+    "results": [
+     {
+      "id": "a31-v0",
+      "rank": 1,
+      "score": 7.016222,
+      "page": 31
+     },
+     {
+      "id": "a31-t2",
+      "rank": 2,
+      "score": 6.490725,
+      "page": 31
+     },
+     {
+      "id": "a67-t0",
+      "rank": 3,
+      "score": 5.439406,
+      "page": 67
+     },
+     {
+      "id": "a31-t1",
+      "rank": 4,
+      "score": 5.278741,
+      "page": 31
+     },
+     {
+      "id": "a67-t1",
+      "rank": 5,
+      "score": 4.718574,
+      "page": 67
+     }
+    ],
+    "admitted": [
+     "a67-t0",
+     "a31-t1"
+    ],
+    "skipped_budget": [
+     "a67-t1"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a31-v0",
+     "a31-t2"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a31-v0",
+   "a31-t0",
+   "a31-t2",
+   "a31-v1",
+   "a66-v0",
+   "a67-t0",
+   "a31-t1"
+  ],
+  "context": "[a31-v0 | nasa-fy-2024-afr.pdf | page 31 | CHARTS]\nVISUAL CONTENT of page 31 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE)\nCHARTS:\n- Liabilities by Type Comparison for FY 2024 and FY 2023: stacked bar chart, units in millions, legend includes Pensions and Post-Employment Benefits Payable, Advances from Others and Deferred Revenue, Federal Employee Salary, Leave and Benefits Payable, Other Liabilities, Other Accrued Liabilities, Accounts Payable, Environmental and Disposal Liabilities.\n  - 2024 Total: $7,664 Total\n    - Environmental and Disposal Liabilities: $2,353\n    - Accounts Payable: $1,775\n    - Other Accrued Liabilities: $1,902\n    - Other Liabilities: $1,046\n    - Federal Employee Salary, Leave and Benefits Payable: $348\n    - Advances from Others and Deferred Revenue: $214\n    - Pensions and Post-Employment Benefits Payable: $26\n  - 2023 Total: $6,719 Total\n    - Environmental and Disposal Liabilities: $2,305\n    - Accounts Payable: $1,766\n    - Other Accrued Liabilities: $1,793\n    - Other Liabilities: $302\n    - Federal Employee Salary, Leave and Benefits Payable: $288\n    - Advances from Others and Deferred Revenue: $238\n    - Pensions and Post-Employment Benefits Payable: $27\n- Liabilities by Type FY 2024: donut chart / pie chart, units in millions, center text TOTAL LIABILITIES $7,664.\n  - Environmental and Disposal Liabilities: 31%, $2,353\n  - Other Accrued Liabilities: 25%, $1,902\n  - Accounts Payable: 23%, $1,775\n  - Other Liabilities: 14%, $1,046\n  - Federal Employee Salary, Leave and Benefits Payable: 4%, $348\n  - Advances from Others and Deferred Revenue: 3%, $214\n  - Pensions and Post-Employment Benefits Payable: Less Than 1%, $26\n\n[a31-t0 | nasa-fy-2024-afr.pdf | page 31 | Total Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent highe]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nTotal Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent higher than FY 2023. Environmental and\nDisposal Liabilities, Accounts Payable, and Other Accrued Liabilities represent the majority of NASA’s liabilities.\nEnvironmental and Disposal Liabilities of $2.4 billion represent the estimated cost to clean up both known and\nprojected environmental hazards. This category had an increase of $48 million or two percent.\nAccounts Payable, which represents amounts owed to other entities, was $1.8 billion, an increase of $9 million, or\none percent, compared to FY 2023. The increase is attributed to the timing of invoices being received, approved, and\ndisbursed.\nOther Accrued Liabilities with public entities were $1.9 billion, an increase of $109 million, or six percent, compared\nto FY 2023. Other Liabilities, which represents various amounts including Unearned Lease Revenue and Contingent\nLiabilities, were $1 billion, an increase of $744 million. The increase is primarily due to the implementation of SFFAS 54\nin FY 2024 which requires additional financial reporting for leases.\n\n[a31-t2 | nasa-fy-2024-afr.pdf | page 31 | Total Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent highe]\nes\n$26\n$1,766\n$1,793\n$2,305\n$288\n$302\n$238\n$27\nLiabilities by Type Comparison\nfor FY 2024 and FY 2023\n(IN MILLIONS)\nLiabilities by Type FY 2024\n(IN MILLIONS)\nLess Than 1%\nPensions and Post-Employment\n\nBenefits Payable\n$26\n23%\nAccounts\nPayable\n$1,775\nTOTAL\nLIABILITIES\n$7,664\n14%\nOther\nLiabilities\n$1,046\n4%\nFederal Employee\nSalary, Leave and\nBenefits Payable\n$348\n3%\nAdvances from\nOthers and\nDeferred Revenue\n$214\n31%\nEnvironmental\nand Disposal\nLiabilities\n$2,353\n25%\nOther Accrued\nLiabilities\n$1,902\n\n[a31-v1 | nasa-fy-2024-afr.pdf | page 31 | KEY FACTS]\nVISUAL CONTENT of page 31 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE)\nKEY FACTS:\n- Total Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent higher than FY 2023.\n- Environmental and Disposal Liabilities of $2.4 billion represent the estimated cost to clean up both known and projected environmental hazards, an increase of $48 million or two percent.\n- Accounts Payable, which represents amounts owed to other entities, was $1.8 billion, an increase of $9 million, or one percent, compared to FY 2023.\n- Other Accrued Liabilities with public entities were $1.9 billion, an increase of $109 million, or six percent, compared to FY 2023.\n- Other Liabilities, which represents various amounts including Unearned Lease Revenue and Contingent Liabilities, were $1 billion, an increase of $744 million.\n- Total Net Position comprised of Unexpended Appropriations and Cumulative Results of Operations (“net worth”), increased by $424 million, two percent higher than FY 2023.\n- Unexpended Appropriations, at $13 billion, decreased by $176 million or one percent from FY 2023.\n- Cumulative Results of Operations, at $6.7 billion, increased by $600 million or 10 percent from FY 2023.\n\n[a66-v0 | nasa-fy-2024-afr.pdf | page 66 | KEY FACTS]\nVISUAL CONTENT of page 66 (PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNOTE 9\nEnvironmental and Disposal Liabilities (CONTINUED))\nKEY FACTS:\n- Remediation costs at certain sites classified as reasonably possible were estimated to be $18 million for FY 2024 and $22 million for FY 2023.\n- The asbestos cleanup cost liability of $181 million in FY 2024 represents an increase of $5 million compared to the $176 million recorded in FY 2023.\n- NASA recorded a total estimated liability for the end-of-life disposal of PP&E of $60 million in FY 2024.\n- This was an increase of $1 million over the $59 million recorded in FY 2023.\n- The documented target reliability for the International Space Station (ISS) decommissioning approach is 99 percent.\n\n[a67-t0 | nasa-fy-2024-afr.pdf | page 67 | Intragovernmental Other Liabilities primarily represent accrued cost estimates f]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nIntragovernmental Other Liabilities primarily represent accrued cost estimates for goods and services performed by\nFederal trading partners and payroll costs related to employer contributions, payroll taxes payable, and other post-\nemployment benefits. For FY 2024, Intragovernmental Other Liabilities included $29 million in other current liabilities\nthat are not covered by budgetary resources.\nOther Accrued Liabilities with public entities primarily consist of the accrual of contractor costs with related budgetary\nobligations for goods and services performed. The period of performance for contractor contracts typically spans the\nduration of NASA programs, which could be for a number of years prior to final delivery of the product. In such cases,\nNASA records a cost accrual throughout the fiscal year as the work is performed.\nOther Liabilities with the public include unearned lease revenue and lease liability. In FY 2024, SFFAS 54, Leases, requires\nthat Federal lessees recognize a lease liability and a right-to-use lease asset, and that Federal lessors recognize a lease\n\n[a31-t1 | nasa-fy-2024-afr.pdf | page 31 | Total Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent highe]\ntingent\nLiabilities, were $1 billion, an increase of $744 million. The increase is primarily due to the implementation of SFFAS 54\nin FY 2024 which requires additional financial reporting for leases.\n\nFederal Employee Salary, Leave and Benefits Payable are Accrued Funded Payroll and Leave and Unfunded Leave.\nTotal Net Position comprised of Unexpended Appropriations and Cumulative Results of Operations (“net\nworth”), increased by $424 million, two percent higher than FY 2023. Unexpended Appropriations, at $13 billion,\ndecreased by $176 million or one percent from FY 2023. Cumulative Results of Operations, at $6.7 billion, increased by\n$600 million or 10 percent from FY 2023.\n$1,775\n$1,902\n$2,353\n$348\n$1,046\n$214\n$7,664 Total\n2024\n$6,719 Total\n2023\nOther Accrued\nLiabilities\nPensions and\nPost-Employment\nBenefits Payable\nAccounts Payable\nAdvances from\nOthers and\nDeferred Revenue\nFederal Employee\nSalary, Leave and\nBenefits Payable\nOther Liabilities\nEnvironmental and Disposal Liabilities\n$26\n$1,766\n$1,793\n$2,305\n$288\n$302\n$238\n$27\nLiabilities by Type Comparison\nfor FY 2024 and FY 2023\n(IN MILLIONS)\nLiabilities by Type FY 2024\n(IN MILLIONS)\nLess Than 1%\nPensions and Post-Employment",
+  "context_chars": 8373,
+  "n_searches": 2,
+  "prompt_tokens": 6063,
+  "output_tokens": 144,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.26,
+  "cost_usd": 0.000664,
+  "latency_s": 13.06,
+  "cited_pages": [
+   31
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD10",
+  "split": "dev",
+  "group": "chart",
+  "question": "In the 'Sources of Funding FY 2024' donut chart, what share and amount came from prior year congressional appropriations?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "In the 'Sources of Funding FY 2024' donut chart, prior year congressional appropriations accounted for an 11% share, amounting to $3,335 million [a34-v0].",
+  "citations": [
+   "a34-v0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Sources of Funding FY 2024 donut chart prior year congressional appropriations",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2242.3,
+    "results": [
+     {
+      "id": "a34-v0",
+      "rank": 1,
+      "score": 9.248756,
+      "page": 34
+     },
+     {
+      "id": "a34-t2",
+      "rank": 2,
+      "score": 8.294949,
+      "page": 34
+     },
+     {
+      "id": "a34-t0",
+      "rank": 3,
+      "score": 5.938984,
+      "page": 34
+     },
+     {
+      "id": "a34-v2",
+      "rank": 4,
+      "score": 5.542366,
+      "page": 34
+     },
+     {
+      "id": "a34-t1",
+      "rank": 5,
+      "score": 1.594244,
+      "page": 34
+     }
+    ],
+    "admitted": [
+     "a34-v0",
+     "a34-t2",
+     "a34-t0",
+     "a34-v2",
+     "a34-t1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a34-v0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a34-v0",
+   "a34-t2",
+   "a34-t0",
+   "a34-v2",
+   "a34-t1"
+  ],
+  "context": "[a34-v0 | nasa-fy-2024-afr.pdf | page 34 | CHARTS]\nVISUAL CONTENT of page 34 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE Sources of Funding)\nCHARTS:\n- Title: Sources of Funding Comparison for FY 2024 and FY 2023 (IN MILLIONS)\n  - Chart Type: Stacked column chart\n  - Units: Millions\n  - Legend: Spending Authority from Offsetting Collections, Prior Year Congressional Appropriations, Congressional Appropriations\n  - Labeled Values:\n    - 2024 (Total $30,051 Total): Spending Authority from Offsetting Collections: $1,840; Prior Year Congressional Appropriations: $3,335; Congressional Appropriations: $24,876\n    - 2023 (Total $30,923 Total): Spending Authority from Offsetting Collections: $2,108; Prior Year Congressional Appropriations: $3,242; Congressional Appropriations: $25,573\n- Title: Sources of Funding FY 2024 (IN MILLIONS)\n  - Chart Type: Donut chart\n  - Units: Millions\n  - Center text: TOTAL FUNDING $30,051\n  - Labeled Values:\n    - Spending Authority from Offsetting Collections: 6% ($1,840)\n    - Prior Year Congressional Appropriations: 11% ($3,335)\n    - Congressional Appropriations: 83% ($24,876)\n\n[a34-t2 | nasa-fy-2024-afr.pdf | page 34 | Appropriations from Congress for the current fiscal year and unobligated balance]\nMILLIONS)\nSources of Funding FY 2024\n(IN MILLIONS)\n83%\nCongressional\nAppropriations\n$24,876\n11%\nPrior Year\nCongressional\nAppropriations\n$3,335\n6%\nSpending Authority\nfrom Offsetting\nCollections\n$1,840\n\nTOTAL\nFUNDING\n$30,051\n\n[a34-t0 | nasa-fy-2024-afr.pdf | page 34 | Appropriations from Congress for the current fiscal year and unobligated balance]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nAppropriations from Congress for the current fiscal year and unobligated balances\nfrom prior fiscal years.\nRevenue from agreements with other governmental organizations or private entities.\n$\nSources of Funding\nThe Statement of Budgetary Resources provides information on the budgetary funding available to NASA. NASA’s\nresources consist primarily of funds received from two sources:\nIn FY 2024, the total funds available for use by the Agency was $30 billion — a decrease of $872 million or three percent,\ncompared to FY 2023.\nThe $24.9 billion in appropriations from Congress for FY 2024 accounted for 83 percent of the total funds available for\nuse by the Agency. Congress designates the funding available to the Agency for a specific NASA mission. Appropriations\nthat remained available from prior years totaled $3.3 billion, 11 percent of NASA’s available resources in FY 2024.\nNASA’s FY 2024 funding also included $1.8 billion spending authority from offsetting collections, primarily comprised\nof revenue earned and collected from agreements, representing six percent of NASA’s available resources in FY\n\n[a34-v2 | nasa-fy-2024-afr.pdf | page 34 | KEY FACTS]\nVISUAL CONTENT of page 34 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE Sources of Funding)\nKEY FACTS:\n- In FY 2024, the total funds available for use by the Agency was $30 billion — a decrease of $872 million or three percent, compared to FY 2023.\n- The $24.9 billion in appropriations from Congress for FY 2024 accounted for 83 percent of the total funds available for use by the Agency.\n- Appropriations that remained available from prior years totaled $3.3 billion, 11 percent of NASA’s available resources in FY 2024.\n- NASA’s FY 2024 funding also included $1.8 billion spending authority from offsetting collections, representing six percent of NASA’s available resources in FY 2024.\n- In FY 2024, NASA obligated $27 billion of the $30 billion available for Agency programmatic and institutional objectives.\n- The remaining $3 billion may be obligated until the funds' periods of availability expire.\n\n[a34-t1 | nasa-fy-2024-afr.pdf | page 34 | Appropriations from Congress for the current fiscal year and unobligated balance]\nincluded $1.8 billion spending authority from offsetting collections, primarily comprised\nof revenue earned and collected from agreements, representing six percent of NASA’s available resources in FY\n\n2024. Revenue is earned under NASA’s authority to provide goods, services, or use of facilities to other entities on a\nreimbursable basis.\nIn FY 2024, NASA obligated $27 billion of the $30 billion available for Agency programmatic and institutional\nobjectives. An obligation binds the Government to make an expenditure (or outlay) of funds and reflects a reservation of\nbudget authority that will be used to pay for a contract, labor, or other items. The remaining $3 billion may be obligated\nuntil the funds’ periods of availability expire.\n$30,051 Total\n2024\n$30,923 Total\n2023\n$25,573\n$2,108\n$3,242\n$24,876\n$1,840\n$3,335\nSpending Authority\nfrom Offsetting\nCollections\nCongressional\nAppropriations\nPrior Year\nCongressional\nAppropriations\nSources of Funding Comparison\nfor FY 2024 and FY 2023\n(IN MILLIONS)\nSources of Funding FY 2024\n(IN MILLIONS)\n83%\nCongressional\nAppropriations\n$24,876\n11%\nPrior Year\nCongressional\nAppropriations\n$3,335\n6%\nSpending Authority\nfrom Offsetting\nCollections\n$1,840",
+  "context_chars": 5109,
+  "n_searches": 1,
+  "prompt_tokens": 2586,
+  "output_tokens": 100,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.35,
+  "cost_usd": 0.000299,
+  "latency_s": 9.01,
+  "cited_pages": [
+   34
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD11",
+  "split": "dev",
+  "group": "multihop",
+  "question": "Was NASA's FY 2024 net cost of operations above or below the $24.9 billion FY 2024 budget shown in 'NASA by the Numbers', and by roughly how much?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "NASA's FY 2024 net cost of operations was **below** the $24.9 billion FY 2024 budget shown in 'NASA by the Numbers' [a13-v2, a32-v1]. \n\n- **FY 2024 Net Cost of Operations:** $24.7 billion [a32-v1]\n- **FY 2024 Budget ('NASA by the Numbers'):** $24.9 billion [a13-v2]\n- **Difference:** The net cost of operations was below the budget by **$0.2 billion** (or roughly **$200 million**).",
+  "citations": [
+   "a13-v2",
+   "a32-v1"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "net cost of operations FY 2024 NASA by the Numbers",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2219.2,
+    "results": [
+     {
+      "id": "a32-v1",
+      "rank": 1,
+      "score": 9.311425,
+      "page": 32
+     },
+     {
+      "id": "a32-t0",
+      "rank": 2,
+      "score": 8.842784,
+      "page": 32
+     },
+     {
+      "id": "a33-v1",
+      "rank": 3,
+      "score": 8.67492,
+      "page": 33
+     },
+     {
+      "id": "a13-v2",
+      "rank": 4,
+      "score": 8.025852,
+      "page": 13
+     },
+     {
+      "id": "a33-t0",
+      "rank": 5,
+      "score": 7.47643,
+      "page": 33
+     }
+    ],
+    "admitted": [
+     "a32-v1",
+     "a32-t0",
+     "a33-v1",
+     "a13-v2",
+     "a33-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "\"NASA by the Numbers\" FY 2024 budget 24.9 billion",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1890.8,
+    "results": [
+     {
+      "id": "a13-v2",
+      "rank": 1,
+      "score": 9.380432,
+      "page": 13
+     },
+     {
+      "id": "a13-t0",
+      "rank": 2,
+      "score": 9.281577,
+      "page": 13
+     },
+     {
+      "id": "a34-v2",
+      "rank": 3,
+      "score": 6.5519,
+      "page": 34
+     },
+     {
+      "id": "a13-v0",
+      "rank": 4,
+      "score": 6.118098,
+      "page": 13
+     },
+     {
+      "id": "a34-t0",
+      "rank": 5,
+      "score": 5.553426,
+      "page": 34
+     }
+    ],
+    "admitted": [
+     "a13-t0",
+     "a34-v2",
+     "a13-v0"
+    ],
+    "skipped_budget": [
+     "a34-t0"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a13-v2",
+     "a32-v1"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a32-v1",
+   "a32-t0",
+   "a33-v1",
+   "a13-v2",
+   "a33-t0",
+   "a13-t0",
+   "a34-v2",
+   "a13-v0"
+  ],
+  "context": "[a32-v1 | nasa-fy-2024-afr.pdf | page 32 | KEY FACTS]\nVISUAL CONTENT of page 32 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE\nResults of Operations\nNet Cost of Operations)\nKEY FACTS:\n- The Statement of Net Cost presents NASA's Net Cost of Operations by strategic goal.\n- As of September 30, 2024, NASA's gross costs were $26.6 billion, an increase of $318 million from FY 2023.\n- Earned Revenue from other governmental organizations or private entities was $1.8 billion, a $200 million increase from FY 2023.\n- This leaves NASA with a FY 2024 net cost of $24.7 billion, an increase of $118 million from FY 2023.\n- Strategic Goal 1 net cost for FY 2024 is $8,038 million (32%).\n- Strategic Goal 2 net cost for FY 2024 is $10,920 million (44%).\n- Strategic Goal 3 net cost for FY 2024 is $2,929 million (12%).\n- Strategic Goal 4 net cost for FY 2024 is $2,847 million (12%).\n\n[a32-t0 | nasa-fy-2024-afr.pdf | page 32 | Results of Operations]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nResults of Operations\nNet Cost of Operations\nThe Statement of Net Cost presents NASA’s Net Cost of Operations by strategic goal. NASA’s strategic goals are\ndescribed in the Mission Performance section of the Agency Financial Report (page 13). The Net Cost of Operations\nrepresents gross cost incurred less revenue earned for work performed for other government organizations or private\nentities. As of September 30, 2024, NASA’s gross costs were $26.6 billion, an increase of $318 million from FY 2023.\nEarned Revenue from other governmental organizations or private entities was $1.8 billion, a $200 million increase\nfrom FY 2023. This leaves NASA with a FY 2024 net cost of $24.7 billion, an increase of $118 million from FY 2023.\nSTRATEGIC GOAL 1\nExpand human knowledge through new scientific discoveries.\nSTRATEGIC GOAL 2\nExtend human presence to the Moon and on towards Mars for sustainable long-term\nexploration, development, and utilization.\nSTRATEGIC GOAL 3\nCatalyze economic growth and drive innovation to address national challenges.\nSTRATEGIC GOAL 4\n\n[a33-v1 | nasa-fy-2024-afr.pdf | page 33 | KEY FACTS]\nVISUAL CONTENT of page 33 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS FINANCIAL PERFORMANCE\nResults of Operations (CONTINUED)\nGross Cost of Operations)\nKEY FACTS:\n- Gross cost of operations is presented detailing select NASA programs that support each strategic goal.\n- Total Gross Cost of Operations for FY 2024 is $26,551 million, and for FY 2023 is $26,233 million.\n- Strategic Goal 1 Total: FY 2024 $9,128 million | FY 2023 $9,166 million.\n- Strategic Goal 2 Total: FY 2024 $11,306 million | FY 2023 $11,030 million.\n- Strategic Goal 3 Total: FY 2024 $3,075 million | FY 2023 $3,044 million.\n- Strategic Goal 4 Total: FY 2024 $3,042 million | FY 2023 $2,993 million.\n\n[a13-v2 | nasa-fy-2024-afr.pdf | page 13 | KEY FACTS]\nVISUAL CONTENT of page 13 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS WELCOME TO NASA / NASA by the Numbers)\nKEY FACTS:\n- FY 2024 budget: $24.9 billion\n- Research, Engineering, & Development budget: $13.3 billion (54%)\n- Operations budget: $9.0 billion (36%)\n- Grants budget: $1.3 billion (5%)\n- Facilities and Equipment budget: $1.3 billion (5%)\n- The $24.9 billion includes $4.5 million of funds transferred from General Services Administration (GSA) for Technology Modernization Fund (TMF) investment award.\n- NASA's civil service workforce: 18,475 employees\n\n[a33-t0 | nasa-fy-2024-afr.pdf | page 33 | Results of Operations (CONTINUED)]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nResults of Operations (CONTINUED)\nGross Cost of Operations\nNASA’s day-to-day operations are performed at NASA and contractor facilities around the globe and in space. Gross\ncost of operations is presented in the following table, detailing select NASA programs that support each strategic goal.\nGross cost of operations include expenses incurred for NASA’s research and development (R&D) investments that are\nexpected to maintain or increase national economic productive capacity or yield other future benefits. Top programs by\nstrategic goal in relation to gross cost have remained consistent year to year.\nFY 2024 Total: $3,075  |  FY 2023 Total: $3,044\nSTRATEGIC GOAL 3\nCatalyze economic growth and drive innovation to address national challenges.\nTechnology Demonstration\n$337\n$369\nScience and Engineering\n$655\n$577\nOther Goal 3 Programs\n$2,052\n$2,129\nFY 2024 Total: $3,042  |  FY 2023 Total: $2,993\nSTRATEGIC GOAL 4\nEnhance capabilities and operations to catalyze current and future mission success.\nInfrastructure\n$666\n$660\nMission Enabling Service\n$686\n$683\nCenter Engineering, Safety, & Operations\n$829\n$800\nOther Goal 4 Programs\n\n[a13-t0 | nasa-fy-2024-afr.pdf | page 13 | NASA by the Numbers]\nNASA by the Numbers\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nWELCOME TO NASA\nNOTE:\nThe $24.9 billion includes $4.5 million of funds transferred\nfrom General Services Administration (GSA) for Technology\nModernization Fund (TMF) investment award.\nFY 2024 BUDGET\n$24.9 Billion\n$13.3B\n(54%)\nResearch, Engineering, &\nDevelopment\n$9.0B\n(36%)\nOperations\n$1.3B\n(5%)\nGrants\n$1.3B\n(5%)\nFacilities and Equipment\nNASA’S CIVIL SERVICE WORKFORCE BY CENTER\n18,475 Employees\n3,229 (18%)\nJohnson Space Center\n(JSC)\n3,180 (17%)\nGoddard Space Flight\nCenter (GSFC)\n2,345 (13%)\nMarshall Space Flight\nCenter (MSFC)\n2,104 (11%)\nKennedy Space Center\n(KSC)\n1,848 (10%)\nLangley Research Center\n(LaRC)\n1,744 (9%)\nNASA Headquarters\n(HQ)\n1,471 (8%)\nGlenn Research Center\n(GRC)\n1,327 (7%)\nAmes Research Center\n(ARC)\n675 (4%)\nOther\n552 (3%)\nArmstrong Flight Research\nCenter (AFRC)\nLanding science on the Moon, demonstrating quiet supersonic aircraft, and launching\ntwo new Earth climate satellites, plus a mission to Europa, one of Jupiter's icy moons,\nare just a FEW of the milestones we have planned for 2024. (December 27, 2023)\nLEARN MORE →\nDid You Know?\nS C A N  M E\n\n[a34-v2 | nasa-fy-2024-afr.pdf | page 34 | KEY FACTS]\nVISUAL CONTENT of page 34 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE Sources of Funding)\nKEY FACTS:\n- In FY 2024, the total funds available for use by the Agency was $30 billion — a decrease of $872 million or three percent, compared to FY 2023.\n- The $24.9 billion in appropriations from Congress for FY 2024 accounted for 83 percent of the total funds available for use by the Agency.\n- Appropriations that remained available from prior years totaled $3.3 billion, 11 percent of NASA’s available resources in FY 2024.\n- NASA’s FY 2024 funding also included $1.8 billion spending authority from offsetting collections, representing six percent of NASA’s available resources in FY 2024.\n- In FY 2024, NASA obligated $27 billion of the $30 billion available for Agency programmatic and institutional objectives.\n- The remaining $3 billion may be obligated until the funds' periods of availability expire.\n\n[a13-v0 | nasa-fy-2024-afr.pdf | page 13 | CHARTS]\nVISUAL CONTENT of page 13 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS WELCOME TO NASA / NASA by the Numbers)\nCHARTS:\n- FY 2024 BUDGET\n  - Chart Type: Breakdown list / summary cards\n  - Units: Billions of Dollars ($)\n  - Categories and Values:\n    - Research, Engineering, & Development: $13.3B (54%)\n    - Operations: $9.0B (36%)\n    - Grants: $1.3B (5%\n    - Facilities and Equipment: $1.3B (5%)\n- NASA’S CIVIL SERVICE WORKFORCE BY CENTER\n  - Chart Type: Breakdown list / summary cards\n  - Units: Number of Employees\n  - Categories and Values:\n    - Johnson Space Center (JSC): 3,229 (18%)\n    - Goddard Space Flight Center (GSFC): 3,180 (17%)\n    - Marshall Space Flight Center (MSFC): 2,345 (13%)\n    - Kennedy Space Center (KSC): 2,104 (11%)\n    - Langley Research Center (LaRC): 1,848 (10%)\n    - NASA Headquarters (HQ): 1,744 (9%)\n    - Glenn Research Center (GRC): 1,471 (8%)\n    - Ames Research Center (ARC): 1,327 (7%)\n    - Other: 675 (4%)\n    - Armstrong Flight Research Center (AFRC): 552 (3%)",
+  "context_chars": 7973,
+  "n_searches": 2,
+  "prompt_tokens": 5987,
+  "output_tokens": 243,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.53,
+  "cost_usd": 0.000696,
+  "latency_s": 13.79,
+  "cited_pages": [
+   13,
+   32
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD12",
+  "split": "dev",
+  "group": "multihop",
+  "question": "The 'Other' slice of the FY 2024 Assets by Type chart is $987 million. Which balance sheet line items make up that amount?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "The \"Other\" category in the FY 2024 Assets by Type chart ($987 million) represents **Accounts Receivable, Advances and Prepayments, and Investments** [a30-t1].\n\nOn the Consolidated Balance Sheet as of September 30, 2024, the line items making up the remaining assets (beyond Fund Balance with Treasury and Property, Plant, and Equipment, Net) are:\n* **Intragovernmental:** Investments, Net; Accounts Receivable, Net; and Advances and Prepayments [a50-t0]\n* **With the Public:** Accounts Receivable, Net; Advances and Prepayments; and Other Assets (Note 7) [a50-t0]",
+  "citations": [
+   "a30-t1",
+   "a50-t0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Other Assets by Type FY 2024 balance sheet line items 987 million",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2432.4,
+    "results": [
+     {
+      "id": "a30-v0",
+      "rank": 1,
+      "score": 6.524171,
+      "page": 30
+     },
+     {
+      "id": "a64-v1",
+      "rank": 2,
+      "score": 5.097795,
+      "page": 64
+     },
+     {
+      "id": "a29-v2",
+      "rank": 3,
+      "score": 3.946144,
+      "page": 29
+     },
+     {
+      "id": "a29-t0",
+      "rank": 4,
+      "score": 3.320371,
+      "page": 29
+     },
+     {
+      "id": "a29-v0",
+      "rank": 5,
+      "score": 3.274699,
+      "page": 29
+     }
+    ],
+    "admitted": [
+     "a30-v0",
+     "a64-v1",
+     "a29-v2",
+     "a29-t0",
+     "a29-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Balance Sheet September 30 2024 assets Fund Balance with Treasury Property Plant and Equipment Other Assets",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2354.2,
+    "results": [
+     {
+      "id": "a50-t0",
+      "rank": 1,
+      "score": 8.051998,
+      "page": 50
+     },
+     {
+      "id": "a30-t0",
+      "rank": 2,
+      "score": 7.515291,
+      "page": 30
+     },
+     {
+      "id": "a30-v1",
+      "rank": 3,
+      "score": 7.304364,
+      "page": 30
+     },
+     {
+      "id": "a30-t1",
+      "rank": 4,
+      "score": 6.916454,
+      "page": 30
+     },
+     {
+      "id": "a50-v0",
+      "rank": 5,
+      "score": 6.303179,
+      "page": 50
+     }
+    ],
+    "admitted": [
+     "a50-t0",
+     "a30-t0",
+     "a30-v1",
+     "a30-t1"
+    ],
+    "skipped_budget": [
+     "a50-v0"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Note 7 Other Assets 2024 accounts receivable advances prepayments investments",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2345.6,
+    "results": [
+     {
+      "id": "a50-t0",
+      "rank": 1,
+      "score": 7.548326,
+      "page": 50
+     },
+     {
+      "id": "a50-tab1",
+      "rank": 2,
+      "score": 7.328349,
+      "page": 50
+     },
+     {
+      "id": "a30-t1",
+      "rank": 3,
+      "score": 5.276538,
+      "page": 30
+     },
+     {
+      "id": "a50-v0",
+      "rank": 4,
+      "score": 4.985004,
+      "page": 50
+     },
+     {
+      "id": "a64-v1",
+      "rank": 5,
+      "score": 4.634233,
+      "page": 64
+     }
+    ],
+    "admitted": [],
+    "skipped_budget": [
+     "a50-tab1",
+     "a50-v0"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a30-t1",
+     "a50-t0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a30-v0",
+   "a64-v1",
+   "a29-v2",
+   "a29-t0",
+   "a29-v0",
+   "a50-t0",
+   "a30-t0",
+   "a30-v1",
+   "a30-t1"
+  ],
+  "context": "[a30-v0 | nasa-fy-2024-afr.pdf | page 30 | CHARTS]\nVISUAL CONTENT of page 30 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS FINANCIAL PERFORMANCE)\nCHARTS:\n* Title: Assets by Type Comparison for FY 2024 and FY 2023 (IN MILLIONS)\n  * Type: Stacked bar chart\n  * Units: Millions of dollars\n  * Legend/Categories: Other (purple), Property, Plant, and Equipment (blue), Fund Balance with Treasury (green)\n  * Labeled Values:\n    * 2024 Total ($27,504): Other $987; Property, Plant, and Equipment $9,331; Fund Balance with Treasury $17,186\n    * 2023 Total ($26,135): Other $106; Property, Plant, and Equipment $8,651; Fund Balance with Treasury $17,378\n\n* Title: Assets by Type 2024 (IN MILLIONS)\n  * Type: Donut chart\n  * Units: Millions of dollars\n  * Center text: TOTAL ASSETS $27,504\n  * Labeled Values/Slices:\n    * Property, Plant, and Equipment: 34%, $9,331\n    * Other: 4%, $987\n    * Fund Balance with Treasury: 62%, $17,186\n\n[a64-v1 | nasa-fy-2024-afr.pdf | page 64 | KEY FACTS]\nVISUAL CONTENT of page 64 (PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION)\nKEY FACTS:\n- Note 7 Other Assets: Value of Other Assets at the end of the period in FY 2024 was $697 million.\n- Note 8 Liabilities Not Covered by Budgetary Resources: Discount rate of FECA actuarial liability estimate was 2.65 percent in FY 2024 and 2.33 percent in FY 2023.\n- Intragovernmental Liabilities - Other Liabilities: 2024 is $30 million, 2023 is $58 million.\n- Federal Employee Salary, Leave and Benefits Payable: 2024 is $281 million, 2023 is $275 million.\n- Pensions and Post-Employment Benefits Payable: 2024 is $26 million, 2023 is $27 million.\n- Environmental and Disposal Liabilities (Note 9): 2024 is $2,266 million, 2023 is $2,184 million.\n- Other Liabilities: 2024 is $833 million, 2023 is $99 million.\n- Total Liabilities: 2024 is $7,664 million, 2023 is $6,719 million.\n\n[a29-v2 | nasa-fy-2024-afr.pdf | page 29 | KEY FACTS]\nVISUAL CONTENT of page 29 (PAGE TITLE: Management's Discussion and Analysis / Financial Performance: Financial Highlights / Overview of Financial Position)\nKEY FACTS:\n- NASA's Balance Sheet provides a comparable snapshot of the Agency’s financial position as of September 30, 2024 and September 30, 2023.\n- FY 2024 Assets: $27,504 million.\n- FY 2024 Liabilities: $7,664 million.\n- FY 2024 Net Position: $19,840 million.\n- FY 2023 Assets: $26,135 million.\n- FY 2023 Liabilities: $6,719 million.\n- FY 2023 Net Position: $19,416 million.\n\n[a29-t0 | nasa-fy-2024-afr.pdf | page 29 | $27,504]\nFY 2023\n$27,504\n$26,135\n$7,664\n$6,719\n$19,840\n$19,416\nFY 2024\nAssets             Liabilities             Net Position\nFinancial Highlights\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nOverview of Financial Position\nNASA’s Balance Sheet provides a comparable snapshot of the Agency’s financial position as of September 30, 2024 and\nSeptember 30, 2023. It displays amounts in three primary categories.\nAssets\nNet Position\nthe activity between revenue and\nother financing sources, and costs\nincurred since inception.\nthe current and future\neconomic benefits owned or\navailable for use by NASA.\nBalance Sheet Components FY 2024 and FY 2023\n(IN MILLIONS)\nLiabilities\nthe debts owed by NASA but\nnot yet paid.\n\n[a29-v0 | nasa-fy-2024-afr.pdf | page 29 | CHARTS]\nVISUAL CONTENT of page 29 (PAGE TITLE: Management's Discussion and Analysis / Financial Performance: Financial Highlights / Overview of Financial Position)\nCHARTS:\n- Balance Sheet Components FY 2024 and FY 2023; column/bar chart; millions (in millions); Legend: Assets (yellow), Liabilities (teal), Net Position (dark blue); FY 2024: Assets $27,504, Liabilities $7,664, Net Position $19,840; FY 2023: Assets $26,135, Liabilities $6,719, Net Position $19,416.\n\n[a50-t0 | nasa-fy-2024-afr.pdf | page 50 | Consolidated Balance Sheets]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nTHE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nConsolidated Balance Sheets\nAs of September 30, 2024 and 2023\n(IN MILLIONS)\n2024\n2023\nAssets\nIntragovernmental:\nFund Balance with Treasury (Note 2)\n$ 17,186\n$ 17,378\nInvestments, Net (Note 3)\nAccounts Receivable, Net (Note 4)\nAdvances and Prepayments\n—\nTotal Intragovernmental\n17,407\n17,460\nWith the Public:\nAccounts Receivable, Net (Note 4)\nProperty, Plant, and Equipment, Net (Note 5)\n9,331\n8,651\nAdvances and Prepayments\nOther Assets (Note 7)\n—\nTotal with the Public\n10,097\n8,675\nTotal Assets\n$ 27,504\n$ 26,135\nStewardship PP&E (Note 6)\nLiabilities: (Note 8)\nIntragovernmental:\nAccounts Payable\n$ 29\n$ 36\nAdvances from Others and Deferred Revenue\nOther Liabilities (Note 10)\nTotal Intragovernmental\nWith the Public:\nAccounts Payable\n1,746\n1,730\nFederal Employee Salary, Leave and Benefits Payable\nPensions and Post-Employment Benefits Payable\nEnvironmental and Disposal Liabilities (Note 9)\n2,353\n2,305\nAdvances from Others and Deferred Revenue\nOther Liabilities (Note 10)\n\n[a30-t0 | nasa-fy-2024-afr.pdf | page 30 | Total Assets were the largest of the three categories (Total Liabilities plus To]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nTotal Assets were the largest of the three categories (Total Liabilities plus Total Net Position will always equal\nTotal Assets). NASA’s total asset balance, as of September 30, 2024, was $27.5 billion, five percent higher than FY 2023.\nThe Agency’s Fund Balance with Treasury (FBWT) and its Property, Plant, and Equipment (PP&E) were the two\nprimary components of the total assets balance.\nFBWT, which represents NASA’s cash balance with the U.S. Department of the Treasury, was the largest asset at $17\nbillion, accounting for 62 percent of total assets. This cash balance includes Congressional appropriated funds available\nfor NASA’s mission operations (for example, employee labor or purchased goods or services from contractors) that\nhave not yet been paid.\nNASA’s PP&E had a net book value of $9.3 billion as of September 30, 2024, 34 percent of total assets or an eight percent\nincrease as compared to FY 2023. The increase is primarily attributed to the fabrication of essential assets supporting\nArtemis, Gateway, and the International Space Station (ISS) program requirements, ongoing revitalization, construction\n\n[a30-v1 | nasa-fy-2024-afr.pdf | page 30 | KEY FACTS]\nVISUAL CONTENT of page 30 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS FINANCIAL PERFORMANCE)\nKEY FACTS:\n* NASA’s total asset balance as of September 30, 2024, was $27.5 billion, five percent higher than FY 2023.\n* Total Assets were the largest of the three categories (Total Liabilities plus Total Net Position will always equal Total Assets).\n* Fund Balance with Treasury (FBWT) was the largest asset at $17 billion, accounting for 62 percent of total assets.\n* NASA’s Property, Plant, and Equipment (PP&E) had a net book value of $9.3 billion as of September 30, 2024, 34 percent of total assets or an eight percent increase as compared to FY 2023.\n* The Other category represents Accounts Receivable, Advances and Prepayments, and Investments as of September 30, 2024.\n* The Other category increased by $881 million.\n\n[a30-t1 | nasa-fy-2024-afr.pdf | page 30 | Total Assets were the largest of the three categories (Total Liabilities plus To]\ncrease is primarily attributed to the fabrication of essential assets supporting\nArtemis, Gateway, and the International Space Station (ISS) program requirements, ongoing revitalization, construction\n\nof facilities, and the active production work on Mobile Launcher-2.\nThe Other category represents Accounts Receivable, Advances and Prepayments, and Investments as of September 30,\n2024. This category increased by $881 million. This increase is due to the implementation of a new Agency business\nprocess for lease accounting mandated by the Statement of Federal Financial Accounting Standards (SFFAS)\n54, Leases, which requires additional financial reporting for leases.\nTOTAL\nASSETS\n$27,504\nFund Balance\nwith Treasury\nProperty, Plant,\nand Equipment\nOther\n$27,504 Total\n2024\n$17,186\n$9,331\n$987\n$26,135 Total\n2023\n$17,378\n$8,651\n$106\n62%\nFund Balance\nwith Treasury\n$17,186\n34%\nProperty, Plant,\nand Equipment\n$9,331\n4%\nOther\n$987\nAssets by Type Comparison\nfor FY 2024 and FY 2023\n(IN MILLIONS)\nAssets by Type 2024\n(IN MILLIONS)",
+  "context_chars": 8377,
+  "n_searches": 3,
+  "prompt_tokens": 9591,
+  "output_tokens": 288,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.45,
+  "cost_usd": 0.001074,
+  "latency_s": 18.12,
+  "cited_pages": [
+   30,
+   50
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD13",
+  "split": "dev",
+  "group": "text",
+  "question": "According to the Net Cost of Operations discussion, how much earned revenue did NASA have in FY 2024 and how did its net cost change from FY 2023?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "According to the Net Cost of Operations discussion in the Management's Discussion and Analysis:\n- NASA had **$1.8 billion** in earned revenue from other governmental organizations or private entities in FY 2024 (which represents a $200 million increase from FY 2023) [a32-t0]. (More specifically, total earned revenue was $1,817 million in FY 2024 compared to $1,617 million in FY 2023 [a51-t0]).\n- NASA's net cost of operations was **$24.7 billion** in FY 2024 ($24,734 million), which is an increase of **$118 million** from FY 2023 (when the net cost was $24,616 million) [a32-t0, a51-t0].",
+  "citations": [
+   "a32-t0",
+   "a51-t0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Net Cost of Operations earned revenue FY 2024 FY 2023",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2132.3,
+    "results": [
+     {
+      "id": "a32-v1",
+      "rank": 1,
+      "score": 9.214232,
+      "page": 32
+     },
+     {
+      "id": "a32-t0",
+      "rank": 2,
+      "score": 9.046471,
+      "page": 32
+     },
+     {
+      "id": "a33-v1",
+      "rank": 3,
+      "score": 8.039394,
+      "page": 33
+     },
+     {
+      "id": "a51-t0",
+      "rank": 4,
+      "score": 6.863738,
+      "page": 51
+     },
+     {
+      "id": "a51-v1",
+      "rank": 5,
+      "score": 6.670159,
+      "page": 51
+     }
+    ],
+    "admitted": [
+     "a32-v1",
+     "a32-t0",
+     "a33-v1",
+     "a51-t0",
+     "a51-v1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "\"Earned Revenue from other governmental organizations or private entities was $1.8 billion\"",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2184.2,
+    "results": [
+     {
+      "id": "a32-t0",
+      "rank": 1,
+      "score": 5.737539,
+      "page": 32
+     },
+     {
+      "id": "a32-v1",
+      "rank": 2,
+      "score": 5.285089,
+      "page": 32
+     },
+     {
+      "id": "a34-t0",
+      "rank": 3,
+      "score": 2.212156,
+      "page": 34
+     },
+     {
+      "id": "a34-t1",
+      "rank": 4,
+      "score": 1.721341,
+      "page": 34
+     },
+     {
+      "id": "a34-v1",
+      "rank": 5,
+      "score": 0.344327,
+      "page": 34
+     }
+    ],
+    "admitted": [
+     "a34-t0",
+     "a34-t1",
+     "a34-v1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a32-t0",
+     "a51-t0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a32-v1",
+   "a32-t0",
+   "a33-v1",
+   "a51-t0",
+   "a51-v1",
+   "a34-t0",
+   "a34-t1",
+   "a34-v1"
+  ],
+  "context": "[a32-v1 | nasa-fy-2024-afr.pdf | page 32 | KEY FACTS]\nVISUAL CONTENT of page 32 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE\nResults of Operations\nNet Cost of Operations)\nKEY FACTS:\n- The Statement of Net Cost presents NASA's Net Cost of Operations by strategic goal.\n- As of September 30, 2024, NASA's gross costs were $26.6 billion, an increase of $318 million from FY 2023.\n- Earned Revenue from other governmental organizations or private entities was $1.8 billion, a $200 million increase from FY 2023.\n- This leaves NASA with a FY 2024 net cost of $24.7 billion, an increase of $118 million from FY 2023.\n- Strategic Goal 1 net cost for FY 2024 is $8,038 million (32%).\n- Strategic Goal 2 net cost for FY 2024 is $10,920 million (44%).\n- Strategic Goal 3 net cost for FY 2024 is $2,929 million (12%).\n- Strategic Goal 4 net cost for FY 2024 is $2,847 million (12%).\n\n[a32-t0 | nasa-fy-2024-afr.pdf | page 32 | Results of Operations]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nResults of Operations\nNet Cost of Operations\nThe Statement of Net Cost presents NASA’s Net Cost of Operations by strategic goal. NASA’s strategic goals are\ndescribed in the Mission Performance section of the Agency Financial Report (page 13). The Net Cost of Operations\nrepresents gross cost incurred less revenue earned for work performed for other government organizations or private\nentities. As of September 30, 2024, NASA’s gross costs were $26.6 billion, an increase of $318 million from FY 2023.\nEarned Revenue from other governmental organizations or private entities was $1.8 billion, a $200 million increase\nfrom FY 2023. This leaves NASA with a FY 2024 net cost of $24.7 billion, an increase of $118 million from FY 2023.\nSTRATEGIC GOAL 1\nExpand human knowledge through new scientific discoveries.\nSTRATEGIC GOAL 2\nExtend human presence to the Moon and on towards Mars for sustainable long-term\nexploration, development, and utilization.\nSTRATEGIC GOAL 3\nCatalyze economic growth and drive innovation to address national challenges.\nSTRATEGIC GOAL 4\n\n[a33-v1 | nasa-fy-2024-afr.pdf | page 33 | KEY FACTS]\nVISUAL CONTENT of page 33 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS FINANCIAL PERFORMANCE\nResults of Operations (CONTINUED)\nGross Cost of Operations)\nKEY FACTS:\n- Gross cost of operations is presented detailing select NASA programs that support each strategic goal.\n- Total Gross Cost of Operations for FY 2024 is $26,551 million, and for FY 2023 is $26,233 million.\n- Strategic Goal 1 Total: FY 2024 $9,128 million | FY 2023 $9,166 million.\n- Strategic Goal 2 Total: FY 2024 $11,306 million | FY 2023 $11,030 million.\n- Strategic Goal 3 Total: FY 2024 $3,075 million | FY 2023 $3,044 million.\n- Strategic Goal 4 Total: FY 2024 $3,042 million | FY 2023 $2,993 million.\n\n[a51-t0 | nasa-fy-2024-afr.pdf | page 51 | Consolidated Statements of Net Cost]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nTHE ACCOMPANYING NOTES ARE AN INTEGRAL PART OF THESE FINANCIAL STATEMENTS\nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION\nConsolidated Statements of Net Cost\nFor the Fiscal Years Ended September 30, 2024 and 2023\n(IN MILLIONS)\n2024\n2023\nSTRATEGIC GOAL 1\nExpand human knowledge through new scientific discoveries:\nGross Costs\n$ 9,128\n$ 9,166\nLess: Earned Revenue\n1,090\nNet Costs\n8,038\n8,262\nSTRATEGIC GOAL 2\nExtend human presence to the Moon and on towards Mars for sustainable\nlong-term exploration, development, and utilization:\nGross Costs\n$ 11,306\n$ 11,030\nLess: Earned Revenue\nNet Costs\n10,920\n10,676\nSTRATEGIC GOAL 3\nCatalyze economic growth and drive innovation to address national challenges:\nGross Costs\n$ 3,075\n$ 3,044\nLess: Earned Revenue\nNet Costs\n2,929\n2,883\nSTRATEGIC GOAL 4\nEnhance capabilities and operations to catalyze current and future mission success:\nGross Costs\n$ 3,042\n$ 2,993\nLess: Earned Revenue\nNet Costs\n2,847\n2,795\nNet Cost of Operations\nTotal Gross Costs\n$ 26,551\n$ 26,233\nLess: Total Earned Revenue\n1,817\n1,617\nNet Costs\n$ 24,734\n$ 24,616\n\n[a51-v1 | nasa-fy-2024-afr.pdf | page 51 | KEY FACTS]\nVISUAL CONTENT of page 51 (PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION)\nKEY FACTS:\n- Strategic Goal 1 Net Costs: 2024 $8,038 million; 2023 $8,262 million\n- Strategic Goal 2 Net Costs: 2024 $10,920 million; 2023 $10,676 million\n- Strategic Goal 3 Net Costs: 2024 $2,929 million; 2023 $2,883 million\n- Strategic Goal 4 Net Costs: 2024 $2,847 million; 2023 $2,795 million\n- Total Gross Costs: 2024 $26,551 million; 2023 $26,233 million\n- Less: Total Earned Revenue: 2024 $1,817 million; 2023 $1,617 million\n- Net Costs of Operations: 2024 $24,734 million; 2023 $24,616 million\n\n[a34-t0 | nasa-fy-2024-afr.pdf | page 34 | Appropriations from Congress for the current fiscal year and unobligated balance]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nAppropriations from Congress for the current fiscal year and unobligated balances\nfrom prior fiscal years.\nRevenue from agreements with other governmental organizations or private entities.\n$\nSources of Funding\nThe Statement of Budgetary Resources provides information on the budgetary funding available to NASA. NASA’s\nresources consist primarily of funds received from two sources:\nIn FY 2024, the total funds available for use by the Agency was $30 billion — a decrease of $872 million or three percent,\ncompared to FY 2023.\nThe $24.9 billion in appropriations from Congress for FY 2024 accounted for 83 percent of the total funds available for\nuse by the Agency. Congress designates the funding available to the Agency for a specific NASA mission. Appropriations\nthat remained available from prior years totaled $3.3 billion, 11 percent of NASA’s available resources in FY 2024.\nNASA’s FY 2024 funding also included $1.8 billion spending authority from offsetting collections, primarily comprised\nof revenue earned and collected from agreements, representing six percent of NASA’s available resources in FY\n\n[a34-t1 | nasa-fy-2024-afr.pdf | page 34 | Appropriations from Congress for the current fiscal year and unobligated balance]\nincluded $1.8 billion spending authority from offsetting collections, primarily comprised\nof revenue earned and collected from agreements, representing six percent of NASA’s available resources in FY\n\n2024. Revenue is earned under NASA’s authority to provide goods, services, or use of facilities to other entities on a\nreimbursable basis.\nIn FY 2024, NASA obligated $27 billion of the $30 billion available for Agency programmatic and institutional\nobjectives. An obligation binds the Government to make an expenditure (or outlay) of funds and reflects a reservation of\nbudget authority that will be used to pay for a contract, labor, or other items. The remaining $3 billion may be obligated\nuntil the funds’ periods of availability expire.\n$30,051 Total\n2024\n$30,923 Total\n2023\n$25,573\n$2,108\n$3,242\n$24,876\n$1,840\n$3,335\nSpending Authority\nfrom Offsetting\nCollections\nCongressional\nAppropriations\nPrior Year\nCongressional\nAppropriations\nSources of Funding Comparison\nfor FY 2024 and FY 2023\n(IN MILLIONS)\nSources of Funding FY 2024\n(IN MILLIONS)\n83%\nCongressional\nAppropriations\n$24,876\n11%\nPrior Year\nCongressional\nAppropriations\n$3,335\n6%\nSpending Authority\nfrom Offsetting\nCollections\n$1,840\n\n[a34-v1 | nasa-fy-2024-afr.pdf | page 34 | DIAGRAMS]\nVISUAL CONTENT of page 34 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE Sources of Funding)\nDIAGRAMS:\n- Green background callout box:\n  - Text: \"Appropriations from Congress for the current fiscal year and unobligated balances from prior fiscal years.\"\n  - Text: \"Revenue from agreements with other governmental organizations or private entities.\"",
+  "context_chars": 7788,
+  "n_searches": 2,
+  "prompt_tokens": 6054,
+  "output_tokens": 299,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.43,
+  "cost_usd": 0.000725,
+  "latency_s": 13.46,
+  "cited_pages": [
+   32,
+   51
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD14",
+  "split": "dev",
+  "group": "text",
+  "question": "What do NASA's Environmental and Disposal Liabilities represent, and how much did they change in FY 2024?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "NASA's Environmental and Disposal Liabilities represent the estimated cost to clean up both known and projected environmental hazards [a31-t0]. Specifically, they result from:\n- Operations (including facilities obtained from other governmental entities) that have resulted in contamination from waste disposal methods, leaks, and spills [a65-t1];\n- Other past activity that created a public health or environmental risk, including identifiable costs associated with asbestos abatement [a65-t1]; and\n- Total cleanup costs associated with the removal, containment, and/or disposal of hazardous wastes or material and/or property at permanent or temporary closure or shutdown of associated Property, Plant, and Equipment (PP&E) [a65-t1].\n\nIn FY 2024, total Environmental and Disposal Liabilities changed as follows:\n- **Total Environmental and Disposal Liabilities** increased by **$48 million** (or about 2 percent), moving from **$2,305 million** in FY 2023 to **$2,353 million** in FY 2024 (reported as approximately $2.4 billion) [a31-t0, a65-tab2].\n- **Restoration Projects** increased by **$42 million**, from **$2,070 million** in FY 2023 to **$2,112 million** in FY 2024 [a65-tab2].\n- **Asbestos** liabilities increased by **$5 million**, from **$176 million** in FY 2023 to **$181 million** in FY 2024 [a66-v0, a65-tab2].\n- **End of Life Disposal of Property, Plant, and Equipment** increased by **$1 million**, from **$59 million** in FY 2023 to **$60 million** in FY 2024 [a66-v0, a65-tab2].",
+  "citations": [
+   "a31-t0",
+   "a65-tab2",
+   "a65-t1",
+   "a66-v0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Environmental and Disposal Liabilities FY 2024 change",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2235.1,
+    "results": [
+     {
+      "id": "a31-t0",
+      "rank": 1,
+      "score": 8.005984,
+      "page": 31
+     },
+     {
+      "id": "a31-v1",
+      "rank": 2,
+      "score": 7.679686,
+      "page": 31
+     },
+     {
+      "id": "a66-v0",
+      "rank": 3,
+      "score": 7.103383,
+      "page": 66
+     },
+     {
+      "id": "a65-t2",
+      "rank": 4,
+      "score": 6.806437,
+      "page": 65
+     },
+     {
+      "id": "a65-t1",
+      "rank": 5,
+      "score": 6.748113,
+      "page": 65
+     }
+    ],
+    "admitted": [
+     "a31-t0",
+     "a31-v1",
+     "a66-v0",
+     "a65-t2",
+     "a65-t1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Total Environmental and Disposal Liabilities FY 2024 FY 2023 millions",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2393.9,
+    "results": [
+     {
+      "id": "a31-v1",
+      "rank": 1,
+      "score": 9.006871,
+      "page": 31
+     },
+     {
+      "id": "a31-t0",
+      "rank": 2,
+      "score": 8.840202,
+      "page": 31
+     },
+     {
+      "id": "a66-v0",
+      "rank": 3,
+      "score": 8.495337,
+      "page": 66
+     },
+     {
+      "id": "a65-t2",
+      "rank": 4,
+      "score": 8.266343,
+      "page": 65
+     },
+     {
+      "id": "a31-v0",
+      "rank": 5,
+      "score": 7.911878,
+      "page": 31
+     }
+    ],
+    "admitted": [
+     "a31-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Environmental and Disposal Liabilities Asbestos End of Life Disposal 2024 2023 millions",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1813.0,
+    "results": [
+     {
+      "id": "a65-tab2",
+      "rank": 1,
+      "score": 8.009219,
+      "page": 65
+     },
+     {
+      "id": "a66-v0",
+      "rank": 2,
+      "score": 7.939682,
+      "page": 66
+     },
+     {
+      "id": "a65-v0",
+      "rank": 3,
+      "score": 7.36554,
+      "page": 65
+     },
+     {
+      "id": "a65-v1",
+      "rank": 4,
+      "score": 7.276557,
+      "page": 65
+     },
+     {
+      "id": "a65-t2",
+      "rank": 5,
+      "score": 7.229178,
+      "page": 65
+     }
+    ],
+    "admitted": [
+     "a65-tab2"
+    ],
+    "skipped_budget": [
+     "a65-v0",
+     "a65-v1"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a31-t0",
+     "a65-tab2",
+     "a65-t1",
+     "a66-v0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a31-t0",
+   "a31-v1",
+   "a66-v0",
+   "a65-t2",
+   "a65-t1",
+   "a31-v0",
+   "a65-tab2"
+  ],
+  "context": "[a31-t0 | nasa-fy-2024-afr.pdf | page 31 | Total Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent highe]\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nFINANCIAL PERFORMANCE\nTotal Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent higher than FY 2023. Environmental and\nDisposal Liabilities, Accounts Payable, and Other Accrued Liabilities represent the majority of NASA’s liabilities.\nEnvironmental and Disposal Liabilities of $2.4 billion represent the estimated cost to clean up both known and\nprojected environmental hazards. This category had an increase of $48 million or two percent.\nAccounts Payable, which represents amounts owed to other entities, was $1.8 billion, an increase of $9 million, or\none percent, compared to FY 2023. The increase is attributed to the timing of invoices being received, approved, and\ndisbursed.\nOther Accrued Liabilities with public entities were $1.9 billion, an increase of $109 million, or six percent, compared\nto FY 2023. Other Liabilities, which represents various amounts including Unearned Lease Revenue and Contingent\nLiabilities, were $1 billion, an increase of $744 million. The increase is primarily due to the implementation of SFFAS 54\nin FY 2024 which requires additional financial reporting for leases.\n\n[a31-v1 | nasa-fy-2024-afr.pdf | page 31 | KEY FACTS]\nVISUAL CONTENT of page 31 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE)\nKEY FACTS:\n- Total Liabilities, as of September 30, 2024, were $7.7 billion, 14 percent higher than FY 2023.\n- Environmental and Disposal Liabilities of $2.4 billion represent the estimated cost to clean up both known and projected environmental hazards, an increase of $48 million or two percent.\n- Accounts Payable, which represents amounts owed to other entities, was $1.8 billion, an increase of $9 million, or one percent, compared to FY 2023.\n- Other Accrued Liabilities with public entities were $1.9 billion, an increase of $109 million, or six percent, compared to FY 2023.\n- Other Liabilities, which represents various amounts including Unearned Lease Revenue and Contingent Liabilities, were $1 billion, an increase of $744 million.\n- Total Net Position comprised of Unexpended Appropriations and Cumulative Results of Operations (“net worth”), increased by $424 million, two percent higher than FY 2023.\n- Unexpended Appropriations, at $13 billion, decreased by $176 million or one percent from FY 2023.\n- Cumulative Results of Operations, at $6.7 billion, increased by $600 million or 10 percent from FY 2023.\n\n[a66-v0 | nasa-fy-2024-afr.pdf | page 66 | KEY FACTS]\nVISUAL CONTENT of page 66 (PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nNOTE 9\nEnvironmental and Disposal Liabilities (CONTINUED))\nKEY FACTS:\n- Remediation costs at certain sites classified as reasonably possible were estimated to be $18 million for FY 2024 and $22 million for FY 2023.\n- The asbestos cleanup cost liability of $181 million in FY 2024 represents an increase of $5 million compared to the $176 million recorded in FY 2023.\n- NASA recorded a total estimated liability for the end-of-life disposal of PP&E of $60 million in FY 2024.\n- This was an increase of $1 million over the $59 million recorded in FY 2023.\n- The documented target reliability for the International Space Station (ISS) decommissioning approach is 99 percent.\n\n[a65-t2 | nasa-fy-2024-afr.pdf | page 65 | In accordance with guidance issued by FASAB, if an agency is required by Federal]\nliabilities as of September 30, 2024 and 2023 were as follows:\nRestoration Projects\nNASA recorded a total estimated liability for known restoration projects of $2.112 billion in FY 2024. This was an\n\nincrease of $42 million from $2.070 billion recorded in FY 2023. The increase in this liability is primarily due to\nthe availability of new or updated information on the extent of contamination and refinements to the estimation\nmethodology. The liability for each restoration project is estimated for a duration of no more than 30 years, except\nwhere required by state statutes, regulations, or an agreement.\nIn addition to the probable cleanup costs for known hazardous conditions recognized in the financial statements, there\nare other remediation sites where the likelihood of required cleanup for known hazardous conditions is reasonably\n(IN MILLIONS)\n2024\n2023\nEnvironmental Liabilities\nRestoration Projects\n$ 2,112\n$ 2,070\nAsbestos\nEnd of Life Disposal of Property, Plant, and Equipment\nTotal Environmental and Disposal Liabilities\n$ 2,353\n$ 2,305\nUnfunded Environmental Liabilities (Note 8)\n$ 2,266\n$ 2,184\nFunded Environmental Liabilities\nTotal Environmental and Disposal Liabilities\n\n[a65-t1 | nasa-fy-2024-afr.pdf | page 65 | In accordance with guidance issued by FASAB, if an agency is required by Federal]\nestimated, a liability is recorded in the financial statements. If the likelihood\nof required cleanup is reasonably possible, the estimated cost of cleanup is disclosed in the notes to the financial\n\nstatements. If the likelihood of required cleanup is remote, no liability or estimate is recorded or disclosed.\nEnvironmental and Disposal Liabilities Represent Cleanup Costs Resulting From:\n•\tOperations, including facilities obtained from other governmental entities, that have resulted in contamination from\nwaste disposal methods, leaks and spills;\n•\tOther past activity that created a public health or environmental risk, including identifiable costs associated with\nasbestos abatement; and\n•\tTotal cleanup costs associated with the removal, containment, and/or disposal of hazardous wastes or material and/or\nproperty at permanent or temporary closure or shutdown of associated PP&E.\nEnvironmental and disposal liabilities as of September 30, 2024 and 2023 were as follows:\nRestoration Projects\nNASA recorded a total estimated liability for known restoration projects of $2.112 billion in FY 2024. This was an\n\n[a31-v0 | nasa-fy-2024-afr.pdf | page 31 | CHARTS]\nVISUAL CONTENT of page 31 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | FINANCIAL PERFORMANCE)\nCHARTS:\n- Liabilities by Type Comparison for FY 2024 and FY 2023: stacked bar chart, units in millions, legend includes Pensions and Post-Employment Benefits Payable, Advances from Others and Deferred Revenue, Federal Employee Salary, Leave and Benefits Payable, Other Liabilities, Other Accrued Liabilities, Accounts Payable, Environmental and Disposal Liabilities.\n  - 2024 Total: $7,664 Total\n    - Environmental and Disposal Liabilities: $2,353\n    - Accounts Payable: $1,775\n    - Other Accrued Liabilities: $1,902\n    - Other Liabilities: $1,046\n    - Federal Employee Salary, Leave and Benefits Payable: $348\n    - Advances from Others and Deferred Revenue: $214\n    - Pensions and Post-Employment Benefits Payable: $26\n  - 2023 Total: $6,719 Total\n    - Environmental and Disposal Liabilities: $2,305\n    - Accounts Payable: $1,766\n    - Other Accrued Liabilities: $1,793\n    - Other Liabilities: $302\n    - Federal Employee Salary, Leave and Benefits Payable: $288\n    - Advances from Others and Deferred Revenue: $238\n    - Pensions and Post-Employment Benefits Payable: $27\n- Liabilities by Type FY 2024: donut chart / pie chart, units in millions, center text TOTAL LIABILITIES $7,664.\n  - Environmental and Disposal Liabilities: 31%, $2,353\n  - Other Accrued Liabilities: 25%, $1,902\n  - Accounts Payable: 23%, $1,775\n  - Other Liabilities: 14%, $1,046\n  - Federal Employee Salary, Leave and Benefits Payable: 4%, $348\n  - Advances from Others and Deferred Revenue: 3%, $214\n  - Pensions and Post-Employment Benefits Payable: Less Than 1%, $26\n\n[a65-tab2 | nasa-fy-2024-afr.pdf | page 65 | In accordance with guidance issued by FASAB, if an agency is required by Federal]\nTABLE on page 65: In accordance with guidance issued by FASAB, if an agency is required by Federal\n| (IN MILLIONS) | 2024 | 2023 |\n|---|---|---|\n| Environmental Liabilities Restoration Projects $ 2,112 $ 2,070 Asbestos 181 176 End of Life Disposal of Property, Plant, and Equipment 60 59 Total Environmental and Disposal Liabilities $ 2,353 $ 2,305 Unfunded Environmental Liabilities (Note 8) $ 2,266 $ 2,184 Funded Environmental Liabilities 87 121 Total Environmental and Disposal Liabilities $ 2,353 $ 2,305 |  |  |\n|  | $ 2,353 | $ 2,305 |",
+  "context_chars": 8358,
+  "n_searches": 3,
+  "prompt_tokens": 8608,
+  "output_tokens": 582,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.5,
+  "cost_usd": 0.001094,
+  "latency_s": 18.37,
+  "cited_pages": [
+   31,
+   65,
+   66
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AD15",
+  "split": "dev",
+  "group": "text",
+  "question": "Through compliance with which two laws does NASA demonstrate stewardship of its resources and accountability for results?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "NASA demonstrates stewardship of its resources and accountability for results through compliance with the Chief Financial Officers Act of 1990 (CFO Act) and the Government Performance and Results Act Modernization Act of 2010 (GPRAMA) [a9-t1].",
+  "citations": [
+   "a9-t1"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "stewardship of its resources and accountability for results compliance with which two laws",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1703.9,
+    "results": [
+     {
+      "id": "a9-t1",
+      "rank": 1,
+      "score": 3.021477,
+      "page": 9
+     },
+     {
+      "id": "a93-t1",
+      "rank": 2,
+      "score": -3.789805,
+      "page": 93
+     },
+     {
+      "id": "a41-t0",
+      "rank": 3,
+      "score": -4.440268,
+      "page": 41
+     },
+     {
+      "id": "a85-t1",
+      "rank": 4,
+      "score": -5.046034,
+      "page": 85
+     },
+     {
+      "id": "a37-t1",
+      "rank": 5,
+      "score": -5.095623,
+      "page": 37
+     }
+    ],
+    "admitted": [
+     "a9-t1",
+     "a93-t1",
+     "a41-t0",
+     "a85-t1",
+     "a37-t1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "invalid_citations",
+    "answer": "NASA demonstrates stewardship of its resources and accountability for results through compliance with the Chief Financial Officers Act of 1990 (CFO Act) and the Government Performance and Results Act Modernization Act of 2010 (GPRAMA).",
+    "citations": [
+     "a9-t1"
+    ],
+    "bad": [
+     "a9-t1"
+    ]
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a9-t1"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a9-t1",
+   "a93-t1",
+   "a41-t0",
+   "a85-t1",
+   "a37-t1"
+  ],
+  "context": "[a9-t1 | nasa-fy-2024-afr.pdf | page 9 | Welcome to NASA]\nersity, equity, inclusion, and accessibility (DEIA) in the fields of science and technology.\nNASA’s achievements of tomorrow are being built on a solid foundation of fiscal operations and performance\n\nmanagement. Through the rigorous application of controls and standards, we ensure that our programs and\nprojects have the resources they need to continue this forward momentum. We use credible, quality data to drive\nAgency decision-making and planning. NASA is transparent in these efforts, complying fully with requirements on\naccountability and performance management.\nNASA demonstrates stewardship of its resources and accountability for results through compliance with the Chief\nFinancial Officers Act of 1990 (CFO Act)1 and the Government Performance and Results Act Modernization Act of\n2010 (GPRAMA)2. Financial aspects of the Agency’s business operations are accounted for according to U.S. Generally\nAccepted Accounting Principles (GAAP). GAAP, for Federal entities, are the standards prescribed by the Federal\nAccounting Standards Advisory Board (FASAB).\nIn this report, NASA presents both performance and financial results of operations by Strategic Goals as identified in\n\n[a93-t1 | nasa-fy-2024-afr.pdf | page 93 | the design and operating effectiveness of the internal control system as part of]\nfree of\nmaterial misstatement, we performed tests of its compliance with certain provisions of laws,\nregulations, contracts and grant agreements as well as the requirements referred to in the Federal\n\nFinancial Management Improvement Act of 1996 (FFMIA), noncompliance with which could\nhave a direct and material effect on the financial statements. However, providing an opinion on\ncompliance with those provisions was not an objective of our audit, and accordingly, we do not\nexpress such an opinion. The results of our tests disclosed no instances of noncompliance or other\nmatters that are required to be reported under Government Auditing Standards and the provisions\nof OMB Bulletin No. 24-02 and disclosed no instances of noncompliance in which NASA’s\nfinancial management systems did not substantially comply with the Section 803(a) requirements\nof FFMIA.\nNASA’s Response to Findings\nGovernment Auditing Standards requires the auditor to perform limited procedures on NASA’s\nresponse to the findings identified in our audit and described previously. NASA’s response was\nnot subjected to the other auditing procedures applied in the audit of the financial statements and\n\n[a41-t0 | nasa-fy-2024-afr.pdf | page 41 | Administrator's Statement of Assurance]\nNOVEMBER 15, 2024\nAdministrator's Statement of Assurance\nManagement Assurances\nNational Aeronautics and Space Administration (NASA) management is responsible for establishing and\nmaintaining an effective system of internal control to support reliable financial reporting and effective and\nefficient programmatic operations. Accordingly, NASA conducted its Fiscal Year (FY) 2024 annual assessment\nof the effectiveness of management’s internal controls for compliance with applicable laws, regulations, and\npolicies; the Federal Managers’ Financial Integrity Act (FMFIA); Federal Financial Management Improvement\nAct (FFMIA); the Office of Management and Budget’s (OMB) Circular A-123, Management’s Responsibility\nfor Enterprise Risk Management and Internal Control; the United States (U.S.) Government Accountability\nOffice’s Standards for Internal Controls in the Federal Government, and NASA policies. Based on the results of\nthe assessment, NASA can provide reasonable assurance that internal control over operations, reporting, and\ncompliance were operating effectively as of September 30, 2024, except for a material weakness associated with\n\n[a85-t1 | nasa-fy-2024-afr.pdf | page 85 | Letter from the Inspector General on Audit]\nnion means the financial statements present fairly, in all material\nrespects, the financial position and results of NASA’s operations in conformity with U.S. generally\naccepted accounting principles.\n\nEY also reported on NASA’s internal control over financial reporting and compliance with laws and\nregulations for FY 2024 (see Enclosure 2). For FY 2024, EY reported no instances of significant\nnoncompliance with applicable laws and regulations but did identify one material weakness in internal\ncontrol related to financial reporting oversight.\nEY is responsible for their enclosed reports, dated November 15, 2024, and the conclusions expressed\ntherein. We do not express an opinion on NASA’s financial statements, conclusions about the\neffectiveness of internal control over financial reporting, or conclusions on compliance with certain laws\nand regulations, including but not limited to the Federal Financial Management Improvement Act\nof 1996.\nCONTINUED ON THE NEXT PAGE →\n\n[a37-t1 | nasa-fy-2024-afr.pdf | page 37 | Internal Control Framework]\nims to\nprovide reasonable assurance that internal controls are operating effectively to ensure efficient operations, reliable\nfinancial reporting, and compliance with applicable laws and regulations.\n\nAn effective system of internal control is at the core of NASA fulfilling its mission and meeting its objectives while\nsafeguarding governmental resources. NASA's management is responsible for implementing internal control activities\nthat support the organization in meeting established objectives.\nNASA complies with the Office of Management and Budget’s (OMB) Circular A-1232, Management’s Responsibility for\nEnterprise Risk Management and Internal Control, which provides Government-wide requirements for internal control\nand accountability, based on the FMFIA. OMB Circular A-123 also requires agencies to establish internal controls over\noperations, reporting, and compliance.\nNASA assesses internal control across the Agency at various levels of the organization to ensure significant risks are\nidentified, and related internal controls that address those risks are evaluated. NASA assesses the effectiveness of the",
+  "context_chars": 6038,
+  "n_searches": 1,
+  "prompt_tokens": 4464,
+  "output_tokens": 183,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.24,
+  "cost_usd": 0.00052,
+  "latency_s": 12.81,
+  "cited_pages": [
+   9
+  ],
+  "eval_context_pages_ok": true,
+  "eval_cited_pages_ok": true
+ },
+ {
+  "query_id": "AE01",
+  "split": "dev",
+  "group": "no_evidence",
+  "question": "How many civil service employees work at Stennis Space Center?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Based on the NASA FY 2024 Agency Financial Report, Stennis Space Center's civil service employees are included in the \"Other\" category (which totals 675 employees, or 4%), as individual employee counts for Stennis Space Center are not broken out separately [a13-t0].",
+  "citations": [
+   "a13-t0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Stennis Space Center civil service employees",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1765.7,
+    "results": [
+     {
+      "id": "a11-t2",
+      "rank": 1,
+      "score": -0.121406,
+      "page": 11
+     },
+     {
+      "id": "a125-t1",
+      "rank": 2,
+      "score": -0.532607,
+      "page": 125
+     },
+     {
+      "id": "a125-v0.1",
+      "rank": 3,
+      "score": -1.246879,
+      "page": 125
+     },
+     {
+      "id": "a11-t1",
+      "rank": 4,
+      "score": -2.192093,
+      "page": 11
+     },
+     {
+      "id": "a11-v0",
+      "rank": 5,
+      "score": -3.080613,
+      "page": 11
+     }
+    ],
+    "admitted": [
+     "a11-t2",
+     "a125-t1",
+     "a125-v0.1",
+     "a11-t1",
+     "a11-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Stennis Space Center employees civil service",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1824.7,
+    "results": [
+     {
+      "id": "a125-t1",
+      "rank": 1,
+      "score": -0.935631,
+      "page": 125
+     },
+     {
+      "id": "a11-t2",
+      "rank": 2,
+      "score": -1.010597,
+      "page": 11
+     },
+     {
+      "id": "a125-v0.1",
+      "rank": 3,
+      "score": -1.726682,
+      "page": 125
+     },
+     {
+      "id": "a11-t1",
+      "rank": 4,
+      "score": -2.535011,
+      "page": 11
+     },
+     {
+      "id": "a13-v0",
+      "rank": 5,
+      "score": -3.075545,
+      "page": 13
+     }
+    ],
+    "admitted": [
+     "a13-v0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Stennis Space Center workforce civil service employees",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1779.5,
+    "results": [
+     {
+      "id": "a11-t2",
+      "rank": 1,
+      "score": -1.502897,
+      "page": 11
+     },
+     {
+      "id": "a125-t1",
+      "rank": 2,
+      "score": -1.636205,
+      "page": 125
+     },
+     {
+      "id": "a13-t0",
+      "rank": 3,
+      "score": -2.158945,
+      "page": 13
+     },
+     {
+      "id": "a13-v0",
+      "rank": 4,
+      "score": -2.377136,
+      "page": 13
+     },
+     {
+      "id": "a125-v0.1",
+      "rank": 5,
+      "score": -2.687659,
+      "page": 125
+     }
+    ],
+    "admitted": [
+     "a13-t0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "a13-t0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "a11-t2",
+   "a125-t1",
+   "a125-v0.1",
+   "a11-t1",
+   "a11-v0",
+   "a13-v0",
+   "a13-t0"
+  ],
+  "context": "[a11-t2 | nasa-fy-2024-afr.pdf | page 11 | Organizational Structure]\ny Research\nCenter\nMarshall Space\nFlight Center\nStennis Space\nCenter\nAmes Research\nCenter\nArmstrong Flight\nResearch Center\nGlenn Research\nCenter\nGoddard Space\nFlight Center\nJet Propulsion\nLaboratory**\n\nChief Scientist/Senior\nClimate Advisor\nChief, Safety &\nMission Assurance\nAdministrator\nDeputy Administrator\nAssociate Administrator\nChief Engineer\nChief Health &\nMedical Officer\nExploration Systems\nDevelopment Mission\nDirectorate\n5 The Agency’s organization structure, roles, and responsibilities are described in NASA Policy Directive 1000.3E, NASA Organization\nhttps://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&c=1000&s=3E\nChief Financial\nOfficer\nChief Information\nOfficer\n\n[a125-t1 | nasa-fy-2024-afr.pdf | page 125 | NASA Procedural Requirements]\nNA\nRibonucleic Acid\nS\nSAT\nSenior Assessment Team\nSBR\nStatement of Budgetary Resources\nSES\nSenior Executive Service\nSFD\nSustainable Flight Demonstration\nSFFAS\nStatement of Federal Financial Accounting\n\nStandards\nSLS\nSpace Launch System\nSM\nService Module\nSMD\nScience Mission Directorate\nSNC\nStatement of Net Cost\nSoA\nStatement of Assurance\nSPHEREx\nSpectro-Photometer for the History of the\nUniverse, Epoch of Reionization and Ices\nExplorer\nSRR\nSystem Requirements Review\nSSC\nStennis Space Center\nSTEM\nScience, Technology, Engineering, and\nMathematics\nSTMD\nSpace Technology Mission Directorate\nSTRIVE\nStratosphere Troposphere Response using\nInfrared Vertically-Resolved Light Explorer\nT\nTAGSAM\nTouch-and-Go-Sample-Acquisition-\nMechanism\nTEAM II\nTeams Engaging Affiliated Museums and\nInformal Institutions\nTMF\nTechnology Modernization Fund\nU\nU.S.\nUnited States\nU.S.C\nUnited States Code\nUESC\nUtility Energy Service Contract\nULDB\nUltra-Long Duration Balloon\nUNICORN\nUnified Comprehensive Operational Risk\nNetwork\nUSDV\nUnited States Deorbit Vehicle\nUSSGL\nUnited States Standard General Ledger\nV\nVCLS Demo 2\nVenture-Class Launch Services Demonstration 2\nVIPer\nVolume of Integrated Performance\nX\nxEVAS\n\n[a125-v0.1 | nasa-fy-2024-afr.pdf | page 125 | TABLES]\nVISUAL CONTENT of page 125 (PAGE TITLE: APPENDIX GLOSSARY OF ACRONYMS)\nand Ices Explorer |\n| SRR | System Requirements Review |\n| SSC | Stennis Space Center |\n| STEM | Science, Technology, Engineering, and Mathematics |\n\n| STMD | Space Technology Mission Directorate |\n| STRIVE | Stratosphere Troposphere Response using Infrared Vertically-Resolved Light Explorer |\n| TAGSAM | Touch-and-Go-Sample-Acquisition-Mechanism |\n| TEAM II | Teams Engaging Affiliated Museums and Informal Institutions |\n| TMF | Technology Modernization Fund |\n| U.S. | United States |\n| U.S.C | United States Code |\n| UESC | Utility Energy Service Contract |\n| ULDB | Ultra-Long Duration Balloon |\n| UNICORN | Unified Comprehensive Operational Risk Network |\n| USDV | United States Deorbit Vehicle |\n| USSGL | United States Standard General Ledger |\n| VCLS Demo 2 | Venture-Class Launch Services Demonstration 2 |\n| VIPer | Volume of Integrated Performance |\n| xEVAS | Exploration Extravehicular Activity Services |\n\n[a11-t1 | nasa-fy-2024-afr.pdf | page 11 | Organizational Structure]\noversight by the NASA Office of JPL\nManagement and Oversight\nDotted lines indicate independent advisory or oversight organizations\nNASA Advisory Council (NAC) | Aerospace Safety Advisory Panel (ASAP)\n\nNASA’s Headquarters, located in Washington, DC, provides the overall guidance and direction to the Agency under the\nleadership of the Administrator. A skilled and diverse group of technical and business professionals conduct day-to-day\nactivities throughout our nine Centers and multiple unique facilities.\nInspector General\nAdvisory Groups—\nNAC & ASAP\nDiversity & Equal\nOpportunity\nSmall Business\nPrograms\nSTEM\nEngagement\nCommunications\nInternational\n& Interagency\nRelations\nGeneral Counsel\nLegislative &\nIntergovernmental\nAffairs\nAeronautics Research\nMission Directorate\nScience Mission\nDirectorate\nSpace Operations\nMission Directorate\nSpace Technology\nMission Directorate\nMission Support\nDirectorate\nOffice of Technology,\nPolicy and Strategy\nJohnson Space\nCenter\nKennedy Space\nCenter\nLangley Research\nCenter\nMarshall Space\nFlight Center\nStennis Space\nCenter\nAmes Research\nCenter\nArmstrong Flight\nResearch Center\nGlenn Research\nCenter\nGoddard Space\nFlight Center\nJet Propulsion\nLaboratory**\n\n[a11-v0 | nasa-fy-2024-afr.pdf | page 11 | DIAGRAMS]\nVISUAL CONTENT of page 11 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS | WELCOME TO NASA\nOrganizational Structure)\nDIAGRAMS:\nTop Center Box:\n- Administrator\n- Deputy Administrator\n- Associate Administrator\n\nLeft side boxes connected to top leadership or via dotted lines:\n- Advisory Groups—NAC & ASAP (connected with dotted lines)\n- Inspector General (connected with dotted lines)\n- Chief Financial Officer\n- Chief Information Officer\n\nRight side box connected to top leadership:\n- Office of Technology, Policy and Strategy\n\nLeft side vertical branch (underneath top leadership):\n- Diversity & Equal Opportunity\n- Small Business Programs\n- STEM Engagement\n- Communications\n- International & Interagency Relations\n- Legislative & Intergovernmental Affairs\n- General Counsel\n\nMission Directorates (middle column below leadership):\n- Aeronautics Research Mission Directorate\n- Exploration Systems Development Mission Directorate\n- Science Mission Directorate\n- Space Operations Mission Directorate\n- Space Technology Mission Directorate\n- Mission Support Directorate\n\nTechnical/Assurance leadership boxes (right of mission directorates):\n- Chief Engineer\n- Chief Health & Medical Officer\n- Chief, Safety & Mission Assurance\n- Chief Scientist/Senior Climate Advisor\n\nNASA Centers (far right column):\n- Ames Research Center\n- Armstrong Flight Research Center\n- Glenn Research Center\n- Goddard Space Flight Center\n- Jet Propulsion Laboratory**\n- Johnson Space Center\n- Kennedy Space Center\n- Langley Research Center\n- Marshall Space Flight Center\n- Stennis Space Center\n\nLegend Box (\"LEGEND\"):\n- **JET PROPULSION LABORATORY (JPL) is a Federally Funded Research and Development Center (FFRDC) managed by the California Institute of Technology (Caltech) with oversight by the NASA Office of JPL Management and Oversight\n- Dotted lines indicate independent advisory or oversight organizations\n\n[a13-v0 | nasa-fy-2024-afr.pdf | page 13 | CHARTS]\nVISUAL CONTENT of page 13 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS WELCOME TO NASA / NASA by the Numbers)\nCHARTS:\n- FY 2024 BUDGET\n  - Chart Type: Breakdown list / summary cards\n  - Units: Billions of Dollars ($)\n  - Categories and Values:\n    - Research, Engineering, & Development: $13.3B (54%)\n    - Operations: $9.0B (36%)\n    - Grants: $1.3B (5%\n    - Facilities and Equipment: $1.3B (5%)\n- NASA’S CIVIL SERVICE WORKFORCE BY CENTER\n  - Chart Type: Breakdown list / summary cards\n  - Units: Number of Employees\n  - Categories and Values:\n    - Johnson Space Center (JSC): 3,229 (18%)\n    - Goddard Space Flight Center (GSFC): 3,180 (17%)\n    - Marshall Space Flight Center (MSFC): 2,345 (13%)\n    - Kennedy Space Center (KSC): 2,104 (11%)\n    - Langley Research Center (LaRC): 1,848 (10%)\n    - NASA Headquarters (HQ): 1,744 (9%)\n    - Glenn Research Center (GRC): 1,471 (8%)\n    - Ames Research Center (ARC): 1,327 (7%)\n    - Other: 675 (4%)\n    - Armstrong Flight Research Center (AFRC): 552 (3%)\n\n[a13-t0 | nasa-fy-2024-afr.pdf | page 13 | NASA by the Numbers]\nNASA by the Numbers\nMANAGEMENT’S DISCUSSION AND ANALYSIS\nWELCOME TO NASA\nNOTE:\nThe $24.9 billion includes $4.5 million of funds transferred\nfrom General Services Administration (GSA) for Technology\nModernization Fund (TMF) investment award.\nFY 2024 BUDGET\n$24.9 Billion\n$13.3B\n(54%)\nResearch, Engineering, &\nDevelopment\n$9.0B\n(36%)\nOperations\n$1.3B\n(5%)\nGrants\n$1.3B\n(5%)\nFacilities and Equipment\nNASA’S CIVIL SERVICE WORKFORCE BY CENTER\n18,475 Employees\n3,229 (18%)\nJohnson Space Center\n(JSC)\n3,180 (17%)\nGoddard Space Flight\nCenter (GSFC)\n2,345 (13%)\nMarshall Space Flight\nCenter (MSFC)\n2,104 (11%)\nKennedy Space Center\n(KSC)\n1,848 (10%)\nLangley Research Center\n(LaRC)\n1,744 (9%)\nNASA Headquarters\n(HQ)\n1,471 (8%)\nGlenn Research Center\n(GRC)\n1,327 (7%)\nAmes Research Center\n(ARC)\n675 (4%)\nOther\n552 (3%)\nArmstrong Flight Research\nCenter (AFRC)\nLanding science on the Moon, demonstrating quiet supersonic aircraft, and launching\ntwo new Earth climate satellites, plus a mission to Europa, one of Jupiter's icy moons,\nare just a FEW of the milestones we have planned for 2024. (December 27, 2023)\nLEARN MORE →\nDid You Know?\nS C A N  M E",
+  "context_chars": 8533,
+  "n_searches": 3,
+  "prompt_tokens": 8400,
+  "output_tokens": 157,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 2.99,
+  "cost_usd": 0.000903,
+  "latency_s": 18.15,
+  "cited_pages": [
+   13
+  ],
+  "eval_context_pages_ok": null,
+  "eval_cited_pages_ok": null
+ },
+ {
+  "query_id": "AE02",
+  "split": "dev",
+  "group": "no_evidence",
+  "question": "What was NASA's enacted FY 2025 budget?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "FY 2025 enacted budget",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2124.6,
+    "results": [
+     {
+      "id": "a70-v1",
+      "rank": 1,
+      "score": 5.800762,
+      "page": 70
+     },
+     {
+      "id": "a70-t0",
+      "rank": 2,
+      "score": 5.795931,
+      "page": 70
+     },
+     {
+      "id": "a70-tab2",
+      "rank": 3,
+      "score": 4.627476,
+      "page": 70
+     },
+     {
+      "id": "a70-tab4",
+      "rank": 4,
+      "score": 4.050565,
+      "page": 70
+     },
+     {
+      "id": "a13-v2",
+      "rank": 5,
+      "score": 3.738431,
+      "page": 13
+     }
+    ],
+    "admitted": [
+     "a70-v1",
+     "a70-t0",
+     "a70-tab2",
+     "a70-tab4",
+     "a13-v2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "FY 2025 budget",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2130.0,
+    "results": [
+     {
+      "id": "a70-v1",
+      "rank": 1,
+      "score": 8.843795,
+      "page": 70
+     },
+     {
+      "id": "a70-t0",
+      "rank": 2,
+      "score": 8.276714,
+      "page": 70
+     },
+     {
+      "id": "a13-v2",
+      "rank": 3,
+      "score": 8.123303,
+      "page": 13
+     },
+     {
+      "id": "a70-tab2",
+      "rank": 4,
+      "score": 7.772588,
+      "page": 70
+     },
+     {
+      "id": "a70-tab4",
+      "rank": 5,
+      "score": 7.419368,
+      "page": 70
+     }
+    ],
+    "admitted": [],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "enacted FY 2025",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1378.5,
+    "results": [
+     {
+      "id": "a70-t0",
+      "rank": 1,
+      "score": 2.33072,
+      "page": 70
+     },
+     {
+      "id": "a70-v1",
+      "rank": 2,
+      "score": 1.755355,
+      "page": 70
+     },
+     {
+      "id": "a45-t3",
+      "rank": 3,
+      "score": 1.437015,
+      "page": 45
+     },
+     {
+      "id": "a45-t4",
+      "rank": 4,
+      "score": 1.227733,
+      "page": 45
+     },
+     {
+      "id": "a23-t1",
+      "rank": 5,
+      "score": 0.572222,
+      "page": 23
+     }
+    ],
+    "admitted": [
+     "a45-t3",
+     "a45-t4",
+     "a23-t1"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "abstain",
+    "reason": "The provided document (NASA FY 2024 Agency Financial Report) does not contain information about NASA's enacted FY 2025 budget."
+   }
+  ],
+  "context_ids": [
+   "a70-v1",
+   "a70-t0",
+   "a70-tab2",
+   "a70-tab4",
+   "a13-v2",
+   "a45-t3",
+   "a45-t4",
+   "a23-t1"
+  ],
+  "context": "[a70-v1 | nasa-fy-2024-afr.pdf | page 70 | KEY FACTS]\nVISUAL CONTENT of page 70 (PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION)\nKEY FACTS:\n- The FY 2026 Budget of the United States Government (President's Budget) presents actual amounts for the year ended September 30, 2024.\n- NASA reconciled amounts of the FY 2023 column on the Statement of Budgetary Resources (SBR) to the actual amounts for FY 2023 in the FY 2025 President's Budget.\n- Underdelivered Orders at the end of the period totaled $12 billion as of September 30, 2024.\n- Underdelivered Orders at the end of the period totaled $13 billion as of September 30, 2023.\n- Total Undelivered Orders for 2024 equal $12,214 million.\n- Total Undelivered Orders for 2023 equal $12,909 million.\n\n[a70-t0 | nasa-fy-2024-afr.pdf | page 70 | The FY 2026 Budget of the United States Government (President’s Budget), which p]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nThe FY 2026 Budget of the United States Government (President’s Budget), which presents the actual amounts for the\nyear ended September 30, 2024, has not been published as of the issue date of these financial statements. The FY 2026\nBudget of the United States Government will be published on a later date at https://www.whitehouse.gov/omb/budget\n(Unaudited).\nNASA reconciled the amounts of the FY 2023 column on the Statement of Budgetary Resources (SBR) to the actual\namounts for FY 2023 in the FY 2025 President’s Budget for budgetary resources, new obligations, upward adjustments\n(total), distributed offsetting receipts, and net outlays as presented below.\nUndelivered Orders represent the amount of goods and/or services ordered to perform NASA’s mission objectives,\nwhich have not been received. Undelivered Orders at the end of the period totaled $12 billion as of September 30, 2024\nand $13 billion as of September 30, 2023.\n(IN MILLIONS)\nTOTAL\nBUDGETARY\nRESOURCES\nNEW OBLIGATIONS &\nUPWARD ADJUSTMENTS\n(TOTAL)\nDISTRIBUTED\nOFFSETTING\nRECEIPTS\nNET OUTLAYS\nCombined Statement of Budgetary Resources\n\n[a70-tab2 | nasa-fy-2024-afr.pdf | page 70 | The FY 2026 Budget of the United States Government (President’s Budget), which p]\nTABLE on page 70: The FY 2026 Budget of the United States Government (President’s Budget), which p\n| (IN MILLIONS) | TOTAL BUDGETARY RESOURCES | NEW OBLIGATIONS & UPWARD ADJUSTMENTS (TOTAL) | DISTRIBUTED OFFSETTING RECEIPTS | NET OUTLAYS |\n|---|---|---|---|---|\n| Combined Statement of Budgetary Resources $ 30,923 $ 28,276 $ (7) $ 25,326 Included on SBR, not in President’s Budget Expired Accounts (318) (142) — — Distributed Offsetting Receipts — — 7 — Budget of the United States Government $ 30,605 $ 28,134 $ — $ 25,326 |  |  |  |  |\n|  | $ 30,605 | $ 28,134 | $ — | $ 25,326 |\n\n[a70-tab4 | nasa-fy-2024-afr.pdf | page 70 | The FY 2026 Budget of the United States Government (President’s Budget), which p]\nTABLE on page 70: The FY 2026 Budget of the United States Government (President’s Budget), which p\n| (IN MILLIONS) | 2024 | 2023 |\n|---|---|---|\n| Federal Unpaid $ 601 $ 706 Paid 212 101 Total 813 807 Nonfederal Unpaid $ 11,355 $ 12,076 Paid 46 26 Total 11,401 12,102 Total Undelivered Orders $ 12,214 $ 12,909 |  |  |\n|  | $ 12,214 | $ 12,909 |\n\n[a13-v2 | nasa-fy-2024-afr.pdf | page 13 | KEY FACTS]\nVISUAL CONTENT of page 13 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS WELCOME TO NASA / NASA by the Numbers)\nKEY FACTS:\n- FY 2024 budget: $24.9 billion\n- Research, Engineering, & Development budget: $13.3 billion (54%)\n- Operations budget: $9.0 billion (36%)\n- Grants budget: $1.3 billion (5%)\n- Facilities and Equipment budget: $1.3 billion (5%)\n- The $24.9 billion includes $4.5 million of funds transferred from General Services Administration (GSA) for Technology Modernization Fund (TMF) investment award.\n- NASA's civil service workforce: 18,475 employees\n\n[a45-t3 | nasa-fy-2024-afr.pdf | page 45 | 2025 and Beyond (CONTINUED)]\ngrants, cooperative agreements, data accessibility, civil rights compliance,\nand accessibility to limited-English populations. EO 14091, which was released February 16, 2023, formally annualized the\n\nEquity Action Plan process. The 2023 Equity Action Plan builds on the success on the 2022 plan by providing strategies for\nensuring more individuals can work and learn from NASA. NASA also published the Agency’s FY 2022-2026 Diversity Equity\nInclusion and Accessibility (DEIA) Strategic Plan in FY 2022, outlining the Agency’s goals to increase workforce diversity,\nworkforce equity and inclusion, workforce accessibility and inclusion, and integrating DEIA into the NASA mission.\nContinuing with the theme of reducing barriers, the Agency is continuing its Full Workforce Barrier Analysis in FY 2025 to\nfurther explore potential underlying causes of barriers for four key identities: race/ethnicity, gender, disability status, and\nmembers of the LGBTQIA+ community. NASA will utilize the insights obtained through this barrier analysis to formulate\nequitable workforce policies. More information on this barrier analysis can be found in the FY 2025 Annual Evaluation Plan\n\n[a45-t4 | nasa-fy-2024-afr.pdf | page 45 | 2025 and Beyond (CONTINUED)]\nill utilize the insights obtained through this barrier analysis to formulate\nequitable workforce policies. More information on this barrier analysis can be found in the FY 2025 Annual Evaluation Plan\n\ncontained within the FY 2025 VIPer.\nAddressing NASA’s outdated infrastructure and facilities has been a constant challenge with the majority of NASA facilities\nbeyond their original design life. Furthermore, as of September 2024, the Agency’s list of construction repairs is at an estimated\n$5.4 billion and its recapitalization liability has grown to an estimated $9 billion. To address these concerns, NASA’s Office of\nStrategic Infrastructure finalized its Master Plan for the Agency's facilities in early FY 2024. This plan will continue to guide\nNASA's strategy for resource allocation, construction, demolition, and other areas critical to maintaining facilities and assets in\nthe coming fiscal years.\nContinuing to develop the next generation of explorers remains one of NASA’s priorities, achieved through engagement\nwith meaningful learning experiences for students and interns. To better improve how NASA builds a diverse future science,\n\n[a23-t1 | nasa-fy-2024-afr.pdf | page 23 | Goals in Strategic Objective 1.1 were combined to create the 1.1.3 Agency Priori]\nr is resulting in a delay to the mission Critical Design Review (CDR) and associated\nslips to the instrument CDRs, which are now scheduled for early FY 2025. The Interstellar Mapping and Acceleration\n\nProbe (IMAP) project’s delivery of at least one instrument is now expected to be delayed beyond FY 2024. Assembly\nand testing of the Payloads and Research Investigations on the Surface of the Moon (PRISM)-1b will not be achieved in\nFY 2024, as completion of the Farside Seismic Suite has been delayed to FY 2025. Although multiple milestones are at\nrisk, the other six are on track or complete including the Europa Clipper pre-ship review and the delivery of the Nancy\nGrace Roman Space Telescope’s spacecraft to Outer Barrel Assembly.\nPerformance Goal 4.1.2, which focuses on decreasing the percentage of negative rating on NASA Federal Employee\nViewpoint Survey (FEVS) DEIA index, was also rated Red. The goal to achieve a Green rating was to keep the index\nrating at 88 percent or above, and the FY 2024 data has shown an index rating of 84.1 percent.\nFY 2024 Performance Assessment (CONTINUED)\nDid You Know?",
+  "context_chars": 7632,
+  "n_searches": 3,
+  "prompt_tokens": 7492,
+  "output_tokens": 114,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 2.84,
+  "cost_usd": 0.000795,
+  "latency_s": 17.87,
+  "abstain_reason": "The provided document (NASA FY 2024 Agency Financial Report) does not contain information about NASA's enacted FY 2025 budget.",
+  "cited_pages": [],
+  "eval_context_pages_ok": null,
+  "eval_cited_pages_ok": null
+ },
+ {
+  "query_id": "AE03",
+  "split": "dev",
+  "group": "no_evidence",
+  "question": "What is the annual salary of the NASA Administrator?",
+  "config": "X3_rerank_vis",
+  "method": "hybrid_rerank",
+  "types": [
+   "text",
+   "table",
+   "visual"
+  ],
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "inspect": false,
+  "model": "gemini-3.5-flash-lite",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "NASA Administrator annual salary",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 2306.5,
+    "results": [
+     {
+      "id": "a41-t0",
+      "rank": 1,
+      "score": 2.270374,
+      "page": 41
+     },
+     {
+      "id": "a38-t1",
+      "rank": 2,
+      "score": 0.909951,
+      "page": 38
+     },
+     {
+      "id": "a41-v0",
+      "rank": 3,
+      "score": 0.535977,
+      "page": 41
+     },
+     {
+      "id": "a64-tab3",
+      "rank": 4,
+      "score": -0.415764,
+      "page": 64
+     },
+     {
+      "id": "a99-t2",
+      "rank": 5,
+      "score": -0.496031,
+      "page": 99
+     }
+    ],
+    "admitted": [
+     "a41-t0",
+     "a38-t1",
+     "a41-v0",
+     "a64-tab3",
+     "a99-t2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rerank",
+    "query": "Administrator salary OR compensation OR pay",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 1710.9,
+    "results": [
+     {
+      "id": "a58-t2",
+      "rank": 1,
+      "score": -4.334055,
+      "page": 58
+     },
+     {
+      "id": "a58-t0",
+      "rank": 2,
+      "score": -6.859166,
+      "page": 58
+     },
+     {
+      "id": "a76-t3",
+      "rank": 3,
+      "score": -7.046298,
+      "page": 76
+     },
+     {
+      "id": "a31-v0",
+      "rank": 4,
+      "score": -7.087948,
+      "page": 31
+     },
+     {
+      "id": "a31-t2",
+      "rank": 5,
+      "score": -7.474204,
+      "page": 31
+     }
+    ],
+    "admitted": [
+     "a58-t2",
+     "a58-t0"
+    ],
+    "skipped_budget": [
+     "a76-t3",
+     "a31-v0",
+     "a31-t2"
+    ]
+   },
+   {
+    "event": "abstain",
+    "reason": "The provided document (NASA FY 2024 Agency Financial Report) does not contain information about the annual salary of the NASA Administrator."
+   }
+  ],
+  "context_ids": [
+   "a41-t0",
+   "a38-t1",
+   "a41-v0",
+   "a64-tab3",
+   "a99-t2",
+   "a58-t2",
+   "a58-t0"
+  ],
+  "context": "[a41-t0 | nasa-fy-2024-afr.pdf | page 41 | Administrator's Statement of Assurance]\nNOVEMBER 15, 2024\nAdministrator's Statement of Assurance\nManagement Assurances\nNational Aeronautics and Space Administration (NASA) management is responsible for establishing and\nmaintaining an effective system of internal control to support reliable financial reporting and effective and\nefficient programmatic operations. Accordingly, NASA conducted its Fiscal Year (FY) 2024 annual assessment\nof the effectiveness of management’s internal controls for compliance with applicable laws, regulations, and\npolicies; the Federal Managers’ Financial Integrity Act (FMFIA); Federal Financial Management Improvement\nAct (FFMIA); the Office of Management and Budget’s (OMB) Circular A-123, Management’s Responsibility\nfor Enterprise Risk Management and Internal Control; the United States (U.S.) Government Accountability\nOffice’s Standards for Internal Controls in the Federal Government, and NASA policies. Based on the results of\nthe assessment, NASA can provide reasonable assurance that internal control over operations, reporting, and\ncompliance were operating effectively as of September 30, 2024, except for a material weakness associated with\n\n[a38-t1 | nasa-fy-2024-afr.pdf | page 38 | NASA Federal Managers' Financial Integrity Act Annual Statement of Assurance Pro]\nr relevant\nsources of information. NASA’s executive leadership provides annual reporting and certifications on the effectiveness of\ninternal controls that are implemented to meet intended objectives.\n\nIn addition, the NASA Office of the Chief Financial Officer (OCFO) implements an extensive annual assessment\nmethodology and internal control testing techniques that evaluate internal controls over financial reporting.\nIn its execution of the Administrator’s Statement of Assurance\n(SoA) Process, NASA considers Enterprise Risk Management\n(ERM) Program activities, including reviews of the Agency\nRisk and Fraud Risk Profiles, to inform the evaluation of and\nprovide assurance over internal controls.\nThe FMFIA assurance statement is based on self-certifications\nsubmitted by NASA Officials-in-Charge that ultimately support\nthe Administrator’s SoA as well as a review of various internal\nand external sources of information. The self-certifications\nare based upon organizational self-assessments guided by\nthe Government Accountability Office’s (GAO) Standards for\nInternal Control in the Federal Government (known as the\nGreen Book). The self-certifications and subsequent reviews\n\n[a41-v0 | nasa-fy-2024-afr.pdf | page 41 | KEY FACTS]\nVISUAL CONTENT of page 41 (PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS: ANALYSIS OF SYSTEMS, CONTROLS, AND LEGAL COMPLIANCE\nManagement Assurances)\nKEY FACTS:\n- NOVEMBER 15, 2024: Administrator’s Statement of Assurance.\n- National Aeronautics and Space Administration (NASA) management is responsible for establishing and maintaining an effective system of internal control to support reliable financial reporting and effective and efficient programmatic operations.\n- For Fiscal Year (FY) 2024, NASA conducted its annual assessment in accordance with FMFIA, OMB Circular A-123, and GAO Standards for Internal Control in the Federal Government.\n- NASA can provide reasonable assurance that internal control over operations, reporting, and compliance were operating effectively as of September 30, 2024, except for a material weakness associated with specific financial controls.\n- The controls were designed appropriately, but did not operate effectively, increasing the risk of a material misstatement on the Agency financial statements.\n- NASA complies with FMFIA and OMB requirements to evaluate and assure the reliability of internal controls over its financial management systems, and complies with Federal financial management system requirements, and assures reliability of its Digital Accountability and Transparency Act of 2014 submissions.\n- FMFIA requires agencies to have financial management systems that substantially comply with Federal financial management system requirements, Federal Accounting Standards, and the U.S. Government Standard General Ledger at the transaction level. NASA's financial management systems substantially comply with FMFIA as of September 30, 2024.\n- Signed by Bill Nelson, Administrator.\n\n[a64-tab3 | nasa-fy-2024-afr.pdf | page 64 | NASA’s Other Assets consist of lessor lease receivables, which represent amounts]\nTABLE on page 64: NASA’s Other Assets consist of lessor lease receivables, which represent amounts\n| (IN MILLIONS) | 2024 | 2023 |\n|---|---|---|\n| Intragovernmental Liabilities: Other Liabilities $ 30 $ 58 Total Intragovernmental Liabilities 30 58 Federal Employee Salary, Leave and Benefits Payable 281 275 Pensions and Post-Employment Benefits Payable 26 27 Environmental and Disposal Liabilities (Note 9) 2,266 2,184 Other Liabilities 833 99 Total Liabilities Not Covered by Budgetary Resources $ 3,436 $ 2,643 Total Liabilities Covered by Budgetary Resources $ 4,203 $ 4,048 Total Liabilities Not Requiring Budgetary Resources $ 25 $ 28 Total Liabilities $ 7,664 $ 6,719 |  |  |\n|  | $ 7,664 | $ 6,719 |\n\n[a99-t2 | nasa-fy-2024-afr.pdf | page 99 | Agency Response to OIG Report on NASA’s Top]\nd innovation in\nspace science, human exploration, and aerospace technology.  NASA recognizes the inherent\nchallenges of managing large, complex, often first-of-their-kind space flight and aeronautics\n\nprograms and has worked over many years to improve policies and processes that control\ncost and schedule while ensuring safety and mission success.\nThe Chief Program Management Officer (CPMO)—a position established in the Office of\nthe Administrator in 2022—is revitalizing NASA’s project management community through\nvarious activities that include the annual project management symposium co-sponsored with\nthe NASA Chief Knowledge Officer, the rollout of the NASA Project Management Network\ncommunity of practice, and greater degrees of cross-Agency collaboration to improve and\nstreamline program and project governing policies and tailoring processes.  In addition, the\nCPMO assumed the Chair of the Program and Project Management Board and enhanced its\nNovember 5, 2024\nOTHER INFORMATION\nAGENCY RESPONSE TO OIG REPORT ON NASA’S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\nCONTINUED ON THE NEXT PAGE →\n\n[a58-t2 | nasa-fy-2024-afr.pdf | page 58 | Liabilities Not Covered by Budgetary Resources]\nloyees hired January 1, 2013, and after, NASA contributes 18.4 percent of gross pay.\nThe Agency also contributes 1.0 percent to a thrift savings plan (contribution plan) for each employee and matches\n\nemployee contributions to this plan up to an additional 4.0 percent of gross pay.\nFederal Employees’ Compensation Act\nA liability is recorded for workers’ compensation claims related to the Federal Employees’ Compensation Act (FECA),\nadministered by the U.S. Department of Labor. FECA provides income and medical cost protection to covered\nFederal civilian employees injured on the job, employees who have incurred a work-related occupational disease,\nand beneficiaries of employees whose death is attributable to a job-related injury or occupational disease. The FECA\nprogram initially pays valid claims and subsequently seeks reimbursement from the Federal agencies employing the\nclaimants. The FECA liability includes the actuarial liability for estimated future costs of death benefits, workers’\ncompensation, medical and miscellaneous costs for approved compensation cases.\nPublic-Private Partnerships (P3)\n\n[a58-t0 | nasa-fy-2024-afr.pdf | page 58 | Liabilities Not Covered by Budgetary Resources]\nFINANCIAL SECTION\nFINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\nLiabilities Not Covered by Budgetary Resources\nLiabilities Not Covered by Budgetary Resources include future environmental cleanup liability, legal claims, other\nretirement benefits, workers’ compensation, annual leave, unearned lease revenue, and lease liability. Liabilities not\ncovered by budgetary resources require future congressional action whereas liabilities covered by budgetary resources\nreflect prior congressional action. Liabilities that do not require the use of budgetary resources are covered by monetary\nassets that are not budgetary resources to the entity.\nFederal Employee Salary, Leave and Benefits Payable\nAnnual, Sick and Other Leave\nAnnual leave is accrued as it is earned; the accrual is reduced as leave is taken. Each year, the balance in the accrued\nannual leave account is adjusted to reflect current pay rates. To the extent current or prior year appropriations are not\navailable to fund annual leave earned but not taken, funding will be obtained from future financing sources. Sick leave\nand other types of non-vested leave are expensed as taken.\nInsurance Benefits",
+  "context_chars": 8841,
+  "n_searches": 2,
+  "prompt_tokens": 5221,
+  "output_tokens": 82,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.88,
+  "cost_usd": 0.000555,
+  "latency_s": 13.78,
+  "abstain_reason": "The provided document (NASA FY 2024 Agency Financial Report) does not contain information about the annual salary of the NASA Administrator.",
+  "cited_pages": [],
+  "eval_context_pages_ok": null,
+  "eval_cited_pages_ok": null
+ }
+]

@@ -1,0 +1,8 @@
+{
+ "page": 2,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: None\n\nPHOTOS:\n- The Artemis II crew, NASA astronauts Reid Wiseman, left, Victor Glover, Christina Koch, and Canadian Space Agency (CSA) astronaut Jeremy Hansen, right, pose for a group photograph with White House staff after a briefing, Thursday, June 6, 2024, at the Eisenhower Executive Office Building in Washington. Photo credit - Bill Ingalls.\n- NASA astronaut Andre Douglas wears AR (Augmented Reality) display technology during a nighttime advanced technology run in the San Francisco Volcanic Field in Northern Arizona on May 21, 2024. The monocular lens consists of a pico-projector and waveguide optical element to focus an image for crew to see their real world overlaid with digital information. These unique near-eye form factors may be used to improve the usability and minimally impact the complex biomechanics of working in a pressurized suit environment. Photo credit - NASA/Josh Valcarcel.\n\nKEY FACTS:\n- Date of group photograph: Thursday, June 6, 2024.\n- Location of group photograph: Eisenhower Executive Office Building in Washington.\n- Artemis II crew: NASA astronauts Reid Wiseman, Victor Glover, Christina Koch, and Canadian Space Agency (CSA) astronaut Jeremy Hansen.\n- Date of nighttime advanced technology run: May 21, 2024.\n- Location of nighttime advanced technology run: San Francisco Volcanic Field in Northern Arizona.\n- Astronaut wearing AR display technology: NASA astronaut Andre Douglas.",
+ "prompt_tokens": 1351,
+ "output_tokens": 312,
+ "latency_s": 4.03
+}

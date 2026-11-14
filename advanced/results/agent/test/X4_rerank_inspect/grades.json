@@ -1,0 +1,182 @@
+[
+ {
+  "query_id": "AT01",
+  "group": "table",
+  "pass": true,
+  "reason": "$17,186M / $17,378M match balance sheet p50 (checked on original)."
+ },
+ {
+  "query_id": "AT02",
+  "group": "table",
+  "pass": true,
+  "reason": "$1,090M / $904M; inspected p51, matches original."
+ },
+ {
+  "query_id": "AT03",
+  "group": "table",
+  "pass": true,
+  "reason": "$27,170M vs $28,276M, decrease $1,106M computed correctly; p53."
+ },
+ {
+  "query_id": "AT04",
+  "group": "table",
+  "pass": true,
+  "reason": "Deficiencies in Financial Reporting Oversight Controls, 0 / 1 / 1; p96 table."
+ },
+ {
+  "query_id": "AT05",
+  "group": "table",
+  "pass": true,
+  "reason": "2 instruments, $183 thousand (unit correct); p115 table (text extraction was garbled; answer verified on page image)."
+ },
+ {
+  "query_id": "AT06",
+  "group": "table",
+  "pass": true,
+  "reason": "Firm-Fixed-Price 31%, Cost-Plus-Award-Fee 28%; p110."
+ },
+ {
+  "query_id": "AT07",
+  "group": "image",
+  "pass": true,
+  "reason": "Advisory Groups NAC & ASAP + Inspector General; legend meaning correct; inspected p11 org chart."
+ },
+ {
+  "query_id": "AT08",
+  "group": "image",
+  "pass": true,
+  "reason": "All five risk categories in order; p39 Figure 2."
+ },
+ {
+  "query_id": "AT09",
+  "group": "image",
+  "pass": true,
+  "reason": "4 / 12 / 50; p15 framework graphic."
+ },
+ {
+  "query_id": "AT10",
+  "group": "image",
+  "pass": true,
+  "reason": "Jeremy Hansen, right; p2 photo caption."
+ },
+ {
+  "query_id": "AT11",
+  "group": "image",
+  "pass": true,
+  "reason": "Europa Clipper + habitability question; p12 photo caption."
+ },
+ {
+  "query_id": "AT12",
+  "group": "chart",
+  "pass": true,
+  "reason": "$9,331M / $8,651M; p30 chart (cited generated visual chunk; values verified on original)."
+ },
+ {
+  "query_id": "AT13",
+  "group": "chart",
+  "pass": true,
+  "reason": "Goal 2, 44%, $10,920M; p32 donut."
+ },
+ {
+  "query_id": "AT14",
+  "group": "chart",
+  "pass": false,
+  "reason": "FAIL: original p22 shows SG3 FY2024 = 10 green + 1 yellow (Below Target). Answer says 0 Below Target and 1 Significantly Below: the Gemini page description (a22-v0) mislabelled the yellow segment as red and the agent repeated it even after inspect_page."
+ },
+ {
+  "query_id": "AT15",
+  "group": "chart",
+  "pass": true,
+  "reason": "SLS $2,719M / $2,555M; p33 chart."
+ },
+ {
+  "query_id": "AT16",
+  "group": "chart",
+  "pass": true,
+  "reason": "JSC 3,229, 18%; p13."
+ },
+ {
+  "query_id": "AT17",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Decrease $224M (8,262 -> 8,038) + DISCOVER; p51 + p16."
+ },
+ {
+  "query_id": "AT18",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Goal 2 $10,920M (p32) + objectives 2.1-2.4 with exact titles cited from p17, the budget-by-objective table, which contains the same objective titles as p16 (verified in original) -> valid evidence although not the listed page."
+ },
+ {
+  "query_id": "AT19",
+  "group": "multihop",
+  "pass": true,
+  "reason": "12 (p22 SG4 FY2024 green = 12, verified on original) + ADVANCE and goal statement (p16)."
+ },
+ {
+  "query_id": "AT20",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Ernst & Young (p85) + material weakness in financial reporting oversight controls; supported by auditor report p92 (heading 'Material Weakness in Financial Reporting Oversight Controls', $254M accrual misstatement) instead of p96 summary table; all claims verified."
+ },
+ {
+  "query_id": "AT21",
+  "group": "text",
+  "pass": true,
+  "reason": "SFFAS 54 Leases business process; p30."
+ },
+ {
+  "query_id": "AT22",
+  "group": "text",
+  "pass": true,
+  "reason": "ARMO within HQ Office of Safety and Mission Assurance; p39."
+ },
+ {
+  "query_id": "AT23",
+  "group": "text",
+  "pass": true,
+  "reason": "Oct 1, 1958, National Aeronautics and Space Act of 1958, NACA; p54."
+ },
+ {
+  "query_id": "AT24",
+  "group": "text",
+  "pass": false,
+  "reason": "FAIL (incomplete): gives SBR figures ($27,170M obligated of $30,051M; $2,881M unobligated) but never states that the remaining ~$3B may still be obligated until the funds' periods of availability expire (p34); p34 not retrieved/cited."
+ },
+ {
+  "query_id": "AU01",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained; no Hubble data."
+ },
+ {
+  "query_id": "AU02",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained; reason mentions JPL staffing composition from p73 but makes no headcount claim."
+ },
+ {
+  "query_id": "AU03",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained."
+ },
+ {
+  "query_id": "AU04",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained."
+ },
+ {
+  "query_id": "AU05",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained; correctly notes Webb is mentioned without cost."
+ },
+ {
+  "query_id": "AU06",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained; only FY2023/2024 data."
+ }
+]

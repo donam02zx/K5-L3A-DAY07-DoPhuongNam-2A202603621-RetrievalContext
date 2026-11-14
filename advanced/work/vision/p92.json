@@ -1,0 +1,8 @@
+{
+ "page": 92,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | INDEPENDENT AUDITORS' REPORT\n\nKEY FACTS:\n- An audit identified a material weakness in financial reporting oversight controls at NASA.\n- A routine accrual for contract costs was posted to the financial management system in an amount that misstated the accounts payable line item by $254 million.\n- The posting for the September accrual was not corrected until November 2024.\n- Government Accountability Office (GAO) Standards of Internal Control for the Federal Government Principle 12 relates to Implement Control Activities.\n- Principle 16 relates to Perform Monitoring Procedures.",
+ "prompt_tokens": 1352,
+ "output_tokens": 127,
+ "latency_s": 1.7
+}

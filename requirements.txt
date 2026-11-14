@@ -1,0 +1,10 @@
+# Day 7 Agentic RAG. Python 3.11+ (tested on 3.14).
+# torch CPU wheel: pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+sentence-transformers==6.3.0
+psycopg[binary]==3.3.8
+pgvector==0.5.1
+numpy==2.5.4
+python-dotenv>=1,<2
+google-genai>=1,<2
+rank-bm25==0.2.2

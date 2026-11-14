@@ -1,0 +1,8 @@
+{
+ "page": 73,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n\nKEY FACTS:\n- The value of NASA’s Caltech contract for FY 2024 was $3 billion.\n- Caltech has managed JPL as a NASA FFRDC since 1959.\n- Note 17 is titled \"Reclassification of Financial Statement Line Items for Financial Report Compilation Process\".\n- References the Financial Report of the United States Government for the Fiscal Years Ended September 30, 2023, and 2022 (treasury.gov).\n- Page number at bottom: 72.",
+ "prompt_tokens": 1352,
+ "output_tokens": 136,
+ "latency_s": 1.63
+}

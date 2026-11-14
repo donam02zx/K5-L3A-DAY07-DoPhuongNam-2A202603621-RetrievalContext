@@ -1,0 +1,8 @@
+{
+ "page": 4,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: NASA COMMEMORATES 55TH ANNIVERSARY OF APOLLO 11 MOON LANDING\n\nPHOTOS: Apollo astronaut Buzz Aldrin poses for a photograph beside the deployed United States flag during an Apollo 11 moonwalk on July 20, 1969. The Lunar Module is on the left, and the footprints of the astronauts are clearly visible in the soil of the moon. Photo credit: NASA\n\nKEY FACTS:\n- The agency celebrated the 55th anniversary of the first astronauts landing on the Moon with a variety of in-person, virtual, and engagement activities nationwide between Monday, July 15, and Thursday, July 25.\n- Events honored America’s vision and technology that enabled the Apollo 11 crewed lunar landing on July 20, 1969.",
+ "prompt_tokens": 1351,
+ "output_tokens": 177,
+ "latency_s": 3.23
+}

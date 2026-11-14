@@ -1,0 +1,8 @@
+{
+ "page": 109,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION / AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHANGES\n\nKEY FACTS:\n- In June 2023, the Office of the Chief Information Officer filled the Chief Data Officer (CDO) position.\n- In May 2024, NASA formalized and appointed the Chief Artificial Intelligence Officer (CAIO).\n- The CDO is drafting the fiscal year (FY) 2025 – FY 2027 NASA Data Strategy.\n- The CAIO co-sponsored a \"Summer of AI\" campaign that reached more than 4,000 unique participants across 40 events over the span of three months.",
+ "prompt_tokens": 1353,
+ "output_tokens": 144,
+ "latency_s": 1.64
+}

@@ -1,0 +1,8 @@
+{
+ "page": 6,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Message from the Administrator\n\nDIAGRAMS:\n- NASA’s Major Themes and Strategic Goals box:\n  - DISCOVER: Expand human knowledge through new scientific discoveries.\n  - EXPLORE: Extend human presence to the Moon and on towards Mars for sustainable long-term exploration, development, and utilization.\n  - INNOVATE: Catalyze economic growth and drive innovation to address national challenges.\n  - ADVANCE: Enhance capabilities and operations to catalyze current and future mission success.\n\nKEY FACTS:\n- Fiscal Year (FY) 2024 Agency Financial Report (AFR) for NASA.\n- Unmodified \"clean\" audit opinion on its 2024 financial statements for the 14th consecutive year.\n- NASA will continue to operate the ISS through 2030.\n- Report date: November 15, 2024.",
+ "prompt_tokens": 1351,
+ "output_tokens": 188,
+ "latency_s": 2.35
+}

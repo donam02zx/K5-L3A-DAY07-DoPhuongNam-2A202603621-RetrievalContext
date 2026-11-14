@@ -1,0 +1,8 @@
+{
+ "page": 36,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS\nAnalysis of Systems, Controls, and Legal Compliance\n\nPHOTOS: JAXA's (Japan Aerospace Exploration Agency) free-flying robotic camera, also known as the JEM (Japanese Experiment Module) Internal Ball Camera 2, is pictured during a technology demonstration inside the Kibo laboratory module. The Internal Ball Camera 2 is being tested for its ability to autonomously maneuver and navigate aboard the International Space Station while photographing and videotaping crew activities.\nPHOTO CREDIT: NASA Johnson, February 27, 2024",
+ "prompt_tokens": 1352,
+ "output_tokens": 116,
+ "latency_s": 2.56
+}

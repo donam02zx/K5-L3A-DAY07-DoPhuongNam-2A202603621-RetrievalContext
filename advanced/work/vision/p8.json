@@ -1,0 +1,8 @@
+{
+ "page": 8,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: SECTION 1 Management's Discussion and Analysis\n\nPHOTOS: A 3D printer creating a NASA insignia out of green powder (GRX-810 superalloy) under a laser.\nPHOTO CREDIT: NASA/Jordan Salkin, May 11, 2024\n\nKEY FACTS:\n- NASA is licensing its invention GRX-810 to four American companies.\n- GRX-810 is a 3D-printable high-temperature material for stronger, more durable airplane and spacecraft parts.",
+ "prompt_tokens": 1351,
+ "output_tokens": 114,
+ "latency_s": 2.34
+}

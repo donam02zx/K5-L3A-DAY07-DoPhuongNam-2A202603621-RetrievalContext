@@ -1,0 +1,15 @@
+{
+ "pages": 127,
+ "chunks": 672,
+ "by_type": {
+  "text": 377,
+  "visual": 241,
+  "table": 54
+ },
+ "embedding_model": "BAAI/bge-small-en-v1.5",
+ "dim": 384,
+ "max_seq_length": 512,
+ "chunks_over_max_tokens": 14,
+ "pages_without_vision": [],
+ "build_seconds": 63.8
+}

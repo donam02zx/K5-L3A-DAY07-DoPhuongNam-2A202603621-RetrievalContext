@@ -1,0 +1,8 @@
+{
+ "page": 68,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n11 NOTE 11\nLeases\n\nTABLES:\nTitle: None (Lessee liability schedule)\nUnits: (IN MILLIONS)\nColumns: FY | PRINCIPAL | INTEREST | TOTAL LIABILITY\nRow 1: 2025 | $ 3 | $ 1 | $ 4\nRow 2: 2026 | 4 | 1 | 5\nRow 3: 2027 | 4 | 1 | 5\nRow 4: 2028 | 3 | 1 | 4\nRow 5: 2029 | 3 | — | 3\nRow 6: 2030-34 | 7 | — | 7\nRow 7: Total | $ 24 | $ 4 | $ 28\n\nTitle: None (Intragovernmental lease arrangements annual expense)\nUnits: (IN MILLIONS)\nColumns: ASSET CLASS | ANNUAL EXPENSE\nRow 1: Buildings/Other Structures | $ 38\nRow 2: Total | $ 38\n\nKEY FACTS:\n- In FY 2024, NASA applied the provisions of SFFAS 54, Leases.\n- NASA recognized $5.4 million of annual lease expense in FY 2024 associated with leases under SFFAS 54 as a lessee.\n- Interest/discount rates based on Treasury marketable securities used for lessee arrangements ranged from 4.69% to 4.88%.\n- NASA recognized $48.6 million of annual lease revenue in FY 2024 associated with leases under SFFAS 54 as a lessor.\n- Interest/discount rates for lessor arrangements ranged from 1.7% to 8.35%.",
+ "prompt_tokens": 1352,
+ "output_tokens": 407,
+ "latency_s": 2.14
+}

@@ -1,0 +1,8 @@
+{
+ "page": 116,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Climate-Related Financial Risk\n\nPHOTOS:\n- A NASA DC-8 aircraft in flight against a mountainous background with snow-covered peaks.\n- Caption: The DC-8 aircraft completed its last mission, ASIA-AQ, which collected detailed air quality data over several locations in Asia to improve the understanding of local air quality in collaboration with local scientists, air quality agencies, and government partners. PHOTO CREDIT – NASA/Carla Thomas, January 24, 2024.\n- An image of the \"THIRD ROCK AMERICA'S SPACE STATION\" logo featuring headphones and audio waves, accompanying the \"Welcome to NASA's Third Rock Radio\" text box.\n\nKEY FACTS:\n- Climate variability and climate change have important impacts on NASA's ability to fulfill its mission.\n- NASA recognizes its unique role in end-to-end Earth System Science.\n- The Climate Adaptation Plan (CAP) provides NASA's vision for adapting to climate change effects on mission, facilities, infrastructure, natural lands, and other assets.\n- The 2024-2027 NASA Climate Adaptation Plan is available at www.sustainability.gov/pdfs/nasa-2024-cap.pdf.\n- The 2022 NASA Sustainability Plan is available at www.sustainability.gov/pdfs/nasa-2022-sustainability-plan.pdf.\n- NASA's Third Rock Radio was launched in 2011 and is produced and published by Houston-based RFC Media LLC.",
+ "prompt_tokens": 1353,
+ "output_tokens": 321,
+ "latency_s": 2.59
+}

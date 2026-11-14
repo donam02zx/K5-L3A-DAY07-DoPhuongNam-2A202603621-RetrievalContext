@@ -1,0 +1,8 @@
+{
+ "page": 110,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION / AGENCY RESPONSE TO OIG REPORT ON NASA’S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nTABLES:\n### Instrument Type and Percentage of Total Obligations\n\n| Instrument Type | Percentage of Total Obligations |\n| :--- | :--- |\n| Firm-Fixed-Price | 31% |\n| Cost-Plus-Award-Fee | 28% |\n| Cost-Plus-Fixed-Fee | 23% |\n| Cost-Plus-Incentive-Fee | 6% |\n| Grant | 6% |\n| Other * | 6% |\n\n* includes Cost-No-Fee, Fixed-Price-Award-Fee, and Time-and-Materials\n\nKEY FACTS:\n- In FY 2024, Firm-Fixed-Price instruments accounted for 31% of total obligations.\n- Cost-Plus-Award-Fee instruments accounted for 28% of total obligations in FY 2024.\n- Cost-Plus-Fixed-Fee instruments accounted for 23% of total obligations in FY 2024.\n- Cost-Plus-Incentive-Fee instruments accounted for 6% of total obligations in FY 2024.\n- Grants accounted for 6% of total obligations in FY 2024.\n- Other instruments accounted for 6% of total obligations in FY 2024.\n- NASA developed a new Peer Review policy (comparable to the Department of Defense peer review process) for review of actions valued over $1 billion.",
+ "prompt_tokens": 1353,
+ "output_tokens": 335,
+ "latency_s": 2.16
+}

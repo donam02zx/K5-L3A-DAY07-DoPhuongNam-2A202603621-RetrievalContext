@@ -1,0 +1,199 @@
+[
+ {
+  "query_id": "q01",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q02",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q04",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q07",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Stage + git commit --amend; p11-c0 (p11-c1 describes what --amend does)."
+ },
+ {
+  "query_id": "q08",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q09",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q10",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Fast-forward, no divergent work; p13-c6 (p13-c10 contrasts with three-way merge)."
+ },
+ {
+  "query_id": "q11",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q12",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Four protocols; p24-c0 (p24-c8 describes the two HTTP modes)."
+ },
+ {
+  "query_id": "q13",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "'avoids recursivity'; p8-c18 retrieved by hybrid with fixed validator run."
+ },
+ {
+  "query_id": "q14",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "q15",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Non-fast-forward merge commit; p32-c10 (and p31-c16) support."
+ },
+ {
+  "query_id": "q16",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "t01",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "t02",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Both commands given; p11-c4/p11-c5 (reset HEAD hint) and p11-c12 (restore --staged) support."
+ },
+ {
+  "query_id": "t03",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "t04",
+  "answer_grade": 2,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Collaborators via Settings > Collaborators > Add collaborator; p32-c4 + p32-c5 (steps) support."
+ },
+ {
+  "query_id": "t05",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "t06",
+  "answer_grade": 2,
+  "citation_support": [
+   true
+  ],
+  "reason": "Correct and complete; every cited chunk read and supports the answer."
+ },
+ {
+  "query_id": "u01",
+  "citation_support": [],
+  "abstention_correct": true,
+  "reason": "Abstained after searching; topic absent."
+ },
+ {
+  "query_id": "u02",
+  "citation_support": [],
+  "abstention_correct": true,
+  "reason": "Abstained after searching; topic absent."
+ },
+ {
+  "query_id": "u03",
+  "citation_support": [],
+  "abstention_correct": true,
+  "reason": "Abstained after searching; topic absent."
+ }
+]

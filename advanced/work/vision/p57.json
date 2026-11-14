@@ -1,0 +1,8 @@
+{
+ "page": 57,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n01 NOTE 1 Reporting Entity and Summary of Significant Accounting Policies (CONTINUED)\n\nKEY FACTS:\n- Property, Plant, and Equipment (PP&E) are capitalized assets with acquisition costs of $500,000 or more, and a useful life of two years or more.\n- Capitalized costs for internal use software include the full costs incurred during the software development stage only.\n- For internal use software, NASA capitalizes costs when the total projected cost is $1 million or more, and the expected useful life is two years or more.\n- In FY 2024, NASA implemented the requirements under SFFAS 54, Leases.\n- Under SFFAS 62, Transitional Amendment to SFFAS 54, NASA has elected the transitional accommodation related to \"embedded leases\" through September 30, 2026.",
+ "prompt_tokens": 1352,
+ "output_tokens": 204,
+ "latency_s": 1.63
+}

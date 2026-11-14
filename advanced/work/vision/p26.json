@@ -1,0 +1,8 @@
+{
+ "page": 26,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS STRATEGIC GOALS AND HIGHLIGHTS\n03 STRATEGIC GOAL III. INNOVATE\nCatalyze economic growth and drive innovation to address national challenges.\n\nPHOTOS:\n- Large satellite dish antenna (Deep Space Network) in an arid landscape. Caption: \"Capable of receiving both radio frequency and optical signals, the DSN’s hybrid antenna has tracked and decoded the downlink laser from DSOC, aboard NASA’s Psyche mission. An experimental antenna has received both radio frequency and near-infrared laser signals from NASA’s Psyche spacecraft as it travels through deep space. This shows it’s possible for the giant dish antennas of NASA’s Deep Space Network (DSN), which communicate with spacecraft via radio waves, to be retrofitted for optical, or laser, communications. By packing more data into transmissions, optical communication will enable new space exploration capabilities while supporting the DSN as demand on the network grows. Photo credit — NASA/JPL-Caltech\"\n\nKEY FACTS:\n- Strategic Goal 3 is supported by 11 Performance Goals.\n- 10 performance goals were rated Green and one was rated Yellow at the time of publication.\n- NASA creates over 1,000 new technologies.\n- In November 2023, the Deep Space Optical Communications (DSOC) achieved first light by sending and receiving optical data from far beyond the Moon.\n- In March 2024, the Low Boom Flight Demonstration (LBFD) X-59 completed its flight readiness review.\n- In January 2024, the Sustainable Flight Demonstration (SFD) project completed a system requirements review (SRR).",
+ "prompt_tokens": 1352,
+ "output_tokens": 356,
+ "latency_s": 3.08
+}

@@ -1,0 +1,8 @@
+{
+ "page": 108,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION / AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- NASA released NPR 8820.2H, Facility Project Requirements, on September 27, 2022.\n- In 2017, NASA began to analyze the Agency’s leasing policies, procedures, and practices regarding non-NASA entities (out-grants).\n- In 2020, NASA decided to centralize real estate functions across all Centers to OSI’s Facilities and Real Estate Division (OSI-FRED).\n- OSI-FRED completed updates to Title 14 of the Code of Federal Regulations (CFR) to serve as the guidelines for the Real Estate Contracting Officer program.\n- NASA estimates that centralizing real estate functions and updating the Enhanced Use Lease Program will reduce the time to complete a lease agreement by up to 50 percent.\n- NASA revised NPR 8820.2H in September 2024.\n- 14 CFR, “Aeronautics and Space,” Part 1204, “Administrative Authority and Policy,” Subpart 5, “Delegations and Designations.”\n- NPD 8800.14F, Policy for Real Estate Management (August 15, 2024) and NPR 8800.15F, Real Estate Management Program (October 8, 2024).",
+ "prompt_tokens": 1353,
+ "output_tokens": 314,
+ "latency_s": 1.99
+}

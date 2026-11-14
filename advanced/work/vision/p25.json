@@ -1,0 +1,8 @@
+{
+ "page": 25,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS STRATEGIC GOALS AND HIGHLIGHTS\nSTRATEGIC GOAL II. EXPLORE\nExtend human presence to the Moon and on towards Mars for sustainable long-term exploration, development, and utilization.\n\nPHOTOS:\n- The crew of NASA’s SpaceX Crew-8 mission to the International Space Station poses for a photo during their Crew Equipment Interface Test at NASA’s Kennedy Space Center in Florida. The goal of the training was to rehearse launch day activities and get a close look at the spacecraft that will take them to the International Space Station. Photo credit — SpaceX, January 12, 2024.\n\nKEY FACTS:\n- Strategic Goal 2 is supported by 10 Performance Goals.\n- Eight performance goals were rated Green, one was rated Yellow, and one was unrated at the time of publication.\n- Artemis II Space Launch System (SLS) Booster Segments were delivered to KSC earlier in the year.\n- Artemis II Crew Module (CM)/Service Module (SM) Vacuum Performance Testing completed in July 2024.\n- The Artemis III Booster Aft Skirts were ready for Acceptance Checkout (ACO) in July 2024.\n- SpaceX Crew-8 successfully launched March 2024.",
+ "prompt_tokens": 1352,
+ "output_tokens": 272,
+ "latency_s": 2.39
+}

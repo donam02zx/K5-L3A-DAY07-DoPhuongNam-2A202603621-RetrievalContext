@@ -1,0 +1,8 @@
+{
+ "page": 121,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: APPENDIX AWARDS: Celebrating NASA 10+ Years of Excellence\n\nPHOTOS:\n- Large group photo of NASA workforce and leadership posing together indoors, with NASA Administrator and officials seated in the front center.\n- Grid of 12 \"Best Places to Work\" award certificates for the years 2023 through 2012.\n- Image showing a line of 10 AGA \"Certificate of Excellence in Accountability Reporting (CEAR)\" crystal awards.\n- Image of an audit opinion document with a magnifying glass overlaid.\n\nKEY FACTS:\n- NASA has been named the \"Best Place to Work in the Federal Government\" among large agencies for 12 consecutive years, with #1 ranking since 2012.\n- NASA received its 10th Certificate of Excellence in Accountability Reporting (CEAR) Award for its FY 2023 AFR from AGA.\n- For the 13th consecutive year, NASA received an unmodified, or \"clean,\" opinion from the Independent Auditors on its FY 2023 financial statements.\n- Page number: 120.",
+ "prompt_tokens": 1353,
+ "output_tokens": 233,
+ "latency_s": 2.77
+}

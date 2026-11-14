@@ -1,0 +1,577 @@
+{
+ "summary": {
+  "method": "hybrid_rrf",
+  "split": "test",
+  "N": 8,
+  "top_k": 5,
+  "context_k": 3,
+  "budget_chars": 2400,
+  "filter": true,
+  "candidates": 20,
+  "hit1": 4,
+  "hit3": 6,
+  "hit5": 6,
+  "mrr": 0.625,
+  "context_hit": 6,
+  "avg_context_chars": 1942,
+  "median_latency_ms": 17.9,
+  "load_seconds": 0.0,
+  "cost_usd": 0.0,
+  "misses_at3": [
+   "n02",
+   "n08"
+  ]
+ },
+ "traces": [
+  {
+   "query_id": "n01",
+   "question": "How can I make a Git alias that runs an external program such as gitk instead of a Git subcommand?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p6-c2",
+     "score": 0.032787,
+     "page": 6,
+     "source": "book/02-git-basics/sections/aliases.asc",
+     "section": "Git Aliases",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p6-c0",
+     "score": 0.032002,
+     "page": 6,
+     "source": "book/02-git-basics/sections/aliases.asc",
+     "section": "Git Aliases",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p6-c1",
+     "score": 0.030777,
+     "page": 6,
+     "source": "book/02-git-basics/sections/aliases.asc",
+     "section": "Git Aliases",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p8-c29",
+     "score": 0.016129,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Viewing Your Staged and Unstaged Changes",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p32-c18",
+     "score": 0.015873,
+     "page": 32,
+     "source": "book/06-github/sections/3-maintaining.asc",
+     "section": "Pull Request Refs",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p6-c2"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p6-c2",
+    "p6-c0"
+   ],
+   "context_chars": 1552,
+   "context_hit": true,
+   "latency_ms": 21.2
+  },
+  {
+   "query_id": "n02",
+   "question": "What does running git init create inside the project directory?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p7-c1",
+     "score": 0.032258,
+     "page": 7,
+     "source": "book/02-git-basics/sections/getting-a-repository.asc",
+     "section": "Initializing a Repository in an Existing Directory",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p29-c5",
+     "score": 0.029469,
+     "page": 29,
+     "source": "book/05-distributed-git/sections/maintaining.asc",
+     "section": "Applying a Patch with `apply`",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p7-c6",
+     "score": 0.029236,
+     "page": 7,
+     "source": "book/02-git-basics/sections/getting-a-repository.asc",
+     "section": "Cloning an Existing Repository",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p8-c8",
+     "score": 0.029199,
+     "page": 8,
+     "source": "book/02-git-basics/sections/recording-changes.asc",
+     "section": "Tracking New Files",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p25-c2",
+     "score": 0.02886,
+     "page": 25,
+     "source": "book/04-git-server/sections/setting-up-server.asc",
+     "section": "Setting Up the Server",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p7-c2"
+   ],
+   "hit1": false,
+   "hit3": false,
+   "hit5": false,
+   "rr": 0.0,
+   "first_hit_rank": null,
+   "context_ids": [
+    "p7-c1",
+    "p29-c5",
+    "p7-c6"
+   ],
+   "context_chars": 2285,
+   "context_hit": false,
+   "latency_ms": 16.6
+  },
+  {
+   "query_id": "n03",
+   "question": "If I protect my SSH key with a passphrase, which ssh-keygen option should I add and why?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p19-c2",
+     "score": 0.032522,
+     "page": 19,
+     "source": "book/04-git-server/sections/generating-ssh-key.asc",
+     "section": "Generating Your SSH Public Key",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p19-c3",
+     "score": 0.032266,
+     "page": 19,
+     "source": "book/04-git-server/sections/generating-ssh-key.asc",
+     "section": "Generating Your SSH Public Key",
+     "hit": true
+    },
+    {
+     "rank": 3,
+     "id": "p30-c3",
+     "score": 0.031498,
+     "page": 30,
+     "source": "book/06-github/sections/1-setting-up-account.asc",
+     "section": "SSH Access",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p19-c1",
+     "score": 0.031281,
+     "page": 19,
+     "source": "book/04-git-server/sections/generating-ssh-key.asc",
+     "section": "Generating Your SSH Public Key",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p19-c0",
+     "score": 0.03031,
+     "page": 19,
+     "source": "book/04-git-server/sections/generating-ssh-key.asc",
+     "section": "Generating Your SSH Public Key",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p19-c3"
+   ],
+   "hit1": false,
+   "hit3": true,
+   "hit5": true,
+   "rr": 0.5,
+   "first_hit_rank": 2,
+   "context_ids": [
+    "p19-c2",
+    "p19-c3",
+    "p30-c3"
+   ],
+   "context_chars": 1959,
+   "context_hit": true,
+   "latency_ms": 21.9
+  },
+  {
+   "query_id": "n04",
+   "question": "On which port does git instaweb start its temporary web server?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p23-c1",
+     "score": 0.032522,
+     "page": 23,
+     "source": "book/04-git-server/sections/gitweb.asc",
+     "section": "GitWeb",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p24-c13",
+     "score": 0.030769,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "Dumb HTTP",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p23-c0",
+     "score": 0.030679,
+     "page": 23,
+     "source": "book/04-git-server/sections/gitweb.asc",
+     "section": "GitWeb",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p23-c2",
+     "score": 0.029572,
+     "page": 23,
+     "source": "book/04-git-server/sections/gitweb.asc",
+     "section": "GitWeb",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p24-c11",
+     "score": 0.029199,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "Dumb HTTP",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p23-c1"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p23-c1",
+    "p24-c13",
+    "p23-c0"
+   ],
+   "context_chars": 1968,
+   "context_hit": true,
+   "latency_ms": 16.6
+  },
+  {
+   "query_id": "n05",
+   "question": "With Smart HTTP, if the GIT_HTTP_EXPORT_ALL variable is left out, which repositories are served to unauthenticated clients?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p26-c0",
+     "score": 0.032522,
+     "page": 26,
+     "source": "book/04-git-server/sections/smart-http.asc",
+     "section": "Smart HTTP",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p26-c2",
+     "score": 0.032018,
+     "page": 26,
+     "source": "book/04-git-server/sections/smart-http.asc",
+     "section": "Smart HTTP",
+     "hit": true
+    },
+    {
+     "rank": 3,
+     "id": "p24-c11",
+     "score": 0.032002,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "Dumb HTTP",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p24-c8",
+     "score": 0.030579,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "The HTTP Protocols",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p24-c13",
+     "score": 0.029911,
+     "page": 24,
+     "source": "book/04-git-server/sections/protocols.asc",
+     "section": "Dumb HTTP",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p26-c2"
+   ],
+   "hit1": false,
+   "hit3": true,
+   "hit5": true,
+   "rr": 0.5,
+   "first_hit_rank": 2,
+   "context_ids": [
+    "p26-c0",
+    "p26-c2",
+    "p24-c11"
+   ],
+   "context_chars": 2264,
+   "context_hit": true,
+   "latency_ms": 19.1
+  },
+  {
+   "query_id": "n06",
+   "question": "How do I show only the commits from the last two weeks in the log?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p12-c16",
+     "score": 0.032787,
+     "page": 12,
+     "source": "book/02-git-basics/sections/viewing-history.asc",
+     "section": "Limiting Log Output",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p12-c19",
+     "score": 0.032258,
+     "page": 12,
+     "source": "book/02-git-basics/sections/viewing-history.asc",
+     "section": "Limiting Log Output",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p12-c13",
+     "score": 0.031746,
+     "page": 12,
+     "source": "book/02-git-basics/sections/viewing-history.asc",
+     "section": "Viewing the Commit History",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p12-c18",
+     "score": 0.03101,
+     "page": 12,
+     "source": "book/02-git-basics/sections/viewing-history.asc",
+     "section": "Limiting Log Output",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p12-c2",
+     "score": 0.03101,
+     "page": 12,
+     "source": "book/02-git-basics/sections/viewing-history.asc",
+     "section": "Viewing the Commit History",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p12-c16"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p12-c16",
+    "p12-c19"
+   ],
+   "context_chars": 1590,
+   "context_hit": true,
+   "latency_ms": 16.5
+  },
+  {
+   "query_id": "n07",
+   "question": "Under what condition is a GitHub organization free?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p33-c1",
+     "score": 0.032266,
+     "page": 33,
+     "source": "book/06-github/sections/4-managing-organization.asc",
+     "section": "Organization Basics",
+     "hit": true
+    },
+    {
+     "rank": 2,
+     "id": "p30-c1",
+     "score": 0.031099,
+     "page": 30,
+     "source": "book/06-github/sections/1-setting-up-account.asc",
+     "section": "Account Setup and Configuration",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p33-c0",
+     "score": 0.031054,
+     "page": 33,
+     "source": "book/06-github/sections/4-managing-organization.asc",
+     "section": "Managing an organization",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p30-c0",
+     "score": 0.030536,
+     "page": 30,
+     "source": "book/06-github/sections/1-setting-up-account.asc",
+     "section": "Account Setup and Configuration",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p33-c2",
+     "score": 0.030415,
+     "page": 33,
+     "source": "book/06-github/sections/4-managing-organization.asc",
+     "section": "Organization Basics",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p33-c1"
+   ],
+   "hit1": true,
+   "hit3": true,
+   "hit5": true,
+   "rr": 1.0,
+   "first_hit_rank": 1,
+   "context_ids": [
+    "p33-c1",
+    "p30-c1",
+    "p33-c0"
+   ],
+   "context_chars": 1770,
+   "context_hit": true,
+   "latency_ms": 18.7
+  },
+  {
+   "query_id": "n08",
+   "question": "When you clone a repository, what name does Git give the remote by default?",
+   "filter": null,
+   "method": "hybrid_rrf",
+   "results": [
+    {
+     "rank": 1,
+     "id": "p7-c4",
+     "score": 0.031545,
+     "page": 7,
+     "source": "book/02-git-basics/sections/getting-a-repository.asc",
+     "section": "Cloning an Existing Repository",
+     "hit": false
+    },
+    {
+     "rank": 2,
+     "id": "p17-c3",
+     "score": 0.030478,
+     "page": 17,
+     "source": "book/03-git-branching/sections/remote-branches.asc",
+     "section": "Remote Branches",
+     "hit": false
+    },
+    {
+     "rank": 3,
+     "id": "p9-c10",
+     "score": 0.030331,
+     "page": 9,
+     "source": "book/02-git-basics/sections/remotes.asc",
+     "section": "Fetching and Pulling from Your Remotes",
+     "hit": false
+    },
+    {
+     "rank": 4,
+     "id": "p9-c2",
+     "score": 0.028783,
+     "page": 9,
+     "source": "book/02-git-basics/sections/remotes.asc",
+     "section": "Showing Your Remotes",
+     "hit": false
+    },
+    {
+     "rank": 5,
+     "id": "p9-c6",
+     "score": 0.028309,
+     "page": 9,
+     "source": "book/02-git-basics/sections/remotes.asc",
+     "section": "Adding Remote Repositories",
+     "hit": false
+    }
+   ],
+   "gold_chunk_ids": [
+    "p17-c2"
+   ],
+   "hit1": false,
+   "hit3": false,
+   "hit5": false,
+   "rr": 0.0,
+   "first_hit_rank": null,
+   "context_ids": [
+    "p7-c4",
+    "p17-c3",
+    "p9-c10"
+   ],
+   "context_chars": 2147,
+   "context_hit": false,
+   "latency_ms": 17.1
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "page": 127,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: BACK COVER IMAGE\nA Moonlit Moonwalk\n\nPHOTOS:\n- What the photo shows: NASA astronaut Kate Rubins places a sample marker in the soil before collecting a sample during a nighttime simulated moonwalk in the San Francisco Volcanic Field in Northern Arizona on May 16, 2024. A sample marker provides a photographic reference point for science samples collected on the lunar surface.\n- Photo credit: NASA/Josh Valcarcel\n\nKEY FACTS:\n- Location: Mary W. Jackson NASA Headquarters, 300 E Street SW (Hidden Figures Way), Washington, DC 20546\n- Phone: (202) 358 - 0001\n- Website: NASA.GOV\n- Date of photo: May 16, 2024\n- Location of photo: San Francisco Volcanic Field in Northern Arizona",
+ "prompt_tokens": 1353,
+ "output_tokens": 187,
+ "latency_s": 2.84
+}

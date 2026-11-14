@@ -1,0 +1,8 @@
+{
+ "page": 76,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION - FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n18 NOTE 18 Public-Private Partnerships (CONTINUED)\n\nKEY FACTS:\n- NASA has entered into ESPCs and UESCs to procure energy savings and facility improvements.\n- Under these contracts, NASA retains additional cost savings and receives title to installed goods, equipment, and improvements.\n- ESPC and UESC contracts cannot exceed 25 years.\n- ESPC expected life based on contract terms ranges from 16 to 24 years.\n- UESC expected life based on contract terms ranges from 14 to 17 years.\n- ESPC and UESC repayments can be funded on an annual basis under OMB Memorandum M-98-13 and M-12-21.\n- ESPCs and UESCs can be terminated for convenience in part or in full, with NASA responsible for outstanding loan balances and early termination or payment fees.",
+ "prompt_tokens": 1352,
+ "output_tokens": 203,
+ "latency_s": 1.9
+}

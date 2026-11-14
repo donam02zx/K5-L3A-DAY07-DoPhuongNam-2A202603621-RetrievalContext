@@ -1,0 +1,8 @@
+{
+ "decided_on": "dev only, before any test run (2026-11-14)",
+ "criteria_in_order": ["grounded answer mean (manual)", "abstention correct on no-evidence", "false abstentions", "context evidence rate", "tokens/cost", "median latency"],
+ "selected": "D_hybrid_fix",
+ "baseline": "A_dense",
+ "reason": "D and E tie on dev quality (22/22 grade 2, 3/3 abstention, CtxEv 22/22); D uses fewer prompt tokens (68,810 vs 76,418) with a smaller context (top_k 3, budget 6000 chars). Both beat A/B/C, whose false abstentions came from the strict citation validator.",
+ "test_runs": ["A_dense", "D_hybrid_fix"]
+}

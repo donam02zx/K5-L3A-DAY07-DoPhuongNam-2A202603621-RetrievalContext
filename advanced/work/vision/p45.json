@@ -1,0 +1,8 @@
+{
+ "page": 45,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS FORWARD LOOKING / 2025 and Beyond (CONTINUED)\n\nCHARTS: none\n\nTABLES: none\n\nDIAGRAMS: none\n\nPHOTOS: none\n\nKEY FACTS:\n- NASA has a goal of transferring at least three technologies to small businesses by the end of FY 2025.\n- As of September 2024, NASA's list of construction repairs is at an estimated $5.4 billion.\n- NASA's recapitalization liability has grown to an estimated $9 billion.\n- NASA intends to award 30 Teams Engaging Affiliated Museums and Informal Institutions (TEAM II) Community Anchors and National Connectors over the next two fiscal years.",
+ "prompt_tokens": 1352,
+ "output_tokens": 155,
+ "latency_s": 2.03
+}

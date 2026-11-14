@@ -1,0 +1,8 @@
+{
+ "page": 42,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS: ANALYSIS OF SYSTEMS, CONTROLS, AND LEGAL COMPLIANCE\nFinancial Systems Strategies\n\nCHARTS: none\n\nTABLES: none\n\nDIAGRAMS: none\n\nPHOTOS: none\n\nKEY FACTS:\n- SAP ECC is NASA’s core financial system and functions as the central hub for the Agency’s business operations, with SAP ECC reaching its end-of-life in December 2027.\n- On October 30, 2023, President Biden signed an Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence (AI).\n- In response to the Executive Order, NASA appointed its first Chief Artificial Intelligence Officer on May 13, 2024.",
+ "prompt_tokens": 1352,
+ "output_tokens": 161,
+ "latency_s": 2.08
+}

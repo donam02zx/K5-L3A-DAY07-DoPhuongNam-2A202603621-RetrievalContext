@@ -1,0 +1,8 @@
+{
+ "page": 20,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Strategic Goals and Highlights\n\nPHOTOS:\n- A SpaceX Falcon Heavy rocket with the Psyche spacecraft onboard is launched from Launch Complex 39A, Friday, Oct. 13, 2023, at NASA's Kennedy Space Center in Florida. NASA's Psyche spacecraft will travel to a metal-rich asteroid by the same name orbiting the Sun between Mars and Jupiter to study its' composition. The spacecraft also carries the Agency's Deep Space Optical Communications technology demonstration, which will test laser communications beyond the Moon.\n- PHOTO CREDIT: NASA/Aubrey Gemignani\n\nKEY FACTS:\n- SpaceX Falcon Heavy rocket launched with the Psyche spacecraft onboard.\n- Launch occurred from Launch Complex 39A on Friday, Oct. 13, 2023.\n- Location of launch: NASA's Kennedy Space Center in Florida.\n- Psyche spacecraft will travel to a metal-rich asteroid between Mars and Jupiter to study its composition.\n- Spacecraft carries the Deep Space Optical Communications technology demonstration.\n- Technology demonstration will test laser communications beyond the Moon.\n- Photo credit: NASA/Aubrey Gemignani.",
+ "prompt_tokens": 1352,
+ "output_tokens": 243,
+ "latency_s": 2.72
+}

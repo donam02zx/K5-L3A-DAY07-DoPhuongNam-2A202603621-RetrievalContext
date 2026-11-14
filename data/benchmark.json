@@ -1,0 +1,725 @@
+[
+ {
+  "id": "q01",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "direct",
+  "question": "What are the three main states that files can reside in in Git?",
+  "expected_answer": "Modified, staged and committed.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 5,
+    "evidence": "Git has three main states that your files can reside in: _modified_, _staged_, and _committed_",
+    "unit_id": "01-introduction/what-is-git",
+    "chunk_ids": [
+     "p5-c10"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q02",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "direct",
+  "question": "How long is the checksum string Git uses to identify content?",
+  "expected_answer": "A SHA-1 hash: a 40-character string of hexadecimal characters.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 5,
+    "evidence": "This is a 40-character string composed of hexadecimal characters",
+    "unit_id": "01-introduction/what-is-git",
+    "chunk_ids": [
+     "p5-c7"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q03",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "conditional",
+  "question": "Which file does git config use when given the --system option, and what privilege is needed to change it?",
+  "expected_answer": "[path]/etc/gitconfig (values for every user on the system); changing it needs administrative/superuser privilege.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 2,
+    "evidence": "If you pass the option `--system` to `git config`, it reads and writes from this file specifically. Because this is a system configuration file, you would need administrative or superuser privilege to make changes to it.",
+    "unit_id": "01-introduction/first-time-setup",
+    "chunk_ids": [
+     "p2-c1"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q04",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "paraphrase",
+  "question": "How can I read the full manual for the configuration command without an internet connection?",
+  "expected_answer": "Run `git help config` (or `git config --help` / `man git-config`); manpages work offline.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 3,
+    "evidence": "you can get the manpage help for the `git config` command by running this",
+    "unit_id": "01-introduction/help",
+    "chunk_ids": [
+     "p3-c0"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q05",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "direct",
+  "question": "What two kinds of tags does Git support?",
+  "expected_answer": "Lightweight and annotated tags.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 10,
+    "evidence": "Git supports two types of tags: _lightweight_ and _annotated_.",
+    "unit_id": "02-git-basics/tagging",
+    "chunk_ids": [
+     "p10-c3"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q06",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "conditional",
+  "question": "If I push using the --follow-tags option, which tags reach the remote?",
+  "expected_answer": "Only annotated tags.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 10,
+    "evidence": "if you use `git push <remote> --follow-tags` only annotated tags will be pushed to the remote.",
+    "unit_id": "02-git-basics/tagging",
+    "chunk_ids": [
+     "p10-c10"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q07",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "paraphrase",
+  "question": "I committed too early and forgot to include a file. How do I redo that last commit?",
+  "expected_answer": "Stage the forgotten changes and run `git commit --amend`.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 11,
+    "evidence": "stage them, and commit again using the `--amend` option",
+    "unit_id": "02-git-basics/undoing",
+    "chunk_ids": [
+     "p11-c0"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q08",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "conditional",
+  "question": "Under what condition is it safe to amend a commit?",
+  "expected_answer": "Only when the commit is still local and has not been pushed.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 11,
+    "evidence": "Only amend commits that are still local and have not been pushed somewhere.",
+    "unit_id": "02-git-basics/undoing",
+    "chunk_ids": [
+     "p11-c3"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q09",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "paraphrase",
+  "question": "What single guideline sums up the danger of rewriting history with rebase?",
+  "expected_answer": "Do not rebase commits that exist outside your repository and that people may have based work on.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 16,
+    "evidence": "Do not rebase commits that exist outside your repository and that people may have based work on.",
+    "unit_id": "03-git-branching/rebasing",
+    "chunk_ids": [
+     "p16-c10"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q10",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "paraphrase",
+  "question": "Why does Git only move the branch pointer ahead when merging a hotfix that is directly ahead of master?",
+  "expected_answer": "Because there is no divergent work to merge; this is a fast-forward.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 13,
+    "evidence": "Git simplifies things by moving the pointer forward because there is no divergent work to merge together",
+    "unit_id": "03-git-branching/basic-branching-and-merging",
+    "chunk_ids": [
+     "p13-c6"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q11",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "conditional",
+  "question": "A branch still has unmerged work and `git branch -d` refuses to delete it. How can I delete it anyway?",
+  "expected_answer": "Force the deletion with `git branch -D <branch>` (the work is lost).",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 14,
+    "evidence": "If you really do want to delete the branch and lose that work, you can force it with `-D`",
+    "unit_id": "03-git-branching/branch-management",
+    "chunk_ids": [
+     "p14-c2"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q12",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "direct",
+  "question": "Which protocols can Git use to transfer data?",
+  "expected_answer": "Local, HTTP, SSH and the Git protocol.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 24,
+    "evidence": "Git can use four distinct protocols to transfer data: Local, HTTP, Secure Shell (SSH) and Git.",
+    "unit_id": "04-git-server/protocols",
+    "chunk_ids": [
+     "p24-c0"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q13",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "direct",
+  "question": "In a .gitignore file, what does starting a pattern with a forward slash do?",
+  "expected_answer": "It avoids recursivity (pattern applies only at that level).",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 8,
+    "evidence": "You can start patterns with a forward slash (`/`) to avoid recursivity.",
+    "unit_id": "02-git-basics/recording-changes",
+    "chunk_ids": [
+     "p8-c18"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "q14",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "filter",
+  "question": "What are the main units of long-lived discussion in this tool?",
+  "expected_answer": "Merge requests and issues (GitLab).",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 22,
+    "evidence": "Merge requests and issues are the main units of long-lived discussion in GitLab.",
+    "unit_id": "04-git-server/gitlab",
+    "chunk_ids": [
+     "p22-c12"
+    ]
+   }
+  ],
+  "filter": {
+   "chapter": "04-git-server"
+  }
+ },
+ {
+  "id": "q15",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "filter",
+  "question": "What kind of merge is created when you press the merge button on the website?",
+  "expected_answer": "A non-fast-forward merge: a merge commit is created even if a fast-forward was possible.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 31,
+    "evidence": "GitHub will perform a \"`non-fast-forward`\" merge",
+    "unit_id": "06-github/2-contributing",
+    "chunk_ids": [
+     "p31-c16"
+    ]
+   },
+   {
+    "source_id": "progit2",
+    "page": 32,
+    "evidence": "This will do a \"`non-fast-forward`\" merge, creating a merge commit even if a fast-forward merge was possible.",
+    "unit_id": "06-github/3-maintaining",
+    "chunk_ids": [
+     "p32-c10"
+    ]
+   }
+  ],
+  "filter": {
+   "chapter": "06-github"
+  }
+ },
+ {
+  "id": "q16",
+  "split": "dev",
+  "origin": "day6-dev",
+  "type": "filter",
+  "question": "Which workflow gives every developer a public repository they can write to while reading everyone else's?",
+  "expected_answer": "The Integration-Manager workflow.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 28,
+    "evidence": "each developer has write access to their own public repository and read access to everyone else's",
+    "unit_id": "05-distributed-git/distributed-workflows",
+    "chunk_ids": [
+     "p28-c5"
+    ]
+   }
+  ],
+  "filter": {
+   "chapter": "05-distributed-git"
+  }
+ },
+ {
+  "id": "t01",
+  "split": "dev",
+  "origin": "day6-test",
+  "type": "direct",
+  "question": "Which port does the Git daemon listen on?",
+  "expected_answer": "Port 9418.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 24,
+    "evidence": "it listens on a dedicated port (9418)",
+    "unit_id": "04-git-server/protocols",
+    "chunk_ids": [
+     "p24-c20"
+    ]
+   },
+   {
+    "source_id": "progit2",
+    "page": 20,
+    "evidence": "punch a hole in it at port 9418",
+    "unit_id": "04-git-server/git-daemon",
+    "chunk_ids": [
+     "p20-c1"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t02",
+  "split": "dev",
+  "origin": "day6-test",
+  "type": "paraphrase",
+  "question": "How do I take a file back out of the staging area without throwing away my edits?",
+  "expected_answer": "Use `git restore --staged <file>`. (Alternative also in the book: `git reset HEAD <file>`.)",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 11,
+    "evidence": "it says use `git restore --staged <file>...` to unstage",
+    "unit_id": "02-git-basics/undoing",
+    "chunk_ids": [
+     "p11-c12"
+    ]
+   },
+   {
+    "source_id": "progit2",
+    "page": 11,
+    "evidence": "it says use `git reset HEAD <file>...` to unstage",
+    "note": "added in Day 7: the book gives two valid unstage commands (git reset HEAD / git restore --staged); Day 6 gold only listed the second.",
+    "chunk_ids": [
+     "p11-c5"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t03",
+  "split": "dev",
+  "origin": "day6-test",
+  "type": "conditional",
+  "question": "How many API requests per hour can I make to GitHub with and without authenticating?",
+  "expected_answer": "60 per hour unauthenticated; up to 5,000 per hour when authenticated.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 34,
+    "evidence": "Without authenticating, you will be limited to 60 requests per hour. If you authenticate you can make up to 5,000 requests per hour.",
+    "unit_id": "06-github/5-scripting",
+    "chunk_ids": [
+     "p34-c14"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t04",
+  "split": "dev",
+  "origin": "day6-test",
+  "type": "filter",
+  "question": "How do I give other people push access to my repository?",
+  "expected_answer": "Add them as collaborators in the repository settings.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 32,
+    "evidence": "you need to add them as \"`collaborators`\"",
+    "unit_id": "06-github/3-maintaining",
+    "chunk_ids": [
+     "p32-c4"
+    ]
+   }
+  ],
+  "filter": {
+   "chapter": "06-github"
+  }
+ },
+ {
+  "id": "t05",
+  "split": "dev",
+  "origin": "day6-test",
+  "type": "direct",
+  "question": "Who are the lieutenants in the dictator and lieutenants workflow?",
+  "expected_answer": "Integration managers in charge of certain parts of the repository.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 28,
+    "evidence": "Various integration managers are in charge of certain parts of the repository; they're called _lieutenants_.",
+    "unit_id": "05-distributed-git/distributed-workflows",
+    "chunk_ids": [
+     "p28-c8"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "t06",
+  "split": "dev",
+  "origin": "day6-test",
+  "type": "conditional",
+  "question": "What option must git describe be given to also use non-annotated tags?",
+  "expected_answer": "The `--tags` option.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 29,
+    "evidence": "if you want to take advantage of lightweight (non-annotated) tags as well, add the `--tags` option to the command.",
+    "unit_id": "05-distributed-git/maintaining",
+    "chunk_ids": [
+     "p29-c41"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n01",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "paraphrase",
+  "question": "How can I make a Git alias that runs an external program such as gitk instead of a Git subcommand?",
+  "expected_answer": "Start the alias command with a `!` character, e.g. `git config --global alias.visual '!gitk'`.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 6,
+    "evidence": "In that case, you start the command with a `!` character.",
+    "chunk_ids": [
+     "p6-c2"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n02",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "direct",
+  "question": "What does running git init create inside the project directory?",
+  "expected_answer": "A new subdirectory named `.git` containing all the necessary repository files (a Git repository skeleton); nothing is tracked yet.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 7,
+    "evidence": "This creates a new subdirectory named `.git` that contains all of your necessary repository files",
+    "chunk_ids": [
+     "p7-c2"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n03",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "conditional",
+  "question": "If I protect my SSH key with a passphrase, which ssh-keygen option should I add and why?",
+  "expected_answer": "Add the `-o` option; it saves the private key in a format more resistant to brute-force password cracking than the default.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 19,
+    "evidence": "if you do use a password, make sure to add the `-o` option; it saves the private key in a format that is more resistant to brute-force password cracking",
+    "chunk_ids": [
+     "p19-c3"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n04",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "direct",
+  "question": "On which port does git instaweb start its temporary web server?",
+  "expected_answer": "Port 1234 (it then opens a web browser on that page).",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 23,
+    "evidence": "That starts up an HTTPD server on port 1234",
+    "chunk_ids": [
+     "p23-c1"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n05",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "conditional",
+  "question": "With Smart HTTP, if the GIT_HTTP_EXPORT_ALL variable is left out, which repositories are served to unauthenticated clients?",
+  "expected_answer": "Only repositories that contain the `git-daemon-export-ok` file, just like the Git daemon.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 26,
+    "evidence": "If you leave out `GIT_HTTP_EXPORT_ALL` environment variable, then Git will only serve to unauthenticated clients the repositories with the `git-daemon-export-ok` file in them",
+    "chunk_ids": [
+     "p26-c2"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n06",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "paraphrase",
+  "question": "How do I show only the commits from the last two weeks in the log?",
+  "expected_answer": "Use a time-limiting option: `git log --since=2.weeks`.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 12,
+    "evidence": "this command gets the list of commits made in the last two weeks",
+    "chunk_ids": [
+     "p12-c16"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n07",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "conditional",
+  "question": "Under what condition is a GitHub organization free?",
+  "expected_answer": "Organizations are free if everything you plan to store there will be open source.",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 33,
+    "evidence": "organizations are free if everything you plan to store there will be open source",
+    "chunk_ids": [
+     "p33-c1"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "n08",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "direct",
+  "question": "When you clone a repository, what name does Git give the remote by default?",
+  "expected_answer": "`origin` (and the remote master branch is referenced locally as `origin/master`).",
+  "answerable": true,
+  "gold": [
+   {
+    "source_id": "progit2",
+    "page": 17,
+    "evidence": "Git's `clone` command automatically names it `origin` for you",
+    "chunk_ids": [
+     "p17-c2"
+    ]
+   }
+  ],
+  "filter": null
+ },
+ {
+  "id": "u01",
+  "split": "dev",
+  "origin": "day7-new",
+  "type": "no_evidence",
+  "question": "How do I use git bisect to find the commit that introduced a bug?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Term 'bisect' occurs 0 times in all 579 chunks (Pro Git ch. 1-6 only; this topic is in later chapters).",
+  "filter": null
+ },
+ {
+  "id": "u02",
+  "split": "dev",
+  "origin": "day7-new",
+  "type": "no_evidence",
+  "question": "How do I add another repository as a submodule of my project?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Term 'submodule' occurs 0 times in all 579 chunks (Pro Git ch. 1-6 only; this topic is in later chapters).",
+  "filter": null
+ },
+ {
+  "id": "u03",
+  "split": "dev",
+  "origin": "day7-new",
+  "type": "no_evidence",
+  "question": "How can I recover a lost commit by looking at the reflog?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Term 'reflog' occurs 0 times in all 579 chunks (Pro Git ch. 1-6 only; this topic is in later chapters).",
+  "filter": null
+ },
+ {
+  "id": "u04",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "no_evidence",
+  "question": "How do I track large binary files with Git LFS?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Term 'lfs' occurs 0 times in all 579 chunks (Pro Git ch. 1-6 only; this topic is in later chapters).",
+  "filter": null
+ },
+ {
+  "id": "u05",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "no_evidence",
+  "question": "How do I create a second working directory with git worktree?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Term 'worktree' occurs 0 times in all 579 chunks (Pro Git ch. 1-6 only; this topic is in later chapters).",
+  "filter": null
+ },
+ {
+  "id": "u06",
+  "split": "test",
+  "origin": "day7-new",
+  "type": "no_evidence",
+  "question": "What information does git blame show for each line of a file?",
+  "answerable": false,
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Term 'blame' occurs 0 times in all 579 chunks (Pro Git ch. 1-6 only; this topic is in later chapters).",
+  "filter": null
+ }
+]

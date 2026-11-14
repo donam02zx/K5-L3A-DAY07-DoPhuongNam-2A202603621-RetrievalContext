@@ -1,0 +1,8 @@
+{
+ "page": 102,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- The International Space Station (ISS or Station) Program's greatest accomplishment is as much a human achievement as it is a technological one.\n- Russia has been authorized to continue participation in the ISS through 2028 and Congress has authorized U.S. participation through 2030.\n- In June 2024, NASA and Roscosmos signed a memorandum agreeing to a contingency deorbit plan in case deorbit must occur prior to the arrival of the United States Deorbit Vehicle (USDV).\n- NASA has contracted with Space Exploration Technologies Corporation (SpaceX) to provide the USDV by 2028 and will conduct a Systems Requirements Review in early 2025.\n- NASA's commitment to improving cost and schedule performance extends to the Science Mission Directorate (SMD), which has delivered 18 projects on budget between 2009 and 2022.",
+ "prompt_tokens": 1353,
+ "output_tokens": 218,
+ "latency_s": 2.59
+}

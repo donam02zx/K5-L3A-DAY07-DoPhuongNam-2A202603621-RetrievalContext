@@ -1,0 +1,8 @@
+{
+ "page": 1,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: AGENCY FINANCIAL REPORT\nFY 2024\nNational Aeronautics and Space Administration\n\nPHOTOS: A close-up view of an astronaut wearing a white helmet and specialized glasses fitted with camera equipment, illuminated by bright lights in a dark setting, with the NASA logo visible in the upper right corner.\n\nKEY FACTS:\n- NASA FY 2024 Agency Financial Report",
+ "prompt_tokens": 1351,
+ "output_tokens": 78,
+ "latency_s": 3.45
+}

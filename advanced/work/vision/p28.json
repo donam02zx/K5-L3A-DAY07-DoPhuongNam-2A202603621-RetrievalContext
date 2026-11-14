@@ -1,0 +1,8 @@
+{
+ "page": 28,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS\nFinancial Performance\n\nPHOTOS:\n- What the photo shows: Crews transport NOAA’s (National Oceanic and Atmospheric Administration) Geostationary Operational Environmental Satellite (GOES-U) from the Astrotech Space Operations facility to the SpaceX hangar at Launch Complex 39A at NASA’s Kennedy Space Center in Florida beginning on Friday, June 14, 2024, with the operation finishing early Saturday, June 15, 2024. The fourth and final weather-observing and environmental monitoring satellite in NOAA’s GOES-R Series will assist meteorologists in providing advanced weather forecasting and warning capabilities.\n- Photo credit: NASA/Ben Smegelsky\n\nKEY FACTS:\n- Date of transport: Friday, June 14, 2024 to early Saturday, June 15, 2024\n- Satellite transported: NOAA’s Geostationary Operational Environmental Satellite (GOES-U)\n- Facilities involved: Astrotech Space Operations facility to the SpaceX hangar at Launch Complex 39A at NASA’s Kennedy Space Center in Florida\n- Satellite series: NOAA’s GOES-R Series (fourth and final weather-observing and environmental monitoring satellite)\n- Page number: 27",
+ "prompt_tokens": 1352,
+ "output_tokens": 276,
+ "latency_s": 3.04
+}

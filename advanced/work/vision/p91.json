@@ -1,0 +1,8 @@
+{
+ "page": 91,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | INDEPENDENT AUDITORS’ REPORT\n\nKEY FACTS:\n- Ernst & Young LLP is located at 1775 Tysons Blvd, Tysons, VA 22102.\n- The document is a Report of Independent Auditors on Internal Control Over Financial Reporting and on Compliance and Other Matters Based on an Audit of Financial Statements Performed in Accordance with Government Auditing Standards.\n- The report is addressed to the Administrator and the Inspector General of the National Aeronautics and Space Administration.\n- The audit was conducted in accordance with auditing standards generally accepted in the United States of America, Government Auditing Standards, and Office of Management and Budget (OMB) Bulletin No. 24-02 Audit Requirements for Federal Financial Statements.\n- The financial statements covered include the consolidated balance sheet as of September 30, 2024, and related consolidated statements of net cost and changes in net position and combined statement of budgetary resources for the year then ended, and related notes.\n- The report on the financial statements is dated November 15, 2024, and expressed an unmodified opinion.",
+ "prompt_tokens": 1352,
+ "output_tokens": 239,
+ "latency_s": 1.97
+}

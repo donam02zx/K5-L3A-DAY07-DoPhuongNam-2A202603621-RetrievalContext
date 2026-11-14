@@ -1,0 +1,8 @@
+{
+ "page": 49,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION: Financial Statements, Notes, and Required Supplementary Information\n\nPHOTOS:\n- The GUSTO mission successfully launched on a scientific balloon from Antarctica Dec. 31, 7:30 p.m. local time (Dec. 31, 1:30 a.m EST). GUSTO is flying on a 39 million cubic-foot zero-pressure scientific balloon, which is so large it could easily fit 195 blimps inside of it. The balloon is used to fly missions for long periods of time during the Austral Summer over Antarctica. GUSTO is aiming for a NASA record of 55+ days in flight to achieve its science goals. GUSTO is mapping a large portion of the Milky Way galaxy and Large Magellanic Cloud to help scientists study the interstellar medium. The observatory is transmitting the data it collects back to watchful teams on the ground as it steadily circumnavigates the South Pole around 120,000+ feet.\n- PHOTO CREDIT: NASA/Scott Battaion\n\nKEY FACTS:\n- 39 million cubic-foot zero-pressure scientific balloon\n- Could easily fit 195 blimps inside of it\n- Aiming for a NASA record of 55+ days in flight\n- Circumnavigates the South Pole around 120,000+ feet",
+ "prompt_tokens": 1352,
+ "output_tokens": 291,
+ "latency_s": 2.49
+}

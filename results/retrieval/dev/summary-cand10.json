@@ -1,0 +1,25 @@
+[
+ {
+  "method": "hybrid_rerank",
+  "split": "dev",
+  "N": 22,
+  "top_k": 5,
+  "context_k": 3,
+  "budget_chars": 2400,
+  "filter": true,
+  "candidates": 10,
+  "hit1": 19,
+  "hit3": 20,
+  "hit5": 21,
+  "mrr": 0.895,
+  "context_hit": 20,
+  "avg_context_chars": 1935,
+  "median_latency_ms": 530.4,
+  "load_seconds": 13.9,
+  "cost_usd": 0.0,
+  "misses_at3": [
+   "q04",
+   "t02"
+  ]
+ }
+]

@@ -1,0 +1,2908 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "question": "What are the three main states that files can reside in in Git?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "The three main states that files can reside in in Git are modified, staged, and committed [p5-c10]. Modified means the file has been changed but not yet committed, staged means a modified file's current version is marked to go into the next commit snapshot, and committed means the data is safely stored in the local database [p5-c10].",
+  "citations": [
+   "p5-c10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "three main states files reside Git modified staged committed",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 24.6,
+    "results": [
+     {
+      "id": "p5-c10",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 5
+     },
+     {
+      "id": "p5-c12",
+      "rank": 2,
+      "score": 0.032258,
+      "page": 5
+     },
+     {
+      "id": "p8-c9",
+      "rank": 3,
+      "score": 0.030303,
+      "page": 8
+     },
+     {
+      "id": "p11-c12",
+      "rank": 4,
+      "score": 0.029911,
+      "page": 11
+     },
+     {
+      "id": "p8-c26",
+      "rank": 5,
+      "score": 0.029199,
+      "page": 8
+     }
+    ],
+    "admitted": [
+     "p5-c10",
+     "p5-c12",
+     "p8-c9",
+     "p11-c12",
+     "p8-c26"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p5-c10"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p5-c10",
+   "p5-c12",
+   "p8-c9",
+   "p11-c12",
+   "p8-c26"
+  ],
+  "context": "[p5-c10 | book/01-introduction/sections/what-is-git.asc | page 5 | The Three States]\n#### The Three States\n\nPay attention now -- here is the main thing to remember about Git if you want the rest of your learning process to go smoothly. Git has three main states that your files can reside in: _modified_, _staged_, and _committed_:\n\n* Modified means that you have changed the file but have not committed it to your database yet.\n* Staged means that you have marked a modified file in its current version to go into your next commit snapshot.\n* Committed means that the data is safely stored in your local database.\n\nThis leads us to the three main sections of a Git project: the working tree, the staging area, and the Git directory.\n\nWorking tree, staging area, and Git directory\n\n[p5-c12 | book/01-introduction/sections/what-is-git.asc | page 5 | The Three States]\n1. You modify files in your working tree.\n2. You selectively stage just those changes you want to be part of your next commit, which adds _only_ those changes to the staging area.\n3. You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.\n\nIf a particular version of a file is in the Git directory, it's considered _committed_. If it has been modified and was added to the staging area, it is _staged_. And if it was changed since it was checked out but has not been staged, it is _modified_. In ch02-git-basics-chapter#ch02-git-basics-chapter, you'll learn more about these states and how you can either take advantage of them or skip the staged part entirely.\n\n[p8-c9 | book/02-git-basics/sections/recording-changes.asc | page 8 | Staging Modified Files]\n#### Staging Modified Files\n\nLet's change a file that was already tracked. If you change a previously tracked file called `CONTRIBUTING.md` and then run your `git status` command again, you get something that looks like this:\n\n```\n$ git status\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges to be committed:\n  (use \"git reset HEAD <file>...\" to unstage)\n\n    new file:   README\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n    modified:   CONTRIBUTING.md\n\n```\n\n[p11-c12 | book/02-git-basics/sections/undoing.asc | page 11 | Unstaging a Staged File with git restore]\nRight below the \"`Changes to be committed`\" text, it says use `git restore --staged <file>...` to unstage. So, let's use that advice to unstage the `CONTRIBUTING.md` file:\n\n```\n$ git restore --staged CONTRIBUTING.md\n$ git status\nOn branch master\nChanges to be committed:\n  (use \"git restore --staged <file>...\" to unstage)\n    renamed:    README.md -> README\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n    modified:   CONTRIBUTING.md\n\n```\n\nThe `CONTRIBUTING.md` file is modified but once again unstaged.\n\n[p8-c26 | book/02-git-basics/sections/recording-changes.asc | page 8 | Viewing Your Staged and Unstaged Changes]\nFor another example, if you stage the `CONTRIBUTING.md` file and then edit it, you can use `git diff` to see the changes in the file that are staged and the changes that are unstaged. If our environment looks like this:\n\n```\n$ git add CONTRIBUTING.md\n$ echo '# test line' >> CONTRIBUTING.md\n$ git status\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges to be committed:\n  (use \"git reset HEAD <file>...\" to unstage)\n\n    modified:   CONTRIBUTING.md\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n    modified:   CONTRIBUTING.md\n```\n\nNow you can use `git diff` to see what is still unstaged:",
+  "context_chars": 3893,
+  "n_searches": 1,
+  "prompt_tokens": 2027,
+  "output_tokens": 125,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.9,
+  "cost_usd": 0.000253,
+  "latency_s": 5.57,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "question": "How long is the checksum string Git uses to identify content?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Git uses a 40-character SHA-1 hash string composed of hexadecimal characters to identify content [p5-c7].",
+  "citations": [
+   "p5-c7"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "checksum string length characters SHA-1",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.5,
+    "results": [
+     {
+      "id": "p5-c7",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 5
+     },
+     {
+      "id": "p15-c10",
+      "rank": 2,
+      "score": 0.032258,
+      "page": 15
+     },
+     {
+      "id": "p15-c1",
+      "rank": 3,
+      "score": 0.030579,
+      "page": 15
+     },
+     {
+      "id": "p29-c37",
+      "rank": 4,
+      "score": 0.03055,
+      "page": 29
+     },
+     {
+      "id": "p29-c40",
+      "rank": 5,
+      "score": 0.030366,
+      "page": 29
+     }
+    ],
+    "admitted": [
+     "p5-c7",
+     "p15-c10",
+     "p15-c1",
+     "p29-c37",
+     "p29-c40"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p5-c7"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p5-c7",
+   "p15-c10",
+   "p15-c1",
+   "p29-c37",
+   "p29-c40"
+  ],
+  "context": "[p5-c7 | book/01-introduction/sections/what-is-git.asc | page 5 | Git Has Integrity]\n#### Git Has Integrity\n\nEverything in Git is checksummed before it is stored and is then referred to by that checksum. This means it's impossible to change the contents of any file or directory without Git knowing about it. This functionality is built into Git at the lowest levels and is integral to its philosophy. You can't lose information in transit or get file corruption without Git being able to detect it.\n\nThe mechanism that Git uses for this checksumming is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. A SHA-1 hash looks something like this:\n\n```\n24b9da6552252987aa493b52f8696cd6d3b00373\n```\n\n[p15-c10 | book/03-git-branching/sections/nutshell.asc | page 15 | Switching Branches]\n```\n$ git log --oneline --decorate --graph --all\n* c2b9e (HEAD, master) Make other changes\n| * 87ab2 (testing) Make a change\n|/\n* f30ab Add feature #32 - ability to add new formats to the central interface\n* 34ac2 Fix bug #1328 - stack overflow under certain conditions\n* 98ca9 Initial commit of my project\n```\n\nBecause a branch in Git is actually a simple file that contains the 40 character SHA-1 checksum of the commit it points to, branches are cheap to create and destroy. Creating a new branch is as quick and simple as writing 41 bytes to a file (40 characters and a newline).\n\n[p15-c1 | book/03-git-branching/sections/nutshell.asc | page 15 | Branches in a Nutshell]\nTo visualize this, let's assume that you have a directory containing three files, and you stage them all and commit. Staging the files computes a checksum for each one (the SHA-1 hash we mentioned in ch01-getting-started#what is git section), stores that version of the file in the Git repository (Git refers to them as _blobs_), and adds that checksum to the staging area:\n\n```\n$ git add README test.rb LICENSE\n$ git commit -m 'Initial commit'\n```\n\nWhen you create the commit by running `git commit`, Git checksums each subdirectory (in this case, just the root project directory) and stores them as a tree object in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.\n\n[p29-c37 | book/05-distributed-git/sections/maintaining.asc | page 29 | Tagging Your Releases]\n```\n\nThen, you can directly import the key into the Git database by exporting it and piping that through `git hash-object`, which writes a new blob with those contents into Git and gives you back the SHA-1 of the blob:\n\n[source,console]\n```\n\n$ gpg -a --export F721C45A | git hash-object -w --stdin 659ef797d181633c87ec71ac3f9ba29fe5775b92\n\n```\n\nNow that you have the contents of your key in Git, you can create a tag that points directly to it by specifying the new SHA-1 value that the `hash-object` command gave you:\n\n[source,console]\n```\n\n$ git tag -a maintainer-pgp-pub 659ef797d181633c87ec71ac3f9ba29fe5775b92\n\n[p29-c40 | book/05-distributed-git/sections/maintaining.asc | page 29 | Tagging Your Releases]\n```\nIn response, Git generates a string consisting of the name of the most recent tag earlier than that commit, followed by the number of commits since that tag, followed finally by a partial SHA-1 value of the commit being described (prefixed with the letter \"g\" meaning Git):\n\n[source,console]\n```",
+  "context_chars": 3470,
+  "n_searches": 1,
+  "prompt_tokens": 1963,
+  "output_tokens": 72,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.59,
+  "cost_usd": 0.000225,
+  "latency_s": 8.67,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "question": "Which file does git config use when given the --system option, and what privilege is needed to change it?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "When given the `--system` option, `git config` reads and writes from the `[path]/etc/gitconfig` file, and making changes to it requires administrative or superuser privileges [p2-c1].",
+  "citations": [
+   "p2-c1"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "git config --system file privilege",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 15.7,
+    "results": [
+     {
+      "id": "p2-c1",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 2
+     },
+     {
+      "id": "p2-c3",
+      "rank": 2,
+      "score": 0.032258,
+      "page": 2
+     },
+     {
+      "id": "p20-c2",
+      "rank": 3,
+      "score": 0.030366,
+      "page": 20
+     },
+     {
+      "id": "p2-c11",
+      "rank": 4,
+      "score": 0.029631,
+      "page": 2
+     },
+     {
+      "id": "p20-c3",
+      "rank": 5,
+      "score": 0.028485,
+      "page": 20
+     }
+    ],
+    "admitted": [
+     "p2-c1",
+     "p2-c3",
+     "p20-c2",
+     "p2-c11",
+     "p20-c3"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p2-c1"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p2-c1",
+   "p2-c3",
+   "p20-c2",
+   "p2-c11",
+   "p20-c3"
+  ],
+  "context": "[p2-c1 | book/01-introduction/sections/first-time-setup.asc | page 2 | First-Time Git Setup]\n1. `[path]/etc/gitconfig` file: Contains values applied to every user on the system and all their repositories. If you pass the option `--system` to `git config`, it reads and writes from this file specifically. Because this is a system configuration file, you would need administrative or superuser privilege to make changes to it.\n2. `~/.gitconfig` or `~/.config/git/config` file: Values specific personally to you, the user. You can make Git read and write to this file specifically by passing the `--global` option, and this affects _all_ of the repositories you work with on your system.\n3. `config` file in the Git directory (that is, `.git/config`) of whatever repository you're currently using: Specific to that single repository.\n\n[p2-c3 | book/01-introduction/sections/first-time-setup.asc | page 2 | First-Time Git Setup]\nEach level overrides values in the previous level, so values in `.git/config` trump those in `[path]/etc/gitconfig`.\n\nOn Windows systems, Git looks for the `.gitconfig` file in the `$HOME` directory (`C:\\Users\\$USER` for most people). It also still looks for `[path]/etc/gitconfig`, although it's relative to the MSys root, which is wherever you decide to install Git on your Windows system when you run the installer. If you are using version 2.x or later of Git for Windows, there is also a system-level config file at `C:\\Documents and Settings\\All Users\\Application Data\\Git\\config` on Windows XP, and in `C:\\ProgramData\\Git\\config` on Windows Vista and newer. This config file can only be changed by `git config -f <file>` as an admin.\n\n[p20-c2 | book/04-git-server/sections/git-daemon.asc | page 20 | Git Daemon]\nSince `systemd` is the most common init system among modern Linux distributions, you can use it for that purpose. Simply place a file in `/etc/systemd/system/git-daemon.service` with these contents:\n\n```\n[Unit]\nDescription=Start Git Daemon\n\n[Service]\nExecStart=/usr/bin/git daemon --reuseaddr --base-path=/srv/git/ /srv/git/\n\nRestart=always\nRestartSec=500ms\n\nStandardOutput=syslog\nStandardError=syslog\nSyslogIdentifier=git-daemon\n\nUser=git\nGroup=git\n\n[Install]\nWantedBy=multi-user.target\n```\n\nYou might have noticed that Git daemon is started here with `git` as both group and user. Modify it to fit your needs and make sure the provided user exists on the system. Also, check that the Git binary is indeed located at `/usr/bin/git` and change the path if necessary.\n\n[p2-c11 | book/01-introduction/sections/first-time-setup.asc | page 2 | Checking Your Settings]\nNOTE: Since Git might read the same configuration variable value from more than one file, it's possible that you have an unexpected value for one of these values and you don't know why. In cases like that, you can query Git as to the _origin_ for that value, and it will tell you which configuration file had the final say in setting that value:\n\n```\n$ git config --show-origin rerere.autoUpdate\nfile:/home/johndoe/.gitconfig    false\n```\n\n[p20-c3 | book/04-git-server/sections/git-daemon.asc | page 20 | Git Daemon]\nFinally, you'll run `systemctl enable git-daemon` to automatically start the service on boot, and can start and stop the service with, respectively, `systemctl start git-daemon` and `systemctl stop git-daemon`.\n\nOn other systems, you may want to use `xinetd`, a script in your `sysvinit` system, or something else -- as long as you get that command daemonized and watched somehow.\n\nNext, you have to tell Git which repositories to allow unauthenticated Git server-based access to. You can do this in each repository by creating a file named `git-daemon-export-ok`.\n\n```\n$ cd /path/to/project.git\n$ touch git-daemon-export-ok\n```\n\nThe presence of that file tells Git that it's OK to serve this project without authentication.",
+  "context_chars": 3850,
+  "n_searches": 1,
+  "prompt_tokens": 2013,
+  "output_tokens": 90,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.95,
+  "cost_usd": 0.000237,
+  "latency_s": 9.22,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "question": "How can I read the full manual for the configuration command without an internet connection?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "You can read the full manual page for the `config` command offline using any of the following equivalent commands: `git help config`, `git config --help`, or `man git-config` [p3-c0].",
+  "citations": [
+   "p3-c0"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "manual for configuration command git config help",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.1,
+    "results": [
+     {
+      "id": "p2-c10",
+      "rank": 1,
+      "score": 0.032266,
+      "page": 2
+     },
+     {
+      "id": "p3-c0",
+      "rank": 2,
+      "score": 0.031778,
+      "page": 3
+     },
+     {
+      "id": "p2-c1",
+      "rank": 3,
+      "score": 0.031498,
+      "page": 2
+     },
+     {
+      "id": "p3-c1",
+      "rank": 4,
+      "score": 0.031054,
+      "page": 3
+     },
+     {
+      "id": "p2-c11",
+      "rank": 5,
+      "score": 0.03031,
+      "page": 2
+     }
+    ],
+    "admitted": [
+     "p2-c10",
+     "p3-c0",
+     "p2-c1",
+     "p3-c1",
+     "p2-c11"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p3-c0"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p2-c10",
+   "p3-c0",
+   "p2-c1",
+   "p3-c1",
+   "p2-c11"
+  ],
+  "context": "[p2-c10 | book/01-introduction/sections/first-time-setup.asc | page 2 | Checking Your Settings]\n#### Checking Your Settings\n\nIf you want to check your configuration settings, you can use the `git config --list` command to list all the settings Git can find at that point:\n\n```\n$ git config --list\nuser.name=John Doe\nuser.email=johndoe@example.com\ncolor.status=auto\ncolor.branch=auto\ncolor.interactive=auto\ncolor.diff=auto\n...\n```\n\nYou may see keys more than once, because Git reads the same key from different files (`[path]/etc/gitconfig` and `~/.gitconfig`, for example). In this case, Git uses the last value for each unique key it sees.\n\nYou can also check what Git thinks a specific key's value is by typing `git config <key>`:\n\n```\n$ git config user.name\nJohn Doe\n```\n\n[p3-c0 | book/01-introduction/sections/help.asc | page 3 | Getting Help]\n### Getting Help\n\nIf you ever need help while using Git, there are three equivalent ways to get the comprehensive manual page (manpage) help for any of the Git commands:\n\n```\n$ git help <verb>\n$ git <verb> --help\n$ man git-<verb>\n```\n\nFor example, you can get the manpage help for the `git config` command by running this:\n\n```\n$ git help config\n```\n\nThese commands are nice because you can access them anywhere, even offline. If the manpages and this book aren't enough and you need in-person help, you can try the `#git`, `#github`, or `#gitlab` channels on the Libera Chat IRC server, which can be found at ^. These channels are regularly filled with hundreds of people who are all very knowledgeable about Git and are often willing to help.\n\n[p2-c1 | book/01-introduction/sections/first-time-setup.asc | page 2 | First-Time Git Setup]\n1. `[path]/etc/gitconfig` file: Contains values applied to every user on the system and all their repositories. If you pass the option `--system` to `git config`, it reads and writes from this file specifically. Because this is a system configuration file, you would need administrative or superuser privilege to make changes to it.\n2. `~/.gitconfig` or `~/.config/git/config` file: Values specific personally to you, the user. You can make Git read and write to this file specifically by passing the `--global` option, and this affects _all_ of the repositories you work with on your system.\n3. `config` file in the Git directory (that is, `.git/config`) of whatever repository you're currently using: Specific to that single repository.\n\n[p3-c1 | book/01-introduction/sections/help.asc | page 3 | Getting Help]\nIn addition, if you don't need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise \"`help`\" output with the `-h` option, as in:\n\n[p2-c11 | book/01-introduction/sections/first-time-setup.asc | page 2 | Checking Your Settings]\nNOTE: Since Git might read the same configuration variable value from more than one file, it's possible that you have an unexpected value for one of these values and you don't know why. In cases like that, you can query Git as to the _origin_ for that value, and it will tell you which configuration file had the final say in setting that value:\n\n```\n$ git config --show-origin rerere.autoUpdate\nfile:/home/johndoe/.gitconfig    false\n```",
+  "context_chars": 3249,
+  "n_searches": 1,
+  "prompt_tokens": 1831,
+  "output_tokens": 92,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.92,
+  "cost_usd": 0.00022,
+  "latency_s": 9.14,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "question": "What two kinds of tags does Git support?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Git supports two types of tags: lightweight and annotated [p10-c3].",
+  "citations": [
+   "p10-c3"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "two kinds of tags Git supports",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 18.3,
+    "results": [
+     {
+      "id": "p10-c3",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 10
+     },
+     {
+      "id": "p10-c10",
+      "rank": 2,
+      "score": 0.031746,
+      "page": 10
+     },
+     {
+      "id": "p10-c0",
+      "rank": 3,
+      "score": 0.031099,
+      "page": 10
+     },
+     {
+      "id": "p29-c41",
+      "rank": 4,
+      "score": 0.03101,
+      "page": 29
+     },
+     {
+      "id": "p10-c9",
+      "rank": 5,
+      "score": 0.030118,
+      "page": 10
+     }
+    ],
+    "admitted": [
+     "p10-c3",
+     "p10-c10",
+     "p10-c0",
+     "p29-c41",
+     "p10-c9"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p10-c3"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p10-c3",
+   "p10-c10",
+   "p10-c0",
+   "p29-c41",
+   "p10-c9"
+  ],
+  "context": "[p10-c3 | book/02-git-basics/sections/tagging.asc | page 10 | Creating Tags]\n#### Creating Tags\n\nGit supports two types of tags: _lightweight_ and _annotated_.\n\nA lightweight tag is very much like a branch that doesn't change -- it's just a pointer to a specific commit.\n\nAnnotated tags, however, are stored as full objects in the Git database. They're checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG). It's generally recommended that you create annotated tags so you can have all this information; but if you want a temporary tag or for some reason don't want to keep the other information, lightweight tags are available too.\n\n[p10-c10 | book/02-git-basics/sections/tagging.asc | page 10 | Sharing Tags]\n```\n$ git push origin --tags\nCounting objects: 1, done.\nWriting objects: 100% (1/1), 160 bytes | 0 bytes/s, done.\nTotal 1 (delta 0), reused 0 (delta 0)\nTo git@github.com:schacon/simplegit.git\n * [new tag]         v1.4 -> v1.4\n * [new tag]         v1.4-lw -> v1.4-lw\n```\n\nNow, when someone else clones or pulls from your repository, they will get all your tags as well.\n\nNOTE: .`git push` pushes both types of tags\n`git push <remote> --tags` will push both lightweight and annotated tags. There is currently no option to push only lightweight tags, but if you use `git push <remote> --follow-tags` only annotated tags will be pushed to the remote.\n\n[p10-c0 | book/02-git-basics/sections/tagging.asc | page 10 | Tagging]\n### Tagging\n\nLike most VCSs, Git has the ability to tag specific points in a repository's history as being important. Typically, people use this functionality to mark release points (`v1.0`, `v2.0` and so on). In this section, you'll learn how to list existing tags, how to create and delete tags, and what the different types of tags are.\n\n[p29-c41 | book/05-distributed-git/sections/maintaining.asc | page 29 | Tagging Your Releases]\n$ git describe master v1.6.2-rc1-20-g8c5b85c\n\n```\n\nThis way, you can export a snapshot or build and name it something understandable to people.\nIn fact, if you build Git from source code cloned from the Git repository, `git --version` gives you something that looks like this.\nIf you're describing a commit that you have directly tagged, it gives you simply the tag name.\n\nBy default, the `git describe` command requires annotated tags (tags created with the `-a` or `-s` flag); if you want to take advantage of lightweight (non-annotated) tags as well, add the `--tags` option to the command.\nYou can also use this string as the target of a `git checkout` or `git show` command, although it relies on the abbreviated SHA-1 value at the end, so it may not be valid forever.\n```\n\n[p10-c9 | book/02-git-basics/sections/tagging.asc | page 10 | Sharing Tags]\n#### Sharing Tags\n\nBy default, the `git push` command doesn't transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches -- you can run `git push origin <tagname>`.\n\n```\n$ git push origin v1.5\nCounting objects: 14, done.\nDelta compression using up to 8 threads.\nCompressing objects: 100% (12/12), done.\nWriting objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.\nTotal 14 (delta 3), reused 0 (delta 0)\nTo git@github.com:schacon/simplegit.git\n * [new tag]         v1.5 -> v1.5\n```\n\nIf you have a lot of tags that you want to push up at once, you can also use the `--tags` option to the `git push` command. This will transfer all of your tags to the remote server that are not already there.",
+  "context_chars": 3604,
+  "n_searches": 1,
+  "prompt_tokens": 2006,
+  "output_tokens": 63,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.43,
+  "cost_usd": 0.000226,
+  "latency_s": 8.72,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "question": "If I push using the --follow-tags option, which tags reach the remote?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "If you use the `--follow-tags` option with `git push`, only annotated tags will be pushed to the remote server [p10-c10].",
+  "citations": [
+   "p10-c10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "--follow-tags",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.7,
+    "results": [
+     {
+      "id": "p10-c10",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 10
+     },
+     {
+      "id": "p10-c1",
+      "rank": 2,
+      "score": 0.031514,
+      "page": 10
+     },
+     {
+      "id": "p10-c0",
+      "rank": 3,
+      "score": 0.03125,
+      "page": 10
+     },
+     {
+      "id": "p10-c2",
+      "rank": 4,
+      "score": 0.030159,
+      "page": 10
+     },
+     {
+      "id": "p10-c9",
+      "rank": 5,
+      "score": 0.030159,
+      "page": 10
+     }
+    ],
+    "admitted": [
+     "p10-c10",
+     "p10-c1",
+     "p10-c0",
+     "p10-c2",
+     "p10-c9"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "--follow-tags pushed",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 15.5,
+    "results": [
+     {
+      "id": "p10-c10",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 10
+     },
+     {
+      "id": "p10-c9",
+      "rank": 2,
+      "score": 0.031498,
+      "page": 10
+     },
+     {
+      "id": "p10-c11",
+      "rank": 3,
+      "score": 0.031054,
+      "page": 10
+     },
+     {
+      "id": "p10-c12",
+      "rank": 4,
+      "score": 0.030415,
+      "page": 10
+     },
+     {
+      "id": "p10-c13",
+      "rank": 5,
+      "score": 0.029211,
+      "page": 10
+     }
+    ],
+    "admitted": [
+     "p10-c11",
+     "p10-c12",
+     "p10-c13"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p10-c10"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p10-c10",
+   "p10-c1",
+   "p10-c0",
+   "p10-c2",
+   "p10-c9",
+   "p10-c11",
+   "p10-c12",
+   "p10-c13"
+  ],
+  "context": "[p10-c10 | book/02-git-basics/sections/tagging.asc | page 10 | Sharing Tags]\n```\n$ git push origin --tags\nCounting objects: 1, done.\nWriting objects: 100% (1/1), 160 bytes | 0 bytes/s, done.\nTotal 1 (delta 0), reused 0 (delta 0)\nTo git@github.com:schacon/simplegit.git\n * [new tag]         v1.4 -> v1.4\n * [new tag]         v1.4-lw -> v1.4-lw\n```\n\nNow, when someone else clones or pulls from your repository, they will get all your tags as well.\n\nNOTE: .`git push` pushes both types of tags\n`git push <remote> --tags` will push both lightweight and annotated tags. There is currently no option to push only lightweight tags, but if you use `git push <remote> --follow-tags` only annotated tags will be pushed to the remote.\n\n[p10-c1 | book/02-git-basics/sections/tagging.asc | page 10 | Listing Your Tags]\n#### Listing Your Tags\n\nListing the existing tags in Git is straightforward. Just type `git tag` (with optional `-l` or `--list`):\n\n```\n$ git tag\nv1.0\nv2.0\n```\n\nThis command lists the tags in alphabetical order; the order in which they are displayed has no real importance.\n\nYou can also search for tags that match a particular pattern. The Git source repo, for instance, contains more than 500 tags. If you're interested only in looking at the 1.8.5 series, you can run this:\n\n```\n$ git tag -l \"v1.8.5*\"\nv1.8.5\nv1.8.5-rc0\nv1.8.5-rc1\nv1.8.5-rc2\nv1.8.5-rc3\nv1.8.5.1\nv1.8.5.2\nv1.8.5.3\nv1.8.5.4\nv1.8.5.5\n```\n\n[p10-c0 | book/02-git-basics/sections/tagging.asc | page 10 | Tagging]\n### Tagging\n\nLike most VCSs, Git has the ability to tag specific points in a repository's history as being important. Typically, people use this functionality to mark release points (`v1.0`, `v2.0` and so on). In this section, you'll learn how to list existing tags, how to create and delete tags, and what the different types of tags are.\n\n[p10-c2 | book/02-git-basics/sections/tagging.asc | page 10 | Listing Your Tags]\nNOTE: Listing tag wildcards requires `-l` or `--list` option\nIf you want just the entire list of tags, running the command `git tag` implicitly assumes you want a listing and provides one; the use of `-l` or `--list` in this case is optional.\n\nIf, however, you're supplying a wildcard pattern to match tag names, the use of `-l` or `--list` is mandatory.\n\n[p10-c9 | book/02-git-basics/sections/tagging.asc | page 10 | Sharing Tags]\n#### Sharing Tags\n\nBy default, the `git push` command doesn't transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. This process is just like sharing remote branches -- you can run `git push origin <tagname>`.\n\n```\n$ git push origin v1.5\nCounting objects: 14, done.\nDelta compression using up to 8 threads.\nCompressing objects: 100% (12/12), done.\nWriting objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.\nTotal 14 (delta 3), reused 0 (delta 0)\nTo git@github.com:schacon/simplegit.git\n * [new tag]         v1.5 -> v1.5\n```\n\nIf you have a lot of tags that you want to push up at once, you can also use the `--tags` option to the `git push` command. This will transfer all of your tags to the remote server that are not already there.\n\n[p10-c11 | book/02-git-basics/sections/tagging.asc | page 10 | Deleting Tags]\n#### Deleting Tags\n\nTo delete a tag on your local repository, you can use `git tag -d <tagname>`. For example, we could remove our lightweight tag above as follows:\n\n```\n$ git tag -d v1.4-lw\nDeleted tag 'v1.4-lw' (was e7d5add)\n```\n\nNote that this does not remove the tag from any remote servers. There are two common variations for deleting a tag from a remote server.\n\nThe first variation is `git push <remote> :refs/tags/<tagname>`:\n\n```\n$ git push origin :refs/tags/v1.4-lw\nTo /git@github.com:schacon/simplegit.git\n - [deleted]         v1.4-lw\n```\n\nThe way to interpret the above is to read it as the null value before the colon is being pushed to the remote tag name, effectively deleting it.\n\nThe second (and more intuitive) way to delete a remote tag is with:\n\n[p10-c12 | book/02-git-basics/sections/tagging.asc | page 10 | Deleting Tags]\n```\n$ git push origin --delete <tagname>\n```\n\n[p10-c13 | book/02-git-basics/sections/tagging.asc | page 10 | Checking out Tags]\n#### Checking out Tags\n\nIf you want to view the versions of files a tag is pointing to, you can do a `git checkout` of that tag, although this puts your repository in \"`detached HEAD`\" state, which has some ill side effects:",
+  "context_chars": 4412,
+  "n_searches": 2,
+  "prompt_tokens": 4074,
+  "output_tokens": 98,
+  "thought_tokens": 0,
+  "model_calls": 3,
+  "model_latency_s": 2.45,
+  "cost_usd": 0.000447,
+  "latency_s": 13.42,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "question": "I committed too early and forgot to include a file. How do I redo that last commit?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "To redo your last commit and include a forgotten file, make the additional changes or add the forgotten file using `git add`, and then commit again using the `--amend` option (`git commit --amend`) [p11-c0, p11-c1].",
+  "citations": [
+   "p11-c0",
+   "p11-c1"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "commit too early forgot file redo last commit amend",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 18.5,
+    "results": [
+     {
+      "id": "p11-c0",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 11
+     },
+     {
+      "id": "p11-c2",
+      "rank": 2,
+      "score": 0.032002,
+      "page": 11
+     },
+     {
+      "id": "p11-c1",
+      "rank": 3,
+      "score": 0.031281,
+      "page": 11
+     },
+     {
+      "id": "p11-c9",
+      "rank": 4,
+      "score": 0.03055,
+      "page": 11
+     },
+     {
+      "id": "p11-c7",
+      "rank": 5,
+      "score": 0.03031,
+      "page": 11
+     }
+    ],
+    "admitted": [
+     "p11-c0",
+     "p11-c2",
+     "p11-c1",
+     "p11-c9",
+     "p11-c7"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p11-c0",
+     "p11-c1"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p11-c0",
+   "p11-c2",
+   "p11-c1",
+   "p11-c9",
+   "p11-c7"
+  ],
+  "context": "[p11-c0 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\n### Undoing Things\n\nAt any stage, you may want to undo something. Here, we'll review a few basic tools for undoing changes that you've made. Be careful, because you can't always undo some of these undos. This is one of the few areas in Git where you may lose some work if you do it wrong.\n\nOne of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the `--amend` option:\n\n```\n$ git commit --amend\n```\n\n[p11-c2 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\nYou end up with a single commit -- the second commit replaces the results of the first.\n\nNOTE: It's important to understand that when you're amending your last commit, you're not so much fixing it as _replacing_ it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it's as if the previous commit never happened, and it won't show up in your repository history.\n\nThe obvious value to amending commits is to make minor improvements to your last commit, without cluttering your repository history with commit messages of the form, \"`Oops, forgot to add a file`\" or \"`Darn, fixing a typo in last commit`\".\n\n[p11-c1 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\nThis command takes your staging area and uses it for the commit. If you've made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you'll change is your commit message.\n\nThe same commit-message editor fires up, but it already contains the message of your previous commit. You can edit the message the same as always, but it overwrites your previous commit.\n\nAs an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:\n\n```\n$ git commit -m 'Initial commit'\n$ git add forgotten_file\n$ git commit --amend\n```\n\n[p11-c9 | book/02-git-basics/sections/undoing.asc | page 11 | Unmodifying a Modified File]\nRemember, anything that is _committed_ in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an `--amend` commit can be recovered (see ch10-git-internals# data recovery for data recovery). However, anything you lose that was never committed is likely never to be seen again.\n\n[p11-c7 | book/02-git-basics/sections/undoing.asc | page 11 | Unmodifying a Modified File]\n#### Unmodifying a Modified File\n\nWhat if you realize that you don't want to keep your changes to the `CONTRIBUTING.md` file? How can you easily unmodify it -- revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, `git status` tells you how to do that, too. In the last example output, the unstaged area looks like this:\n\n```\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n    modified:   CONTRIBUTING.md\n```\n\nIt tells you pretty explicitly how to discard the changes you've made. Let's do what it says:",
+  "context_chars": 3471,
+  "n_searches": 1,
+  "prompt_tokens": 1870,
+  "output_tokens": 115,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.8,
+  "cost_usd": 0.000233,
+  "latency_s": 14.28,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "question": "Under what condition is it safe to amend a commit?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "It is safe to amend a commit only if the commit is still local and has not been pushed somewhere; amending previously pushed commits and force pushing can cause problems for collaborators [p11-c3].",
+  "citations": [
+   "p11-c3"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "amend a commit safe condition",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.5,
+    "results": [
+     {
+      "id": "p11-c9",
+      "rank": 1,
+      "score": 0.031514,
+      "page": 11
+     },
+     {
+      "id": "p11-c0",
+      "rank": 2,
+      "score": 0.031319,
+      "page": 11
+     },
+     {
+      "id": "p11-c2",
+      "rank": 3,
+      "score": 0.030886,
+      "page": 11
+     },
+     {
+      "id": "p11-c1",
+      "rank": 4,
+      "score": 0.03009,
+      "page": 11
+     },
+     {
+      "id": "p11-c3",
+      "rank": 5,
+      "score": 0.029911,
+      "page": 11
+     }
+    ],
+    "admitted": [
+     "p11-c9",
+     "p11-c0",
+     "p11-c2",
+     "p11-c1",
+     "p11-c3"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p11-c3"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p11-c9",
+   "p11-c0",
+   "p11-c2",
+   "p11-c1",
+   "p11-c3"
+  ],
+  "context": "[p11-c9 | book/02-git-basics/sections/undoing.asc | page 11 | Unmodifying a Modified File]\nRemember, anything that is _committed_ in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an `--amend` commit can be recovered (see ch10-git-internals# data recovery for data recovery). However, anything you lose that was never committed is likely never to be seen again.\n\n[p11-c0 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\n### Undoing Things\n\nAt any stage, you may want to undo something. Here, we'll review a few basic tools for undoing changes that you've made. Be careful, because you can't always undo some of these undos. This is one of the few areas in Git where you may lose some work if you do it wrong.\n\nOne of the common undos takes place when you commit too early and possibly forget to add some files, or you mess up your commit message. If you want to redo that commit, make the additional changes you forgot, stage them, and commit again using the `--amend` option:\n\n```\n$ git commit --amend\n```\n\n[p11-c2 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\nYou end up with a single commit -- the second commit replaces the results of the first.\n\nNOTE: It's important to understand that when you're amending your last commit, you're not so much fixing it as _replacing_ it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it's as if the previous commit never happened, and it won't show up in your repository history.\n\nThe obvious value to amending commits is to make minor improvements to your last commit, without cluttering your repository history with commit messages of the form, \"`Oops, forgot to add a file`\" or \"`Darn, fixing a typo in last commit`\".\n\n[p11-c1 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\nThis command takes your staging area and uses it for the commit. If you've made no changes since your last commit (for instance, you run this command immediately after your previous commit), then your snapshot will look exactly the same, and all you'll change is your commit message.\n\nThe same commit-message editor fires up, but it already contains the message of your previous commit. You can edit the message the same as always, but it overwrites your previous commit.\n\nAs an example, if you commit and then realize you forgot to stage the changes in a file you wanted to add to this commit, you can do something like this:\n\n```\n$ git commit -m 'Initial commit'\n$ git add forgotten_file\n$ git commit --amend\n```\n\n[p11-c3 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\nNOTE: Only amend commits that are still local and have not been pushed somewhere. Amending previously pushed commits and force pushing the branch will cause problems for your collaborators. For more on what happens when you do this and how to recover if you're on the receiving end read rebase peril.",
+  "context_chars": 3042,
+  "n_searches": 1,
+  "prompt_tokens": 1728,
+  "output_tokens": 86,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.75,
+  "cost_usd": 0.000207,
+  "latency_s": 9.01,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "question": "What single guideline sums up the danger of rewriting history with rebase?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "The danger of rebasing can be summed up in the guideline: \"Do not rebase commits that exist outside your repository and that people may have based work on.\" [p16-c10]",
+  "citations": [
+   "p16-c10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "guideline danger rewriting history rebase",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 16.8,
+    "results": [
+     {
+      "id": "p27-c7",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 27
+     },
+     {
+      "id": "p16-c17",
+      "rank": 2,
+      "score": 0.032018,
+      "page": 16
+     },
+     {
+      "id": "p16-c6",
+      "rank": 3,
+      "score": 0.031258,
+      "page": 16
+     },
+     {
+      "id": "p16-c10",
+      "rank": 4,
+      "score": 0.030579,
+      "page": 16
+     },
+     {
+      "id": "p29-c30",
+      "rank": 5,
+      "score": 0.03055,
+      "page": 29
+     }
+    ],
+    "admitted": [
+     "p27-c7",
+     "p16-c17",
+     "p16-c6",
+     "p16-c10",
+     "p29-c30"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p16-c10"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p27-c7",
+   "p16-c17",
+   "p16-c6",
+   "p16-c10",
+   "p29-c30"
+  ],
+  "context": "[p27-c7 | book/05-distributed-git/sections/contributing.asc | page 27 | Commit Guidelines]\nThis approach also makes it easier to pull out or revert one of the changesets if you need to later. ch07-git-tools# rewriting history describes a number of useful Git tricks for rewriting history and interactively staging files -- use these tools to help craft a clean and understandable history before sending the work to someone else.\n\n[p16-c17 | book/03-git-branching/sections/rebasing.asc | page 16 | Rebase vs. Merge]\n#### Rebase vs. Merge\n\nNow that you've seen rebasing and merging in action, you may be wondering which one is better. Before we can answer this, let's step back a bit and talk about what history means.\n\nOne point of view on this is that your repository's commit history is a *record of what actually happened.* It's a historical document, valuable in its own right, and shouldn't be tampered with. From this angle, changing the commit history is almost blasphemous; you're _lying_ about what actually transpired. So what if there was a messy series of merge commits? That's how it happened, and the repository should preserve that for posterity.\n\n[p16-c6 | book/03-git-branching/sections/rebasing.asc | page 16 | More Interesting Rebases]\n#### More Interesting Rebases\n\nYou can also have your rebase replay on something other than the rebase target branch. Take a history like rbdiag e, for example. You branched a topic branch (`server`) to add some server-side functionality to your project, and made a commit. Then, you branched off that to make the client-side changes (`client`) and committed a few times. Finally, you went back to your `server` branch and did a few more commits.\n\nA history with a topic branch off another topic branch\n\n[p16-c10 | book/03-git-branching/sections/rebasing.asc | page 16 | The Perils of Rebasing]\n#### The Perils of Rebasing\n\nAhh, but the bliss of rebasing isn't without its drawbacks, which can be summed up in a single line:\n\n*Do not rebase commits that exist outside your repository and that people may have based work on.*\n\nIf you follow that guideline, you'll be fine. If you don't, people will hate you, and you'll be scorned by friends and family.\n\nWhen you rebase stuff, you're abandoning existing commits and creating new ones that are similar but different. If you push commits somewhere and others pull them down and base work on them, and then you rewrite those commits with `git rebase` and push them up again, your collaborators will have to re-merge their work and things will get messy when you try to pull their work back into yours.\n\n[p29-c30 | book/05-distributed-git/sections/maintaining.asc | page 29 | Rebasing and Cherry-Picking Workflows]\n##### Rebasing and Cherry-Picking Workflows\n\nOther maintainers prefer to rebase or cherry-pick contributed work on top of their `master` branch, rather than merging it in, to keep a mostly linear history. When you have work in a topic branch and have determined that you want to integrate it, you move to that branch and run the rebase command to rebuild the changes on top of your current `master` (or `develop`, and so on) branch. If that works well, you can fast-forward your `master` branch, and you'll end up with a linear project history.",
+  "context_chars": 3259,
+  "n_searches": 1,
+  "prompt_tokens": 1782,
+  "output_tokens": 89,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.72,
+  "cost_usd": 0.000214,
+  "latency_s": 8.89,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "question": "Why does Git only move the branch pointer ahead when merging a hotfix that is directly ahead of master?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Git moves the branch pointer forward because the commit pointed to by the hotfix branch can be reached by following the history of the current commit, meaning there is no divergent work to merge together [p13-c6]. This simplifies the process into a \"fast-forward\" rather than requiring a three-way merge [p13-c6, p13-c10].",
+  "citations": [
+   "p13-c6",
+   "p13-c10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "hotfix directly ahead of master branch pointer fast-forward",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 19.2,
+    "results": [
+     {
+      "id": "p13-c6",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 13
+     },
+     {
+      "id": "p13-c5",
+      "rank": 2,
+      "score": 0.031514,
+      "page": 13
+     },
+     {
+      "id": "p16-c7",
+      "rank": 3,
+      "score": 0.030331,
+      "page": 16
+     },
+     {
+      "id": "p16-c8",
+      "rank": 4,
+      "score": 0.02967,
+      "page": 16
+     },
+     {
+      "id": "p13-c10",
+      "rank": 5,
+      "score": 0.029206,
+      "page": 13
+     }
+    ],
+    "admitted": [
+     "p13-c6",
+     "p13-c5",
+     "p16-c7",
+     "p16-c8",
+     "p13-c10"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p13-c6",
+     "p13-c10"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p13-c6",
+   "p13-c5",
+   "p16-c7",
+   "p16-c8",
+   "p13-c10"
+  ],
+  "context": "[p13-c6 | book/03-git-branching/sections/basic-branching-and-merging.asc | page 13 | Basic Branching]\nYou'll notice the phrase \"`fast-forward`\" in that merge. Because the commit `C4` pointed to by the branch `hotfix` you merged in was directly ahead of the commit `C2` you're on, Git simply moves the pointer forward. To phrase that another way, when you try to merge one commit with a commit that can be reached by following the first commit's history, Git simplifies things by moving the pointer forward because there is no divergent work to merge together -- this is called a \"`fast-forward.`\"\n\nYour change is now in the snapshot of the commit pointed to by the `master` branch, and you can deploy the fix.\n\n.`master` is fast-forwarded to `hotfix`\n\n[p13-c5 | book/03-git-branching/sections/basic-branching-and-merging.asc | page 13 | Basic Branching]\nYou can run your tests, make sure the hotfix is what you want, and finally merge the `hotfix` branch back into your `master` branch to deploy to production. You do this with the `git merge` command:\n\n```\n$ git checkout master\n$ git merge hotfix\nUpdating f42c576..3a0874c\nFast-forward\n index.html | 2 ++\n 1 file changed, 2 insertions(+)\n```\n\n[p16-c7 | book/03-git-branching/sections/rebasing.asc | page 16 | More Interesting Rebases]\nSuppose you decide that you want to merge your client-side changes into your mainline for a release, but you want to hold off on the server-side changes until it's tested further. You can take the changes on `client` that aren't on `server` (`C8` and `C9`) and replay them on your `master` branch by using the `--onto` option of `git rebase`:\n\n```\n$ git rebase --onto master server client\n```\n\nThis basically says, \"`Take the `client` branch, figure out the patches since it diverged from the `server` branch, and replay these patches in the `client` branch as if it was based directly off the `master` branch instead.`\" It's a bit complex, but the result is pretty cool.\n\nRebasing a topic branch off another topic branch\n\nNow you can fast-forward your `master` branch (see rbdiag g):\n\n[p16-c8 | book/03-git-branching/sections/rebasing.asc | page 16 | More Interesting Rebases]\n```\n$ git checkout master\n$ git merge client\n```\n\nFast-forwarding your `master` branch to include the `client` branch changes\n\nLet's say you decide to pull in your `server` branch as well. You can rebase the `server` branch onto the `master` branch without having to check it out first by running `git rebase <basebranch> <topicbranch>` -- which checks out the topic branch (in this case, `server`) for you and replays it onto the base branch (`master`):\n\n```\n$ git rebase master server\n```\n\nThis replays your `server` work on top of your `master` work, as shown in rbdiag h.\n\nRebasing your `server` branch on top of your `master` branch\n\nThen, you can fast-forward the base branch (`master`):\n\n```\n$ git checkout master\n$ git merge server\n```\n\n[p13-c10 | book/03-git-branching/sections/basic-branching-and-merging.asc | page 13 | Basic Merging]\nThis looks a bit different than the `hotfix` merge you did earlier. In this case, your development history has diverged from some older point. Because the commit on the branch you're on isn't a direct ancestor of the branch you're merging in, Git has to do some work. In this case, Git does a simple three-way merge, using the two snapshots pointed to by the branch tips and the common ancestor of the two.\n\nThree snapshots used in a typical merge\n\nInstead of just moving the branch pointer forward, Git creates a new snapshot that results from this three-way merge and automatically creates a new commit that points to it. This is referred to as a merge commit, and is special in that it has more than one parent.\n\nA merge commit",
+  "context_chars": 3741,
+  "n_searches": 1,
+  "prompt_tokens": 2000,
+  "output_tokens": 140,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.85,
+  "cost_usd": 0.000256,
+  "latency_s": 9.14,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "question": "A branch still has unmerged work and `git branch -d` refuses to delete it. How can I delete it anyway?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "If a branch contains unmerged work, you can force-delete it by using the capital `-D` option instead of `-d` (e.g., `git branch -D testing`) [p14-c2].",
+  "citations": [
+   "p14-c2"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "git branch -d delete unmerged work force",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 24.7,
+    "results": [
+     {
+      "id": "p14-c2",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 14
+     },
+     {
+      "id": "p13-c11",
+      "rank": 2,
+      "score": 0.031514,
+      "page": 13
+     },
+     {
+      "id": "p17-c22",
+      "rank": 3,
+      "score": 0.030118,
+      "page": 17
+     },
+     {
+      "id": "p14-c1",
+      "rank": 4,
+      "score": 0.03009,
+      "page": 14
+     },
+     {
+      "id": "p16-c9",
+      "rank": 5,
+      "score": 0.029437,
+      "page": 16
+     }
+    ],
+    "admitted": [
+     "p14-c2",
+     "p13-c11",
+     "p17-c22",
+     "p14-c1",
+     "p16-c9"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p14-c2"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p14-c2",
+   "p13-c11",
+   "p17-c22",
+   "p14-c1",
+   "p16-c9"
+  ],
+  "context": "[p14-c2 | book/03-git-branching/sections/branch-management.asc | page 14 | Branch Management]\nTo see all the branches that contain work you haven't yet merged in, you can run `git branch --no-merged`:\n\n```\n$ git branch --no-merged\n  testing\n```\n\nThis shows your other branch. Because it contains work that isn't merged in yet, trying to delete it with `git branch -d` will fail:\n\n```\n$ git branch -d testing\nerror: The branch 'testing' is not fully merged.\nIf you are sure you want to delete it, run 'git branch -D testing'.\n```\n\nIf you really do want to delete the branch and lose that work, you can force it with `-D`, as the helpful message points out.\n\nTIP: The options described above, `--merged` and `--no-merged` will, if not given a commit or branch name as an argument, show you what is, respectively, merged or not merged into your _current_ branch.\n\n[p13-c11 | book/03-git-branching/sections/basic-branching-and-merging.asc | page 13 | Basic Merging]\nNow that your work is merged in, you have no further need for the `iss53` branch. You can close the issue in your issue-tracking system, and delete the branch:\n\n```\n$ git branch -d iss53\n```\n\n[p17-c22 | book/03-git-branching/sections/remote-branches.asc | page 17 | Deleting Remote Branches]\n#### Deleting Remote Branches\n\nSuppose you're done with a remote branch -- say you and your collaborators are finished with a feature and have merged it into your remote's `master` branch (or whatever branch your stable codeline is in). You can delete a remote branch using the `--delete` option to `git push`. If you want to delete your `serverfix` branch from the server, you run the following:\n\n```\n$ git push origin --delete serverfix\nTo https://github.com/schacon/simplegit\n - [deleted]         serverfix\n```\n\nBasically all this does is to remove the pointer from the server. The Git server will generally keep the data there for a while until a garbage collection runs, so if it was accidentally deleted, it's often easy to recover.\n\n[p14-c1 | book/03-git-branching/sections/branch-management.asc | page 14 | Branch Management]\n```\n$ git branch -v\n  iss53   93b412c Fix javascript issue\n* master  7a98805 Merge branch 'iss53'\n  testing 782fd34 Add scott to the author list in the readme\n```\n\nThe useful `--merged` and `--no-merged` options can filter this list to branches that you have or have not yet merged into the branch you're currently on. To see which branches are already merged into the branch you're on, you can run `git branch --merged`:\n\n```\n$ git branch --merged\n  iss53\n* master\n```\n\nBecause you already merged in `iss53` earlier, you see it in your list. Branches on this list without the `*` in front of them are generally fine to delete with `git branch -d`; you've already incorporated their work into another branch, so you're not going to lose anything.\n\n[p16-c9 | book/03-git-branching/sections/rebasing.asc | page 16 | More Interesting Rebases]\nYou can remove the `client` and `server` branches because all the work is integrated and you don't need them anymore, leaving your history for this entire process looking like rbdiag i:\n\n```\n$ git branch -d client\n$ git branch -d server\n```\n\nFinal commit history",
+  "context_chars": 3190,
+  "n_searches": 1,
+  "prompt_tokens": 1869,
+  "output_tokens": 95,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.59,
+  "cost_usd": 0.000225,
+  "latency_s": 8.87,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "question": "Which protocols can Git use to transfer data?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Git can use four distinct protocols to transfer data: Local, HTTP (including Smart and Dumb HTTP), Secure Shell (SSH), and Git [p24-c0, p24-c8].",
+  "citations": [
+   "p24-c0",
+   "p24-c8"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "protocols transfer data Git",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 18.2,
+    "results": [
+     {
+      "id": "p24-c0",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 24
+     },
+     {
+      "id": "p24-c8",
+      "rank": 2,
+      "score": 0.032002,
+      "page": 24
+     },
+     {
+      "id": "p7-c7",
+      "rank": 3,
+      "score": 0.03125,
+      "page": 7
+     },
+     {
+      "id": "p9-c5",
+      "rank": 4,
+      "score": 0.030798,
+      "page": 9
+     },
+     {
+      "id": "p24-c21",
+      "rank": 5,
+      "score": 0.030536,
+      "page": 24
+     }
+    ],
+    "admitted": [
+     "p24-c0",
+     "p24-c8",
+     "p7-c7",
+     "p9-c5",
+     "p24-c21"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p24-c0",
+     "p24-c8"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p24-c0",
+   "p24-c8",
+   "p7-c7",
+   "p9-c5",
+   "p24-c21"
+  ],
+  "context": "[p24-c0 | book/04-git-server/sections/protocols.asc | page 24 | The Protocols]\n### The Protocols\n\nGit can use four distinct protocols to transfer data: Local, HTTP, Secure Shell (SSH) and Git. Here we'll discuss what they are and in what basic circumstances you would want (or not want) to use them.\n\n[p24-c8 | book/04-git-server/sections/protocols.asc | page 24 | The HTTP Protocols]\n#### The HTTP Protocols\n\nGit can communicate over HTTP using two different modes. Prior to Git 1.6.6, there was only one way it could do this which was very simple and generally read-only. In version 1.6.6, a new, smarter protocol was introduced that involved Git being able to intelligently negotiate data transfer in a manner similar to how it does over SSH. In the last few years, this new HTTP protocol has become very popular since it's simpler for the user and smarter about how it communicates. The newer version is often referred to as the _Smart_ HTTP protocol and the older way as _Dumb_ HTTP. We'll cover the newer Smart HTTP protocol first.\n\n[p7-c7 | book/02-git-basics/sections/getting-a-repository.asc | page 7 | Cloning an Existing Repository]\nThat command does the same thing as the previous one, but the target directory is called `mylibgit`.\n\nGit has a number of different transfer protocols you can use. The previous example uses the `https://` protocol, but you may also see `git://` or `user@server:path/to/repo.git`, which uses the SSH transfer protocol. ch04-git-on-the-server# getting git on a server will introduce all of the available options the server can set up to access your Git repository and the pros and cons of each.\n\n[p9-c5 | book/02-git-basics/sections/remotes.asc | page 9 | Showing Your Remotes]\nNotice that these remotes use a variety of protocols; we'll cover more about this in ch04-git-on-the-server# getting git on a server.\n\n[p24-c21 | book/04-git-server/sections/protocols.asc | page 24 | The Pros]\n##### The Pros\n\nThe Git protocol is often the fastest network transfer protocol available. If you're serving a lot of traffic for a public project or serving a very large project that doesn't require user authentication for read access, it's likely that you'll want to set up a Git daemon to serve your project. It uses the same data-transfer mechanism as the SSH protocol but without the encryption and authentication overhead.",
+  "context_chars": 2358,
+  "n_searches": 1,
+  "prompt_tokens": 1565,
+  "output_tokens": 94,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.32,
+  "cost_usd": 0.000194,
+  "latency_s": 8.81,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "question": "In a .gitignore file, what does starting a pattern with a forward slash do?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Starting a pattern with a forward slash (`/`) in a `.gitignore` file avoids recursivity [p8-c18].",
+  "citations": [
+   "p8-c18"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "gitignore forward slash pattern",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 19.2,
+    "results": [
+     {
+      "id": "p8-c16",
+      "rank": 1,
+      "score": 0.032002,
+      "page": 8
+     },
+     {
+      "id": "p8-c21",
+      "rank": 2,
+      "score": 0.032002,
+      "page": 8
+     },
+     {
+      "id": "p8-c19",
+      "rank": 3,
+      "score": 0.031099,
+      "page": 8
+     },
+     {
+      "id": "p8-c18",
+      "rank": 4,
+      "score": 0.030886,
+      "page": 8
+     },
+     {
+      "id": "p8-c17",
+      "rank": 5,
+      "score": 0.030777,
+      "page": 8
+     }
+    ],
+    "admitted": [
+     "p8-c16",
+     "p8-c21",
+     "p8-c19",
+     "p8-c18",
+     "p8-c17"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "forward slash avoid recursivity gitignore",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 19.9,
+    "results": [
+     {
+      "id": "p8-c21",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 8
+     },
+     {
+      "id": "p8-c18",
+      "rank": 2,
+      "score": 0.032018,
+      "page": 8
+     },
+     {
+      "id": "p8-c16",
+      "rank": 3,
+      "score": 0.031746,
+      "page": 8
+     },
+     {
+      "id": "p8-c19",
+      "rank": 4,
+      "score": 0.030835,
+      "page": 8
+     },
+     {
+      "id": "p8-c17",
+      "rank": 5,
+      "score": 0.028309,
+      "page": 8
+     }
+    ],
+    "admitted": [],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "slash avoid recursivity",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 14.9,
+    "results": [
+     {
+      "id": "p8-c18",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 8
+     },
+     {
+      "id": "p5-c0",
+      "rank": 2,
+      "score": 0.016129,
+      "page": 5
+     },
+     {
+      "id": "p8-c19",
+      "rank": 3,
+      "score": 0.016129,
+      "page": 8
+     },
+     {
+      "id": "p12-c4",
+      "rank": 4,
+      "score": 0.015873,
+      "page": 12
+     },
+     {
+      "id": "p16-c15",
+      "rank": 5,
+      "score": 0.015625,
+      "page": 16
+     }
+    ],
+    "admitted": [
+     "p5-c0",
+     "p12-c4",
+     "p16-c15"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p8-c18"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p8-c16",
+   "p8-c21",
+   "p8-c19",
+   "p8-c18",
+   "p8-c17",
+   "p5-c0",
+   "p12-c4",
+   "p16-c15"
+  ],
+  "context": "[p8-c16 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\n#### Ignoring Files\n\nOften, you'll have a class of files that you don't want Git to automatically add or even show you as being untracked. These are generally automatically generated files such as log files or files produced by your build system. In such cases, you can create a file listing patterns to match them named `.gitignore`. Here is an example `.gitignore` file:\n\n```\n$ cat .gitignore\n*.[oa]\n*~\n```\n\n[p8-c21 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\nNOTE: In the simple case, a repository might have a single `.gitignore` file in its root directory, which applies recursively to the entire repository. However, it is also possible to have additional `.gitignore` files in subdirectories. The rules in these nested `.gitignore` files apply only to the files under the directory where they are located. The Linux kernel source repository has 206 `.gitignore` files.\n\nIt is beyond the scope of this book to get into the details of multiple `.gitignore` files; see `man gitignore` for the details.\n\n[p8-c19 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\nGlob patterns are like simplified regular expressions that shells use. An asterisk (`\\*`) matches zero or more characters; `[abc]` matches any character inside the brackets (in this case a, b, or c); a question mark (`?`) matches a single character; and brackets enclosing characters separated by a hyphen (`[0-9]`) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; `a/**/z` would match `a/z`, `a/b/z`, `a/b/c/z`, and so on.\n\nHere is another example `.gitignore` file:\n\n[p8-c18 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\n* Blank lines or lines starting with `#` are ignored.\n* Standard glob patterns work, and will be applied recursively throughout the entire working tree.\n* You can start patterns with a forward slash (`/`) to avoid recursivity.\n* You can end patterns with a forward slash (`/`) to specify a directory.\n* You can negate a pattern by starting it with an exclamation point (`!`).\n\n[p8-c17 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\nThe first line tells Git to ignore any files ending in \"`.o`\" or \"`.a`\" -- object and archive files that may be the product of building your code. The second line tells Git to ignore all files whose names end with a tilde (`~`), which is used by many text editors such as Emacs to mark temporary files. You may also include a log, tmp, or pid directory; automatically generated documentation; and so on. Setting up a `.gitignore` file for your new repository before you get going is generally a good idea so you don't accidentally commit files that you really don't want in your Git repository.\n\nThe rules for the patterns you can put in the `.gitignore` file are as follows:\n\n[p5-c0 | book/01-introduction/sections/what-is-git.asc | page 5 | What is Git?]\n### What is Git?\n\nSo, what is Git in a nutshell? This is an important section to absorb, because if you understand what Git is and the fundamentals of how it works, then using Git effectively will probably be much easier for you. As you learn Git, try to clear your mind of the things you may know about other VCSs, such as CVS, Subversion or Perforce -- doing so will help you avoid subtle confusion when using the tool. Even though Git's user interface is fairly similar to these other VCSs, Git stores and thinks about information in a very different way, and understanding these differences will help you avoid becoming confused while using it.\n\n[p12-c4 | book/02-git-basics/sections/viewing-history.asc | page 12 | Viewing the Commit History]\n```\ndiff --git a/lib/simplegit.rb b/lib/simplegit.rb\nindex a0a60ae..47c6340 100644\n--- a/lib/simplegit.rb\n+++ b/lib/simplegit.rb\n@@ -18,8 +18,3 @@ class SimpleGit\n     end\n\n end\n-\n-if $0 == __FILE__\n-  git = SimpleGit.new\n-  puts git.show\n-end\n```\n\n[p16-c15 | book/03-git-branching/sections/rebasing.asc | page 16 | Rebase When You Rebase]\nThis only works if `C4` and `C4'` that your partner made are almost exactly the same patch. Otherwise the rebase won't be able to tell that it's a duplicate and will add another `C4`-like patch (which will probably fail to apply cleanly, since the changes would already be at least somewhat there).\n\nYou can also simplify this by running a `git pull --rebase` instead of a normal `git pull`. Or you could do it manually with a `git fetch` followed by a `git rebase teamone/master` in this case.\n\nIf you are using `git pull` and want to make `--rebase` the default, you can set the `pull.rebase` config value with something like `git config --global pull.rebase true`.",
+  "context_chars": 4822,
+  "n_searches": 3,
+  "prompt_tokens": 5171,
+  "output_tokens": 111,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 2.97,
+  "cost_usd": 0.000562,
+  "latency_s": 18.22,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "question": "What are the main units of long-lived discussion in this tool?",
+  "filter": {
+   "chapter": "04-git-server"
+  },
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Merge requests and issues serve as the primary units of long-lived discussion in GitLab [p22-c12].",
+  "citations": [
+   "p22-c12"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "discussion long-lived",
+    "filter": {
+     "chapter": "04-git-server"
+    },
+    "top_k": 5,
+    "latency_ms": 15.8,
+    "results": [
+     {
+      "id": "p22-c12",
+      "rank": 1,
+      "score": 0.032266,
+      "page": 22
+     },
+     {
+      "id": "p22-c4",
+      "rank": 2,
+      "score": 0.016393,
+      "page": 22
+     },
+     {
+      "id": "p21-c9",
+      "rank": 3,
+      "score": 0.016129,
+      "page": 21
+     },
+     {
+      "id": "p24-c14",
+      "rank": 4,
+      "score": 0.016129,
+      "page": 24
+     },
+     {
+      "id": "p21-c5",
+      "rank": 5,
+      "score": 0.015873,
+      "page": 21
+     }
+    ],
+    "admitted": [
+     "p22-c12",
+     "p22-c4",
+     "p21-c9",
+     "p24-c14",
+     "p21-c5"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p22-c12"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p22-c12",
+   "p22-c4",
+   "p21-c9",
+   "p24-c14",
+   "p21-c5"
+  ],
+  "context": "[p22-c12 | book/04-git-server/sections/gitlab.asc | page 22 | Working Together]\nMerge requests and issues are the main units of long-lived discussion in GitLab. Each merge request allows a line-by-line discussion of the proposed change (which supports a lightweight kind of code review), as well as a general overall discussion thread. Both can be assigned to users, or organized into milestones.\n\nThis section is focused mainly on the Git-related features of GitLab, but as a mature project, it provides many other features to help your team work together, such as project wikis and system maintenance tools. One benefit to GitLab is that, once the server is set up and running, you'll rarely need to tweak a configuration file or access the server via SSH; most administration and general usage can be done through the in-browser interface.\n\n[p22-c4 | book/04-git-server/sections/gitlab.asc | page 22 | Users]\n\"`Destroying`\" a user, on the other hand, completely removes them from the database and filesystem. All projects and data in their namespace is removed, and any groups they own will also be removed. This is obviously a much more permanent and destructive action, and you will rarely need it.\n\n[p21-c9 | book/04-git-server/sections/git-on-a-server.asc | page 21 | SSH Access]\nAnother way to do it is to have your SSH server authenticate from an LDAP server or some other centralized authentication source that you may already have set up. As long as each user can get shell access on the machine, any SSH authentication mechanism you can think of should work.\n\n[p24-c14 | book/04-git-server/sections/protocols.asc | page 24 | The Pros]\n##### The Pros\n\nWe'll concentrate on the pros of the Smart version of the HTTP protocol.\n\nThe simplicity of having a single URL for all types of access and having the server prompt only when authentication is needed makes things very easy for the end user. Being able to authenticate with a username and password is also a big advantage over SSH, since users don't have to generate SSH keys locally and upload their public key to the server before being able to interact with it. For less sophisticated users, or users on systems where SSH is less common, this is a major advantage in usability. It is also a very fast and efficient protocol, similar to the SSH one.\n\n[p21-c5 | book/04-git-server/sections/git-on-a-server.asc | page 21 | Putting the Bare Repository on a Server]\nIt's important to note that this is literally all you need to do to run a useful Git server to which several people have access -- just add SSH-able accounts on a server, and stick a bare repository somewhere that all those users have read and write access to. You're ready to go -- nothing else needed.\n\nIn the next few sections, you'll see how to expand to more sophisticated setups. This discussion will include not having to create user accounts for each user, adding public read access to repositories, setting up web UIs and more. However, keep in mind that to collaborate with a couple of people on a private project, all you _need_ is an SSH server and a bare repository.",
+  "context_chars": 3105,
+  "n_searches": 1,
+  "prompt_tokens": 1751,
+  "output_tokens": 69,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.3,
+  "cost_usd": 0.000203,
+  "latency_s": 8.8,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "question": "What kind of merge is created when you press the merge button on the website?",
+  "filter": {
+   "chapter": "06-github"
+  },
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Pressing the merge button on the GitHub website performs a non-fast-forward merge, which creates a merge commit even if a fast-forward merge was possible [p31-c16, p32-c10].",
+  "citations": [
+   "p31-c16",
+   "p32-c10"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "merge button website",
+    "filter": {
+     "chapter": "06-github"
+    },
+    "top_k": 5,
+    "latency_ms": 13.7,
+    "results": [
+     {
+      "id": "p32-c10",
+      "rank": 1,
+      "score": 0.032266,
+      "page": 32
+     },
+     {
+      "id": "p32-c20",
+      "rank": 2,
+      "score": 0.032258,
+      "page": 32
+     },
+     {
+      "id": "p31-c21",
+      "rank": 3,
+      "score": 0.03101,
+      "page": 31
+     },
+     {
+      "id": "p31-c16",
+      "rank": 4,
+      "score": 0.030798,
+      "page": 31
+     },
+     {
+      "id": "p31-c2",
+      "rank": 5,
+      "score": 0.028958,
+      "page": 31
+     }
+    ],
+    "admitted": [
+     "p32-c10",
+     "p32-c20",
+     "p31-c21",
+     "p31-c16",
+     "p31-c2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p31-c16",
+     "p32-c10"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p32-c10",
+   "p32-c20",
+   "p31-c21",
+   "p31-c16",
+   "p31-c2"
+  ],
+  "context": "[p32-c10 | book/06-github/sections/3-maintaining.asc | page 32 | Collaborating on the Pull Request]\nOnce the code is in a place you like and want to merge it in, you can either pull the code down and merge it locally, either with the `git pull <url> <branch>` syntax we saw earlier, or by adding the fork as a remote and fetching and merging.\n\nIf the merge is trivial, you can also just hit the \"`Merge`\" button on the GitHub site. This will do a \"`non-fast-forward`\" merge, creating a merge commit even if a fast-forward merge was possible. This means that no matter what, every time you hit the merge button, a merge commit is created. As you can see in merge button, GitHub gives you all of this information if you click the hint link.\n\nMerge button and instructions for merging a Pull Request manually\n\n[p32-c20 | book/06-github/sections/3-maintaining.asc | page 32 | Pull Request Refs]\nThe eagle-eyed among you would note the `head` on the end of the remote portion of the refspec. There's also a `refs/pull/#/merge` ref on the GitHub side, which represents the commit that would result if you push the \"`merge`\" button on the site. This can allow you to test the merge before even hitting the button.\n\n[p31-c21 | book/06-github/sections/2-contributing.asc | page 31 | Pull Requests as Patches]\nFor instance, if you go back and look again at pr final, you'll notice that the contributor did not rebase his commit and send another Pull Request. Instead they added new commits and pushed them to the existing branch. This way if you go back and look at this Pull Request in the future, you can easily find all of the context of why decisions were made. Pushing the \"`Merge`\" button on the site purposefully creates a merge commit that references the Pull Request so that it's easy to go back and research the original conversation if necessary.\n\n[p31-c16 | book/06-github/sections/2-contributing.asc | page 31 | Iterating on a Pull Request]\nThe other thing you'll notice is that GitHub checks to see if the Pull Request merges cleanly and provides a button to do the merge for you on the server. This button only shows up if you have write access to the repository and a trivial merge is possible. If you click it GitHub will perform a \"`non-fast-forward`\" merge, meaning that even if the merge *could* be a fast-forward, it will still create a merge commit.\n\nIf you would prefer, you can simply pull the branch down and merge it locally. If you merge this branch into the `master` branch and push it to GitHub, the Pull Request will automatically be closed.\n\n[p31-c2 | book/06-github/sections/2-contributing.asc | page 31 | Forking Projects]\nThis way, projects don't have to worry about adding users as collaborators to give them push access. People can fork a project, push to it, and contribute their changes back to the original repository by creating what's called a Pull Request, which we'll cover next. This opens up a discussion thread with code review, and the owner and the contributor can then communicate about the change until the owner is happy with it, at which point the owner can merge it in.\n\nTo fork a project, visit the project page and click the \"`Fork`\" button at the top-right of the page.\n\nThe \"`Fork`\" button\n\nAfter a few seconds, you'll be taken to your new project page, with your own writeable copy of the code.",
+  "context_chars": 3342,
+  "n_searches": 1,
+  "prompt_tokens": 1855,
+  "output_tokens": 102,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.54,
+  "cost_usd": 0.000226,
+  "latency_s": 9.08,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "q16",
+  "split": "dev",
+  "question": "Which workflow gives every developer a public repository they can write to while reading everyone else's?",
+  "filter": {
+   "chapter": "05-distributed-git"
+  },
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "The Integration-Manager Workflow allows every developer to have a public repository they can write to while having read access to everyone else's [p28-c5].",
+  "citations": [
+   "p28-c5"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "public repository write read everyone else integration-manager workflow dictator lieutenant",
+    "filter": {
+     "chapter": "05-distributed-git"
+    },
+    "top_k": 5,
+    "latency_ms": 14.7,
+    "results": [
+     {
+      "id": "p28-c5",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 28
+     },
+     {
+      "id": "p28-c8",
+      "rank": 2,
+      "score": 0.032266,
+      "page": 28
+     },
+     {
+      "id": "p28-c6",
+      "rank": 3,
+      "score": 0.032002,
+      "page": 28
+     },
+     {
+      "id": "p28-c7",
+      "rank": 4,
+      "score": 0.03055,
+      "page": 28
+     },
+     {
+      "id": "p27-c25",
+      "rank": 5,
+      "score": 0.030331,
+      "page": 27
+     }
+    ],
+    "admitted": [
+     "p28-c5",
+     "p28-c8",
+     "p28-c6",
+     "p28-c7",
+     "p27-c25"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p28-c5"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p28-c5",
+   "p28-c8",
+   "p28-c6",
+   "p28-c7",
+   "p27-c25"
+  ],
+  "context": "[p28-c5 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Integration-Manager Workflow]\n#### Integration-Manager Workflow\n\nBecause Git allows you to have multiple remote repositories, it's possible to have a workflow where each developer has write access to their own public repository and read access to everyone else's. This scenario often includes a canonical repository that represents the \"`official`\" project. To contribute to that project, you create your own public clone of the project and push your changes to it. Then, you can send a request to the maintainer of the main project to pull in your changes. The maintainer can then add your repository as a remote, test your changes locally, merge them into their branch, and push back to their repository. The process works as follows (see wfdiag b):\n\n[p28-c8 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Dictator and Lieutenants Workflow]\n#### Dictator and Lieutenants Workflow\n\nThis is a variant of a multiple-repository workflow. It's generally used by huge projects with hundreds of collaborators; one famous example is the Linux kernel. Various integration managers are in charge of certain parts of the repository; they're called _lieutenants_. All the lieutenants have one integration manager known as the benevolent dictator. The benevolent dictator pushes from their directory to a reference repository from which all the collaborators need to pull. The process works like this (see wfdiag c):\n\n[p28-c6 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Integration-Manager Workflow]\n1. The project maintainer pushes to their public repository.\n2. A contributor clones that repository and makes changes.\n3. The contributor pushes to their own public copy.\n4. The contributor sends the maintainer an email asking them to pull changes.\n5. The maintainer adds the contributor's repository as a remote and merges locally.\n6. The maintainer pushes merged changes to the main repository.\n\nIntegration-manager workflow\n\n[p28-c7 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Integration-Manager Workflow]\nThis is a very common workflow with hub-based tools like GitHub or GitLab, where it's easy to fork a project and push your changes into your fork for everyone to see. One of the main advantages of this approach is that you can continue to work, and the maintainer of the main repository can pull in your changes at any time. Contributors don't have to wait for the project to incorporate their changes -- each party can work at their own pace.\n\n[p27-c25 | book/05-distributed-git/sections/contributing.asc | page 27 | Private Managed Team]\n#### Private Managed Team\n\nIn this next scenario, you'll look at contributor roles in a larger private group. You'll learn how to work in an environment where small groups collaborate on features, after which those team-based contributions are integrated by another party.\n\nLet's say that John and Jessica are working together on one feature (call this \"`featureA`\"), while Jessica and a third developer, Josie, are working on a second (say, \"`featureB`\"). In this case, the company is using a type of integration-manager workflow where the work of the individual groups is integrated only by certain engineers, and the `master` branch of the main repo can be updated only by those engineers. In this scenario, all work is done in team-based branches and pulled together by the integrators later.",
+  "context_chars": 3501,
+  "n_searches": 1,
+  "prompt_tokens": 1826,
+  "output_tokens": 85,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.56,
+  "cost_usd": 0.000217,
+  "latency_s": 8.95,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "t01",
+  "split": "dev",
+  "question": "Which port does the Git daemon listen on?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "The Git daemon listens on port 9418 [p20-c1, p24-c20].",
+  "citations": [
+   "p20-c1",
+   "p24-c20"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "Git daemon listen on port",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.0,
+    "results": [
+     {
+      "id": "p20-c1",
+      "rank": 1,
+      "score": 0.032266,
+      "page": 20
+     },
+     {
+      "id": "p24-c20",
+      "rank": 2,
+      "score": 0.032258,
+      "page": 24
+     },
+     {
+      "id": "p20-c3",
+      "rank": 3,
+      "score": 0.032018,
+      "page": 20
+     },
+     {
+      "id": "p20-c0",
+      "rank": 4,
+      "score": 0.030777,
+      "page": 20
+     },
+     {
+      "id": "p20-c2",
+      "rank": 5,
+      "score": 0.03009,
+      "page": 20
+     }
+    ],
+    "admitted": [
+     "p20-c1",
+     "p24-c20",
+     "p20-c3",
+     "p20-c0",
+     "p20-c2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p20-c1",
+     "p24-c20"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p20-c1",
+   "p24-c20",
+   "p20-c3",
+   "p20-c0",
+   "p20-c2"
+  ],
+  "context": "[p20-c1 | book/04-git-server/sections/git-daemon.asc | page 20 | Git Daemon]\nIn any case, the Git protocol is relatively easy to set up. Basically, you need to run this command in a daemonized manner:\n\n```\n$ git daemon --reuseaddr --base-path=/srv/git/ /srv/git/\n```\n\nThe `--reuseaddr` option allows the server to restart without waiting for old connections to time out, while the `--base-path` option allows people to clone projects without specifying the entire path, and the path at the end tells the Git daemon where to look for repositories to export. If you're running a firewall, you'll also need to punch a hole in it at port 9418 on the box you're setting this up on.\n\nYou can daemonize this process a number of ways, depending on the operating system you're running.\n\n[p24-c20 | book/04-git-server/sections/protocols.asc | page 24 | The Git Protocol]\n#### The Git Protocol\n\nFinally, we have the Git protocol. This is a special daemon that comes packaged with Git; it listens on a dedicated port (9418) that provides a service similar to the SSH protocol, but with absolutely no authentication or cryptography. In order for a repository to be served over the Git protocol, you must create a `git-daemon-export-ok` file -- the daemon won't serve a repository without that file in it -- but, other than that, there is no security. Either the Git repository is available for everyone to clone, or it isn't. This means that there is generally no pushing over this protocol. You can enable push access but, given the lack of authentication, anyone on the internet who finds your project's URL could push to that project. Suffice it to say that this is rare.\n\n[p20-c3 | book/04-git-server/sections/git-daemon.asc | page 20 | Git Daemon]\nFinally, you'll run `systemctl enable git-daemon` to automatically start the service on boot, and can start and stop the service with, respectively, `systemctl start git-daemon` and `systemctl stop git-daemon`.\n\nOn other systems, you may want to use `xinetd`, a script in your `sysvinit` system, or something else -- as long as you get that command daemonized and watched somehow.\n\nNext, you have to tell Git which repositories to allow unauthenticated Git server-based access to. You can do this in each repository by creating a file named `git-daemon-export-ok`.\n\n```\n$ cd /path/to/project.git\n$ touch git-daemon-export-ok\n```\n\nThe presence of that file tells Git that it's OK to serve this project without authentication.\n\n[p20-c0 | book/04-git-server/sections/git-daemon.asc | page 20 | Git Daemon]\n### Git Daemon\n\nNext we'll set up a daemon serving repositories using the \"`Git`\" protocol. This is a common choice for fast, unauthenticated access to your Git data. Remember that since this is not an authenticated service, anything you serve over this protocol is public within its network.\n\nIf you're running this on a server outside your firewall, it should be used only for projects that are publicly visible to the world. If the server you're running it on is inside your firewall, you might use it for projects that a large number of people or computers (continuous integration or build servers) have read-only access to, when you don't want to have to add an SSH key for each.\n\n[p20-c2 | book/04-git-server/sections/git-daemon.asc | page 20 | Git Daemon]\nSince `systemd` is the most common init system among modern Linux distributions, you can use it for that purpose. Simply place a file in `/etc/systemd/system/git-daemon.service` with these contents:\n\n```\n[Unit]\nDescription=Start Git Daemon\n\n[Service]\nExecStart=/usr/bin/git daemon --reuseaddr --base-path=/srv/git/ /srv/git/\n\nRestart=always\nRestartSec=500ms\n\nStandardOutput=syslog\nStandardError=syslog\nSyslogIdentifier=git-daemon\n\nUser=git\nGroup=git\n\n[Install]\nWantedBy=multi-user.target\n```\n\nYou might have noticed that Git daemon is started here with `git` as both group and user. Modify it to fit your needs and make sure the provided user exists on the system. Also, check that the Git binary is indeed located at `/usr/bin/git` and change the path if necessary.",
+  "context_chars": 4072,
+  "n_searches": 1,
+  "prompt_tokens": 2011,
+  "output_tokens": 81,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.42,
+  "cost_usd": 0.000234,
+  "latency_s": 9.05,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "t02",
+  "split": "dev",
+  "question": "How do I take a file back out of the staging area without throwing away my edits?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "You can unstage a file without losing your edits by using `git restore --staged <file>` or `git reset HEAD <file>` [p11-c5, p11-c12].",
+  "citations": [
+   "p11-c5",
+   "p11-c12"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "unstage file without throwing away edits",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 22.8,
+    "results": [
+     {
+      "id": "p11-c4",
+      "rank": 1,
+      "score": 0.032266,
+      "page": 11
+     },
+     {
+      "id": "p11-c12",
+      "rank": 2,
+      "score": 0.031545,
+      "page": 11
+     },
+     {
+      "id": "p11-c5",
+      "rank": 3,
+      "score": 0.031054,
+      "page": 11
+     },
+     {
+      "id": "p11-c11",
+      "rank": 4,
+      "score": 0.03101,
+      "page": 11
+     },
+     {
+      "id": "p8-c26",
+      "rank": 5,
+      "score": 0.029324,
+      "page": 8
+     }
+    ],
+    "admitted": [
+     "p11-c4",
+     "p11-c12",
+     "p11-c5",
+     "p11-c11",
+     "p8-c26"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p11-c5",
+     "p11-c12"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p11-c4",
+   "p11-c12",
+   "p11-c5",
+   "p11-c11",
+   "p8-c26"
+  ],
+  "context": "[p11-c4 | book/02-git-basics/sections/undoing.asc | page 11 | Unstaging a Staged File]\n#### Unstaging a Staged File\n\nThe next two sections demonstrate how to work with your staging area and working directory changes. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let's say you've changed two files and want to commit them as two separate changes, but you accidentally type `git add *` and stage them both. How can you unstage one of the two? The `git status` command reminds you:\n\n```\n$ git add *\n$ git status\nOn branch master\nChanges to be committed:\n  (use \"git reset HEAD <file>...\" to unstage)\n\n    renamed:    README.md -> README\n    modified:   CONTRIBUTING.md\n```\n\n[p11-c12 | book/02-git-basics/sections/undoing.asc | page 11 | Unstaging a Staged File with git restore]\nRight below the \"`Changes to be committed`\" text, it says use `git restore --staged <file>...` to unstage. So, let's use that advice to unstage the `CONTRIBUTING.md` file:\n\n```\n$ git restore --staged CONTRIBUTING.md\n$ git status\nOn branch master\nChanges to be committed:\n  (use \"git restore --staged <file>...\" to unstage)\n    renamed:    README.md -> README\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n    modified:   CONTRIBUTING.md\n\n```\n\nThe `CONTRIBUTING.md` file is modified but once again unstaged.\n\n[p11-c5 | book/02-git-basics/sections/undoing.asc | page 11 | Unstaging a Staged File]\nRight below the \"`Changes to be committed`\" text, it says use `git reset HEAD <file>...` to unstage. So, let's use that advice to unstage the `CONTRIBUTING.md` file:\n\n```\n$ git reset HEAD CONTRIBUTING.md\nUnstaged changes after reset:\nM    CONTRIBUTING.md\n$ git status\nOn branch master\nChanges to be committed:\n  (use \"git reset HEAD <file>...\" to unstage)\n\n    renamed:    README.md -> README\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n    modified:   CONTRIBUTING.md\n```\n\nThe command is a bit strange, but it works. The `CONTRIBUTING.md` file is modified but once again unstaged.\n\n[p11-c11 | book/02-git-basics/sections/undoing.asc | page 11 | Unstaging a Staged File with git restore]\n##### Unstaging a Staged File with git restore\n\nThe next two sections demonstrate how to work with your staging area and working directory changes with `git restore`. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let's say you've changed two files and want to commit them as two separate changes, but you accidentally type `git add *` and stage them both. How can you unstage one of the two? The `git status` command reminds you:\n\n```\n$ git add *\n$ git status\nOn branch master\nChanges to be committed:\n  (use \"git restore --staged <file>...\" to unstage)\n    modified:   CONTRIBUTING.md\n    renamed:    README.md -> README\n\n```\n\n[p8-c26 | book/02-git-basics/sections/recording-changes.asc | page 8 | Viewing Your Staged and Unstaged Changes]\nFor another example, if you stage the `CONTRIBUTING.md` file and then edit it, you can use `git diff` to see the changes in the file that are staged and the changes that are unstaged. If our environment looks like this:\n\n```\n$ git add CONTRIBUTING.md\n$ echo '# test line' >> CONTRIBUTING.md\n$ git status\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges to be committed:\n  (use \"git reset HEAD <file>...\" to unstage)\n\n    modified:   CONTRIBUTING.md\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n    modified:   CONTRIBUTING.md\n```\n\nNow you can use `git diff` to see what is still unstaged:",
+  "context_chars": 3977,
+  "n_searches": 1,
+  "prompt_tokens": 2106,
+  "output_tokens": 101,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.46,
+  "cost_usd": 0.000251,
+  "latency_s": 9.07,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "t03",
+  "split": "dev",
+  "question": "How many API requests per hour can I make to GitHub with and without authenticating?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "Without authenticating, you are limited to 60 API requests per hour [p34-c14]. If you authenticate, you can make up to 5,000 requests per hour [p34-c14].",
+  "citations": [
+   "p34-c14"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "GitHub API requests per hour authenticating without",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.4,
+    "results": [
+     {
+      "id": "p34-c14",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 34
+     },
+     {
+      "id": "p34-c10",
+      "rank": 2,
+      "score": 0.032002,
+      "page": 34
+     },
+     {
+      "id": "p34-c11",
+      "rank": 3,
+      "score": 0.029116,
+      "page": 34
+     },
+     {
+      "id": "p31-c18",
+      "rank": 4,
+      "score": 0.028624,
+      "page": 31
+     },
+     {
+      "id": "p34-c22",
+      "rank": 5,
+      "score": 0.015873,
+      "page": 34
+     }
+    ],
+    "admitted": [
+     "p34-c14",
+     "p34-c10",
+     "p34-c11",
+     "p31-c18",
+     "p34-c22"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p34-c14"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p34-c14",
+   "p34-c10",
+   "p34-c11",
+   "p31-c18",
+   "p34-c22"
+  ],
+  "context": "[p34-c14 | book/06-github/sections/5-scripting.asc | page 34 | Commenting on an Issue]\nGitHub will only show you the token once, so be sure to copy it. You can now use this to authenticate in your script instead of using a username and password. This is nice because you can limit the scope of what you want to do and the token is revocable.\n\nThis also has the added advantage of increasing your rate limit. Without authenticating, you will be limited to 60 requests per hour. If you authenticate you can make up to 5,000 requests per hour.\n\nSo let's use it to make a comment on one of our issues. Let's say we want to leave a comment on a specific issue, Issue #6. To do so we have to do an HTTP POST request to `repos/<user>/<repo>/issues/<num>/comments` with the token we just generated as an Authorization header.\n\n[p34-c10 | book/06-github/sections/5-scripting.asc | page 34 | The GitHub API]\n#### The GitHub API\n\nServices and hooks give you a way to receive push notifications about events that happen on your repositories, but what if you need more information about these events? What if you need to automate something like adding collaborators or labeling issues?\n\nThis is where the GitHub API comes in handy. GitHub has tons of API endpoints for doing nearly anything you can do on the website in an automated fashion. In this section we'll learn how to authenticate and connect to the API, how to comment on an issue and how to change the status of a Pull Request through the API.\n\n[p34-c11 | book/06-github/sections/5-scripting.asc | page 34 | Basic Usage]\n#### Basic Usage\n\nThe most basic thing you can do is a simple GET request on an endpoint that doesn't require authentication. This could be a user or read-only information on an open source project. For example, if we want to know more about a user named \"`schacon`\", we can run something like this:\n\n```\n$ curl https://api.github.com/users/schacon\n{\n  \"login\": \"schacon\",\n  \"id\": 70,\n  \"avatar_url\": \"https://avatars.githubusercontent.com/u/70\",\n# …\n  \"name\": \"Scott Chacon\",\n  \"company\": \"GitHub\",\n  \"following\": 19,\n  \"created_at\": \"2008-01-27T17:19:28Z\",\n  \"updated_at\": \"2014-06-10T02:37:23Z\"\n}\n```\n\n[p31-c18 | book/06-github/sections/2-contributing.asc | page 31 | Advanced Pull Requests]\n#### Advanced Pull Requests\n\nNow that we've covered the basics of contributing to a project on GitHub, let's cover a few interesting tips and tricks about Pull Requests so you can be more effective in using them.\n\n[p34-c22 | book/06-github/sections/5-scripting.asc | page 34 | Octokit]\n#### Octokit\n\nThough we've been doing nearly everything through `curl` and simple HTTP requests in these examples, several open-source libraries exist that make this API available in a more idiomatic way. At the time of this writing, the supported languages include Go, Objective-C, Ruby, and .NET. Check out ^ for more information on these, as they handle much of the HTTP for you.\n\nHopefully these tools can help you customize and modify GitHub to work better for your specific workflows. For complete documentation on the entire API as well as guides for common tasks, check out ^.",
+  "context_chars": 3134,
+  "n_searches": 1,
+  "prompt_tokens": 1831,
+  "output_tokens": 99,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.65,
+  "cost_usd": 0.000223,
+  "latency_s": 8.96,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "t04",
+  "split": "dev",
+  "question": "How do I give other people push access to my repository?",
+  "filter": {
+   "chapter": "06-github"
+  },
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "To give other people push access to your repository, you need to add them as \"collaborators\" [p32-c4]. You can do this by clicking the \"Settings\" link in your repository, selecting \"Collaborators\" from the left-hand menu, typing their username into the box, and clicking \"Add collaborator\" [p32-c4, p32-c5].",
+  "citations": [
+   "p32-c4",
+   "p32-c5"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "push access repository collaborators",
+    "filter": {
+     "chapter": "06-github"
+    },
+    "top_k": 5,
+    "latency_ms": 15.0,
+    "results": [
+     {
+      "id": "p32-c4",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 32
+     },
+     {
+      "id": "p31-c2",
+      "rank": 2,
+      "score": 0.032018,
+      "page": 31
+     },
+     {
+      "id": "p32-c5",
+      "rank": 3,
+      "score": 0.032002,
+      "page": 32
+     },
+     {
+      "id": "p32-c6",
+      "rank": 4,
+      "score": 0.031258,
+      "page": 32
+     },
+     {
+      "id": "p34-c2",
+      "rank": 5,
+      "score": 0.030777,
+      "page": 34
+     }
+    ],
+    "admitted": [
+     "p32-c4",
+     "p31-c2",
+     "p32-c5",
+     "p32-c6",
+     "p34-c2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p32-c4",
+     "p32-c5"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p32-c4",
+   "p31-c2",
+   "p32-c5",
+   "p32-c6",
+   "p34-c2"
+  ],
+  "context": "[p32-c4 | book/06-github/sections/3-maintaining.asc | page 32 | Adding Collaborators]\n#### Adding Collaborators\n\nIf you're working with other people who you want to give commit access to, you need to add them as \"`collaborators`\". If Ben, Jeff, and Louise all sign up for accounts on GitHub, and you want to give them push access to your repository, you can add them to your project. Doing so will give them \"`push`\" access, which means they have both read and write access to the project and Git repository.\n\nClick the \"`Settings`\" link at the bottom of the right-hand sidebar.\n\nThe repository settings link\n\n[p31-c2 | book/06-github/sections/2-contributing.asc | page 31 | Forking Projects]\nThis way, projects don't have to worry about adding users as collaborators to give them push access. People can fork a project, push to it, and contribute their changes back to the original repository by creating what's called a Pull Request, which we'll cover next. This opens up a discussion thread with code review, and the owner and the contributor can then communicate about the change until the owner is happy with it, at which point the owner can merge it in.\n\nTo fork a project, visit the project page and click the \"`Fork`\" button at the top-right of the page.\n\nThe \"`Fork`\" button\n\nAfter a few seconds, you'll be taken to your new project page, with your own writeable copy of the code.\n\n[p32-c5 | book/06-github/sections/3-maintaining.asc | page 32 | Adding Collaborators]\nThen select \"`Collaborators`\" from the menu on the left-hand side. Then, just type a username into the box, and click \"`Add collaborator.`\" You can repeat this as many times as you like to grant access to everyone you like. If you need to revoke access, just click the \"`X`\" on the right-hand side of their row.\n\nThe repository collaborators box\n\n[p32-c6 | book/06-github/sections/3-maintaining.asc | page 32 | Managing Pull Requests]\n#### Managing Pull Requests\n\nNow that you have a project with some code in it and maybe even a few collaborators who also have push access, let's go over what to do when you get a Pull Request yourself.\n\nPull Requests can either come from a branch in a fork of your repository or they can come from another branch in the same repository. The only difference is that the ones in a fork are often from people where you can't push to their branch and they can't push to yours, whereas with internal Pull Requests generally both parties can access the branch.\n\nFor these examples, let's assume you are \"`tonychacon`\" and you've created a new Arduino code project named \"`fade`\".\n\n[p34-c2 | book/06-github/sections/5-scripting.asc | page 34 | Services]\n##### Services\n\nFirst we'll take a look at Services. Both the Hooks and Services integrations can be found in the Settings section of your repository, where we previously looked at adding Collaborators and changing the default branch of your project. Under the \"`Webhooks and Services`\" tab you will see something like services hooks.\n\nServices and Hooks configuration section",
+  "context_chars": 3036,
+  "n_searches": 1,
+  "prompt_tokens": 1761,
+  "output_tokens": 135,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.73,
+  "cost_usd": 0.00023,
+  "latency_s": 9.12,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "t05",
+  "split": "dev",
+  "question": "Who are the lieutenants in the dictator and lieutenants workflow?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "In the dictator and lieutenants workflow, lieutenants are integration managers who are in charge of certain parts of the repository [p28-c8].",
+  "citations": [
+   "p28-c8"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "dictator and lieutenants workflow lieutenants",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.3,
+    "results": [
+     {
+      "id": "p28-c8",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 28
+     },
+     {
+      "id": "p28-c9",
+      "rank": 2,
+      "score": 0.032522,
+      "page": 28
+     },
+     {
+      "id": "p27-c34",
+      "rank": 3,
+      "score": 0.03055,
+      "page": 27
+     },
+     {
+      "id": "p28-c3",
+      "rank": 4,
+      "score": 0.03055,
+      "page": 28
+     },
+     {
+      "id": "p28-c5",
+      "rank": 5,
+      "score": 0.030303,
+      "page": 28
+     }
+    ],
+    "admitted": [
+     "p28-c8",
+     "p28-c9",
+     "p27-c34",
+     "p28-c3",
+     "p28-c5"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "lieutenants integration manager part of repository",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 15.8,
+    "results": [
+     {
+      "id": "p28-c8",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 28
+     },
+     {
+      "id": "p28-c6",
+      "rank": 2,
+      "score": 0.032258,
+      "page": 28
+     },
+     {
+      "id": "p28-c5",
+      "rank": 3,
+      "score": 0.031746,
+      "page": 28
+     },
+     {
+      "id": "p28-c9",
+      "rank": 4,
+      "score": 0.030077,
+      "page": 28
+     },
+     {
+      "id": "p27-c25",
+      "rank": 5,
+      "score": 0.029911,
+      "page": 27
+     }
+    ],
+    "admitted": [
+     "p28-c6",
+     "p27-c25"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "\"dictator and lieutenants\" linux kernel",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 16.0,
+    "results": [
+     {
+      "id": "p28-c8",
+      "rank": 1,
+      "score": 0.032522,
+      "page": 28
+     },
+     {
+      "id": "p28-c9",
+      "rank": 2,
+      "score": 0.032522,
+      "page": 28
+     },
+     {
+      "id": "p29-c42",
+      "rank": 3,
+      "score": 0.029031,
+      "page": 29
+     },
+     {
+      "id": "p4-c6",
+      "rank": 4,
+      "score": 0.028439,
+      "page": 4
+     },
+     {
+      "id": "p20-c2",
+      "rank": 5,
+      "score": 0.026876,
+      "page": 20
+     }
+    ],
+    "admitted": [
+     "p29-c42",
+     "p4-c6",
+     "p20-c2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p28-c8"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p28-c8",
+   "p28-c9",
+   "p27-c34",
+   "p28-c3",
+   "p28-c5",
+   "p28-c6",
+   "p27-c25",
+   "p29-c42",
+   "p4-c6",
+   "p20-c2"
+  ],
+  "context": "[p28-c8 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Dictator and Lieutenants Workflow]\n#### Dictator and Lieutenants Workflow\n\nThis is a variant of a multiple-repository workflow. It's generally used by huge projects with hundreds of collaborators; one famous example is the Linux kernel. Various integration managers are in charge of certain parts of the repository; they're called _lieutenants_. All the lieutenants have one integration manager known as the benevolent dictator. The benevolent dictator pushes from their directory to a reference repository from which all the collaborators need to pull. The process works like this (see wfdiag c):\n\n[p28-c9 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Dictator and Lieutenants Workflow]\n1. Regular developers work on their topic branch and rebase their work on top of `master`. The `master` branch is that of the reference repository to which the dictator pushes.\n2. Lieutenants merge the developers' topic branches into their `master` branch.\n3. The dictator merges the lieutenants' `master` branches into the dictator's `master` branch.\n4. Finally, the dictator pushes that `master` branch to the reference repository so the other developers can rebase on it.\n\nBenevolent dictator workflow\n\nThis kind of workflow isn't common, but can be useful in very big projects, or in highly hierarchical environments. It allows the project leader (the dictator) to delegate much of the work and collect large subsets of code at multiple points before integrating them.\n\n[p27-c34 | book/05-distributed-git/sections/contributing.asc | page 27 | Private Managed Team]\nMany groups switch to Git because of this ability to have multiple teams working in parallel, merging the different lines of work late in the process. The ability of smaller subgroups of a team to collaborate via remote branches without necessarily having to involve or impede the entire team is a huge benefit of Git. The sequence for the workflow you saw here is something like this:\n\nBasic sequence of this managed-team workflow\n\n[p28-c3 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Centralized Workflow]\nIf you are already comfortable with a centralized workflow in your company or team, you can easily continue using that workflow with Git. Simply set up a single repository, and give everyone on your team push access; Git won't let users overwrite each other.\n\nSay John and Jessica both start working at the same time. John finishes his change and pushes it to the server. Then Jessica tries to push her changes, but the server rejects them. She is told that she's trying to push non-fast-forward changes and that she won't be able to do so until she fetches and merges. This workflow is attractive to a lot of people because it's a paradigm that many are familiar and comfortable with.\n\n[p28-c5 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Integration-Manager Workflow]\n#### Integration-Manager Workflow\n\nBecause Git allows you to have multiple remote repositories, it's possible to have a workflow where each developer has write access to their own public repository and read access to everyone else's. This scenario often includes a canonical repository that represents the \"`official`\" project. To contribute to that project, you create your own public clone of the project and push your changes to it. Then, you can send a request to the maintainer of the main project to pull in your changes. The maintainer can then add your repository as a remote, test your changes locally, merge them into their branch, and push back to their repository. The process works as follows (see wfdiag b):\n\n[p28-c6 | book/05-distributed-git/sections/distributed-workflows.asc | page 28 | Integration-Manager Workflow]\n1. The project maintainer pushes to their public repository.\n2. A contributor clones that repository and makes changes.\n3. The contributor pushes to their own public copy.\n4. The contributor sends the maintainer an email asking them to pull changes.\n5. The maintainer adds the contributor's repository as a remote and merges locally.\n6. The maintainer pushes merged changes to the main repository.\n\nIntegration-manager workflow\n\n[p27-c25 | book/05-distributed-git/sections/contributing.asc | page 27 | Private Managed Team]\n#### Private Managed Team\n\nIn this next scenario, you'll look at contributor roles in a larger private group. You'll learn how to work in an environment where small groups collaborate on features, after which those team-based contributions are integrated by another party.\n\nLet's say that John and Jessica are working together on one feature (call this \"`featureA`\"), while Jessica and a third developer, Josie, are working on a second (say, \"`featureB`\"). In this case, the company is using a type of integration-manager workflow where the work of the individual groups is integrated only by certain engineers, and the `master` branch of the main repo can be updated only by those engineers. In this scenario, all work is done in team-based branches and pulled together by the integrators later.\n\n[p29-c42 | book/05-distributed-git/sections/maintaining.asc | page 29 | Tagging Your Releases]\n```\nFor instance, the Linux kernel recently jumped from 8 to 10 characters to ensure SHA-1 object uniqueness, so older `git describe` output names were invalidated.\n\n[[_preparing_release]]\n==== Preparing a Release\n\n(((releasing)))(((git commands, archive)))\nNow you want to release a build.\nOne of the things you'll want to do is create an archive of the latest snapshot of your code for those poor souls who don't use Git.\nThe command to do this is `git archive`:\n\n[source,console]\n```\n\n[p4-c6 | book/01-introduction/sections/installing.asc | page 4 | Installing from Source]\nIf you're using a RPM-based distribution (Fedora/RHEL/RHEL-derivatives), you also need the `getopt` package (which is already installed on a Debian-based distro):\n\n```\n$ sudo dnf install getopt\n```\n\nAdditionally, if you're using Fedora/RHEL/RHEL-derivatives, you need to do this:\n\n```\n$ sudo ln -s /usr/bin/db2x_docbook2texi /usr/bin/docbook2x-texi\n```\n\ndue to binary name differences.\n\nWhen you have all the necessary dependencies, you can go ahead and grab the latest tagged release tarball from several places. You can get it via the kernel.org site, at ^, or the mirror on the GitHub website, at ^. It's generally a little clearer what the latest version is on the GitHub page, but the kernel.org page also has release signatures if you want to verify your download.\n\nThen, compile and install:\n\n[p20-c2 | book/04-git-server/sections/git-daemon.asc | page 20 | Git Daemon]\nSince `systemd` is the most common init system among modern Linux distributions, you can use it for that purpose. Simply place a file in `/etc/systemd/system/git-daemon.service` with these contents:\n\n```\n[Unit]\nDescription=Start Git Daemon\n\n[Service]\nExecStart=/usr/bin/git daemon --reuseaddr --base-path=/srv/git/ /srv/git/\n\nRestart=always\nRestartSec=500ms\n\nStandardOutput=syslog\nStandardError=syslog\nSyslogIdentifier=git-daemon\n\nUser=git\nGroup=git\n\n[Install]\nWantedBy=multi-user.target\n```\n\nYou might have noticed that Git daemon is started here with `git` as both group and user. Modify it to fit your needs and make sure the provided user exists on the system. Also, check that the Git binary is indeed located at `/usr/bin/git` and change the path if necessary.",
+  "context_chars": 7470,
+  "n_searches": 3,
+  "prompt_tokens": 6179,
+  "output_tokens": 124,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.01,
+  "cost_usd": 0.000668,
+  "latency_s": 18.08,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "t06",
+  "split": "dev",
+  "question": "What option must git describe be given to also use non-annotated tags?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "answered",
+  "answer": "To also use lightweight (non-annotated) tags, `git describe` must be given the `--tags` option [p29-c41].",
+  "citations": [
+   "p29-c41"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "git describe non-annotated tags option",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 15.4,
+    "results": [
+     {
+      "id": "p29-c41",
+      "rank": 1,
+      "score": 0.032787,
+      "page": 29
+     },
+     {
+      "id": "p10-c3",
+      "rank": 2,
+      "score": 0.032002,
+      "page": 10
+     },
+     {
+      "id": "p10-c4",
+      "rank": 3,
+      "score": 0.031498,
+      "page": 10
+     },
+     {
+      "id": "p10-c10",
+      "rank": 4,
+      "score": 0.031281,
+      "page": 10
+     },
+     {
+      "id": "p29-c39",
+      "rank": 5,
+      "score": 0.03009,
+      "page": 29
+     }
+    ],
+    "admitted": [
+     "p29-c41",
+     "p10-c3",
+     "p10-c4",
+     "p10-c10",
+     "p29-c39"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "answer",
+    "citations": [
+     "p29-c41"
+    ]
+   }
+  ],
+  "context_ids": [
+   "p29-c41",
+   "p10-c3",
+   "p10-c4",
+   "p10-c10",
+   "p29-c39"
+  ],
+  "context": "[p29-c41 | book/05-distributed-git/sections/maintaining.asc | page 29 | Tagging Your Releases]\n$ git describe master v1.6.2-rc1-20-g8c5b85c\n\n```\n\nThis way, you can export a snapshot or build and name it something understandable to people.\nIn fact, if you build Git from source code cloned from the Git repository, `git --version` gives you something that looks like this.\nIf you're describing a commit that you have directly tagged, it gives you simply the tag name.\n\nBy default, the `git describe` command requires annotated tags (tags created with the `-a` or `-s` flag); if you want to take advantage of lightweight (non-annotated) tags as well, add the `--tags` option to the command.\nYou can also use this string as the target of a `git checkout` or `git show` command, although it relies on the abbreviated SHA-1 value at the end, so it may not be valid forever.\n```\n\n[p10-c3 | book/02-git-basics/sections/tagging.asc | page 10 | Creating Tags]\n#### Creating Tags\n\nGit supports two types of tags: _lightweight_ and _annotated_.\n\nA lightweight tag is very much like a branch that doesn't change -- it's just a pointer to a specific commit.\n\nAnnotated tags, however, are stored as full objects in the Git database. They're checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG). It's generally recommended that you create annotated tags so you can have all this information; but if you want a temporary tag or for some reason don't want to keep the other information, lightweight tags are available too.\n\n[p10-c4 | book/02-git-basics/sections/tagging.asc | page 10 | Annotated Tags]\n#### Annotated Tags\n\nCreating an annotated tag in Git is simple. The easiest way is to specify `-a` when you run the `tag` command:\n\n```\n$ git tag -a v1.4 -m \"my version 1.4\"\n$ git tag\nv0.1\nv1.3\nv1.4\n```\n\nThe `-m` specifies a tagging message, which is stored with the tag. If you don't specify a message for an annotated tag, Git launches your editor so you can type it in.\n\nYou can see the tag data along with the commit that was tagged by using the `git show` command:\n\n```\n$ git show v1.4\ntag v1.4\nTagger: Ben Straub <ben@straub.cc>\nDate:   Sat May 3 20:19:12 2014 -0700\n\nmy version 1.4\n\ncommit ca82a6dff817ec66f44342007202690a93763949\nAuthor: Scott Chacon <schacon@gee-mail.com>\nDate:   Mon Mar 17 21:52:11 2008 -0700\n\n    Change version number\n```\n\n[p10-c10 | book/02-git-basics/sections/tagging.asc | page 10 | Sharing Tags]\n```\n$ git push origin --tags\nCounting objects: 1, done.\nWriting objects: 100% (1/1), 160 bytes | 0 bytes/s, done.\nTotal 1 (delta 0), reused 0 (delta 0)\nTo git@github.com:schacon/simplegit.git\n * [new tag]         v1.4 -> v1.4\n * [new tag]         v1.4-lw -> v1.4-lw\n```\n\nNow, when someone else clones or pulls from your repository, they will get all your tags as well.\n\nNOTE: .`git push` pushes both types of tags\n`git push <remote> --tags` will push both lightweight and annotated tags. There is currently no option to push only lightweight tags, but if you use `git push <remote> --follow-tags` only annotated tags will be pushed to the remote.\n\n[p29-c39 | book/05-distributed-git/sections/maintaining.asc | page 29 | Tagging Your Releases]\n```\n\nThey can use that key to verify all your signed tags.\nAlso, if you include instructions in the tag message, running `git show <tag>` will let you give the end user more specific instructions about tag verification.\n\n[[_build_number]]\n==== Generating a Build Number\n\n(((build numbers)))(((git commands, describe)))\nBecause Git doesn't have monotonically increasing numbers like 'v123' or the equivalent to go with each commit, if you want to have a human-readable name to go with a commit, you can run `git describe` on that commit.\n```",
+  "context_chars": 3785,
+  "n_searches": 1,
+  "prompt_tokens": 2118,
+  "output_tokens": 81,
+  "thought_tokens": 0,
+  "model_calls": 2,
+  "model_latency_s": 1.45,
+  "cost_usd": 0.000244,
+  "latency_s": 8.78,
+  "eval_context_hit": true
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "question": "How do I use git bisect to find the commit that introduced a bug?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "git bisect",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 35.6,
+    "results": [
+     {
+      "id": "p6-c0",
+      "rank": 1,
+      "score": 0.02971,
+      "page": 6
+     },
+     {
+      "id": "p15-c12",
+      "rank": 2,
+      "score": 0.027212,
+      "page": 15
+     },
+     {
+      "id": "p5-c0",
+      "rank": 3,
+      "score": 0.025658,
+      "page": 5
+     },
+     {
+      "id": "p11-c10",
+      "rank": 4,
+      "score": 0.016393,
+      "page": 11
+     },
+     {
+      "id": "p31-c43",
+      "rank": 5,
+      "score": 0.016393,
+      "page": 31
+     }
+    ],
+    "admitted": [
+     "p6-c0",
+     "p15-c12",
+     "p5-c0",
+     "p11-c10",
+     "p31-c43"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "bisect",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 15.2,
+    "results": [
+     {
+      "id": "p31-c43",
+      "rank": 1,
+      "score": 0.016393,
+      "page": 31
+     },
+     {
+      "id": "p27-c33",
+      "rank": 2,
+      "score": 0.016129,
+      "page": 27
+     },
+     {
+      "id": "p13-c3",
+      "rank": 3,
+      "score": 0.015873,
+      "page": 13
+     },
+     {
+      "id": "p16-c2",
+      "rank": 4,
+      "score": 0.015625,
+      "page": 16
+     },
+     {
+      "id": "p6-c0",
+      "rank": 5,
+      "score": 0.015385,
+      "page": 6
+     }
+    ],
+    "admitted": [
+     "p27-c33",
+     "p13-c3",
+     "p16-c2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "Binary Search",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 14.3,
+    "results": [
+     {
+      "id": "p12-c17",
+      "rank": 1,
+      "score": 0.032266,
+      "page": 12
+     },
+     {
+      "id": "p10-c1",
+      "rank": 2,
+      "score": 0.029211,
+      "page": 10
+     },
+     {
+      "id": "p8-c19",
+      "rank": 3,
+      "score": 0.016393,
+      "page": 8
+     },
+     {
+      "id": "p31-c25",
+      "rank": 4,
+      "score": 0.016129,
+      "page": 31
+     },
+     {
+      "id": "p4-c2",
+      "rank": 5,
+      "score": 0.016129,
+      "page": 4
+     }
+    ],
+    "admitted": [
+     "p12-c17",
+     "p10-c1",
+     "p8-c19",
+     "p31-c25",
+     "p4-c2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved passages do not contain information about the git bisect command because chapters 7 and higher (where git bisect is typically covered in Pro Git) are outside the scope of chapters 1-6."
+   }
+  ],
+  "context_ids": [
+   "p6-c0",
+   "p15-c12",
+   "p5-c0",
+   "p11-c10",
+   "p31-c43",
+   "p27-c33",
+   "p13-c3",
+   "p16-c2",
+   "p12-c17",
+   "p10-c1",
+   "p8-c19",
+   "p31-c25",
+   "p4-c2"
+  ],
+  "context": "[p6-c0 | book/02-git-basics/sections/aliases.asc | page 6 | Git Aliases]\n### Git Aliases\n\nBefore we move on to the next chapter, we want to introduce a feature that can make your Git experience simpler, easier, and more familiar: aliases. For clarity's sake, we won't be using them anywhere else in this book, but if you go on to use Git with any regularity, aliases are something you should know about.\n\nGit doesn't automatically infer your command if you type it in partially. If you don't want to type the entire text of each of the Git commands, you can easily set up an alias for each command using `git config`. Here are a couple of examples you may want to set up:\n\n```\n$ git config --global alias.co checkout\n$ git config --global alias.br branch\n$ git config --global alias.ci commit\n$ git config --global alias.st status\n```\n\n[p15-c12 | book/03-git-branching/sections/nutshell.asc | page 15 | Switching Branches]\nNOTE: From Git version 2.23 onwards you can use `git switch` instead of `git checkout` to:\n\n- Switch to an existing branch: `git switch testing-branch`.\n- Create a new branch and switch to it: `git switch -c new-branch`. The `-c` flag stands for create, you can also use the full flag: `--create`.\n- Return to your previously checked out branch: `git switch -`.\n\n[p5-c0 | book/01-introduction/sections/what-is-git.asc | page 5 | What is Git?]\n### What is Git?\n\nSo, what is Git in a nutshell? This is an important section to absorb, because if you understand what Git is and the fundamentals of how it works, then using Git effectively will probably be much easier for you. As you learn Git, try to clear your mind of the things you may know about other VCSs, such as CVS, Subversion or Perforce -- doing so will help you avoid subtle confusion when using the tool. Even though Git's user interface is fairly similar to these other VCSs, Git stores and thinks about information in a very different way, and understanding these differences will help you avoid becoming confused while using it.\n\n[p11-c10 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing things with git restore]\n#### Undoing things with git restore\n\nGit version 2.23.0 introduced a new command: `git restore`. It's basically an alternative to `git reset` which we just covered. From Git version 2.23.0 onwards, Git will use `git restore` instead of `git reset` for many undo operations.\n\nLet's retrace our steps, and undo things with `git restore` instead of `git reset`.\n\n[p31-c43 | book/06-github/sections/2-contributing.asc | page 31 | Code Snippets]\n```\n\n<1> Add the source repository and give it a name. Here, I have chosen to call it `progit`. <2> Get a reference on progit's branches, in particular `master`. <3> Set your `master` branch to fetch from the `progit` remote. <4> Define the default push repository to `origin`.\n\nOnce this is done, the workflow becomes much simpler:\n\n```\n\n$ git checkout master <1>\n$ git pull <2>\n$ git push <3>\n\n[p27-c33 | book/05-distributed-git/sections/contributing.asc | page 27 | Private Managed Team]\nJessica's commit history now looks something like this:\n\nJessica's history after committing on a feature branch\n\nAt some point, Jessica, Josie, and John inform the integrators that the `featureA` and `featureBee` branches on the server are ready for integration into the mainline. After the integrators merge these branches into the mainline, a fetch will bring down the new merge commit, making the history look like this:\n\nJessica's history after merging both her topic branches\n\n[p13-c3 | book/03-git-branching/sections/basic-branching-and-merging.asc | page 13 | Basic Branching]\nHowever, before you do that, note that if your working directory or staging area has uncommitted changes that conflict with the branch you're checking out, Git won't let you switch branches. It's best to have a clean working state when you switch branches. There are ways to get around this (namely, stashing and commit amending) that we'll cover later on, in ch07-git-tools# git stashing. For now, let's assume you've committed all your changes, so you can switch back to your `master` branch:\n\n```\n$ git checkout master\nSwitched to branch 'master'\n```\n\n[p16-c2 | book/03-git-branching/sections/rebasing.asc | page 16 | The Basic Rebase]\nFor this example, you would check out the `experiment` branch, and then rebase it onto the `master` branch as follows:\n\n```\n$ git checkout experiment\n$ git rebase master\nFirst, rewinding head to replay your work on top of it...\nApplying: added staged command\n```\n\nThis operation works by going to the common ancestor of the two branches (the one you're on and the one you're rebasing onto), getting the diff introduced by each commit of the branch you're on, saving those diffs to temporary files, resetting the current branch to the same commit as the branch you are rebasing onto, and finally applying each change in turn.\n\nRebasing the change introduced in `C4` onto `C3`\n\nAt this point, you can go back to the `master` branch and do a fast-forward merge.\n\n[p12-c17 | book/02-git-basics/sections/viewing-history.asc | page 12 | Limiting Log Output]\nThis command works with lots of formats -- you can specify a specific date like `\"2008-01-15\"`, or a relative date such as `\"2 years 1 day 3 minutes ago\"`.\n\nYou can also filter the list to commits that match some search criteria. The `--author` option allows you to filter on a specific author, and the `--grep` option lets you search for keywords in the commit messages.\n\nNOTE: You can specify more than one instance of both the `--author` and `--grep` search criteria, which will limit the commit output to commits that match _any_ of the `--author` patterns and _any_ of the `--grep` patterns; however, adding the `--all-match` option further limits the output to just those commits that match _all_ `--grep` patterns.\n\n[p10-c1 | book/02-git-basics/sections/tagging.asc | page 10 | Listing Your Tags]\n#### Listing Your Tags\n\nListing the existing tags in Git is straightforward. Just type `git tag` (with optional `-l` or `--list`):\n\n```\n$ git tag\nv1.0\nv2.0\n```\n\nThis command lists the tags in alphabetical order; the order in which they are displayed has no real importance.\n\nYou can also search for tags that match a particular pattern. The Git source repo, for instance, contains more than 500 tags. If you're interested only in looking at the 1.8.5 series, you can run this:\n\n```\n$ git tag -l \"v1.8.5*\"\nv1.8.5\nv1.8.5-rc0\nv1.8.5-rc1\nv1.8.5-rc2\nv1.8.5-rc3\nv1.8.5.1\nv1.8.5.2\nv1.8.5.3\nv1.8.5.4\nv1.8.5.5\n```\n\n[p8-c19 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\nGlob patterns are like simplified regular expressions that shells use. An asterisk (`\\*`) matches zero or more characters; `[abc]` matches any character inside the brackets (in this case a, b, or c); a question mark (`?`) matches a single character; and brackets enclosing characters separated by a hyphen (`[0-9]`) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; `a/**/z` would match `a/z`, `a/b/z`, `a/b/c/z`, and so on.\n\nHere is another example `.gitignore` file:\n\n[p31-c25 | book/06-github/sections/2-contributing.asc | page 31 | Keeping up with Upstream]\n```\nCompressing objects: 100% (6/6), done.\nWriting objects: 100% (6/6), 682 bytes | 0 bytes/s, done.\nTotal 6 (delta 2), reused 0 (delta 0)\nTo https://github.com/tonychacon/blink\n   ef4725c..3c8d735  slower-blink -> slow-blink\n```\n\n[p4-c2 | book/01-introduction/sections/installing.asc | page 4 | Installing on macOS]\n#### Installing on macOS\n\nThere are several ways to install Git on macOS. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run `git` from the Terminal the very first time.\n\n```\n$ git --version\n```\n\nIf you don't have it installed already, it will prompt you to install it.\n\nIf you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at ^.\n\nGit macOS installer",
+  "context_chars": 8119,
+  "n_searches": 3,
+  "prompt_tokens": 6811,
+  "output_tokens": 108,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.14,
+  "cost_usd": 0.000724,
+  "latency_s": 18.15,
+  "abstain_reason": "The retrieved passages do not contain information about the git bisect command because chapters 7 and higher (where git bisect is typically covered in Pro Git) are outside the scope of chapters 1-6."
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "question": "How do I add another repository as a submodule of my project?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "submodule add another repository",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.1,
+    "results": [
+     {
+      "id": "p24-c1",
+      "rank": 1,
+      "score": 0.032266,
+      "page": 24
+     },
+     {
+      "id": "p32-c37",
+      "rank": 2,
+      "score": 0.031498,
+      "page": 32
+     },
+     {
+      "id": "p24-c3",
+      "rank": 3,
+      "score": 0.029116,
+      "page": 24
+     },
+     {
+      "id": "p25-c3",
+      "rank": 4,
+      "score": 0.027783,
+      "page": 25
+     },
+     {
+      "id": "p32-c4",
+      "rank": 5,
+      "score": 0.027106,
+      "page": 32
+     }
+    ],
+    "admitted": [
+     "p24-c1",
+     "p32-c37",
+     "p24-c3",
+     "p25-c3",
+     "p32-c4"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "git submodule add",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 19.0,
+    "results": [
+     {
+      "id": "p24-c3",
+      "rank": 1,
+      "score": 0.031514,
+      "page": 24
+     },
+     {
+      "id": "p8-c10",
+      "rank": 2,
+      "score": 0.031025,
+      "page": 8
+     },
+     {
+      "id": "p9-c6",
+      "rank": 3,
+      "score": 0.03101,
+      "page": 9
+     },
+     {
+      "id": "p8-c35",
+      "rank": 4,
+      "score": 0.029828,
+      "page": 8
+     },
+     {
+      "id": "p7-c2",
+      "rank": 5,
+      "score": 0.029762,
+      "page": 7
+     }
+    ],
+    "admitted": [
+     "p8-c10",
+     "p9-c6",
+     "p8-c35",
+     "p7-c2"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "submodule",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 15.0,
+    "results": [
+     {
+      "id": "p22-c5",
+      "rank": 1,
+      "score": 0.016393,
+      "page": 22
+     },
+     {
+      "id": "p8-c21",
+      "rank": 2,
+      "score": 0.016129,
+      "page": 8
+     },
+     {
+      "id": "p31-c25",
+      "rank": 3,
+      "score": 0.015873,
+      "page": 31
+     },
+     {
+      "id": "p8-c19",
+      "rank": 4,
+      "score": 0.015625,
+      "page": 8
+     },
+     {
+      "id": "p32-c0",
+      "rank": 5,
+      "score": 0.015385,
+      "page": 32
+     }
+    ],
+    "admitted": [
+     "p22-c5",
+     "p8-c21",
+     "p31-c25",
+     "p8-c19"
+    ],
+    "skipped_budget": [
+     "p32-c0"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "answer": "The retrieved passages do not contain enough evidence to answer how to add another repository as a submodule.",
+    "citations": [],
+    "bad": []
+   },
+   {
+    "event": "abstain",
+    "reason": "The retrieved passages do not contain information about adding a repository as a submodule."
+   }
+  ],
+  "context_ids": [
+   "p24-c1",
+   "p32-c37",
+   "p24-c3",
+   "p25-c3",
+   "p32-c4",
+   "p8-c10",
+   "p9-c6",
+   "p8-c35",
+   "p7-c2",
+   "p22-c5",
+   "p8-c21",
+   "p31-c25",
+   "p8-c19"
+  ],
+  "context": "[p24-c1 | book/04-git-server/sections/protocols.asc | page 24 | Local Protocol]\n#### Local Protocol\n\nThe most basic is the _Local protocol_, in which the remote repository is in another directory on the same host. This is often used if everyone on your team has access to a shared filesystem such as an NFS^ mount, or in the less likely case that everyone logs in to the same computer. The latter wouldn't be ideal, because all your code repository instances would reside on the same computer, making a catastrophic loss much more likely.\n\nIf you have a shared mounted filesystem, then you can clone, push to, and pull from a local file-based repository. To clone a repository like this, or to add one as a remote to an existing project, use the path to the repository as the URL. For example, to clone a local repository, you can run something like this:\n\n[p32-c37 | book/06-github/sections/3-maintaining.asc | page 32 | Transferring a Project]\n##### Transferring a Project\n\nIf you would like to transfer a project to another user or an organization in GitHub, there is a \"`Transfer ownership`\" option at the bottom of the same \"`Options`\" tab of your repository settings page that allows you to do this.\n\nTransfer a project to another GitHub user or Organization\n\nThis is helpful if you are abandoning a project and someone wants to take it over, or if your project is getting bigger and want to move it into an organization.\n\nNot only does this move the repository along with all its watchers and stars to another place, it also sets up a redirect from your URL to the new place. It will also redirect clones and fetches from Git, not just web requests.\n\n[p24-c3 | book/04-git-server/sections/protocols.asc | page 24 | Local Protocol]\nTo add a local repository to an existing Git project, you can run something like this:\n\n```\n$ git remote add local_proj /srv/git/project.git\n```\n\nThen, you can push to and pull from that remote via your new remote name `local_proj` as though you were doing so over a network.\n\n[p25-c3 | book/04-git-server/sections/setting-up-server.asc | page 25 | Setting Up the Server]\nThen, John, Josie, or Jessica can push the first version of their project into that repository by adding it as a remote and pushing up a branch. Note that someone must shell onto the machine and create a bare repository every time you want to add a project. Let's use `gitserver` as the hostname of the server on which you've set up your `git` user and repository. If you're running it internally, and you set up DNS for `gitserver` to point to that server, then you can use the commands pretty much as is (assuming that `myproject` is an existing project with files in it):\n\n```\n# on John's computer\n$ cd myproject\n$ git init\n$ git add .\n$ git commit -m 'Initial commit'\n$ git remote add origin git@gitserver:/srv/git/project.git\n$ git push origin master\n```\n\n[p32-c4 | book/06-github/sections/3-maintaining.asc | page 32 | Adding Collaborators]\n#### Adding Collaborators\n\nIf you're working with other people who you want to give commit access to, you need to add them as \"`collaborators`\". If Ben, Jeff, and Louise all sign up for accounts on GitHub, and you want to give them push access to your repository, you can add them to your project. Doing so will give them \"`push`\" access, which means they have both read and write access to the project and Git repository.\n\nClick the \"`Settings`\" link at the bottom of the right-hand sidebar.\n\nThe repository settings link\n\n[p8-c10 | book/02-git-basics/sections/recording-changes.asc | page 8 | Staging Modified Files]\nThe `CONTRIBUTING.md` file appears under a section named \"`Changes not staged for commit`\" -- which means that a file that is tracked has been modified in the working directory but not yet staged. To stage it, you run the `git add` command. `git add` is a multipurpose command -- you use it to begin tracking new files, to stage files, and to do other things like marking merge-conflicted files as resolved. It may be helpful to think of it more as \"`add precisely this content to the next commit`\" rather than \"`add this file to the project`\". Let's run `git add` now to stage the `CONTRIBUTING.md` file, and then run `git status` again:\n\n[p9-c6 | book/02-git-basics/sections/remotes.asc | page 9 | Adding Remote Repositories]\n#### Adding Remote Repositories\n\nWe've mentioned and given some demonstrations of how the `git clone` command implicitly adds the `origin` remote for you. Here's how to add a new remote explicitly. To add a new remote Git repository as a shortname you can reference easily, run `git remote add <shortname> <url>`:\n\n```\n$ git remote\norigin\n$ git remote add pb https://github.com/paulboone/ticgit\n$ git remote -v\norigin    https://github.com/schacon/ticgit (fetch)\norigin    https://github.com/schacon/ticgit (push)\npb    https://github.com/paulboone/ticgit (fetch)\npb    https://github.com/paulboone/ticgit (push)\n```\n\n[p8-c35 | book/02-git-basics/sections/recording-changes.asc | page 8 | Skipping the Staging Area]\n```\n$ git status\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n    modified:   CONTRIBUTING.md\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n$ git commit -a -m 'Add new benchmarks'\n[master 83e38c7] Add new benchmarks\n 1 file changed, 5 insertions(+), 0 deletions(-)\n```\n\nNotice how you don't have to run `git add` on the `CONTRIBUTING.md` file in this case before you commit. That's because the `-a` flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.\n\n[p7-c2 | book/02-git-basics/sections/getting-a-repository.asc | page 7 | Initializing a Repository in an Existing Directory]\nThis creates a new subdirectory named `.git` that contains all of your necessary repository files -- a Git repository skeleton. At this point, nothing in your project is tracked yet. See ch10-git-internals#ch10-git-internals for more information about exactly what files are contained in the `.git` directory you just created.\n\nIf you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few `git add` commands that specify the files you want to track, followed by a `git commit`:\n\n```\n$ git add *.c\n$ git add LICENSE\n$ git commit -m 'Initial project version'\n```\n\n[p22-c5 | book/04-git-server/sections/gitlab.asc | page 22 | Groups]\n##### Groups\n\nA GitLab group is a collection of projects, along with data about how users can access those projects. Each group has a project namespace (the same way that users do), so if the group +training+ has a project +materials+, its URL would be `http://server/training/materials`.\n\nThe GitLab group administration screen\n\nEach group is associated with a number of users, each of which has a level of permissions for the group's projects and the group itself. These range from \"`Guest`\" (issues and chat only) to \"`Owner`\" (full control of the group, its members, and its projects). The types of permissions are too numerous to list here, but GitLab has a helpful link on the administration screen.\n\n[p8-c21 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\nNOTE: In the simple case, a repository might have a single `.gitignore` file in its root directory, which applies recursively to the entire repository. However, it is also possible to have additional `.gitignore` files in subdirectories. The rules in these nested `.gitignore` files apply only to the files under the directory where they are located. The Linux kernel source repository has 206 `.gitignore` files.\n\nIt is beyond the scope of this book to get into the details of multiple `.gitignore` files; see `man gitignore` for the details.\n\n[p31-c25 | book/06-github/sections/2-contributing.asc | page 31 | Keeping up with Upstream]\n```\nCompressing objects: 100% (6/6), done.\nWriting objects: 100% (6/6), 682 bytes | 0 bytes/s, done.\nTotal 6 (delta 2), reused 0 (delta 0)\nTo https://github.com/tonychacon/blink\n   ef4725c..3c8d735  slower-blink -> slow-blink\n```\n\n[p8-c19 | book/02-git-basics/sections/recording-changes.asc | page 8 | Ignoring Files]\nGlob patterns are like simplified regular expressions that shells use. An asterisk (`\\*`) matches zero or more characters; `[abc]` matches any character inside the brackets (in this case a, b, or c); a question mark (`?`) matches a single character; and brackets enclosing characters separated by a hyphen (`[0-9]`) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; `a/**/z` would match `a/z`, `a/b/z`, `a/b/c/z`, and so on.\n\nHere is another example `.gitignore` file:",
+  "context_chars": 8948,
+  "n_searches": 3,
+  "prompt_tokens": 10673,
+  "output_tokens": 119,
+  "thought_tokens": 0,
+  "model_calls": 5,
+  "model_latency_s": 3.73,
+  "cost_usd": 0.001115,
+  "latency_s": 22.32,
+  "abstain_reason": "The retrieved passages do not contain information about adding a repository as a submodule."
+ },
+ {
+  "query_id": "u03",
+  "split": "dev",
+  "question": "How can I recover a lost commit by looking at the reflog?",
+  "filter": null,
+  "config": "E_hybrid_k5",
+  "method": "hybrid_rrf",
+  "top_k": 5,
+  "max_searches": 3,
+  "budget": 9000,
+  "candidates": 20,
+  "model": "gemini-3.5-flash-lite",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+  "citations": [],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "recover lost commit reflog",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 28.1,
+    "results": [
+     {
+      "id": "p11-c3",
+      "rank": 1,
+      "score": 0.032002,
+      "page": 11
+     },
+     {
+      "id": "p5-c9",
+      "rank": 2,
+      "score": 0.031319,
+      "page": 5
+     },
+     {
+      "id": "p11-c2",
+      "rank": 3,
+      "score": 0.02885,
+      "page": 11
+     },
+     {
+      "id": "p11-c9",
+      "rank": 4,
+      "score": 0.016393,
+      "page": 11
+     },
+     {
+      "id": "p12-c0",
+      "rank": 5,
+      "score": 0.016129,
+      "page": 12
+     }
+    ],
+    "admitted": [
+     "p11-c3",
+     "p5-c9",
+     "p11-c2",
+     "p11-c9",
+     "p12-c0"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "reflog",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 16.0,
+    "results": [
+     {
+      "id": "p27-c47",
+      "rank": 1,
+      "score": 0.016393,
+      "page": 27
+     },
+     {
+      "id": "p16-c6",
+      "rank": 2,
+      "score": 0.016129,
+      "page": 16
+     },
+     {
+      "id": "p12-c13",
+      "rank": 3,
+      "score": 0.015873,
+      "page": 12
+     },
+     {
+      "id": "p29-c10",
+      "rank": 4,
+      "score": 0.015625,
+      "page": 29
+     },
+     {
+      "id": "p12-c9",
+      "rank": 5,
+      "score": 0.015385,
+      "page": 12
+     }
+    ],
+    "admitted": [
+     "p27-c47",
+     "p16-c6",
+     "p12-c13",
+     "p29-c10",
+     "p12-c9"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "search",
+    "tool": "search_docs",
+    "method": "hybrid_rrf",
+    "query": "\"git reflog\"",
+    "filter": null,
+    "top_k": 5,
+    "latency_ms": 17.0,
+    "results": [
+     {
+      "id": "p11-c10",
+      "rank": 1,
+      "score": 0.016393,
+      "page": 11
+     },
+     {
+      "id": "p12-c9",
+      "rank": 2,
+      "score": 0.016393,
+      "page": 12
+     },
+     {
+      "id": "p12-c12",
+      "rank": 3,
+      "score": 0.016129,
+      "page": 12
+     },
+     {
+      "id": "p26-c2",
+      "rank": 4,
+      "score": 0.016129,
+      "page": 26
+     },
+     {
+      "id": "p4-c7",
+      "rank": 5,
+      "score": 0.015873,
+      "page": 4
+     }
+    ],
+    "admitted": [
+     "p11-c10",
+     "p12-c12",
+     "p26-c2",
+     "p4-c7"
+    ],
+    "skipped_budget": []
+   },
+   {
+    "event": "abstain",
+    "reason": "The provided search passages from chapters 1-6 do not contain the specific instructions or text explaining how to recover a lost commit using the reflog."
+   }
+  ],
+  "context_ids": [
+   "p11-c3",
+   "p5-c9",
+   "p11-c2",
+   "p11-c9",
+   "p12-c0",
+   "p27-c47",
+   "p16-c6",
+   "p12-c13",
+   "p29-c10",
+   "p12-c9",
+   "p11-c10",
+   "p12-c12",
+   "p26-c2",
+   "p4-c7"
+  ],
+  "context": "[p11-c3 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\nNOTE: Only amend commits that are still local and have not been pushed somewhere. Amending previously pushed commits and force pushing the branch will cause problems for your collaborators. For more on what happens when you do this and how to recover if you're on the receiving end read rebase peril.\n\n[p5-c9 | book/01-introduction/sections/what-is-git.asc | page 5 | Git Generally Only Adds Data]\n#### Git Generally Only Adds Data\n\nWhen you do actions in Git, nearly all of them only _add_ data to the Git database. It is hard to get the system to do anything that is not undoable or to make it erase data in any way. As with any VCS, you can lose or mess up changes you haven't committed yet, but after you commit a snapshot into Git, it is very difficult to lose, especially if you regularly push your database to another repository.\n\nThis makes using Git a joy because we know we can experiment without the danger of severely screwing things up. For a more in-depth look at how Git stores its data and how you can recover data that seems lost, see ch02-git-basics-chapter# undoing.\n\n[p11-c2 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing Things]\nYou end up with a single commit -- the second commit replaces the results of the first.\n\nNOTE: It's important to understand that when you're amending your last commit, you're not so much fixing it as _replacing_ it entirely with a new, improved commit that pushes the old commit out of the way and puts the new commit in its place. Effectively, it's as if the previous commit never happened, and it won't show up in your repository history.\n\nThe obvious value to amending commits is to make minor improvements to your last commit, without cluttering your repository history with commit messages of the form, \"`Oops, forgot to add a file`\" or \"`Darn, fixing a typo in last commit`\".\n\n[p11-c9 | book/02-git-basics/sections/undoing.asc | page 11 | Unmodifying a Modified File]\nRemember, anything that is _committed_ in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an `--amend` commit can be recovered (see ch10-git-internals# data recovery for data recovery). However, anything you lose that was never committed is likely never to be seen again.\n\n[p12-c0 | book/02-git-basics/sections/viewing-history.asc | page 12 | Viewing the Commit History]\n### Viewing the Commit History\n\nAfter you have created several commits, or if you have cloned a repository with an existing commit history, you'll probably want to look back to see what has happened. The most basic and powerful tool to do this is the `git log` command.\n\nThese examples use a very simple project called \"`simplegit`\". To get the project, run:\n\n```\n$ git clone https://github.com/schacon/simplegit-progit\n```\n\nWhen you run `git log` in this project, you should get output that looks something like this:\n\n[p27-c47 | book/05-distributed-git/sections/contributing.asc | page 27 | Public Project over Email]\n```\n$ cat 0001-add-limit-to-log-function.patch\nFrom 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001\nFrom: Jessica Smith <jessica@example.com>\nDate: Sun, 6 Apr 2008 10:17:23 -0700\nSubject: [PATCH 1/2] Add limit to log function\n\nLimit log functionality to the first 20\n\n---\n lib/simplegit.rb |    2 +-\n 1 files changed, 1 insertions(+), 1 deletions(-)\n\ndiff --git a/lib/simplegit.rb b/lib/simplegit.rb\nindex 76f47bc..f9815f1 100644\n--- a/lib/simplegit.rb\n+++ b/lib/simplegit.rb\n@@ -14,7 +14,7 @@ class SimpleGit\n   end\n\n   def log(treeish = 'master')\n-    command(\"git log #{treeish}\")\n+    command(\"git log -n 20 #{treeish}\")\n   end\n\n   def ls_tree(treeish = 'master')\n--\n2.1.0\n```\n\n[p16-c6 | book/03-git-branching/sections/rebasing.asc | page 16 | More Interesting Rebases]\n#### More Interesting Rebases\n\nYou can also have your rebase replay on something other than the rebase target branch. Take a history like rbdiag e, for example. You branched a topic branch (`server`) to add some server-side functionality to your project, and made a commit. Then, you branched off that to make the client-side changes (`client`) and committed a few times. Finally, you went back to your `server` branch and did a few more commits.\n\nA history with a topic branch off another topic branch\n\n[p12-c13 | book/02-git-basics/sections/viewing-history.asc | page 12 | Viewing the Commit History]\nCommon options to `git log`\n| Option | Description\n| `-p` | Show the patch introduced with each commit.\n| `--stat` | Show statistics for files modified in each commit.\n| `--shortstat` | Display only the changed/insertions/deletions line from the `--stat` command.\n| `--name-only` | Show the list of files modified after the commit information.\n| `--name-status` | Show the list of files affected with added/modified/deleted information as well.\n| `--abbrev-commit` | Show only the first few characters of the SHA-1 checksum instead of all 40.\n| `--relative-date` | Display the date in a relative format (for example, \"`2 weeks ago`\") instead of using the full date format.\n| `--graph` | Display an ASCII graph of the branch and merge history beside the log output.\n| `--pretty` | Show commits in an\n\n[p29-c10 | book/05-distributed-git/sections/maintaining.asc | page 29 | Applying a Patch with `am`]\n```\n$ git log --pretty=fuller -1\ncommit 6c5e70b984a60b3cecd395edd5b48a7575bf58e0\nAuthor:     Jessica Smith <jessica@example.com>\nAuthorDate: Sun Apr 6 10:17:23 2008 -0700\nCommit:     Scott Chacon <schacon@gmail.com>\nCommitDate: Thu Apr 9 09:19:06 2009 -0700\n\n   Add limit to log function\n\n   Limit log functionality to the first 20\n```\n\nThe `Commit` information indicates the person who applied the patch and the time it was applied. The `Author` information is the individual who originally created the patch and when it was originally created.\n\n[p12-c9 | book/02-git-basics/sections/viewing-history.asc | page 12 | Viewing the Commit History]\nUseful specifiers for `git log --pretty=format`\n| Specifier | Description of Output\n| `%H` | Commit hash\n| `%h` | Abbreviated commit hash\n| `%T` | Tree hash\n| `%t` | Abbreviated tree hash\n| `%P` | Parent hashes\n| `%p` | Abbreviated parent hashes\n| `%an` | Author name\n| `%ae` | Author email\n| `%ad` | Author date (format respects the `--date=option`)\n| `%ar` | Author date, relative\n| `%cn` | Committer name\n| `%ce` | Committer email\n| `%cd` | Committer date\n| `%cr` | Committer date, relative\n| `%s` | Subject\n\n[p11-c10 | book/02-git-basics/sections/undoing.asc | page 11 | Undoing things with git restore]\n#### Undoing things with git restore\n\nGit version 2.23.0 introduced a new command: `git restore`. It's basically an alternative to `git reset` which we just covered. From Git version 2.23.0 onwards, Git will use `git restore` instead of `git reset` for many undo operations.\n\nLet's retrace our steps, and undo things with `git restore` instead of `git reset`.\n\n[p12-c12 | book/02-git-basics/sections/viewing-history.asc | page 12 | Viewing the Commit History]\nThose are only some simple output-formatting options to `git log` -- there are many more. log options lists the options we've covered so far, as well as some other common formatting options that may be useful, along with how they change the output of the `log` command.\n\n[p26-c2 | book/04-git-server/sections/smart-http.asc | page 26 | Smart HTTP]\nNext we need to add some things to the Apache configuration to run the `git-http-backend` as the handler for anything coming into the `/git` path of your web server.\n\n```\nSetEnv GIT_PROJECT_ROOT /srv/git\nSetEnv GIT_HTTP_EXPORT_ALL\nScriptAlias /git/ /usr/lib/git-core/git-http-backend/\n```\n\nIf you leave out `GIT_HTTP_EXPORT_ALL` environment variable, then Git will only serve to unauthenticated clients the repositories with the `git-daemon-export-ok` file in them, just like the Git daemon did.\n\nFinally you'll want to tell Apache to allow requests to `git-http-backend` and make writes be authenticated somehow, possibly with an Auth block like this:\n\n[p4-c7 | book/01-introduction/sections/installing.asc | page 4 | Installing from Source]\n```\n$ tar -zxf git-2.8.0.tar.gz\n$ cd git-2.8.0\n$ make configure\n$ ./configure --prefix=/usr\n$ make all doc info\n$ sudo make install install-doc install-html install-info\n```\n\nAfter this is done, you can also get Git via Git itself for updates:\n\n```\n$ git clone https://git.kernel.org/pub/scm/git/git.git\n```",
+  "context_chars": 8493,
+  "n_searches": 3,
+  "prompt_tokens": 7597,
+  "output_tokens": 101,
+  "thought_tokens": 0,
+  "model_calls": 4,
+  "model_latency_s": 3.13,
+  "cost_usd": 0.0008,
+  "latency_s": 18.04,
+  "abstain_reason": "The provided search passages from chapters 1-6 do not contain the specific instructions or text explaining how to recover a lost commit using the reflog."
+ }
+]

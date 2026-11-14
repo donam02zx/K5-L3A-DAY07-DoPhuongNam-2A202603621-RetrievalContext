@@ -1,0 +1,8 @@
+{
+ "page": 56,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION: FINANCIAL STATEMENTS, NOTES, AND REQUIRED SUPPLEMENTARY INFORMATION\n01 NOTE 1 Reporting Entity and Summary of Significant Accounting Policies (CONTINUED)\n\nKEY FACTS:\n- Endeavor Trust Fund P.L. 102-195 requires the interest earned from the Endeavor Trust Fund investments be used to create the Endeavor Teacher Fellowship Program.\n- Challenger Trust Fund P.L. 100-404 requires a quarterly payment of $250,000 be sent to the Challenger Center from interest earned on the Challenger Trust Fund investments.\n- FY 2024 and FY 2023 Consolidated Appropriations Act (P.L. 118-42 and P.L. 117-328) enable NASA to utilize up to $1 million from the Safety, Security, and Mission Services appropriation for disbursement to the Challenger Center.\n- Delinquent non-Federal accounts receivable over 120 days are referred to Treasury for collection, wage garnishment, or cross-servicing in accordance with the Debt Collection Improvement Act, as amended.",
+ "prompt_tokens": 1352,
+ "output_tokens": 239,
+ "latency_s": 1.87
+}

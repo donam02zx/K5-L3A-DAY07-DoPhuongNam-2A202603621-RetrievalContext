@@ -1,0 +1,8 @@
+{
+ "page": 97,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Summary of Reports\n\nPHOTOS:\n- NASA astronaut Andre Douglas holds open a sample bag for NASA astronaut Kate Rubins as she pours some geology samples into it during a simulated moonwalk in the San Francisco Volcanic Field in Northern Arizona on May 17, 2024. PHOTO CREDIT – NASA/Josh Valcarcel\n- Interior view of the primary structure of the Gateway space station's HALO module, April 12, 2024. PHOTO CREDIT – Northrop Grumman/Thales Alenia Space, April 12, 2024.\n\nKEY FACTS:\n- Per OMB requirements, each Executive Branch agency must complete an Annual Data Call under the Payment Integrity Information Act of 2019 (Public Law (P.L.) 116-117) (PIIA).\n- PIIA reporting requirements information can be found at www.PaymentAccuracy.gov.\n- Pursuant to the Inspector General Act of 1978 (P.L. 95-452), NASA's FY 2023 OIG Audit Follow-up Activity Report is available online at www.nasa.gov/audit-liaison-resolution-alr-and-follow-up-program/.\n- The FY 2024 Report will be posted to the site as soon as it is released.\n- The primary structure of the Gateway space station's HALO (Habitation and Logistics Outpost) module is one step closer to launch following welding completion in Turin, Italy.\n- HALO is one of four Gateway modules where astronauts will live, conduct science, and prepare for lunar surface missions.\n- NASA is partnering with Northrop Grumman and their subcontractor Thales Alenia Space to develop HALO.",
+ "prompt_tokens": 1352,
+ "output_tokens": 375,
+ "latency_s": 3.25
+}

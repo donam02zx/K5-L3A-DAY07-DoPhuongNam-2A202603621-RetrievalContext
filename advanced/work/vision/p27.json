@@ -1,0 +1,8 @@
+{
+ "page": 27,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: MANAGEMENT’S DISCUSSION AND ANALYSIS STRATEGIC GOALS AND HIGHLIGHTS\n\nPHOTOS: Members of the 2024 cohort of High School Aerospace Scholars work together at Johnson Space Center during the Engineering Design Challenge focusing on exercise in space on July 29, 2024. Photo credit — NASA/Bill Stafford\n\nKEY FACTS:\n- Strategic Goal IV is supported by 15 Performance Goals.\n- 12 Performance Goals were rated Green, one was rated Yellow, one was rated Red, and one was unrated at the time of publication.\n- Time to hire, for all hires excluding Senior Executive Service (SES) and Pathways, was reduced from 80 days in Q1 to 73 days in Q3 of FY 2024.\n- In FY 2024, NASA began a six-phase multi-year Agencywide Full Workforce Barrier Analysis.",
+ "prompt_tokens": 1352,
+ "output_tokens": 191,
+ "latency_s": 1.51
+}

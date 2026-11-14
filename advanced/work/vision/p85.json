@@ -1,0 +1,8 @@
+{
+ "page": 85,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: FINANCIAL SECTION | LETTER FROM THE INSPECTOR GENERAL ON AUDIT\nLetter from the Inspector General on Audit\n\nKEY FACTS:\n- Date of letter: November 15, 2024\n- TO: Bill Nelson, Administrator; Margaret Vo Schaus, Chief Financial Officer\n- SUBJECT: Audit of NASA’s Fiscal Year 2024 Financial Statements (Report No. IG-25-001; Assignment No. A-24-05-00-FMD)\n- Independent public accounting firm: Ernst & Young LLP (EY)\n- Audit result: \"clean\" or unmodified opinion on NASA’s FY 2024 financial statements\n- EY reported one material weakness in internal control related to financial reporting oversight\n- EY reported no instances of significant noncompliance with applicable laws and regulations for FY 2024",
+ "prompt_tokens": 1352,
+ "output_tokens": 181,
+ "latency_s": 2.11
+}

@@ -1,0 +1,8 @@
+{
+ "page": 29,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: Management's Discussion and Analysis / Financial Performance: Financial Highlights / Overview of Financial Position\n\nCHARTS:\n- Balance Sheet Components FY 2024 and FY 2023; column/bar chart; millions (in millions); Legend: Assets (yellow), Liabilities (teal), Net Position (dark blue); FY 2024: Assets $27,504, Liabilities $7,664, Net Position $19,840; FY 2023: Assets $26,135, Liabilities $6,719, Net Position $19,416.\n\nDIAGRAMS:\n- Overview of Financial Position infographic with three primary categories:\n  - Assets: '+' symbol, \"the current and future economic benefits owned or available for use by NASA.\"\n  - Liabilities: '-' symbol, \"the debts owed by NASA but not yet paid.\"\n  - Net Position: '=' symbol, \"the activity between revenue and other financing sources, and costs incurred since inception.\"\n\nKEY FACTS:\n- NASA's Balance Sheet provides a comparable snapshot of the Agency’s financial position as of September 30, 2024 and September 30, 2023.\n- FY 2024 Assets: $27,504 million.\n- FY 2024 Liabilities: $7,664 million.\n- FY 2024 Net Position: $19,840 million.\n- FY 2023 Assets: $26,135 million.\n- FY 2023 Liabilities: $6,719 million.\n- FY 2023 Net Position: $19,416 million.",
+ "prompt_tokens": 1352,
+ "output_tokens": 381,
+ "latency_s": 2.17
+}

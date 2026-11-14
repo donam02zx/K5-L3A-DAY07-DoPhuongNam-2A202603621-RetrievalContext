@@ -1,0 +1,110 @@
+[
+ {
+  "query_id": "AD01",
+  "group": "table",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD02",
+  "group": "table",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD03",
+  "group": "table",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD04",
+  "group": "table",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD05",
+  "group": "image",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD06",
+  "group": "image",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD07",
+  "group": "image",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD08",
+  "group": "chart",
+  "pass": false,
+  "reason": "FAIL: false abstention - correct value seen on inspected p29 but answer cited 'page-29' in a form the validator rejected twice."
+ },
+ {
+  "query_id": "AD09",
+  "group": "chart",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD10",
+  "group": "chart",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD11",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD12",
+  "group": "multihop",
+  "pass": false,
+  "reason": "FAIL: over-cautious abstention caused by rule 9 (demanded an explicit reported total)."
+ },
+ {
+  "query_id": "AD13",
+  "group": "text",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD14",
+  "group": "text",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AD15",
+  "group": "text",
+  "pass": true,
+  "reason": "Correct, cited required pages (checked against original pages)."
+ },
+ {
+  "query_id": "AE01",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained correctly."
+ },
+ {
+  "query_id": "AE02",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained correctly."
+ },
+ {
+  "query_id": "AE03",
+  "group": "no_evidence",
+  "pass": true,
+  "reason": "Abstained correctly."
+ }
+]

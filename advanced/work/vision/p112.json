@@ -1,0 +1,8 @@
+{
+ "page": 112,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION / AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- The page number is 14 at the top right of the inner document text.\n- Thank you for the opportunity to review and comment on the draft 2024 Report on NASA's Top Management and Performance Challenges.\n- Contact for questions regarding NASA's response is Mark Jenson, GAO/OIG Audit Liaison Program Manager, at (202) 358-0629.\n- The document includes a signature for Bill Nelson.\n- Listed recipients (cc:) include the Chief Financial Officer/Ms. Schaus and Chief Information Officer/Mr. Seaton.\n- Listed recipients include the Associate Administrator for Aeronautics Research Mission Directorate/Mr. Pearce and Associate Administrator for Exploration Systems Development Mission Directorate/Ms. Koerner.\n- Listed recipients include the Associate Administrator for Science Mission Directorate/Ms. Fox and Associate Administrator for Space Operations Mission Directorate/Mr. Bowersox.\n- Listed recipients include the Assistant Administrator for Procurement/Ms. Smith Jackson, Assistant Administrator for Strategic Infrastructure/Mr. Carney, and Chief Human Capital Officer/Ms. Elliott.",
+ "prompt_tokens": 1353,
+ "output_tokens": 251,
+ "latency_s": 2.05
+}

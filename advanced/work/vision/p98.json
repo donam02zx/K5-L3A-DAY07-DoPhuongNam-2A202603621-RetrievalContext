@@ -1,0 +1,8 @@
+{
+ "page": 98,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: OTHER INFORMATION | OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nCHARTS: none\n\nTABLES: none\n\nDIAGRAMS: none\n\nPHOTOS: none\n\nKEY FACTS:\n- The Office of Inspector General's independent assessment identifies three broader challenges for 2024.\n- Improving the Management of Major Programs and Projects.\n- Partnering with Commercial Industry.\n- Enabling Mission Critical Capabilities and Support Services.",
+ "prompt_tokens": 1352,
+ "output_tokens": 95,
+ "latency_s": 2.04
+}

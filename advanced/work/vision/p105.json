@@ -1,0 +1,8 @@
+{
+ "page": 105,
+ "model": "gemini-3.5-flash-lite",
+ "text": "PAGE TITLE: AGENCY RESPONSE TO OIG REPORT ON NASA'S TOP MANAGEMENT AND PERFORMANCE CHALLENGES\n\nKEY FACTS:\n- The text discusses the Human Landing System (HLS) and ESDMD's recognition of challenges identified by the OIG.\n- The document refers to SpaceX and Blue Origin regarding HLS development, Starship test flights, and the Blue Moon lander.\n- Critical design review for Artemis III's initial capability is set for summer 2025.\n- SpaceX plans to undertake a long-duration flight test and a propellant transfer flight test in 2025.\n- Blue Origin's first test flight of the New Glenn rocket is scheduled for no earlier than November 2024.",
+ "prompt_tokens": 1353,
+ "output_tokens": 152,
+ "latency_s": 1.84
+}

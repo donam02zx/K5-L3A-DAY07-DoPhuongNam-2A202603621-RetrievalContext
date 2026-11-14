@@ -1,0 +1,74 @@
+{
+ "split": "test",
+ "config": "D_hybrid_fix",
+ "model": "gemini-3.5-flash-lite",
+ "method": "hybrid_rrf",
+ "cases": 11,
+ "traced": 11,
+ "errors": 0,
+ "error_ids": [],
+ "tool_use": [
+  11,
+  11
+ ],
+ "searches_distribution": {
+  "1": 6,
+  "2": 1,
+  "3": 4
+ },
+ "model_calls_mean": 3,
+ "context_evidence": [
+  7,
+  8
+ ],
+ "context_miss_ids": [
+  "n08"
+ ],
+ "answered_answerable": [
+  8,
+  8
+ ],
+ "abstained_no_evidence": [
+  3,
+  3
+ ],
+ "invalid_citation_events": 2,
+ "avg_context_chars": 3186,
+ "prompt_tokens": 34920,
+ "output_tokens": 1108,
+ "thought_tokens": 0,
+ "cost_usd_est": 0.0039,
+ "latency_s_median": 13.4,
+ "latency_s_total": 144.6,
+ "review": {
+  "cases": 11,
+  "provider_errors": 0,
+  "tool_use": {
+   "n": 11,
+   "N": 11
+  },
+  "grounded_answer": {
+   "0": 0,
+   "1": 0,
+   "2": 8,
+   "N": 8,
+   "mean": 2.0
+  },
+  "citation_validity": {
+   "n": 8,
+   "N": 8
+  },
+  "answer_citation_coverage": {
+   "n": 8,
+   "N": 8
+  },
+  "abstention": {
+   "n": 3,
+   "N": 3
+  },
+  "false_abstention": {
+   "n": 0,
+   "N": 8
+  }
+ }
+}

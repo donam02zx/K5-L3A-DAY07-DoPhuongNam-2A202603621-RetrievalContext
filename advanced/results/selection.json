@@ -1,0 +1,7 @@
+{
+ "decided_on": "advanced dev only, before any advanced test run (2026-11-14)",
+ "criteria_in_order": ["dev pass rate", "no-evidence abstention", "number of content errors (vs citation-only errors)", "cost/latency"],
+ "dev_pass": {"X1_text_dense": "16/18", "X2_hybrid_vis": "17/18", "X3_rerank_vis": "17/18", "X4_rerank_inspect": "17/18", "X5_inspect_strict": "16/18"},
+ "selected": "X4_rerank_inspect",
+ "reason": "Tie at 17/18 among X2/X3/X4. X3 failed a no-evidence question (unsupported inference). X2's failure was a content error (missing $697M Other Assets); X4's only failure was a missing citation with fully correct content, and X4 verifies chart/table numbers on the original page image. X4 costs ~1.4x X2 (~$0.019 vs $0.014 per 18 questions, estimated). X5 (stricter prompt) regressed to 16/18 and was rejected."
+}
